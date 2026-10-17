@@ -1,0 +1,148 @@
+{
+  "id": "aza-2012-lion",
+  "title": "Lion (Panthera leo) Care Manual — Chapter 5, Nutrition",
+  "citation": "AZA Lion Species Survival Plan (2012). Lion (Panthera leo) Care Manual. Association of Zoos and Aquariums, Silver Spring, MD.",
+  "language": "en",
+  "species": [{ "scientificName": "Panthera leo", "commonName": { "pt": "Leão", "en": "Lion" } }],
+  "guild": "obligate_carnivore",
+  "modelSpecies": "Gato doméstico (NRC 2006)",
+  "energy": [
+    {
+      "id": "zoo-maintenance",
+      "coefficient": 125,
+      "coefficientRange": [115, 130],
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção em zoo (proposta 115–130 kcal/kg^0,75)",
+      "note": "≈ 3,5 kg/d (machos) e 2,7 kg/d (fêmeas) de dietas com 1,75 kcal/g. 125 é também a manutenção usada nas equações de crescimento."
+    },
+    {
+      "id": "bmr",
+      "coefficient": 62.5,
+      "coefficientRange": [50, 75],
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "BMR",
+      "lifeStage": "all",
+      "label": "Metabolismo basal (McNab 2000, 2008)"
+    }
+  ],
+  "energyAdjustments": [
+    { "label": "Gestação (gato doméstico)", "factor": 1.4 },
+    { "label": "Pico de lactação (gato doméstico)", "factor": 2.0, "note": "Alternativa fatorial (Kienzle 1998): ME = 125·BWm^0,75 + [%N·(Σ125·BWo^0,75 + 1,8·ADGo)]/0,7." },
+    { "label": "Crescimento pós-desmame", "note": "Recomendado: ME = MEm + 1,8 × GMD (g/d) (Hendricks & Wamberg 2000), com MEm = 125·BW^0,75. A equação NRC sobrestimou ~50 % nos leões." }
+  ],
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 22.5 }, "ether_extract": { "min": 9 }, "linoleic_acid": { "min": 0.55 },
+        "vitamin_a": { "min": 3.55 }, "vitamin_d3": { "min": 0.25 }, "vitamin_e": { "min": 38 }, "vitamin_k": { "min": 1 },
+        "thiamin": { "min": 5.5 }, "riboflavin": { "min": 4.25 }, "niacin": { "min": 42.5 }, "pyridoxine": { "min": 2.5 },
+        "folic_acid": { "min": 0.75 }, "biotin": { "min": 0.08 }, "cobalamin": { "min": 0.02 }, "pantothenic_acid": { "min": 6.25 },
+        "choline": { "min": 2550 }, "calcium": { "min": 0.8 }, "phosphorus": { "min": 0.72 }, "magnesium": { "min": 0.04 },
+        "potassium": { "min": 0.4 }, "sodium": { "min": 0.14 }, "iron": { "min": 80 }, "zinc": { "min": 75 }, "copper": { "min": 8.4 },
+        "manganese": { "min": 4.8 }, "iodine": { "min": 2.2 }, "selenium": { "min": 0.4 }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 20 }, "ether_extract": { "min": 9 }, "linoleic_acid": { "min": 0.55 },
+        "vitamin_a": { "min": 3.55 }, "vitamin_d3": { "min": 0.25 }, "vitamin_e": { "min": 38 }, "vitamin_k": { "min": 1 },
+        "thiamin": { "min": 5.6 }, "riboflavin": { "min": 4.25 }, "niacin": { "min": 42.5 }, "pyridoxine": { "min": 2.5 },
+        "folic_acid": { "min": 0.75 }, "biotin": { "min": 0.08 }, "cobalamin": { "min": 0.02 }, "pantothenic_acid": { "min": 6.25 },
+        "choline": { "min": 2550 },
+        "calcium": { "min": 0.29, "note": "Não há dados para felinos exóticos grandes com 0,3 % de Ca e P." },
+        "phosphorus": { "min": 0.26, "note": "Não há dados para felinos exóticos grandes com 0,3 % de Ca e P." },
+        "magnesium": { "min": 0.04 }, "potassium": { "min": 0.52 }, "sodium": { "min": 0.07 }, "iron": { "min": 80 },
+        "zinc": { "min": 75 }, "copper": { "min": 5 }, "manganese": { "min": 4.8 }, "iodine": { "min": 2.2 }, "selenium": { "min": 0.4 }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Gestação/lactação",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 21.3, "max": 30 }, "ether_extract": { "min": 15 }, "linoleic_acid": { "min": 0.55 },
+        "vitamin_a": { "min": 7.5 }, "vitamin_d3": { "min": 0.25 }, "vitamin_e": { "min": 38 }, "vitamin_k": { "min": 1 },
+        "thiamin": { "min": 5.5 }, "riboflavin": { "min": 4.25 }, "niacin": { "min": 42.5 }, "pyridoxine": { "min": 2.5 },
+        "folic_acid": { "min": 0.75 }, "biotin": { "min": 0.08 }, "cobalamin": { "min": 0.02 }, "pantothenic_acid": { "min": 6.25 },
+        "choline": { "min": 2550 }, "calcium": { "min": 1.08 }, "phosphorus": { "min": 0.76 }, "magnesium": { "min": 0.06 },
+        "potassium": { "min": 0.52 }, "sodium": { "min": 0.13 }, "iron": { "min": 80 }, "zinc": { "min": 60 }, "copper": { "min": 8.8 },
+        "manganese": { "min": 7.2 }, "iodine": { "min": 2.2 }, "selenium": { "min": 0.4 }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Composição observada em 24 dietas de 8 instituições (média; faixa)",
+      "basis": "asFed",
+      "rules": [
+        { "category": "meat_mix", "range": { "min": 59, "max": 91, "target": 75 } },
+        { "category": "whole_prey_vertebrate", "range": { "min": 0, "max": 12, "target": 5 } },
+        { "category": "bones", "range": { "min": 6, "max": 32, "target": 15 } },
+        { "category": "muscle_meat", "label": "Carne em pedaços", "range": { "min": 0, "max": 14, "target": 5 } }
+      ]
+    }
+  ],
+  "growth": [
+    {
+      "label": "Machos, criados pelos pais (modelo broken-line, zoo)", "sex": "male", "rearing": "parent",
+      "birthWeightKg": 1.5, "matureWeightKg": 190, "daysToMaturity": 1062,
+      "intervals": [
+        { "fromDay": 0, "toDay": 30, "adgGramsPerDay": 105 }, { "fromDay": 30, "toDay": 45, "adgGramsPerDay": 112 },
+        { "fromDay": 45, "toDay": 70, "adgGramsPerDay": 139 }, { "fromDay": 70, "toDay": 100, "adgGramsPerDay": 258 },
+        { "fromDay": 100, "toDay": 540, "adgGramsPerDay": 256 }, { "fromDay": 540, "toDay": 1095, "adgGramsPerDay": 114 },
+        { "fromDay": 1095, "toDay": 1460, "adgGramsPerDay": 0 }
+      ]
+    },
+    {
+      "label": "Machos, criação artificial (modelo broken-line, zoo)", "sex": "male", "rearing": "hand",
+      "birthWeightKg": 1.3, "matureWeightKg": 187, "daysToMaturity": 1060, "note": "30–70 d não transcrito (células fundidas no PDF); acelera aos 30 e 70 d.",
+      "intervals": [
+        { "fromDay": 0, "toDay": 30, "adgGramsPerDay": 76 }, { "fromDay": 70, "toDay": 540, "adgGramsPerDay": 258 }, { "fromDay": 540, "toDay": 1095, "adgGramsPerDay": 104 },
+        { "fromDay": 1095, "toDay": 1460, "adgGramsPerDay": 0 }
+      ]
+    },
+    {
+      "label": "Fêmeas, criadas pelos pais (modelo broken-line, zoo)", "sex": "female", "rearing": "parent",
+      "birthWeightKg": 1.2, "matureWeightKg": 133, "daysToMaturity": 1052,
+      "intervals": [
+        { "fromDay": 0, "toDay": 30, "adgGramsPerDay": 96 }, { "fromDay": 30, "toDay": 45, "adgGramsPerDay": 113 },
+        { "fromDay": 45, "toDay": 70, "adgGramsPerDay": 127 }, { "fromDay": 70, "toDay": 100, "adgGramsPerDay": 200 },
+        { "fromDay": 100, "toDay": 540, "adgGramsPerDay": 197 }, { "fromDay": 540, "toDay": 1095, "adgGramsPerDay": 61 },
+        { "fromDay": 1095, "toDay": 1460, "adgGramsPerDay": 0 }
+      ]
+    },
+    {
+      "label": "Fêmeas, criação artificial (modelo broken-line, zoo)", "sex": "female", "rearing": "hand",
+      "birthWeightKg": 1.0, "matureWeightKg": 130, "daysToMaturity": 1044, "note": "30–70 d não transcrito (células fundidas no PDF); acelera aos 30 e 70 d.",
+      "intervals": [
+        { "fromDay": 0, "toDay": 30, "adgGramsPerDay": 69 }, { "fromDay": 70, "toDay": 540, "adgGramsPerDay": 200 }, { "fromDay": 540, "toDay": 1095, "adgGramsPerDay": 51 },
+        { "fromDay": 1095, "toDay": 1460, "adgGramsPerDay": 0 }
+      ]
+    }
+  ],
+  "rules": [
+    { "kind": "supplement", "text": { "pt": "Músculo como parte importante ou exclusiva da dieta: por cada 2 kg, 5 g de carbonato de cálcio, 10 g de fosfato bicálcico e 1 comprimido (1,5 g) de multivitamínico mineral (Ullrey & Bernard 1989)." }, "check": { "type": "food_present", "category": "muscle_meat" } },
+    { "kind": "limit", "text": { "pt": "Dietas moles dão pouca abrasão dentária: combinar com presas inteiras, ossos ou carcaça." } },
+    { "kind": "safety", "text": { "pt": "Carcaças: origem conhecida, sem fármacos, sem chumbo, sem animais com doença neurológica ou EET; atropelados desaconselhados. Congelar itens de origem não doméstica." } },
+    { "kind": "safety", "text": { "pt": "Retirar alimento no máximo 24 h depois de oferecido (HACCP)." } },
+    { "kind": "monitoring", "text": { "pt": "Fêmeas gestantes e lactantes: manter condição corporal moderada (CC 4–6)." } },
+    { "kind": "monitoring", "text": { "pt": "Água: 50 mL/kg PV/dia." } },
+    { "kind": "monitoring", "text": { "pt": "EM de alimentos para carnívoros (Clauss 2010): EM kcal/kg = 39,9 × (%PB + %ENN) + 90,0 × (%gordura)." } },
+    { "kind": "limit", "text": { "pt": "O enriquecimento alimentar faz parte da dieta e deve ser aprovado por nutricionista e veterinário; cuidado com gelo (fraturas dentárias)." } }
+  ],
+  "dataQuality": [
+    "Tabela 7: a coluna \"All\" indica niacina 45,5 ppm, mas todas as fases indicam 42,5 ppm; adotado 42,5.",
+    "Tabela 7: fósforo \"All\" 0,26–0,72 %, mas gestação/lactação indica 0,76 %; adotado o valor por fase.",
+    "Curvas de crescimento: intervalos com taxa variável (p. ex. 365–540 d) estão resumidos; usar a Tabela 6 original para detalhe."
+  ]
+}

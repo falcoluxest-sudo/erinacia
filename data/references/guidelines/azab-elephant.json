@@ -1,0 +1,109 @@
+{
+  "id": "azab-elephant",
+  "title": "Manual de Nutrição para Elefantes",
+  "citation": "Carneiro, L.A., Faria, A.R.G. e Werneck, G.R. Manual de Nutrição para Elefantes. AZAB — Associação de Zoológicos e Aquários do Brasil (baseado em Ullrey, Crissey e Hintz, 1997, Elephants: nutrition and dietary husbandry).",
+  "language": "pt-BR",
+  "species": [
+    { "scientificName": "Elephas maximus", "commonName": { "pt": "Elefante-asiático", "en": "Asian elephant" } },
+    { "scientificName": "Loxodonta africana", "commonName": { "pt": "Elefante-africano", "en": "African elephant" } }
+  ],
+  "guild": "hindgut_herbivore",
+  "modelSpecies": "Equinos (herbívoros não ruminantes com fermentação no cólon)",
+  "intake": [
+    { "label": "Vida livre (Ullrey 1997)", "basis": "DM", "percentBodyWeight": { "min": 1.5, "max": 1.9 } },
+    { "label": "Base dos modelos de dieta (adulto, manutenção)", "basis": "DM", "percentBodyWeight": { "target": 1.5 } }
+  ],
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Manutenção e início de gestação",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "target": 8 },
+        "crude_fibre": { "target": 24, "note": "Nair 1979; em alternativa FDN 62 %, FDA 48 %, lenhina 15 % (Meissner 1990)." },
+        "ndf": { "target": 62 },
+        "adf": { "target": 48 },
+        "lignin": { "target": 15 },
+        "ca_p_ratio": { "target": 1.5 },
+        "calcium": { "target": 0.3 },
+        "phosphorus": { "target": 0.2 },
+        "magnesium": { "target": 0.1 },
+        "potassium": { "target": 0.4 },
+        "sodium": { "target": 0.1 },
+        "sulfur": { "target": 0.15 },
+        "iron": { "target": 50 },
+        "copper": { "target": 10 },
+        "manganese": { "target": 40 },
+        "zinc": { "target": 40 },
+        "cobalt": { "target": 0.1 },
+        "iodine": { "target": 0.6 },
+        "selenium": { "target": 0.2 },
+        "vitamin_a": { "target": 0.003, "note": "Fonte: 3 UI/kg — provável gralha (ver dataQuality)." },
+        "vitamin_d3": { "target": 0.8, "note": "Fonte: 800 UI/kg (vitamina D)." },
+        "vitamin_e": { "target": 100, "note": "Fonte em UI/kg." },
+        "thiamin": { "target": 3 },
+        "riboflavin": { "target": 3 }
+      }
+    },
+    { "lifeStage": "breeding", "label": "Reprodução", "basis": "DM", "values": { "crude_protein": { "target": 10 } } },
+    {
+      "lifeStage": "gestation_late",
+      "label": "Final de gestação",
+      "basis": "DM",
+      "values": { "crude_protein": { "target": 12 }, "calcium": { "target": 0.5 }, "phosphorus": { "target": 0.3 }, "potassium": { "target": 0.4 } }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Lactação (1.º ano 14 % PB; 2.º ano 12 % PB)",
+      "basis": "DM",
+      "values": { "crude_protein": { "min": 12, "max": 14 }, "calcium": { "target": 0.5 }, "phosphorus": { "target": 0.3 }, "potassium": { "target": 0.5 } }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento (ao pé 14 %; 3.º ano 13 %; 4.º ano 12 % PB)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 12, "max": 14 },
+        "calcium": { "min": 0.5, "max": 0.7 },
+        "phosphorus": { "min": 0.3, "max": 0.4 },
+        "potassium": { "target": 0.4 }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Modelo de dieta de verão (adulto, manutenção)",
+      "basis": "DM",
+      "rules": [
+        { "category": "grass_forage", "label": "Gramínea com alto teor de fibra", "range": { "target": 60 } },
+        { "category": "hay", "label": "Feno com PB > 12 %", "range": { "target": 30 } },
+        { "category": "produce", "label": "Itens de condicionamento (frutas/legumes)", "range": { "target": 5 } },
+        { "category": "concentrate", "range": { "target": 3 } },
+        { "category": "browse", "label": "Espécies alternativas (senão, +2 % de gramínea)", "range": { "target": 2 } }
+      ]
+    },
+    {
+      "label": "Modelo de dieta de inverno (adulto, manutenção)",
+      "basis": "DM",
+      "rules": [
+        { "category": "grass_forage", "label": "Gramínea com alto teor de fibra (50 %) + gramínea de inverno, aveia/azevém (20 %)", "range": { "target": 70 } },
+        { "category": "hay", "label": "Feno com PB > 12 %", "range": { "target": 20 } },
+        { "category": "produce", "range": { "target": 5 } },
+        { "category": "concentrate", "range": { "target": 3 } },
+        { "category": "browse", "range": { "target": 2 } }
+      ]
+    }
+  ],
+  "rules": [
+    { "kind": "limit", "text": { "pt": "Frutas e legumes até 5 % da MS; usar para medicação, condicionamento e enriquecimento, sempre contabilizados na dieta." }, "check": { "type": "category_share_above", "category": "produce", "percent": 5, "basis": "DM" } },
+    { "kind": "limit", "text": { "pt": "Ração com 16–25 % FDA: até 50 % da MS; rações com menos fibra e mais energia/PB: 10–25 % da MS." }, "check": { "type": "category_share_above", "category": "concentrate", "percent": 50, "basis": "DM" } },
+    { "kind": "schedule", "text": { "pt": "Qualquer mudança de dieta deve ser gradual, com período de transição." } },
+    { "kind": "safety", "text": { "pt": "Verificar a conservação do feno (fungos, micotoxinas)." } },
+    { "kind": "monitoring", "text": { "pt": "Água à vontade, para beber e banho (asiáticos: 140–200 L/dia)." } }
+  ],
+  "dataQuality": [
+    "Vitamina A indicada como 3 UI/kg em todas as categorias; o valor de Ullrey (1997) deve ser confirmado na fonte original (provável 3000 UI/kg).",
+    "Tabela 1: FDN do feno de Tifton 85 = 7,66 % é incoerente com FDA 38,72 % (provável gralha).",
+    "As exigências de vitaminas não variam entre categorias, o que os próprios autores consideram improvável."
+  ]
+}

@@ -5,3 +5,4 @@ export * from './diet';
 export * from './requirements';
 export * from './feeding';
 export * from './growth';
+export * from './guidelines';

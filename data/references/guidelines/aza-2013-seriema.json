@@ -1,0 +1,74 @@
+{
+  "id": "aza-2013-seriema",
+  "title": "Red-legged Seriema (Cariama cristata) Care Manual — Chapter 5, Nutrition",
+  "citation": "AZA Red-legged Seriema SSP (2013). Red-legged Seriema (Cariama cristata) Care Manual. Association of Zoos and Aquariums, Silver Spring, MD.",
+  "language": "en",
+  "species": [{ "scientificName": "Cariama cristata", "commonName": { "pt": "Seriema", "en": "Red-legged seriema" } }],
+  "guild": "insectivore_omnivore",
+  "modelSpecies": "NRC Poultry (1994) e NRC Dogs and Cats (2006)",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Valores propostos 2008 (extremo superior da faixa só para reprodução)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 16.5, "max": 30, "note": "Extremo superior apenas para reprodução." },
+        "ether_extract": { "min": 10, "max": 30, "note": "Não é exigência: faixa de gordura das presas e itens habituais." },
+        "calcium": { "min": 0.66, "max": 2.0, "note": "Extremo superior apenas para reprodução." },
+        "phosphorus": { "min": 0.33, "max": 1.0, "note": "Extremo superior apenas para reprodução." },
+        "ca_p_ratio": { "min": 1, "max": 2 },
+        "potassium": { "min": 0.44, "max": 0.72 },
+        "sodium": { "min": 0.13, "max": 0.18 },
+        "magnesium": { "min": 0.04, "max": 0.06 },
+        "copper": { "min": 5.5, "max": 12.4 },
+        "iron": { "min": 55, "max": 80 },
+        "zinc": { "min": 55, "max": 96 },
+        "manganese": { "min": 66, "max": 72 },
+        "selenium": { "min": 0.2, "max": 0.4 },
+        "iodine": { "min": 0.33, "max": 0.44 },
+        "vitamin_a": { "min": 0.17, "max": 7.5, "note": "Fonte: 170–7500 UI/kg, convertido para UI/g." },
+        "vitamin_d3": { "min": 0.022, "max": 0.55, "note": "Fonte: 22–550 UI/kg, convertido para UI/g." },
+        "vitamin_e": { "min": 11, "max": 38, "note": "Fonte em UI/kg; assumido 1 UI = 1 mg (acetato de dl-α-tocoferol)." },
+        "thiamin": { "min": 2.2, "max": 5.6 },
+        "riboflavin": { "min": 2.75, "max": 10.5 },
+        "pyridoxine": { "min": 3.3, "max": 5.0 },
+        "cobalamin": { "min": 0.003, "max": 0.035 },
+        "biotin": { "min": 0.11, "max": 0.25 },
+        "choline": { "min": 990, "max": 2250 },
+        "folic_acid": { "min": 0.8, "max": 1.1 },
+        "niacin": { "min": 15, "max": 42.5 },
+        "pantothenic_acid": { "min": 10.5, "max": 17.6 }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Proporções recomendadas (Tabela 6)",
+      "basis": "asFed",
+      "rules": [
+        { "category": "whole_prey_vertebrate", "range": { "min": 0, "max": 25 } },
+        { "category": "invertebrate_prey", "range": { "min": 10, "max": 30, "note": "Insetos com gut-loading ou suplementados com cálcio." } },
+        { "category": "complete_feed_dry", "label": "Alimentos nutricionalmente completos (secos e/ou à base de carne)", "range": { "min": 40, "max": 75 } },
+        { "category": "produce", "label": "Verduras e legumes", "range": { "min": 5, "max": 20 } }
+      ]
+    }
+  ],
+  "growth": [
+    {
+      "label": "Criação artificial: ganho diário após o dia 5",
+      "rearing": "hand",
+      "dailyGainPercent": { "min": 10, "max": 15, "note": "Dias 1–5: 5 refeições/dia; primeira refeição 12–18 h após a eclosão." }
+    }
+  ],
+  "rules": [
+    { "kind": "schedule", "text": { "pt": "Alimentar duas vezes por dia; considerar refeições extra para forrageamento." } },
+    { "kind": "supplement", "text": { "pt": "Insetos com gut-loading ou suplementados com cálcio (relação Ca:P invertida)." }, "check": { "type": "food_present", "category": "invertebrate_prey" } },
+    { "kind": "alert", "text": { "pt": "Sem comer há mais de 48 h: avisar o veterinário." }, "check": { "type": "no_intake_hours", "hours": 48 } },
+    { "kind": "limit", "text": { "pt": "Excesso de cálcio reduz a absorção de P, Mg, Mn e Zn. Algumas instituições sobem o Ca para 2 % após a 3.ª postura." } },
+    { "kind": "schedule", "text": { "pt": "Abaixo de 0 °C, oferecer mais alimento nos meses frios." } },
+    { "kind": "safety", "text": { "pt": "Retirar alimento no máximo 24 h depois de oferecido." } },
+    { "kind": "monitoring", "text": { "pt": "Na criação artificial, pesar cada item para calcular a composição real da dieta." } }
+  ],
+  "intake": [],
+  "dataQuality": ["Peso adulto 2,5–3 kg; não há dados quantitativos de energia para a espécie."]
+}

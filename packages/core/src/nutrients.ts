@@ -46,6 +46,7 @@ export const NUTRIENTS: NutrientDef[] = [
   n('sodium', '%', 'macromineral', 'Sódio', 'Sodium', 'Na (%MN)'),
   n('potassium', '%', 'macromineral', 'Potássio', 'Potassium', 'K (%MN)'),
   n('magnesium', '%', 'macromineral', 'Magnésio', 'Magnesium', 'Mg (%MN)'),
+  n('sulfur', '%', 'macromineral', 'Enxofre', 'Sulfur'),
 
   n('iron', 'mg/kg', 'micromineral', 'Ferro', 'Iron', 'Fe (mg/kg)'),
   n('copper', 'mg/kg', 'micromineral', 'Cobre', 'Copper', 'Cu (mg/kg)'),
@@ -53,6 +54,7 @@ export const NUTRIENTS: NutrientDef[] = [
   n('manganese', 'mg/kg', 'micromineral', 'Manganês', 'Manganese', 'Mn (mg/kg)'),
   n('iodine', 'mg/kg', 'micromineral', 'Iodo', 'Iodine', 'I (mg/kg)'),
   n('selenium', 'mg/kg', 'micromineral', 'Selénio', 'Selenium', 'Se (mg/kg)'),
+  n('cobalt', 'mg/kg', 'micromineral', 'Cobalto', 'Cobalt'),
 
   n('vitamin_a', 'UI/g', 'vitamin', 'Vitamina A', 'Vitamin A', 'Vitamina A RAE (UI/g)'),
   n('vitamin_d2', 'UI/g', 'vitamin', 'Vitamina D2', 'Vitamin D2', 'Vitamina D2 (UI/g)'),
@@ -68,6 +70,7 @@ export const NUTRIENTS: NutrientDef[] = [
   n('biotin', 'mg/kg', 'vitamin', 'Vitamina B7 (biotina)', 'Biotin (B7)', 'Vitamina B7 (Biotina) (mg/kg)'),
   n('folic_acid', 'mg/kg', 'vitamin', 'Vitamina B9 (ác. fólico)', 'Folic acid (B9)', 'Vitamina B9 (Acido Fólico) (mg/kg)'),
   n('cobalamin', 'mg/kg', 'vitamin', 'Vitamina B12 (cobalamina)', 'Cobalamin (B12)', 'Vitamina B12 (Cobalamina) (mg/kg)'),
+  n('choline', 'mg/kg', 'vitamin', 'Colina', 'Choline'),
 
   n('taurine', '%', 'amino_acid', 'Taurina', 'Taurine', 'Taurina  (%MN)'),
   n('lysine', '%', 'amino_acid', 'Lisina', 'Lysine', 'Lisina  (%MN)'),
@@ -82,6 +85,7 @@ export const NUTRIENTS: NutrientDef[] = [
   n('arginine', '%', 'amino_acid', 'Arginina', 'Arginine', 'Arginina  (%MN)'),
   n('glutamine', '%', 'amino_acid', 'Glutamina', 'Glutamine', 'Glutamina  (%MN)'),
   n('cysteine', '%', 'amino_acid', 'Cisteína', 'Cysteine', 'Cisteína  (%MN)'),
+  n('methionine_cystine', '%', 'amino_acid', 'Metionina + cistina', 'Methionine + cystine'),
   n('tyrosine', '%', 'amino_acid', 'Tirosina', 'Tyrosine', 'Tirosina  (%MN)'),
 
   n('mufa', '%', 'fatty_acid', 'AG monoinsaturados', 'Monounsaturated FA', 'AG Monoinsaturadas  (%MN)'),
@@ -114,6 +118,17 @@ export const NUTRIENTS: NutrientDef[] = [
 ];
 
 export const NUTRIENT_BY_KEY: ReadonlyMap<string, NutrientDef> = new Map(NUTRIENTS.map((d) => [d.key, d]));
+
+/**
+ * Diet-level indicators that can carry a requirement but are computed, not
+ * stored per food.
+ */
+export const DERIVED_INDICATORS = {
+  ca_p_ratio: { unit: 'ratio', label: { pt: 'Relação Ca:P', en: 'Ca:P ratio' } },
+  energy_density_dm: { unit: 'kcal/g', label: { pt: 'Densidade energética (MS)', en: 'Energy density (DM)' } },
+  energy_density_as_fed: { unit: 'kcal/g', label: { pt: 'Densidade energética (MN)', en: 'Energy density (as fed)' } },
+  kcal_per_g_protein: { unit: 'kcal/g', label: { pt: 'kcal EM por g PB', en: 'kcal ME per g CP' } },
+} as const;
 
 /** Nutrients that are not concentrations and must not be converted to a dry-matter basis. */
 export const NON_CONCENTRATION = new Set(['moisture', 'dry_matter', 'glycemic_index', 'glycemic_load', 'co2eq']);

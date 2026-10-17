@@ -1,0 +1,73 @@
+{
+  "id": "aza-2010-mustelids",
+  "title": "Mustelid (Mustelidae) Care Manual — Chapter 5, Nutrition",
+  "citation": "AZA Small Carnivore TAG (2010). Mustelid (Mustelidae) Care Manual. Association of Zoos and Aquariums, Silver Spring, MD.",
+  "language": "en",
+  "species": [
+    { "scientificName": "Mustelidae", "commonName": { "pt": "Mustelídeos (lontras, texugos, martas, glutão…)", "en": "Mustelids" } }
+  ],
+  "guild": "carnivore",
+  "modelSpecies": "Cão (NRC 2006, AAFCO 1999), gato (NRC 2006), vison e raposa-do-ártico (NRC 1982), lontra-anã-asiática",
+  "energy": [
+    {
+      "id": "nagy-1998-carnivores",
+      "coefficient": 2.23,
+      "exponent": 0.85,
+      "weightUnit": "g",
+      "energyUnit": "kJ",
+      "energyType": "FMR",
+      "lifeStage": "all",
+      "label": "Mamíferos carnívoros (Nagy et al. 1998)",
+      "note": "O manual chama-lhe \"gross energy requirement\"; a equação de Nagy é de taxa metabólica de campo. Sem equações específicas para mustelídeos."
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Espécies mais omnívoras (coluna 1 da Tabela 9)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 17.5, "max": 26 }, "ether_extract": { "min": 5, "max": 8.5 }, "linoleic_acid": { "min": 1.0, "max": 1.3 },
+        "vitamin_a": { "min": 0.5, "max": 5.9 }, "vitamin_d3": { "min": 0.5, "max": 0.55 }, "vitamin_e": { "min": 27, "max": 50 },
+        "thiamin": { "min": 1.0, "max": 2.25 }, "riboflavin": { "min": 1.6, "max": 10.5 }, "pantothenic_acid": { "min": 7.4, "max": 15 },
+        "niacin": { "min": 11.4, "max": 20 }, "pyridoxine": { "min": 1.0, "max": 1.8 }, "folic_acid": { "min": 0.18, "max": 0.5 },
+        "biotin": { "min": 0.1, "max": 0.12 }, "cobalamin": { "min": 0.022, "max": 0.035 }, "calcium": { "min": 0.5, "max": 1.2 },
+        "phosphorus": { "min": 0.5, "max": 1.0 }, "potassium": { "min": 0.4, "max": 0.6 }, "sodium": { "min": 0.04, "max": 0.3 },
+        "magnesium": { "min": 0.04, "max": 0.06 }, "iron": { "min": 30, "max": 90 }, "zinc": { "min": 50, "max": 120 },
+        "copper": { "min": 6.0, "max": 12.4 }, "iodine": { "min": 0.9, "max": 1.54 }, "selenium": { "min": 0.1, "max": 0.35 }
+      }
+    },
+    {
+      "lifeStage": "all",
+      "label": "Espécies mais carnívoras (coluna 2 da Tabela 9)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 19.7, "max": 32.5 }, "ether_extract": { "min": 9, "max": 30 }, "linoleic_acid": { "min": 0.5, "max": 0.55 },
+        "vitamin_a": { "min": 2.44, "max": 10 }, "vitamin_d3": { "min": 0.25, "max": 1.0 }, "vitamin_e": { "min": 27, "max": 120 },
+        "thiamin": { "min": 1.0, "max": 5.6 }, "riboflavin": { "min": 1.6, "max": 4.25 }, "pantothenic_acid": { "min": 5, "max": 8 },
+        "niacin": { "min": 9.6, "max": 60 }, "pyridoxine": { "min": 1.6, "max": 4.0 }, "folic_acid": { "min": 0.2, "max": 1.3 },
+        "biotin": { "min": 0.07, "max": 0.12 }, "cobalamin": { "min": 0.02, "max": 0.035 }, "calcium": { "min": 0.5, "max": 1.0 },
+        "phosphorus": { "min": 0.5, "max": 0.8 }, "potassium": { "min": 0.4, "max": 0.6 }, "sodium": { "min": 0.05, "max": 0.4 },
+        "magnesium": { "min": 0.03, "max": 0.08 }, "iron": { "min": 80, "max": 114 }, "zinc": { "min": 50, "max": 94 },
+        "copper": { "min": 5.0, "max": 8.8 }, "iodine": { "min": 0.35, "max": 2.2 }, "selenium": { "min": 0.1, "max": 0.4 }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Vison (Mustela) em lactação",
+      "basis": "DM",
+      "values": { "crude_protein": { "target": 45.7, "note": "Lewington 2002; digestibilidade da proteína de 83 %." } }
+    }
+  ],
+  "rules": [
+    { "kind": "supplement", "text": { "pt": "Suplementar tiamina e vitamina E sempre que peixe congelado/descongelado for mais de 33 % da dieta." }, "check": { "type": "category_share_above", "category": "marine_fish", "percent": 33, "basis": "asFed" } },
+    { "kind": "supplement", "text": { "pt": "Dietas ricas em peixe ou AGPI: até 400 mg/kg MS de vitamina E (prevenir esteatite)." } },
+    { "kind": "limit", "text": { "pt": "Evitar dietas com 0,3 % ou menos de Ca e P, apesar de constarem no NRC de cão e gato." } },
+    { "kind": "monitoring", "text": { "pt": "Ganho de peso sazonal de 10–30 % do peso base como meta inicial, até haver dados individuais." } },
+    { "kind": "limit", "text": { "pt": "O glutão (Gulo gulo) pode precisar de mais tiamina do que outros mustelídeos." } }
+  ],
+  "dataQuality": [
+    "Os rótulos \"mais omnívoras\" / \"mais carnívoras\" das duas colunas da Tabela 9 foram inferidos dos valores; confirmar no manual.",
+    "A Tabela 10 (vison, NRC 1982) e a Tabela 11 (taxa basal por espécie) não foram transcritas."
+  ]
+}

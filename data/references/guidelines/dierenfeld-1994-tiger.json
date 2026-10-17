@@ -1,0 +1,49 @@
+{
+  "id": "dierenfeld-1994-tiger",
+  "title": "Nutrition, Food Preparation and Feeding — Management and Conservation of Captive Tigers",
+  "citation": "Dierenfeld, E.S., Bush, M., Phillips, L. and Montali, R. (1994). Nutrition, Food Preparation and Feeding. In: Management and Conservation of Captive Tigers, Panthera tigris. Tilson, R., Brady, G., Traylor-Holzer, K. and Armstrong, D. (Eds.). Minnesota Zoo, Apple Valley, Minnesota.",
+  "language": "en",
+  "species": [{ "scientificName": "Panthera tigris", "commonName": { "pt": "Tigre", "en": "Tiger" } }],
+  "guild": "obligate_carnivore",
+  "modelSpecies": "Gato doméstico (NRC 1984)",
+  "energy": [
+    {
+      "id": "kleiber-maintenance",
+      "coefficient": 140,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção (Kleiber 1964)",
+      "note": "Fêmea de 123 kg ≈ 5170 kcal/d; macho de 160 kg ≈ 6300 kcal/d."
+    }
+  ],
+  "energyAdjustments": [
+    { "label": "Inverno, alojamento exterior", "factorRange": [1.1, 1.2] },
+    { "label": "Verão (apetite reduzido)", "factorRange": [0.8, 0.9] },
+    { "label": "Lactação", "note": "Ad libitum." }
+  ],
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Misturas de carne preparadas na instituição",
+      "basis": "DM",
+      "values": {
+        "calcium": { "target": 1.0, "note": "≈ 7 g Ca/kg de carne: 17,5 g de CaCO3 (40 % Ca) por kg." },
+        "vitamin_a": { "target": 15, "note": "Nível de retinol adotado pelos fabricantes (~15 000 UI/kg MS) após excessos detetados." },
+        "vitamin_e": { "min": 50, "max": 150, "note": "Quando a carne tem gordura polinsaturada (não ruminantes); fonte em UI/kg." }
+      }
+    }
+  ],
+  "rules": [
+    { "kind": "schedule", "text": { "pt": "Um dia de jejum por semana (ou só ossos): a ração diária × 7/6 nos restantes dias (3,1 → 3,6 kg; 4,1 → 4,8 kg)." } },
+    { "kind": "avoid", "text": { "pt": "Não suplementar vitamina A se for fornecido fígado em qualquer quantidade." }, "check": { "type": "food_present", "category": "organ_meat" } },
+    { "kind": "supplement", "text": { "pt": "Carne de músculo sem osso: suplementar Ca com fonte sem fósforo (CaCO3)." }, "check": { "type": "food_present", "category": "muscle_meat" } },
+    { "kind": "limit", "text": { "pt": "Preferir presas inteiras a só músculo ou só vísceras (raquitismo, hipervitaminose A)." } },
+    { "kind": "safety", "text": { "pt": "Nunca fornecer carcaças de animais eutanasiados com barbitúricos." } },
+    { "kind": "safety", "text": { "pt": "Descongelar em condições limpas e fornecer logo; não deixar dietas cruas à temperatura ambiente." } },
+    { "kind": "monitoring", "text": { "pt": "Registar diariamente oferecido vs. consumido por indivíduo e a consistência das fezes." } },
+    { "kind": "limit", "text": { "pt": "Necessidades específicas de felinos: retinol, ácido araquidónico, taurina e niacina; atenção a fitoestrogénios em dietas comerciais." } }
+  ]
+}

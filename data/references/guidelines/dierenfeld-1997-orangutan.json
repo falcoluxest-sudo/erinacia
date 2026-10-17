@@ -1,0 +1,61 @@
+{
+  "id": "dierenfeld-1997-orangutan",
+  "title": "Orangutan Nutrition — Orangutan SSP Husbandry Manual",
+  "citation": "Dierenfeld, E.S. (1997). Orangutan Nutrition. In: Orangutan SSP Husbandry Manual. Sodaro, C. (Ed.). Orangutan SSP and Brookfield Zoo, Brookfield, Illinois.",
+  "language": "en",
+  "species": [
+    { "scientificName": "Pongo pygmaeus", "commonName": { "pt": "Orangotango-de-bornéu", "en": "Bornean orangutan" } },
+    { "scientificName": "Pongo abelii", "commonName": { "pt": "Orangotango-de-sumatra", "en": "Sumatran orangutan" } }
+  ],
+  "guild": "frugivore_folivore",
+  "modelSpecies": "Primatas do Velho Mundo (NRC 1978)",
+  "energy": [
+    {
+      "id": "kleiber-maintenance",
+      "coefficient": 140,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção (Kleiber, via Robbins 1983)",
+      "note": "40 kg (fêmea) ≈ 2227 kcal/d; 75 kg (macho) ≈ 3568 kcal/d."
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Exigências para primatas do Velho Mundo (NRC 1978), Tabela 2",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 16.7 },
+        "calcium": { "min": 0.6 },
+        "phosphorus": { "min": 0.4 },
+        "vitamin_d3": { "min": 2.2 }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Dieta sugerida (resumo do capítulo)",
+      "basis": "asFed",
+      "rules": [
+        { "category": "greens", "label": "Verduras escuras / browse", "range": { "min": 50, "note": "No texto: até 40–50 %; no resumo: pelo menos 50 %." } },
+        { "category": "fruit", "range": { "max": 25, "note": "≈ 5 % da MS." } },
+        { "category": "vegetable_root", "label": "Legumes amarelos/laranja, crus e com casca", "range": { "target": 15 } },
+        { "category": "complete_feed_dry", "label": "Biscoito de primata rico em fibra (≥ 20 % FDN na MS)", "range": { "min": 15, "note": "≈ 50 % das calorias." } }
+      ]
+    }
+  ],
+  "productSpecs": [
+    { "label": "Biscoito de primata rico em fibra", "basis": "DM", "values": { "ndf": { "min": 20 } } }
+  ],
+  "rules": [
+    { "kind": "limit", "text": { "pt": "Sementes, frutos secos e produtos animais apenas como guloseima ou item de forrageamento." }, "check": { "type": "food_present", "category": "seeds_nuts" } },
+    { "kind": "limit", "text": { "pt": "Aumentar a fibra: fruta crua com casca, trocar fruta mole por dura, mais verduras ou browse diário." } },
+    { "kind": "schedule", "text": { "pt": "Objetivo de 6 a 10 itens por dia (p. ex. 2 frutas, 2 legumes amarelos, 3–4 verduras, biscoito)." } },
+    { "kind": "supplement", "text": { "pt": "Suplementos vitamínicos só por necessidade calculada, não por profilaxia." } },
+    { "kind": "monitoring", "text": { "pt": "Obesidade em 25 % dos zoos inquiridos e risco de diabetes: controlar peso; dietas ricas em fibra, pobres em gordura e açúcares simples." } },
+    { "kind": "schedule", "text": { "pt": "Evitar sobrealimentação na gestação; aumentar quantidades (proporções equilibradas) só no último trimestre e na lactação." } }
+  ]
+}

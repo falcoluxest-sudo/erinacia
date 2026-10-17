@@ -1,0 +1,72 @@
+{
+  "id": "aza-2009-polar-bear",
+  "title": "Polar Bear (Ursus maritimus) Care Manual — Chapter 5, Nutrition",
+  "citation": "AZA Bear TAG (2009). Polar Bear (Ursus maritimus) Care Manual. Association of Zoos and Aquariums, Silver Spring, MD. (Com extratos de Lintzenich et al. 2006, Polar Bear Nutrition Guidelines.)",
+  "language": "en",
+  "species": [{ "scientificName": "Ursus maritimus", "commonName": { "pt": "Urso-polar", "en": "Polar bear" } }],
+  "guild": "carnivore",
+  "modelSpecies": "Gato e cão domésticos (NRC 2006; AAFCO 2004)",
+  "energy": [
+    {
+      "id": "zoo-intake",
+      "coefficient": 110,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Consumo em zoo (Best 1985)",
+      "note": "115 kcal ED/kg^0,75. Vida livre: 140–182 kcal EM/kg^0,75."
+    }
+  ],
+  "energyAdjustments": [
+    { "label": "Sazonalidade", "note": "Em zoo comem menos na primavera/verão e mais no outono/inverno; definir metas de peso sazonais." },
+    { "label": "Lactação", "note": "Necessidade calórica aumenta; o apetite cai no período de parto." }
+  ],
+  "intake": [
+    { "label": "Machos (média 432 kg)", "basis": "DM", "percentBodyWeight": { "min": 0.5, "max": 0.9 } },
+    { "label": "Fêmeas (média 227 kg)", "basis": "DM", "percentBodyWeight": { "min": 0.8, "max": 1.1 } }
+  ],
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Recomendações mínimas (adequadas também para crias em crescimento)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 25 }, "ether_extract": { "min": 5, "max": 20 }, "lysine": { "min": 1.0 },
+        "methionine_cystine": { "min": 1.0 }, "methionine": { "min": 0.55 }, "taurine": { "min": 0.1 },
+        "linoleic_acid": { "min": 1.0 }, "arachidonic_acid": { "min": 0.02 },
+        "vitamin_a": { "min": 5, "note": "8,91–15,65 UI/g fornecidos durante anos sem deficiências." },
+        "vitamin_d3": { "min": 1.8 }, "vitamin_e": { "min": 100, "note": "Fonte em UI/kg." },
+        "thiamin": { "min": 5 }, "riboflavin": { "min": 4 }, "niacin": { "min": 40 }, "pyridoxine": { "min": 4 },
+        "folic_acid": { "min": 0.5 }, "biotin": { "min": 0.07 }, "cobalamin": { "min": 0.02 }, "pantothenic_acid": { "min": 5 },
+        "choline": { "min": 1200 }, "calcium": { "min": 0.6 }, "phosphorus": { "min": 0.5 }, "magnesium": { "min": 0.04 },
+        "potassium": { "min": 0.6 }, "sodium": { "min": 0.2 }, "iron": { "min": 80 },
+        "zinc": { "min": 100, "note": "A Tabela 7 do mesmo capítulo indica 97 mg/kg." },
+        "copper": { "min": 10 }, "manganese": { "min": 7.5 }, "iodine": { "min": 1.5 }, "selenium": { "min": 0.1 }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Categorias e faixas com flexibilidade sazonal (Lintzenich et al. 2006)",
+      "basis": "asFed",
+      "rules": [
+        { "category": "complete_feed_dry", "range": { "min": 5, "max": 50 } },
+        { "category": "complete_feed_raw_meat", "range": { "min": 30, "max": 75 } },
+        { "category": "marine_fish", "label": "Peixe de água salgada", "range": { "min": 15, "max": 30 } },
+        { "category": "produce", "range": { "min": 0, "max": 10 } },
+        { "category": "bones", "label": "Carne do osso (50 % do peso do osso)", "range": { "min": 5, "max": 7 } },
+        { "category": "whole_prey_vertebrate", "label": "Ratos grandes ou coelho", "range": { "min": 0, "max": 2.5 } },
+        { "category": "enrichment_misc", "range": { "min": 0, "max": 3 } }
+      ]
+    }
+  ],
+  "rules": [
+    { "kind": "supplement", "text": { "pt": "Suplementar sempre a porção de peixe: 30 mg de tiamina e 100 UI de vitamina E por kg de peixe oferecido." }, "check": { "type": "food_present", "category": "marine_fish" } },
+    { "kind": "avoid", "text": { "pt": "Não suplementar vitaminas A, D e cálcio acima das recomendações, em nenhuma fase (incluindo gestação e lactação)." } },
+    { "kind": "monitoring", "text": { "pt": "Ajustar quantidades pela tendência de peso, condição corporal e comportamento; monitorizar vitaminas séricas." } },
+    { "kind": "safety", "text": { "pt": "Atenção à temperatura e ao tempo de exposição de carne e peixe crus (deterioração e bactérias)." } }
+  ],
+  "dataQuality": ["Zinco: 100 mg/kg (Tabela 4) vs. 97 mg/kg (Tabela 7)."]
+}

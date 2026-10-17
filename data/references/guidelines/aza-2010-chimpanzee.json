@@ -1,0 +1,56 @@
+{
+  "id": "aza-2010-chimpanzee",
+  "title": "Chimpanzee (Pan troglodytes) Care Manual — Chapter 5, Nutrition",
+  "citation": "AZA Ape TAG (2010). Chimpanzee (Pan troglodytes) Care Manual. Association of Zoos and Aquariums, Silver Spring, MD.",
+  "language": "en",
+  "species": [{ "scientificName": "Pan troglodytes", "commonName": { "pt": "Chimpanzé", "en": "Chimpanzee" } }],
+  "guild": "frugivore_folivore",
+  "modelSpecies": "Primatas não humanos (NRC 2003) e RDA humana",
+  "energy": [
+    {
+      "id": "nrc-2003-mer",
+      "coefficient": 100,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Necessidade energética de manutenção (NRC 2003)",
+      "note": "76,5 kg → 1800–2600 kcal/d conforme as condições; a fórmula dá ≈ 2587 kcal/d."
+    }
+  ],
+  "energyAdjustments": [
+    { "label": "Gestação (último trimestre) e lactação", "note": "Aumentar a ingestão calórica; sem fator definido." }
+  ],
+  "proportions": [
+    {
+      "label": "Proporções do capítulo",
+      "basis": "asFed",
+      "rules": [
+        { "category": "fruit", "range": { "max": 25, "note": "≈ 5 % da MS." } },
+        { "category": "greens", "label": "Browse ou verduras escuras", "range": { "min": 45, "max": 50, "note": "\"Até 45–50 %\"." } }
+      ]
+    }
+  ],
+  "productSpecs": [
+    {
+      "label": "Biscoito de primata (base da dieta)",
+      "basis": "asFed",
+      "values": {
+        "crude_protein": { "min": 15, "max": 25 },
+        "energy_density_as_fed": { "max": 3, "note": "\"< 3 kcal/g, se possível\"; base não indicada." },
+        "crude_fibre": { "min": 10, "max": 12, "note": "\"Fibra\" sem método indicado." },
+        "ether_extract": { "min": 3, "max": 4 }
+      }
+    }
+  ],
+  "rules": [
+    { "kind": "supplement", "text": { "pt": "Os primatas não humanos precisam de vitamina C na dieta. Biscoitos: validade de 6 meses após o fabrico (perda de vitamina C)." } },
+    { "kind": "supplement", "text": { "pt": "Juvenis sempre em interior: garantir vitamina D (dieta, UVB ou acesso exterior)." } },
+    { "kind": "supplement", "text": { "pt": "Fêmeas reprodutoras: ácido fólico 400 µg/dia no mês antes da conceção; ferro no último trimestre." } },
+    { "kind": "limit", "text": { "pt": "Evitar suplementos com ferro muito acima do NRC 2003, salvo anemia ferropriva." } },
+    { "kind": "monitoring", "text": { "pt": "Pesar várias vezes por ano; incluir as calorias do enriquecimento e do treino na dieta." } },
+    { "kind": "limit", "text": { "pt": "Lacticínios e proteína adicional mínimos ou nulos; produtos sem açúcar ou com pouco açúcar." } }
+  ],
+  "dataQuality": ["As faixas completas de nutrientes remetem para o NRC 2003 (Nonhuman Primates), não transcritas aqui."]
+}
