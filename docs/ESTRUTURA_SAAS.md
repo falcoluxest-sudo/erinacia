@@ -14,7 +14,7 @@ o guia diz de que **espécie-modelo** os valores foram extrapolados (gato domés
 equinos, aves domésticas, primatas NRC…). A interface mostra sempre a fonte e o grau de
 evidência; quem formula decide.
 
-### Manuais transcritos (`data/references/guidelines/`)
+### Manuais transcritos (`data/references/guidelines/`) — 9 guias
 
 | Ficheiro | Espécies | Energia | Exigências | Proporções | Crescimento | Regras |
 |---|---|---|---|---|---|---|
@@ -26,6 +26,7 @@ evidência; quem formula decide.
 | `aza-2012-lion` | Leão | 115–130·PV^0,75; fatores gestação/lactação/crescimento | por fase (NRC 2006 gato) | observadas (MN) | curvas por sexo e criação | 8 |
 | `aza-2009-polar-bear` | Urso-polar | 110·PV^0,75 | mínimos (31) | sim (MN) | — | 4 |
 | `aza-2010-mustelids` | Mustelídeos | Nagy 2,23·PV(g)^0,85 kJ | omnívoros vs. carnívoros | — | — | 5 |
+| `aza-2012-large-canids` | Lobos, coiote, mabeco, dole, lobo-guará | 130·PV^0,75; gestação e lactação NRC 2006 | AAFCO cão (crescimento, manutenção, máximos) | base 90–95 % / complementos 5–10 % | — | 8 |
 
 Cada ficheiro tem `dataQuality` com as incoerências encontradas nas fontes (por exemplo,
 vitamina A do elefante "3 UI/kg", zinco do urso-polar 100 vs. 97). **Estas notas devem ser

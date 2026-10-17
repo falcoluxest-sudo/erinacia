@@ -15,7 +15,7 @@ const asFormula = (g: Guideline, id: string): MetabolicFormula => {
 };
 
 describe('transcribed manuals', () => {
-  it('loads all eight', () => expect(guidelines.map((g) => g.id).sort()).toHaveLength(8));
+  it('loads all nine', () => expect(guidelines.map((g) => g.id).sort()).toHaveLength(9));
 
   it.each(guidelines.map((g) => [g.id, g] as const))('%s is valid', (_id, g) => {
     expect(validateGuideline(g)).toEqual([]);
@@ -33,6 +33,12 @@ describe('transcribed manuals', () => {
     const c = dailyEnergyKcal(chimp, 76.5);
     expect(c).toBeGreaterThan(1800);
     expect(c).toBeLessThan(2600);
+  });
+
+  it('large canids: 1300–1800 kcal for 22–32 kg', () => {
+    const canid = asFormula(byId('aza-2012-large-canids'), 'nrc-2006-dog-maintenance');
+    expect(dailyEnergyKcal(canid, 22)).toBeGreaterThan(1300);
+    expect(dailyEnergyKcal(canid, 32)).toBeLessThan(1800);
   });
 
   it('lion maintenance gives ≈ 3.5 kg/d for a male on a 1.75 kcal/g diet', () => {

@@ -1,0 +1,109 @@
+{
+  "id": "aza-2012-large-canids",
+  "title": "Large Canid (Canidae) Care Manual — Chapter 5, Nutrition",
+  "citation": "AZA Canid TAG (2012). Large Canid (Canidae) Care Manual. Association of Zoos and Aquariums, Silver Spring, MD.",
+  "language": "en",
+  "species": [
+    { "scientificName": "Canis lupus", "commonName": { "pt": "Lobo-cinzento", "en": "Gray wolf" } },
+    { "scientificName": "Canis rufus", "commonName": { "pt": "Lobo-vermelho", "en": "Red wolf" } },
+    { "scientificName": "Canis latrans", "commonName": { "pt": "Coiote", "en": "Coyote" } },
+    { "scientificName": "Lycaon pictus", "commonName": { "pt": "Mabeco", "en": "African wild dog" } },
+    { "scientificName": "Cuon alpinus", "commonName": { "pt": "Dole", "en": "Dhole" } },
+    { "scientificName": "Chrysocyon brachyurus", "commonName": { "pt": "Lobo-guará", "en": "Maned wolf" } }
+  ],
+  "guild": "carnivore",
+  "modelSpecies": "Cão doméstico (NRC 2006; perfis AAFCO)",
+  "energy": [
+    {
+      "id": "nrc-2006-dog-maintenance",
+      "coefficient": 130,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção, atividade moderada, ambiente termoneutro (NRC 2006)",
+      "note": "O manual indica 1300–1800 kcal EM/d para 22–32 kg (≈ 18 g/kg PV de ração seca com 3,3 kcal/g; 0,68–1,13 kg/d). O coeficiente 130 é o da fórmula de gestação do mesmo capítulo e reproduz esses valores."
+    }
+  ],
+  "energyAdjustments": [
+    { "label": "Final de gestação (4.ª semana após cobrição até ao parto)", "note": "EM = 130·PV^0,75 + 26·PV (NRC 2006)." },
+    { "label": "Lactação", "factorRange": [1, 3], "note": "Até 3 × manutenção no pico (~4 semanas). EM = 145·PV^0,75 + PV·(24n + 12m)·L; n = crias 1–4, m = crias 5–8; L = 0,75 / 0,95 / 1,1 / 1,2 nas semanas 1–4 (NRC 2006)." },
+    { "label": "Frio prolongado", "note": "Monitorizar e aumentar a ingestão se necessário; o calor pode aumentar mais as necessidades do que o frio." }
+  ],
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento e reprodução — mínimos AAFCO (máximos iguais aos de adulto)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 22 }, "arginine": { "min": 0.62 }, "histidine": { "min": 0.22 }, "isoleucine": { "min": 0.45 },
+        "leucine": { "min": 0.72 }, "lysine": { "min": 0.77 }, "methionine_cystine": { "min": 0.53 }, "threonine": { "min": 0.58 },
+        "tryptophan": { "min": 0.2 }, "valine": { "min": 0.48 }, "ether_extract": { "min": 8 }, "linoleic_acid": { "min": 1 },
+        "calcium": { "min": 1.0, "max": 2.5 }, "phosphorus": { "min": 0.8, "max": 1.6 }, "ca_p_ratio": { "min": 1, "max": 2 },
+        "potassium": { "min": 0.6 }, "sodium": { "min": 0.3 }, "magnesium": { "min": 0.04, "max": 0.3 },
+        "iron": { "min": 80, "max": 3000 }, "copper": { "min": 7.3, "max": 250 }, "manganese": { "min": 5 },
+        "zinc": { "min": 120, "max": 1000 }, "iodine": { "min": 1.5, "max": 50 }, "selenium": { "min": 0.11, "max": 2 },
+        "vitamin_a": { "min": 5, "max": 250, "note": "Fonte: 5000–250 000 UI/kg." },
+        "vitamin_d3": { "min": 0.5, "max": 5, "note": "Fonte: vitamina D 500–5000 UI/kg." },
+        "vitamin_e": { "min": 50, "max": 1000, "note": "Fonte em UI/kg." },
+        "thiamin": { "min": 1, "note": "O processamento pode destruir até 90 % da tiamina." },
+        "riboflavin": { "min": 2.2 }, "pantothenic_acid": { "min": 10 }, "niacin": { "min": 11.4 }, "pyridoxine": { "min": 1 },
+        "folic_acid": { "min": 0.18 }, "cobalamin": { "min": 0.022 }, "choline": { "min": 1200 }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Adulto em manutenção — mínimos e máximos AAFCO",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 18 }, "arginine": { "min": 0.51 }, "histidine": { "min": 0.18 }, "isoleucine": { "min": 0.37 },
+        "leucine": { "min": 0.59 }, "lysine": { "min": 0.63 }, "methionine_cystine": { "min": 0.43 }, "threonine": { "min": 0.48 },
+        "tryptophan": { "min": 0.16 }, "valine": { "min": 0.39 }, "ether_extract": { "min": 5 }, "linoleic_acid": { "min": 1 },
+        "calcium": { "min": 0.6, "max": 2.5 }, "phosphorus": { "min": 0.5, "max": 1.6 }, "ca_p_ratio": { "min": 1, "max": 2 },
+        "potassium": { "min": 0.6 }, "sodium": { "min": 0.06 }, "magnesium": { "min": 0.04, "max": 0.3 },
+        "iron": { "min": 80, "max": 3000 }, "copper": { "min": 7.3, "max": 250 }, "manganese": { "min": 5 },
+        "zinc": { "min": 120, "max": 1000 }, "iodine": { "min": 1.5, "max": 50 }, "selenium": { "min": 0.11, "max": 2 },
+        "vitamin_a": { "min": 5, "max": 250 }, "vitamin_d3": { "min": 0.5, "max": 5 }, "vitamin_e": { "min": 50, "max": 1000 },
+        "thiamin": { "min": 1 }, "riboflavin": { "min": 2.2 }, "pantothenic_acid": { "min": 10 }, "niacin": { "min": 11.4 },
+        "pyridoxine": { "min": 1 }, "folic_acid": { "min": 0.18 }, "cobalamin": { "min": 0.022 }, "choline": { "min": 1200 }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Lobos, mabeco e dole: dieta base vs. complementos",
+      "basis": "asFed",
+      "rules": [
+        { "category": "complete_feed_dry", "label": "Dieta base nutricionalmente completa (ração seca ou dieta crua completa)", "range": { "min": 90, "max": 95 } },
+        { "category": "enrichment_misc", "label": "Complementos: carnes preparadas, ossos, carcaças", "range": { "min": 5, "max": 10 } }
+      ]
+    },
+    {
+      "label": "Lobo-guará: complementos",
+      "basis": "DM",
+      "rules": [
+        { "category": "produce", "label": "Fruta, legumes e presas (complementos)", "range": { "max": 30 } }
+      ]
+    }
+  ],
+  "productSpecs": [
+    { "label": "Dietas habituais de canídeos grandes", "basis": "DM", "values": { "crude_protein": { "min": 20, "max": 28 }, "ether_extract": { "min": 5, "max": 18 }, "crude_fibre": { "min": 2, "max": 4 } } },
+    { "label": "Lobo-guará: ração de manutenção de adulto (de preferência sem soja)", "basis": "DM", "values": { "crude_protein": { "min": 20, "max": 25 } } }
+  ],
+  "rules": [
+    { "kind": "avoid", "text": { "pt": "Lobo-guará: não usar rações húmidas ou extrudidas ricas em proteína (cistinúria e cálculos de cistina)." } },
+    { "kind": "monitoring", "text": { "pt": "Lobo-guará: taurina caso a caso e monitorização de taurina (AZA Maned Wolf SSP). Sem evidência para dietas pobres em iodo." } },
+    { "kind": "schedule", "text": { "pt": "Lobos-vermelhos: um dia de jejum por semana, exceto com crias ou em frio prolongado." } },
+    { "kind": "schedule", "text": { "pt": "Gestação e lactação: aumentar a dieta em incrementos de 10–20 %, p. ex. com refeições extra." } },
+    { "kind": "avoid", "text": { "pt": "Fígado geralmente não recomendado; alguns órgãos acumulam minerais." }, "check": { "type": "food_present", "category": "organ_meat" } },
+    { "kind": "limit", "text": { "pt": "Rações de cereais de baixa/média energia associadas a diarreia, má condição e alergias; preferir ração extrudida rica em energia, à base de proteína animal." } },
+    { "kind": "safety", "text": { "pt": "Ossos sempre muito grandes (perna ou joelho de bovino/equino)." } },
+    { "kind": "monitoring", "text": { "pt": "Pesar com regularidade; em grupo, monitorizar a condição de todos os adultos (regurgitação para as crias)." } }
+  ],
+  "dataQuality": [
+    "O PDF tem a fonte codificada; o texto foi descodificado e os números conferidos com os exemplos do capítulo.",
+    "A Tabela 8 (AAFCO) não indica máximos de proteína e aminoácidos.",
+    "Limite de temperatura do jejum do lobo-vermelho ilegível no PDF (≈ 4,4 °C / 40 °F)."
+  ]
+}
