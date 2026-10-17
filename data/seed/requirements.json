@@ -1,0 +1,277 @@
+[
+  {
+    "id": "mamifero-ruminante-browser-grande",
+    "group": "Mamífero, Ruminante, Browser, Grande",
+    "values": {
+      "crude_protein": {
+        "min": 16.0
+      },
+      "calcium": {
+        "min": 0.15
+      },
+      "phosphorus": {
+        "min": 0.1
+      },
+      "sodium": {
+        "min": 0.05
+      },
+      "potassium": {
+        "min": 0.45
+      },
+      "magnesium": {
+        "min": 0.09
+      },
+      "iron": {
+        "min": 27.0
+      },
+      "copper": {
+        "min": 6.0
+      },
+      "zinc": {
+        "min": 10.0
+      },
+      "manganese": {
+        "min": 18.0
+      },
+      "iodine": {
+        "min": 0.09
+      },
+      "selenium": {
+        "min": 0.07
+      },
+      "vitamin_a": {
+        "min": 1.0
+      },
+      "vitamin_d2": {
+        "min": 0.5
+      },
+      "vitamin_e": {
+        "min": 178.8
+      },
+      "ndf": {
+        "min": 25.0
+      }
+    },
+    "reference": null
+  },
+  {
+    "id": "mamifero-ruminante-grazer-grande",
+    "group": "Mamífero, Ruminante, Grazer, Grande",
+    "values": {
+      "crude_protein": {
+        "min": 10.0
+      },
+      "calcium": {
+        "min": 0.15
+      },
+      "phosphorus": {
+        "min": 0.1
+      },
+      "sodium": {
+        "min": 0.05
+      },
+      "potassium": {
+        "min": 0.45
+      },
+      "magnesium": {
+        "min": 0.09
+      },
+      "iron": {
+        "min": 27.0
+      },
+      "copper": {
+        "min": 6.0
+      },
+      "zinc": {
+        "min": 10.0
+      },
+      "manganese": {
+        "min": 18.0
+      },
+      "iodine": {
+        "min": 0.09
+      },
+      "selenium": {
+        "min": 0.07
+      },
+      "vitamin_a": {
+        "min": 1.0
+      },
+      "vitamin_d2": {
+        "min": 0.5
+      },
+      "vitamin_e": {
+        "min": 178.8
+      },
+      "ndf": {
+        "min": 37.0
+      }
+    },
+    "reference": null
+  },
+  {
+    "id": "mamifero-ruminante-predominantemente-browser",
+    "group": "Mamífero, Ruminante, Predominantemente browser",
+    "values": {
+      "crude_protein": {
+        "min": 16.0
+      },
+      "calcium": {
+        "min": 0.15
+      },
+      "phosphorus": {
+        "min": 0.1
+      },
+      "sodium": {
+        "min": 0.05
+      },
+      "potassium": {
+        "min": 0.45
+      },
+      "magnesium": {
+        "min": 0.09
+      },
+      "iron": {
+        "min": 27.0
+      },
+      "copper": {
+        "min": 6.0
+      },
+      "zinc": {
+        "min": 10.0
+      },
+      "manganese": {
+        "min": 18.0
+      },
+      "iodine": {
+        "min": 0.09
+      },
+      "selenium": {
+        "min": 0.07
+      },
+      "vitamin_a": {
+        "min": 1.0
+      },
+      "vitamin_d2": {
+        "min": 0.5
+      },
+      "vitamin_e": {
+        "min": 178.8
+      },
+      "ndf": {
+        "min": 25.0
+      }
+    },
+    "reference": null
+  },
+  {
+    "id": "mamifero-ruminante-predominantemente-grazer",
+    "group": "Mamífero, Ruminante, Predominantemente grazer",
+    "values": {
+      "crude_protein": {
+        "min": 15.0
+      },
+      "calcium": {
+        "min": 0.15
+      },
+      "phosphorus": {
+        "min": 0.1
+      },
+      "sodium": {
+        "min": 0.05
+      },
+      "potassium": {
+        "min": 0.45
+      },
+      "magnesium": {
+        "min": 0.09
+      },
+      "iron": {
+        "min": 27.0
+      },
+      "copper": {
+        "min": 6.0
+      },
+      "zinc": {
+        "min": 10.0
+      },
+      "manganese": {
+        "min": 18.0
+      },
+      "iodine": {
+        "min": 0.09
+      },
+      "selenium": {
+        "min": 0.07
+      },
+      "vitamin_a": {
+        "min": 1.0
+      },
+      "vitamin_d2": {
+        "min": 0.5
+      },
+      "vitamin_e": {
+        "min": 178.8
+      },
+      "ndf": {
+        "min": 30.0
+      }
+    },
+    "reference": null
+  },
+  {
+    "id": "mamifero-ruminante-selecionador",
+    "group": "Mamífero, Ruminante, selecionador",
+    "values": {
+      "crude_protein": {
+        "min": 16.0
+      },
+      "calcium": {
+        "min": 0.15
+      },
+      "phosphorus": {
+        "min": 0.1
+      },
+      "sodium": {
+        "min": 0.05
+      },
+      "potassium": {
+        "min": 0.45
+      },
+      "magnesium": {
+        "min": 0.09
+      },
+      "iron": {
+        "min": 27.0
+      },
+      "copper": {
+        "min": 6.0
+      },
+      "zinc": {
+        "min": 10.0
+      },
+      "manganese": {
+        "min": 18.0
+      },
+      "iodine": {
+        "min": 0.09
+      },
+      "selenium": {
+        "min": 0.07
+      },
+      "vitamin_a": {
+        "min": 1.0
+      },
+      "vitamin_d2": {
+        "min": 0.5
+      },
+      "vitamin_e": {
+        "min": 298.0
+      },
+      "ndf": {
+        "min": 23.0
+      }
+    },
+    "reference": null
+  }
+]

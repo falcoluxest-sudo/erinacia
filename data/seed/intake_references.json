@@ -1,0 +1,65 @@
+[
+  {
+    "id": "mamifero-adax",
+    "group": "Mamífero, Adax",
+    "percentBodyWeight": 2.0,
+    "basis": "DM",
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
+  },
+  {
+    "id": "mamifero-bongo-e-klipspringer",
+    "group": "Mamífero, Bongo e Klipspringer",
+    "percentBodyWeight": 3.0,
+    "basis": "DM",
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
+  },
+  {
+    "id": "mamifero-bufalo-e-camelo",
+    "group": "Mamífero, Búfalo e Camelo",
+    "percentBodyWeight": 1.5,
+    "basis": "DM",
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
+  },
+  {
+    "id": "mamifero-gazela",
+    "group": "Mamífero, Gazela",
+    "percentBodyWeight": 2.0,
+    "basis": "DM",
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
+  },
+  {
+    "id": "mamifero-hipopotamo-do-nilo-1",
+    "group": "Mamífero, Hipopótamo do nilo 1",
+    "percentBodyWeight": 1.5,
+    "basis": "DM",
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
+  },
+  {
+    "id": "mamifero-girafa",
+    "group": "Mamífero, Girafa",
+    "percentBodyWeight": 2.0,
+    "basis": "DM",
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
+  },
+  {
+    "id": "mamifero-primata-calitriquideo-400g",
+    "group": "Mamífero, Primata, Calitriquídeo < 400g",
+    "percentBodyWeight": 22.0,
+    "basis": "asFed",
+    "reference": "EAZA Best Practice Guidelines for Callitrichidae – 3.1 Edition – 2017"
+  },
+  {
+    "id": "mamifero-primata-calitriquideo-400g",
+    "group": "Mamífero, Primata, Calitriquídeo > 400g",
+    "percentBodyWeight": 16.0,
+    "basis": "asFed",
+    "reference": "EAZA Best Practice Guidelines for Callitrichidae – 3.1 Edition – 2017"
+  },
+  {
+    "id": "mamifero-zebra-e-rinoceronte-branco",
+    "group": "Mamífero, Zebra e Rinoceronte branco",
+    "percentBodyWeight": 1.5,
+    "basis": "DM",
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "aves-nao-passeriformes-adultos-manutencao",
+    "group": "Aves, Não passeriformes, adultos, manutenção",
+    "type": "NEM",
+    "constant": 145.0,
+    "exponent": 0.75,
+    "weightUnit": "kg",
+    "energyUnit": "kcal",
+    "year": 2001,
+    "reference": "Carciofi, A. C., & Saad, C. E. D. P. (2001). Nutrition and nutritional problems in wild animal. FOWLER, ME & ZS CUBAS. Biology, medicine, and surgery of South American wild animals. Ames: Iowa State University, 425-434."
+  },
+  {
+    "id": "aves-passeriformes-adultos-manutencao",
+    "group": "Aves, Passeriformes, adultos, manutenção",
+    "type": "NEM",
+    "constant": 225.0,
+    "exponent": 0.75,
+    "weightUnit": "kg",
+    "energyUnit": "kcal",
+    "year": 2001,
+    "reference": "Carciofi, A. C., & Saad, C. E. D. P. (2001). Nutrition and nutritional problems in wild animal. FOWLER, ME & ZS CUBAS. Biology, medicine, and surgery of South American wild animals. Ames: Iowa State University, 425-434."
+  },
+  {
+    "id": "mamifero-placentado-manutencao",
+    "group": "Mamifero placentado, manutenção",
+    "type": "NEM",
+    "constant": 140.0,
+    "exponent": 0.75,
+    "weightUnit": "kg",
+    "energyUnit": "kcal",
+    "year": 2001,
+    "reference": "Carciofi, A. C., & Saad, C. E. D. P. (2001). Nutrition and nutritional problems in wild animal. FOWLER, ME & ZS CUBAS. Biology, medicine, and surgery of South American wild animals. Ames: Iowa State University, 425-434."
+  },
+  {
+    "id": "reptil-jabutis-manutencao",
+    "group": "Réptil, jabutis, manutenção",
+    "type": "NEP",
+    "constant": 32.0,
+    "exponent": 0.86,
+    "weightUnit": "kg",
+    "energyUnit": "kcal",
+    "year": 2001,
+    "reference": "Carciofi, A. C., & Saad, C. E. D. P. (2001). Nutrition and nutritional problems in wild animal. FOWLER, ME & ZS CUBAS. Biology, medicine, and surgery of South American wild animals. Ames: Iowa State University, 425-434."
+  }
+]
