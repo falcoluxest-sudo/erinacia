@@ -192,3 +192,28 @@ export function validateGuideline(g: Guideline): string[] {
   }
   return problems;
 }
+
+export const FOOD_CATEGORY_LABEL: Record<FoodCategory, string> = {
+  complete_feed_dry: 'Ração completa (seca)',
+  complete_feed_raw_meat: 'Dieta crua completa',
+  complete_feed_gel: 'Dieta completa em gel',
+  meat_mix: 'Mistura de carne',
+  muscle_meat: 'Carne de músculo',
+  organ_meat: 'Vísceras',
+  bones: 'Ossos',
+  whole_prey_vertebrate: 'Presas vertebradas inteiras',
+  invertebrate_prey: 'Presas invertebradas',
+  marine_fish: 'Peixe marinho',
+  produce: 'Hortofrutícolas',
+  fruit: 'Fruta',
+  vegetable_root: 'Legumes e raízes',
+  greens: 'Verduras',
+  browse: 'Browse',
+  grass_forage: 'Gramíneas / capim',
+  hay: 'Feno',
+  concentrate: 'Concentrado',
+  seeds_nuts: 'Sementes e frutos secos',
+  animal_products: 'Ovos e lacticínios',
+  supplement: 'Suplementos',
+  enrichment_misc: 'Enriquecimento / outros',
+};

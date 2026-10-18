@@ -27,7 +27,7 @@ const SECTIONS: { title: string; links: { to: string; label: string; icon: typeo
       { to: '/biblioteca', label: 'Biblioteca científica', icon: BookOpen },
       { to: '/formulas', label: 'Fórmulas metabólicas', icon: Calculator },
       { to: '/glossario', label: 'Glossário', icon: BookA },
-      { to: '/dietas', label: 'Dietas', icon: ClipboardList, soon: true },
+      { to: '/dietas', label: 'Dietas', icon: ClipboardList },
     ],
   },
   {

@@ -5,9 +5,10 @@ import { LibraryPage } from './pages/LibraryPage';
 import { SoonPage } from './pages/SoonPage';
 import { FormulasPage } from './pages/FormulasPage';
 import { GlossaryPage } from './pages/GlossaryPage';
+import { DietPage } from './pages/DietPage';
 
 const SOON: [string, string][] = [
-  ['/painel', 'Painel'], ['/dietas', 'Dietas'], ['/nutrientes', 'Nutrientes'], ['/stock', 'Stock'],
+  ['/painel', 'Painel'], ['/nutrientes', 'Nutrientes'], ['/stock', 'Stock'],
   ['/importar', 'Importar'], ['/animais', 'Animais'], ['/crescimento', 'Crescimento'],
 ];
 
@@ -22,6 +23,7 @@ export function App() {
           <Route path="/biblioteca" element={<LibraryPage />} />
           <Route path="/formulas" element={<FormulasPage />} />
           <Route path="/glossario" element={<GlossaryPage />} />
+          <Route path="/dietas" element={<DietPage />} />
           {SOON.map(([path, title]) => <Route key={path} path={path} element={<SoonPage title={title} />} />)}
           <Route path="*" element={<Navigate to="/alimentos" replace />} />
         </Routes>

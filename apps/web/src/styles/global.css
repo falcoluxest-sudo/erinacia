@@ -165,3 +165,19 @@ label.lbl { display: grid; gap: 6px; font-size: 14px; font-weight: 500; }
   .toolbar { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
 }
+
+/* Diet formulation */
+.diet-layout { display: grid; grid-template-columns: minmax(340px, 440px) minmax(0, 1fr); gap: 20px; align-items: start; }
+.diet-form, .diet-results { display: grid; gap: 16px; min-width: 0; }
+.step { margin: 0; font-size: 17px; }
+.diet-form .table-wrap td { padding: 6px 8px; }
+.diet-form .table-wrap .input { min-height: 38px; padding: 0 8px; }
+.energy-card { border-color: var(--folha); }
+@media (max-width: 1100px) { .diet-layout { grid-template-columns: 1fr; } }
+@media print {
+  .sidebar, .no-print { display: none !important; }
+  .main { padding: 0; }
+  .diet-layout { grid-template-columns: 1fr; }
+  .card { box-shadow: none; break-inside: avoid; }
+  body { background: #fff; }
+}

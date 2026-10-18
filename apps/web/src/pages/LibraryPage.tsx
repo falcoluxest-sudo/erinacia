@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AlertTriangle, BookOpen, X } from 'lucide-react';
-import { NUTRIENT_BY_KEY, DERIVED_INDICATORS, type Guideline } from '@erinacia/core';
+import { NUTRIENT_BY_KEY, DERIVED_INDICATORS, FOOD_CATEGORY_LABEL, type Guideline } from '@erinacia/core';
 import { useEscape } from '../components/FoodDetail';
 import { fmt } from '../data/foods';
 
@@ -115,7 +115,7 @@ function GuideDetail({ g, onClose }: { g: Guideline; onClose: () => void }) {
             <h3 style={{ margin: '0 0 8px', fontSize: 16 }}>{p.label} ({p.basis === 'DM' ? '% MS' : '% MN'})</h3>
             <div className="rows">
               {p.rules.map((r, i) => (
-                <div className="row" key={i}><span>{r.label ?? r.category}</span><strong>{range(r.range)} %</strong></div>
+                <div className="row" key={i}><span>{r.label ?? FOOD_CATEGORY_LABEL[r.category]}</span><strong>{range(r.range)} %</strong></div>
               ))}
             </div>
           </section>
