@@ -21,6 +21,8 @@ export interface Food {
   id: string;
   name: string;
   group: string;
+  /** Classification path in the source table (e.g. FoodEx2 levels 1–3 for INSA). */
+  classification?: string[];
   /** Dry matter, % as fed. */
   dryMatter: number;
   /** Nutrient values as fed (MN), keyed by NUTRIENTS[].key, in the catalog unit. */
@@ -37,10 +39,18 @@ export function atwaterKcalPer100g(crudeProtein: number, etherExtract: number, n
   return 4 * crudeProtein + 9 * etherExtract + 4 * nfe;
 }
 
+/**
+ * Models that are plain 4/9/4 Atwater in the Banco (its carnivore and primate
+ * columns equal Atwater for every food), so tables that only give proximates
+ * still get energy for them. Ruminant, herbivore and fermenter models need
+ * fibre fractions and are never derived.
+ */
+const ATWATER_BASED = new Set<EnergyModel>(['atwater', 'carnivore', 'primate']);
+
 export function energyPer100g(food: Food, model: EnergyModel): number | undefined {
   const explicit = food.energy[model];
   if (explicit !== undefined) return explicit;
-  if (model !== 'atwater') return undefined;
+  if (!ATWATER_BASED.has(model)) return undefined;
   const { crude_protein: pb, ether_extract: ee, nfe } = food.nutrients;
   if (pb === undefined || ee === undefined || nfe === undefined) return undefined;
   return atwaterKcalPer100g(pb, ee, nfe);

@@ -1,8 +1,10 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Copy, Info, Lock, Pencil, Plus, Search, Trash2 } from 'lucide-react';
-import { fmt, groupColor, headline, nutrientCount, sourceOf, useFoods, type AppFood } from '../data/foods';
+import { fmt, groupColor, headline, nutrientCount, matchesQuery, SOURCE_ATTRIBUTION, sourceOf, useFoods, type AppFood } from '../data/foods';
 import { FoodDetail } from '../components/FoodDetail';
 import { FoodForm } from '../components/FoodForm';
+
+const PAGE = 60;
 
 type Panel = { kind: 'detail'; food: AppFood } | { kind: 'form'; food?: AppFood; copyOf?: AppFood } | null;
 
@@ -12,6 +14,7 @@ export function FoodsPage() {
   const [group, setGroup] = useState('');
   const [source, setSource] = useState('');
   const [panel, setPanel] = useState<Panel>(null);
+  const [limit, setLimit] = useState(PAGE);
 
   const groups = useMemo(() => [...new Set(foods.map((f) => f.group))].sort((a, b) => a.localeCompare(b, 'pt')), [foods]);
   const sources = useMemo(() => {
@@ -23,11 +26,13 @@ export function FoodsPage() {
   const visible = useMemo(() => {
     const q = query.trim().toLocaleLowerCase('pt');
     return foods
-      .filter((f) => !q || f.name.toLocaleLowerCase('pt').includes(q))
+      .filter((f) => !q || matchesQuery(f.name, q))
       .filter((f) => !group || f.group === group)
       .filter((f) => !source || sourceOf(f) === source)
       .sort((a, b) => a.name.localeCompare(b.name, 'pt'));
   }, [foods, query, group, source]);
+  useEffect(() => setLimit(PAGE), [query, group, source]);
+  const attributions = [...new Set(visible.slice(0, limit).map(sourceOf))].map((s) => SOURCE_ATTRIBUTION[s]).filter(Boolean);
 
   const confirmRemove = (f: AppFood) => {
     if (window.confirm(`Apagar "${f.name}"? Esta ação não pode ser desfeita.`)) remove(f.id);
@@ -38,8 +43,8 @@ export function FoodsPage() {
       <div className="page-intro" role="note">
         <Info size={18} aria-hidden="true" style={{ flex: 'none', marginTop: 2 }} />
         <span>
-          Os alimentos do <strong>Banco Erinacia</strong> são a base de referência e não se editam: use <em>Duplicar</em> para criar
-          uma versão sua. Os seus alimentos podem ser editados e apagados.
+          Os alimentos do <strong>Banco Erinacia</strong> e da tabela portuguesa do <strong>INSA</strong> são a base de referência e não se
+          editam: use <em>Duplicar</em> para criar uma versão sua. Os seus alimentos podem ser editados e apagados.
         </span>
       </div>
 
@@ -82,8 +87,9 @@ export function FoodsPage() {
           <button type="button" className="btn" onClick={() => { setQuery(''); setGroup(''); setSource(''); }}>Limpar filtros</button>
         </div>
       ) : (
+        <>
         <div className="grid">
-          {visible.map((f) => (
+          {visible.slice(0, limit).map((f) => (
             <FoodCard
               key={f.id}
               food={f}
@@ -94,6 +100,15 @@ export function FoodsPage() {
             />
           ))}
         </div>
+        {visible.length > limit && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
+            <button type="button" className="btn" onClick={() => setLimit((l) => l + PAGE * 2)}>
+              Mostrar mais ({visible.length - limit} restantes)
+            </button>
+          </div>
+        )}
+        {attributions.map((a) => <p key={a} className="hint" style={{ marginTop: 16 }}>{a}</p>)}
+        </>
       )}
 
       {panel?.kind === 'detail' && (

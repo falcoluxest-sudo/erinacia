@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { energyPer100g, nutrientDM, type Food } from '@erinacia/core';
-import seed from '../../../../data/seed/foods.json';
+import banco from '../../../../data/seed/foods.json';
+import insa from '../../../../data/seed/foods_insa.json';
 
 export interface AppFood extends Food {
   origin: 'reference' | 'own';
@@ -13,14 +14,24 @@ const STORAGE_KEY = 'erinacia.foods.v1';
 export const REFERENCE_SOURCE = 'Banco Erinacia';
 export const OWN_SOURCE = 'Meus alimentos';
 
-const referenceFoods: AppFood[] = (seed as unknown as (Food & { sources: { source: string; reference?: string }[] })[]).map(
-  (f) => ({
-    ...f,
-    origin: 'reference',
-    sources: [{ source: REFERENCE_SOURCE }],
-    reference: f.sources[0]?.reference ?? undefined,
-  }),
-);
+export const INSA_SOURCE = 'INSA (PT)';
+
+/** Citation each reference table requires wherever its data are shown. */
+export const SOURCE_ATTRIBUTION: Record<string, string> = {
+  [INSA_SOURCE]: 'Fonte: Base de Dados da Composição de Alimentos. Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P. - INSA. v 7.1 - 2026.',
+};
+
+const referenceFoods: AppFood[] = [
+  ...(banco as unknown as (Food & { sources: { source: string; reference?: string }[] })[]).map(
+    (f): AppFood => ({
+      ...f,
+      origin: 'reference',
+      sources: [{ source: REFERENCE_SOURCE }],
+      reference: f.sources[0]?.reference ?? undefined,
+    }),
+  ),
+  ...(insa as unknown as Food[]).map((f): AppFood => ({ ...f, origin: 'reference' })),
+];
 
 function loadOwn(): AppFood[] {
   try {
@@ -94,6 +105,10 @@ export const GROUP_COLORS: Record<string, { bg: string; fg: string }> = {
   Ração: { bg: '#e3e7f6', fg: '#2c3a73' },
   Presas: { bg: '#f6e3d6', fg: '#6b3410' },
   Pescado: { bg: '#d9eef0', fg: '#174f57' },
+  'Ovos e lácteos': { bg: '#f3e6f5', fg: '#5b2a63' },
+  'Cereais e leguminosas': { bg: '#f1ead9', fg: '#5a4520' },
+  'Óleos e gorduras': { bg: '#fbf0cf', fg: '#5c4410' },
+  Temperos: { bg: '#e9efe2', fg: '#34502a' },
 };
 
 export const GROUPS = Object.keys(GROUP_COLORS);
@@ -104,3 +119,10 @@ export function groupColor(group: string) {
 
 export const fmt = (v: number | undefined, digits = 1) =>
   v === undefined || Number.isNaN(v) ? '—' : v.toLocaleString('pt-PT', { maximumFractionDigits: digits, minimumFractionDigits: 0 });
+
+/** Accent- and order-insensitive: "figado porco" finds "Porco, fígado cru". */
+export function matchesQuery(name: string, q: string) {
+  const fold = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt');
+  const n = fold(name);
+  return fold(q).split(/\s+/).every((w) => n.includes(w));
+}

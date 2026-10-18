@@ -73,7 +73,7 @@ export function categoryFromGroup(group: string, name = ''): FoodCategory {
   if (/verdura|hortaliça/.test(g)) return 'greens';
   if (/volumoso|feno/.test(g)) return /feno/.test(n) ? 'hay' : 'grass_forage';
   if (/carne/.test(g)) return 'muscle_meat';
-  if (/presa/.test(g)) return /inset|larva|grilo|tenébrio|barata/.test(n) ? 'invertebrate_prey' : 'whole_prey_vertebrate';
+  if (/presa/.test(g)) return /inset|larva|grilo|tenébrio|tenebrio|barata|caracol|minhoca/.test(n) ? 'invertebrate_prey' : 'whole_prey_vertebrate';
   if (/pescado|peixe/.test(g)) return 'marine_fish';
   if (/semente|castanha/.test(g)) return 'seeds_nuts';
   if (/suplement/.test(g)) return 'supplement';

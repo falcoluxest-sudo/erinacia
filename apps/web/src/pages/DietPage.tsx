@@ -15,7 +15,7 @@ import {
   type NutrientResult,
   type RequirementStatus,
 } from '@erinacia/core';
-import { useFoods, fmt, type AppFood } from '../data/foods';
+import { useFoods, fmt, matchesQuery, sourceOf, type AppFood } from '../data/foods';
 import { evaluate, FORMULAS, TYPE_LABEL } from '../data/formulas';
 import { DEFAULT_MODEL, GUIDES, guideName, loadDiets, newDiet, saveDiets, type DietDraft } from '../data/diets';
 
@@ -124,11 +124,14 @@ export function DietPage() {
     setSaved(next); saveDiets(next); setD(next[0] ?? newDiet());
   };
 
+  const [foodQuery, setFoodQuery] = useState('');
   const byGroup = useMemo(() => {
     const m = new Map<string, AppFood[]>();
-    [...foods].sort((a, b) => a.name.localeCompare(b.name, 'pt')).forEach((f) => m.set(f.group, [...(m.get(f.group) ?? []), f]));
+    const q = foodQuery.trim();
+    [...foods].filter((f) => !q || matchesQuery(f.name, q)).sort((a, b) => a.name.localeCompare(b.name, 'pt')).forEach((f) => m.set(f.group, [...(m.get(f.group) ?? []), f]));
     return [...m.entries()].sort(([a], [b]) => a.localeCompare(b, 'pt'));
-  }, [foods]);
+  }, [foods, foodQuery]);
+  const shown = byGroup.reduce((n, [, l]) => n + l.length, 0);
 
   return (
     <>
@@ -203,12 +206,14 @@ export function DietPage() {
 
           <section className="card" aria-labelledby="s-foods">
             <h2 id="s-foods" className="step">3 · Alimentos</h2>
+            <input className="input" type="search" aria-label="Filtrar alimentos" placeholder={`Filtrar ${foods.length} alimentos (ex.: fígado porco)…`}
+              value={foodQuery} onChange={(e) => setFoodQuery(e.target.value)} />
             <div style={{ display: 'flex', gap: 8 }}>
               <select className="select" aria-label="Alimento a adicionar" value={pick} onChange={(e) => setPick(e.target.value)}>
-                <option value="">Escolher alimento…</option>
+                <option value="">{foodQuery.trim() ? `${shown} alimentos encontrados…` : 'Escolher alimento…'}</option>
                 {byGroup.map(([g, list]) => (
                   <optgroup key={g} label={g}>
-                    {list.map((f) => <option key={f.id} value={f.id} disabled={d.items.some((i) => i.foodId === f.id)}>{f.name}</option>)}
+                    {list.map((f) => <option key={f.id} value={f.id} disabled={d.items.some((i) => i.foodId === f.id)}>{f.name} · {sourceOf(f)}</option>)}
                   </optgroup>
                 ))}
               </select>

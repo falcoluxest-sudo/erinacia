@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Copy, Pencil, X } from 'lucide-react';
 import { NUTRIENTS, nutrientDM, energyPer100g, type EnergyModel, type NutrientCategory } from '@erinacia/core';
-import { fmt, groupColor, sourceOf, type AppFood } from '../data/foods';
+import { fmt, groupColor, SOURCE_ATTRIBUTION, sourceOf, type AppFood } from '../data/foods';
 
 const CATEGORY_LABEL: Record<NutrientCategory, string> = {
   proximate: 'Composição centesimal',
@@ -46,8 +46,10 @@ export function FoodDetail({ food, onClose, onEdit }: { food: AppFood; onClose: 
         <div className="badges">
           <span className="badge" style={{ background: c.bg, color: c.fg }}>{food.group}</span>
           <span className="badge badge-source">{sourceOf(food)}</span>
+          {food.sources[0]?.code && <span className="badge badge-source">Código {food.sources[0].code}</span>}
           {food.sampleCount ? <span className="badge badge-source">{food.sampleCount} dados de origem</span> : null}
         </div>
+        {food.classification && <p className="hint" style={{ margin: 0 }}>{food.classification.join(' › ')}</p>}
 
         <section>
           <h3 style={{ margin: '0 0 8px', fontSize: 16 }}>Energia metabolizável (kcal/100 g MN)</h3>
@@ -92,6 +94,11 @@ export function FoodDetail({ food, onClose, onEdit }: { food: AppFood; onClose: 
           </div>
         </section>
 
+        {SOURCE_ATTRIBUTION[sourceOf(food)] && (
+          <p className="hint" style={{ margin: 0 }}>
+            {SOURCE_ATTRIBUTION[sourceOf(food)]} Os nutrientes que a tabela não analisa não aparecem; o EM (Atwater) usa os hidratos de carbono disponíveis.
+          </p>
+        )}
         {food.reference && (
           <section>
             <h3 style={{ margin: '0 0 6px', fontSize: 16 }}>Bibliografia</h3>
