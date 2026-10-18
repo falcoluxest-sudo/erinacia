@@ -26,6 +26,7 @@ para vir a ser um SaaS (várias instituições, vários idiomas, faturação).
 
 ```bash
 pnpm install
+pnpm --filter @erinacia/web dev   # app web em http://localhost:5173
 pnpm test          # testes do motor (comparados com o Banco.xlsm e exemplos resolvidos)
 pnpm typecheck
 python3 scripts/import_banco.py caminho/para/Banco.xlsm   # regenera data/seed
