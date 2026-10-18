@@ -42,8 +42,8 @@ const SECTIONS: { title: string; links: { to: string; label: string; icon: typeo
   {
     title: 'Plantel',
     links: [
-      { to: '/animais', label: 'Animais', icon: PawPrint, soon: true },
-      { to: '/crescimento', label: 'Crescimento', icon: LineChart, soon: true },
+      { to: '/animais', label: 'Animais', icon: PawPrint },
+      { to: '/crescimento', label: 'Curvas de crescimento', icon: LineChart },
     ],
   },
 ];

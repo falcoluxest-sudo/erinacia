@@ -208,3 +208,28 @@ describe('a diet built from the seed table', () => {
     expect(d.warnings).toEqual([]);
   });
 });
+
+import { curveFromIntervals, relativeDailyGains } from '../src';
+
+describe('reference curves from ADG tables', () => {
+  it('integrates broken-line intervals (lion, parent-reared male)', () => {
+    const c = curveFromIntervals(1500, [
+      { fromDay: 0, toDay: 30, adgGramsPerDay: 105 },
+      { fromDay: 30, toDay: 45, adgGramsPerDay: 112 },
+      { fromDay: 45, toDay: 70, adgGramsPerDay: [100, 120] },
+    ]);
+    expect(c.map((p) => p.ageDays)).toEqual([0, 30, 45, 70]);
+    expect(c[1]!.grams).toBe(1500 + 3150);
+    expect(c[3]!.grams).toBe(1500 + 3150 + 1680 + 2750);
+  });
+
+  it('stops at a gap in the table', () => {
+    const c = curveFromIntervals(1000, [{ fromDay: 0, toDay: 30, adgGramsPerDay: 10 }, { fromDay: 70, toDay: 100, adgGramsPerDay: 10 }]);
+    expect(c).toHaveLength(2);
+  });
+
+  it('relative daily gain (% of body weight per day)', () => {
+    const g = relativeDailyGains([{ date: '2026-01-01', grams: 100 }, { date: '2026-01-03', grams: 124 }]);
+    expect(g[0]!.percentPerDay).toBeCloseTo(12, 9);
+  });
+});

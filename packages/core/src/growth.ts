@@ -81,3 +81,39 @@ export function percentOfExpected(observedGrams: number, curve: CurvePoint[], ag
   const e = expectedWeight(curve, ageDays);
   return e ? observedGrams / e : undefined;
 }
+
+/**
+ * Expected-weight curve from a birth weight and average-daily-gain intervals
+ * (as in broken-line growth tables). A pair of ADGs means the gain changes
+ * linearly across the interval. Gaps between intervals are not bridged.
+ */
+export function curveFromIntervals(
+  birthGrams: number,
+  intervals: { fromDay: number; toDay: number; adgGramsPerDay: number | [number, number] }[],
+): CurvePoint[] {
+  const sorted = [...intervals].sort((a, b) => a.fromDay - b.fromDay);
+  const points: CurvePoint[] = [{ ageDays: 0, grams: birthGrams }];
+  let grams = birthGrams;
+  let day = 0;
+  for (const iv of sorted) {
+    if (iv.fromDay !== day) break;
+    const [a, b] = Array.isArray(iv.adgGramsPerDay) ? iv.adgGramsPerDay : [iv.adgGramsPerDay, iv.adgGramsPerDay];
+    grams += ((a + b) / 2) * (iv.toDay - iv.fromDay);
+    day = iv.toDay;
+    points.push({ ageDays: day, grams });
+  }
+  return points;
+}
+
+/** Daily gain relative to body weight, % per day, between consecutive weighings. */
+export function relativeDailyGains(records: WeightRecord[]): { from: string; to: string; percentPerDay: number }[] {
+  const sorted = [...records].sort((x, y) => x.date.localeCompare(y.date));
+  const out: { from: string; to: string; percentPerDay: number }[] = [];
+  for (let i = 1; i < sorted.length; i++) {
+    const a = sorted[i - 1]!;
+    const b = sorted[i]!;
+    const d = daysBetween(a.date, b.date);
+    if (d > 0 && a.grams > 0) out.push({ from: a.date, to: b.date, percentPerDay: ((b.grams - a.grams) / a.grams / d) * 100 });
+  }
+  return out;
+}
