@@ -11,6 +11,8 @@ import {
   Package,
   Upload,
   Atom,
+  Calculator,
+  BookA,
 } from 'lucide-react';
 import { Logo } from './Logo';
 
@@ -23,6 +25,8 @@ const SECTIONS: { title: string; links: { to: string; label: string; icon: typeo
     title: 'Formulação',
     links: [
       { to: '/biblioteca', label: 'Biblioteca científica', icon: BookOpen },
+      { to: '/formulas', label: 'Fórmulas metabólicas', icon: Calculator },
+      { to: '/glossario', label: 'Glossário', icon: BookA },
       { to: '/dietas', label: 'Dietas', icon: ClipboardList, soon: true },
     ],
   },
