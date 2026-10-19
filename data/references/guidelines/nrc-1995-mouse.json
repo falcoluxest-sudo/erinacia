@@ -1,0 +1,356 @@
+{
+  "id": "nrc-1995-mouse",
+  "title": "Nutrient Requirements of Laboratory Animals, 4th Revised Edition — Chapter 3, Nutrient Requirements of the Mouse",
+  "citation": "National Research Council (1995). Nutrient Requirements of Laboratory Animals, Fourth Revised Edition. Washington, DC: The National Academies Press. doi:10.17226/4758. Capítulo 3, Tabela 3-3 (Estimated Nutrient Requirements of Mice; por kg de dieta, base MN com 10 % de humidade). Lido em https://www.nationalacademies.org/read/4758/chapter/5",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Mus musculus",
+      "commonName": {
+        "pt": "Ratinho-caseiro / ratinho-de-laboratório",
+        "en": "House mouse / laboratory mouse"
+      }
+    },
+    {
+      "scientificName": "Muridae (pequenos murídeos)",
+      "commonName": {
+        "pt": "Pequenos roedores murídeos (modelo: ratos-do-campo, Apodemus…)",
+        "en": "Small murid rodents (model)"
+      }
+    }
+  ],
+  "guild": "omnivore",
+  "modelSpecies": "Ratinho de laboratório (Mus musculus)",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento (tabela única do NRC)",
+      "basis": "DM",
+      "values": {
+        "ether_extract": {
+          "min": 5.56,
+          "note": "fonte: 50 g/kg (MN, 10 % humidade) → 5 % MN → % MS (÷0,9). Lípidos."
+        },
+        "linoleic_acid": {
+          "min": 0.756,
+          "note": "fonte: 6,8 g/kg (MN, 10 % humidade) → 0,68 % MN → % MS (÷0,9)"
+        },
+        "crude_protein": {
+          "min": 20.0,
+          "note": "fonte: 180 g/kg (MN, 10 % humidade) → 18 % MN → % MS (÷0,9). Crescimento: equivalente a 20 % caseína + 0,3 % DL-metionina ou 24 % caseína; com caseína a fonte indica 200 g/kg."
+        },
+        "arginine": {
+          "min": 0.333,
+          "note": "fonte: 3 g/kg (MN, 10 % humidade) → 0,3 % MN → % MS (÷0,9)"
+        },
+        "histidine": {
+          "min": 0.222,
+          "note": "fonte: 2 g/kg (MN, 10 % humidade) → 0,2 % MN → % MS (÷0,9)"
+        },
+        "isoleucine": {
+          "min": 0.444,
+          "note": "fonte: 4 g/kg (MN, 10 % humidade) → 0,4 % MN → % MS (÷0,9)"
+        },
+        "leucine": {
+          "min": 0.778,
+          "note": "fonte: 7 g/kg (MN, 10 % humidade) → 0,7 % MN → % MS (÷0,9)"
+        },
+        "valine": {
+          "min": 0.556,
+          "note": "fonte: 5 g/kg (MN, 10 % humidade) → 0,5 % MN → % MS (÷0,9)"
+        },
+        "threonine": {
+          "min": 0.444,
+          "note": "fonte: 4 g/kg (MN, 10 % humidade) → 0,4 % MN → % MS (÷0,9)"
+        },
+        "lysine": {
+          "min": 0.444,
+          "note": "fonte: 4 g/kg (MN, 10 % humidade) → 0,4 % MN → % MS (÷0,9)"
+        },
+        "methionine_cystine": {
+          "min": 0.556,
+          "note": "fonte: 5 g/kg (MN, 10 % humidade) → 0,5 % MN → % MS (÷0,9). Listado como metionina; a cistina pode substituir 50–66,6 %."
+        },
+        "phenylalanine": {
+          "min": 0.844,
+          "note": "fonte: 7,6 g/kg (MN, 10 % humidade) → 0,76 % MN → % MS (÷0,9). A tirosina pode substituir 50 %."
+        },
+        "tryptophan": {
+          "min": 0.111,
+          "note": "fonte: 1 g/kg (MN, 10 % humidade) → 0,1 % MN → % MS (÷0,9). A niacina pode substituir 0,025 %."
+        },
+        "calcium": {
+          "min": 0.556,
+          "note": "fonte: 5 g/kg (MN, 10 % humidade) → 0,5 % MN → % MS (÷0,9)"
+        },
+        "magnesium": {
+          "min": 0.0556,
+          "note": "fonte: 0,5 g/kg (MN, 10 % humidade) → 0,05 % MN → % MS (÷0,9)"
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 3 g/kg (MN, 10 % humidade) → 0,3 % MN → % MS (÷0,9)"
+        },
+        "potassium": {
+          "min": 0.222,
+          "note": "fonte: 2 g/kg (MN, 10 % humidade) → 0,2 % MN → % MS (÷0,9). Podem ser necessárias concentrações maiores na lactação."
+        },
+        "sodium": {
+          "min": 0.0556,
+          "note": "fonte: 0,5 g/kg (MN, 10 % humidade) → 0,05 % MN → % MS (÷0,9)"
+        },
+        "copper": {
+          "min": 6.67,
+          "note": "fonte: 6 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "iron": {
+          "min": 38.89,
+          "note": "fonte: 35 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "manganese": {
+          "min": 11.11,
+          "note": "fonte: 10 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "zinc": {
+          "min": 11.11,
+          "note": "fonte: 10 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "iodine": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS"
+        },
+        "selenium": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS. Na forma de selenito."
+        },
+        "vitamin_a": {
+          "min": 2.67,
+          "note": "fonte: 2400 UI/kg (MN, 10 % humidade) → 2,4 UI/g MN → ÷0,9 para MS. 0,72 mg retinol/kg (= 2400 UI/kg)."
+        },
+        "vitamin_d3": {
+          "min": 1.11,
+          "note": "fonte: 1000 UI/kg (MN, 10 % humidade) → 1 UI/g MN → ÷0,9 para MS. 0,025 mg colecalciferol; adequado, sem dados quantitativos."
+        },
+        "vitamin_e": {
+          "min": 24.44,
+          "note": "fonte: 22 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como RRR-α-tocoferol (= 32 UI/kg)."
+        },
+        "vitamin_k": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Filoquinona; baseado no rato."
+        },
+        "biotin": {
+          "min": 0.222,
+          "note": "fonte: 0,2 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Adequado."
+        },
+        "choline": {
+          "min": 2222.2,
+          "note": "fonte: 2000 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como bitartarato de colina; adequado, dados insuficientes."
+        },
+        "folic_acid": {
+          "min": 0.556,
+          "note": "fonte: 0,5 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "niacin": {
+          "min": 16.67,
+          "note": "fonte: 15 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Baseado no rato."
+        },
+        "pantothenic_acid": {
+          "min": 17.78,
+          "note": "fonte: 16 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como Ca-pantotenato."
+        },
+        "riboflavin": {
+          "min": 7.78,
+          "note": "fonte: 7 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Adequado; dados insuficientes."
+        },
+        "thiamin": {
+          "min": 5.56,
+          "note": "fonte: 5 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como tiamina-HCl."
+        },
+        "pyridoxine": {
+          "min": 8.89,
+          "note": "fonte: 8 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como piridoxina-HCl; 1 mg/kg para manutenção."
+        },
+        "cobalamin": {
+          "min": 0.0111,
+          "note": "fonte: 10 µg/kg (MN, 10 % humidade) → 0,01 mg/kg MN → ÷0,9 para MS. Adequado; dados insuficientes."
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Reprodução e lactação (tabela única com os ajustes indicados nos comentários)",
+      "basis": "DM",
+      "values": {
+        "ether_extract": {
+          "min": 5.56,
+          "note": "fonte: 50 g/kg (MN, 10 % humidade) → 5 % MN → % MS (÷0,9). Lípidos."
+        },
+        "linoleic_acid": {
+          "min": 0.756,
+          "note": "fonte: 6,8 g/kg (MN, 10 % humidade) → 0,68 % MN → % MS (÷0,9)"
+        },
+        "crude_protein": {
+          "min": 20.0,
+          "note": "fonte: 180 g/kg (MN, 10 % humidade) → 18 % MN → % MS (÷0,9). Reprodução, dietas de ingredientes naturais."
+        },
+        "arginine": {
+          "min": 0.333,
+          "note": "fonte: 3 g/kg (MN, 10 % humidade) → 0,3 % MN → % MS (÷0,9)"
+        },
+        "histidine": {
+          "min": 0.222,
+          "note": "fonte: 2 g/kg (MN, 10 % humidade) → 0,2 % MN → % MS (÷0,9)"
+        },
+        "isoleucine": {
+          "min": 0.444,
+          "note": "fonte: 4 g/kg (MN, 10 % humidade) → 0,4 % MN → % MS (÷0,9)"
+        },
+        "leucine": {
+          "min": 0.778,
+          "note": "fonte: 7 g/kg (MN, 10 % humidade) → 0,7 % MN → % MS (÷0,9)"
+        },
+        "valine": {
+          "min": 0.556,
+          "note": "fonte: 5 g/kg (MN, 10 % humidade) → 0,5 % MN → % MS (÷0,9)"
+        },
+        "threonine": {
+          "min": 0.444,
+          "note": "fonte: 4 g/kg (MN, 10 % humidade) → 0,4 % MN → % MS (÷0,9)"
+        },
+        "lysine": {
+          "min": 0.444,
+          "note": "fonte: 4 g/kg (MN, 10 % humidade) → 0,4 % MN → % MS (÷0,9)"
+        },
+        "methionine_cystine": {
+          "min": 0.556,
+          "note": "fonte: 5 g/kg (MN, 10 % humidade) → 0,5 % MN → % MS (÷0,9). Listado como metionina; a cistina pode substituir 50–66,6 %."
+        },
+        "phenylalanine": {
+          "min": 0.844,
+          "note": "fonte: 7,6 g/kg (MN, 10 % humidade) → 0,76 % MN → % MS (÷0,9). A tirosina pode substituir 50 %."
+        },
+        "tryptophan": {
+          "min": 0.111,
+          "note": "fonte: 1 g/kg (MN, 10 % humidade) → 0,1 % MN → % MS (÷0,9). A niacina pode substituir 0,025 %."
+        },
+        "calcium": {
+          "min": 0.556,
+          "note": "fonte: 5 g/kg (MN, 10 % humidade) → 0,5 % MN → % MS (÷0,9)"
+        },
+        "magnesium": {
+          "min": 0.0778,
+          "note": "fonte: 0,7 g/kg (MN, 10 % humidade) → 0,07 % MN → % MS (÷0,9). 0,7 g/kg na lactação (comentário da tabela)."
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 3 g/kg (MN, 10 % humidade) → 0,3 % MN → % MS (÷0,9)"
+        },
+        "potassium": {
+          "min": 0.222,
+          "note": "fonte: 2 g/kg (MN, 10 % humidade) → 0,2 % MN → % MS (÷0,9). Podem ser necessárias concentrações maiores na lactação."
+        },
+        "sodium": {
+          "min": 0.0556,
+          "note": "fonte: 0,5 g/kg (MN, 10 % humidade) → 0,05 % MN → % MS (÷0,9)"
+        },
+        "copper": {
+          "min": 8.89,
+          "note": "fonte: 8 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. 8,0 mg/kg na gestação e lactação (comentário da tabela)."
+        },
+        "iron": {
+          "min": 38.89,
+          "note": "fonte: 35 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "manganese": {
+          "min": 11.11,
+          "note": "fonte: 10 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "zinc": {
+          "min": 33.33,
+          "note": "fonte: 30 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. 30 mg/kg na reprodução e lactação (comentário da tabela)."
+        },
+        "iodine": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS"
+        },
+        "selenium": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS. Na forma de selenito."
+        },
+        "vitamin_a": {
+          "min": 2.67,
+          "note": "fonte: 2400 UI/kg (MN, 10 % humidade) → 2,4 UI/g MN → ÷0,9 para MS. 0,72 mg retinol/kg (= 2400 UI/kg)."
+        },
+        "vitamin_d3": {
+          "min": 1.11,
+          "note": "fonte: 1000 UI/kg (MN, 10 % humidade) → 1 UI/g MN → ÷0,9 para MS. 0,025 mg colecalciferol; adequado, sem dados quantitativos."
+        },
+        "vitamin_e": {
+          "min": 24.44,
+          "note": "fonte: 22 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como RRR-α-tocoferol (= 32 UI/kg)."
+        },
+        "vitamin_k": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Filoquinona; baseado no rato."
+        },
+        "biotin": {
+          "min": 0.222,
+          "note": "fonte: 0,2 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Adequado."
+        },
+        "choline": {
+          "min": 2222.2,
+          "note": "fonte: 2000 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como bitartarato de colina; adequado, dados insuficientes."
+        },
+        "folic_acid": {
+          "min": 0.556,
+          "note": "fonte: 0,5 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "niacin": {
+          "min": 16.67,
+          "note": "fonte: 15 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Baseado no rato."
+        },
+        "pantothenic_acid": {
+          "min": 17.78,
+          "note": "fonte: 16 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Morris e Lippincott (1941) sugerem 36 mg/kg para reprodução e lactação."
+        },
+        "riboflavin": {
+          "min": 7.78,
+          "note": "fonte: 7 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Adequado; dados insuficientes."
+        },
+        "thiamin": {
+          "min": 5.56,
+          "note": "fonte: 5 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como tiamina-HCl."
+        },
+        "pyridoxine": {
+          "min": 8.89,
+          "note": "fonte: 8 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como piridoxina-HCl; 1 mg/kg para manutenção."
+        },
+        "cobalamin": {
+          "min": 0.0111,
+          "note": "fonte: 10 µg/kg (MN, 10 % humidade) → 0,01 mg/kg MN → ÷0,9 para MS. Adequado; dados insuficientes."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Valores mínimos sem margem de segurança, para dietas com 3,8–4,1 kcal EM/g (MN). Podem ser necessários ajustes para dar margem de segurança."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Piridoxina: 1 mg/kg (MN) chega para manutenção de adultos."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A Tabela 3-3 é uma tabela única ('amount per kg diet'); o conjunto de reprodução foi construído com os mesmos valores, substituindo Mg (0,7 g/kg), Cu (8 mg/kg) e Zn (30 mg/kg) conforme os comentários da própria tabela.",
+    "Base MN com 10 % de humidade; convertido para MS dividindo por 0,9.",
+    "Sem chave no catálogo (omitidos): cloro (0,5 g/kg), molibdénio (150 µg/kg).",
+    "A 'metionina' 5,0 g/kg foi mapeada para metionina+cistina, porque a cistina pode substituir 50–66,6 %; verificar."
+  ]
+}

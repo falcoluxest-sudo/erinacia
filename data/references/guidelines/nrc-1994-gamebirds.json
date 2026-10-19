@@ -1,0 +1,387 @@
+{
+  "id": "nrc-1994-gamebirds",
+  "title": "Nutrient Requirements of Poultry, 9th rev. ed. (1994) — Pheasants and Bobwhite quail (via Merck Veterinary Manual)",
+  "citation": "National Research Council (1994). Nutrient Requirements of Poultry: Ninth Revised Edition. National Academy Press, Washington, DC. https://doi.org/10.17226/2114 — tal como reproduzido (com autorização) em Korver, D. (2023, atualizado set. 2024) \"Nutritional Requirements of Poultry\", Merck Veterinary Manual, tabelas \"Nutrient Requirements of Pheasants\" e \"Nutrient Requirements of Bobwhite Quail\". https://www.merckvetmanual.com/poultry/nutrition-and-management-poultry/nutritional-requirements-of-poultry",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Phasianus colchicus",
+      "commonName": {
+        "pt": "Faisão-comum",
+        "en": "Ring-necked pheasant"
+      }
+    },
+    {
+      "scientificName": "Colinus virginianus",
+      "commonName": {
+        "pt": "Colim-da-virgínia",
+        "en": "Northern bobwhite"
+      }
+    },
+    {
+      "scientificName": "Phasianidae / Odontophoridae",
+      "commonName": {
+        "pt": "Faisões, perdizes e codornizes (modelo)",
+        "en": "Pheasants, partridges and quails (model)"
+      }
+    }
+  ],
+  "guild": "omnivore",
+  "modelSpecies": "Faisão-comum e colim-da-virgínia em criação, NRC 1994",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Faisão — crescimento 0–4 semanas",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.11,
+          "note": "fonte: 2 800 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 31.1,
+          "note": "fonte: 28 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 1.67,
+          "note": "fonte: 1,5 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.611,
+          "note": "fonte: 0,55 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.333,
+          "note": "fonte: 0,3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 3.78,
+          "note": "fonte: 3,4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 77.8,
+          "note": "fonte: 70 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1590,
+          "note": "fonte: 1 430 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Faisão — crescimento 9–17 semanas",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3,
+          "note": "fonte: 2 700 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 20,
+          "note": "fonte: 18 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.889,
+          "note": "fonte: 0,8 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 0.589,
+          "note": "fonte: 0,53 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.5,
+          "note": "fonte: 0,45 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.333,
+          "note": "fonte: 0,3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 3.33,
+          "note": "fonte: 3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 44.4,
+          "note": "fonte: 40 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1110,
+          "note": "fonte: 1 000 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Faisão — reprodução",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.11,
+          "note": "fonte: 2 800 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 16.7,
+          "note": "fonte: 15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.756,
+          "note": "fonte: 0,68 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 2.78,
+          "note": "fonte: 2,5 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.444,
+          "note": "fonte: 0,4 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.333,
+          "note": "fonte: 0,3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 17.8,
+          "note": "fonte: 16 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 33.3,
+          "note": "fonte: 30 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1110,
+          "note": "fonte: 1 000 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Colim — arranque (starting)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.11,
+          "note": "fonte: 2 800 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 28.9,
+          "note": "fonte: 26 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 0.722,
+          "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.5,
+          "note": "fonte: 0,45 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.333,
+          "note": "fonte: 0,3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 4.22,
+          "note": "fonte: 3,8 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 13.3,
+          "note": "fonte: 12 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 33.3,
+          "note": "fonte: 30 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1670,
+          "note": "fonte: 1 500 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Colim — crescimento (growing); usar como referência de manutenção de adultos com cautela",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.11,
+          "note": "fonte: 2 800 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 22.2,
+          "note": "fonte: 20 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.833,
+          "note": "fonte: 0,75 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 0.722,
+          "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.333,
+          "note": "fonte: 0,3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 3.33,
+          "note": "fonte: 3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 10,
+          "note": "fonte: 9 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 33.3,
+          "note": "fonte: 30 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1670,
+          "note": "fonte: 1 500 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Colim — reprodução",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.11,
+          "note": "fonte: 2 800 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 26.7,
+          "note": "fonte: 24 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 1,
+          "note": "fonte: 0,9 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 2.67,
+          "note": "fonte: 2,4 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.778,
+          "note": "fonte: 0,7 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.333,
+          "note": "fonte: 0,3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 16.7,
+          "note": "fonte: 15 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 22.2,
+          "note": "fonte: 20 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1110,
+          "note": "fonte: 1 000 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    }
+  ],
+  "dataQuality": [
+    "Valores do NRC (1994) obtidos através da reprodução autorizada no Merck Veterinary Manual (Korver, 2023, rev. 2024), não do livro original; o NRC original não pôde ser obtido (página 'read online' do NAP indisponível). Algumas tabelas do Merck são versões resumidas das tabelas NRC.",
+    "Tabelas NRC expressas por kg de dieta tal como fornecida (assumido ~90 % MS, convenção NRC); todos os valores foram divididos por 0,9 para base MS.",
+    "Exigências NRC são mínimos para aves domésticas de produção, sem margem de segurança e assumindo nutrientes altamente biodisponíveis; servem apenas de modelo para aves de zoo.",
+    "O fósforo NRC é fósforo DISPONÍVEL (não fítico); a chave 'phosphorus' do catálogo refere-se a fósforo total — o mínimo de P total real será superior.",
+    "Cloro (Cl) e glicina+serina, fenilalanina+tirosina e prolina não têm chave no catálogo e foram omitidos.",
+    "A energia (energy_density_dm) é a concentração típica de EM usada como base da tabela, não uma exigência; as concentrações dos outros nutrientes devem ser ajustadas proporcionalmente se a dieta tiver outra densidade energética.",
+    "As tabelas do Merck para faisão e colim são parciais: para nutrientes não listados a fonte remete para as tabelas de peru (faisão) e de galinha Leghorn/poedeiras (colim) — ver ficheiros nrc-1994-turkey e nrc-1994-chicken-leghorn.",
+    "Faisão: coluna 4–8 semanas não transcrita (disponível na fonte). Colim: o conjunto 'crescimento' foi também etiquetado como 'maintenance' por não existir valor NRC de manutenção para colim; confirmar.",
+    "Colim reprodução: P disponível 0,7 % MN segundo a fonte (valor elevado; confirmar no NRC original).",
+    "Codorniz-japonesa (Coturnix japonica) existe no NRC 1994 mas não está reproduzida no Merck e não foi transcrita."
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "id": "nrc-1995-guinea-pig",
+  "title": "Nutrient Requirements of Laboratory Animals, 4th Revised Edition — Chapter 4, Nutrient Requirements of the Guinea Pig",
+  "citation": "National Research Council (1995). Nutrient Requirements of Laboratory Animals, Fourth Revised Edition. Washington, DC: The National Academies Press. doi:10.17226/4758. Capítulo 4, Tabela 4-1 (Estimated Nutrient Requirements for Growth for Guinea Pigs; por kg de dieta, base MN com 10 % de humidade). Lido em https://www.nationalacademies.org/read/4758/chapter/6",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Cavia porcellus",
+      "commonName": {
+        "pt": "Porquinho-da-índia",
+        "en": "Guinea pig"
+      }
+    },
+    {
+      "scientificName": "Hydrochoerus hydrochaeris",
+      "commonName": {
+        "pt": "Capivara (modelo)",
+        "en": "Capybara (model)"
+      }
+    },
+    {
+      "scientificName": "Dolichotis patagonum",
+      "commonName": {
+        "pt": "Mara-da-patagónia (modelo)",
+        "en": "Patagonian mara (model)"
+      }
+    },
+    {
+      "scientificName": "Hystricomorpha / Caviomorpha",
+      "commonName": {
+        "pt": "Roedores histricomorfos (agutis, chinchilas, porcos-espinhos — modelo)",
+        "en": "Hystricomorph rodents (model)"
+      }
+    }
+  ],
+  "guild": "hindgut_herbivore",
+  "modelSpecies": "Porquinho-da-índia (Cavia porcellus)",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento (única tabela de requisitos do NRC para o porquinho-da-índia)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 20.0,
+          "note": "fonte: 180 g/kg (MN, 10 % humidade) → 18 % MN → % MS (÷0,9). Crescimento equivalente com 300 g caseína + 3 g L-arginina/kg ou 200 g proteína de soja + 10 g DL-metionina/kg."
+        },
+        "linoleic_acid": {
+          "min": 0.148,
+          "max": 0.444,
+          "note": "fonte: 1,33 g/kg (MN, 10 % humidade) → 0,133 % MN → % MS (÷0,9); máximo do intervalo da fonte: 4 g/kg MN. Fonte: ácidos gordos essenciais (n-6) 1,33–4,0 g/kg; 10 g óleo de milho/kg é satisfatório. Intervalo, não limite máximo de segurança."
+        },
+        "crude_fibre": {
+          "min": 16.67,
+          "note": "fonte: 150 g/kg (MN, 10 % humidade) → 15 % MN → % MS (÷0,9). Fonte: \"Fiber\" 150 g/kg, com celulose e/ou materiais de baixa digestibilidade para dar volume; mapeado para fibra bruta."
+        },
+        "arginine": {
+          "min": 1.33,
+          "note": "fonte: 12 g/kg (MN, 10 % humidade) → 1,2 % MN → % MS (÷0,9)"
+        },
+        "histidine": {
+          "min": 0.4,
+          "note": "fonte: 3,6 g/kg (MN, 10 % humidade) → 0,36 % MN → % MS (÷0,9)"
+        },
+        "isoleucine": {
+          "min": 0.667,
+          "note": "fonte: 6 g/kg (MN, 10 % humidade) → 0,6 % MN → % MS (÷0,9)"
+        },
+        "leucine": {
+          "min": 1.2,
+          "note": "fonte: 10,8 g/kg (MN, 10 % humidade) → 1,08 % MN → % MS (÷0,9)"
+        },
+        "lysine": {
+          "min": 0.933,
+          "note": "fonte: 8,4 g/kg (MN, 10 % humidade) → 0,84 % MN → % MS (÷0,9)"
+        },
+        "methionine_cystine": {
+          "min": 0.667,
+          "note": "fonte: 6 g/kg (MN, 10 % humidade) → 0,6 % MN → % MS (÷0,9). Listado como metionina; a cistina pode substituir 40 %."
+        },
+        "phenylalanine": {
+          "min": 1.2,
+          "note": "fonte: 10,8 g/kg (MN, 10 % humidade) → 1,08 % MN → % MS (÷0,9). A tirosina pode substituir 50 %."
+        },
+        "threonine": {
+          "min": 0.667,
+          "note": "fonte: 6 g/kg (MN, 10 % humidade) → 0,6 % MN → % MS (÷0,9)"
+        },
+        "tryptophan": {
+          "min": 0.2,
+          "note": "fonte: 1,8 g/kg (MN, 10 % humidade) → 0,18 % MN → % MS (÷0,9)"
+        },
+        "valine": {
+          "min": 0.933,
+          "note": "fonte: 8,4 g/kg (MN, 10 % humidade) → 0,84 % MN → % MS (÷0,9)"
+        },
+        "calcium": {
+          "min": 0.889,
+          "note": "fonte: 8 g/kg (MN, 10 % humidade) → 0,8 % MN → % MS (÷0,9). Requisitos de Ca, P, Mg e K parecem refletir interações entre eles."
+        },
+        "phosphorus": {
+          "min": 0.444,
+          "note": "fonte: 4 g/kg (MN, 10 % humidade) → 0,4 % MN → % MS (÷0,9)"
+        },
+        "magnesium": {
+          "min": 0.111,
+          "note": "fonte: 1 g/kg (MN, 10 % humidade) → 0,1 % MN → % MS (÷0,9)"
+        },
+        "potassium": {
+          "min": 0.556,
+          "note": "fonte: 5 g/kg (MN, 10 % humidade) → 0,5 % MN → % MS (÷0,9)"
+        },
+        "sodium": {
+          "min": 0.0556,
+          "note": "fonte: 0,5 g/kg (MN, 10 % humidade) → 0,05 % MN → % MS (÷0,9)"
+        },
+        "copper": {
+          "min": 6.67,
+          "note": "fonte: 6 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "iron": {
+          "min": 55.56,
+          "note": "fonte: 50 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Estimativa."
+        },
+        "manganese": {
+          "min": 44.44,
+          "note": "fonte: 40 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "zinc": {
+          "min": 22.22,
+          "note": "fonte: 20 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "iodine": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS. Baseado no rato."
+        },
+        "selenium": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS. Baseado no rato."
+        },
+        "vitamin_a": {
+          "min": 24.4,
+          "note": "fonte: 21960 UI/kg (MN, 10 % humidade) → 21,96 UI/g MN → ÷0,9 para MS. 6,6 mg retinol/kg (= 21 960 UI/kg). Alternativa: 28,0 mg β-caroteno/kg (usado com 40 % da eficiência do retinol)."
+        },
+        "vitamin_d3": {
+          "min": 1.11,
+          "note": "fonte: 1000 UI/kg (MN, 10 % humidade) → 1 UI/g MN → ÷0,9 para MS. 0,025 mg colecalciferol; adequado, sem dados quantitativos."
+        },
+        "vitamin_e": {
+          "min": 29.67,
+          "note": "fonte: 26,7 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como RRR-α-tocoferol (= 40 UI/kg); adequado. Mais com dietas ricas em gordura."
+        },
+        "vitamin_k": {
+          "min": 5.56,
+          "note": "fonte: 5 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Filoquinona; adequado."
+        },
+        "vitamin_c": {
+          "min": 222.2,
+          "note": "fonte: 200 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Ácido ascórbico — essencial na dieta (o porquinho-da-índia não o sintetiza)."
+        },
+        "biotin": {
+          "min": 0.222,
+          "note": "fonte: 0,2 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Adequado."
+        },
+        "choline": {
+          "min": 2000.0,
+          "note": "fonte: 1800 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como bitartarato de colina."
+        },
+        "folic_acid": {
+          "min": 3.33,
+          "max": 6.67,
+          "note": "fonte: 3 mg/kg (MN, 10 % humidade) → ÷0,9 para MS; máximo do intervalo da fonte: 6 mg/kg MN. Fonte: 3,0–6,0 mg/kg (intervalo de estudos, não limite máximo)."
+        },
+        "niacin": {
+          "min": 11.11,
+          "note": "fonte: 10 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "pantothenic_acid": {
+          "min": 22.22,
+          "note": "fonte: 20 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como Ca-d-pantotenato."
+        },
+        "pyridoxine": {
+          "min": 2.22,
+          "max": 3.33,
+          "note": "fonte: 2 mg/kg (MN, 10 % humidade) → ÷0,9 para MS; máximo do intervalo da fonte: 3 mg/kg MN. Fonte: 2,0–3,0 mg/kg (intervalo, não limite máximo)."
+        },
+        "riboflavin": {
+          "min": 3.33,
+          "note": "fonte: 3 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Estimado."
+        },
+        "thiamin": {
+          "min": 2.22,
+          "note": "fonte: 2 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como tiamina-HCl."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Vitamina C obrigatória na dieta (≥200 mg/kg MN em crescimento); verificar perdas no armazenamento da ração."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Valores mínimos sem margem de segurança, para dietas com 2,8–3,5 kcal EM/g (MN). Dietas de ingredientes naturais podem exigir concentrações superiores."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Base MN com 10 % de humidade; convertido para MS dividindo por 0,9.",
+    "Só existe tabela de crescimento; aplicar a adultos e reprodução com cautela.",
+    "'Fiber' 150 g/kg mapeado para fibra bruta; a fonte refere celulose/materiais pouco digestíveis, não FDN/FDA.",
+    "Os máximos em ácido linoleico, ácido fólico e piridoxina são apenas o extremo superior do intervalo citado, não limites de toxicidade.",
+    "Sem chave no catálogo (omitidos): cloro (0,5 g/kg), molibdénio (150 µg/kg), azoto dispensável (16,9 g/kg), β-caroteno (28 mg/kg, alternativa ao retinol).",
+    "Vitamina A muito superior à do rato/ratinho (6,6 mg retinol/kg); transcrito tal como a fonte."
+  ]
+}

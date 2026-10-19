@@ -1,0 +1,403 @@
+{
+  "id": "nrc-1995-rat",
+  "title": "Nutrient Requirements of Laboratory Animals, 4th Revised Edition — Chapter 2, Nutrient Requirements of the Laboratory Rat",
+  "citation": "National Research Council (1995). Nutrient Requirements of Laboratory Animals, Fourth Revised Edition. Washington, DC: The National Academies Press. doi:10.17226/4758. Capítulo 2, Tabela 2-1 (requisitos nutricionais do rato; por kg de dieta, base MN com 10 % de humidade). Lido em https://www.nationalacademies.org/read/4758/chapter/4",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Rattus norvegicus",
+      "commonName": {
+        "pt": "Ratazana / rato-de-laboratório",
+        "en": "Brown rat / laboratory rat"
+      }
+    },
+    {
+      "scientificName": "Muridae / Cricetidae (roedores omnívoros)",
+      "commonName": {
+        "pt": "Roedores murídeos e cricetídeos selvagens (modelo)",
+        "en": "Wild murid and cricetid rodents (model)"
+      }
+    },
+    {
+      "scientificName": "Sciuridae",
+      "commonName": {
+        "pt": "Esquilos e afins (modelo, com reservas)",
+        "en": "Squirrels (model, with caution)"
+      }
+    }
+  ],
+  "guild": "omnivore",
+  "modelSpecies": "Rato de laboratório (Rattus norvegicus)",
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Manutenção de adultos (só proteína, gordura e aminoácidos; minerais e vitaminas: usar os valores de crescimento)",
+      "basis": "DM",
+      "values": {
+        "ether_extract": {
+          "min": 5.56,
+          "note": "fonte: 50 g/kg (MN, 10 % humidade) → 5 % MN → % MS (÷0,9)"
+        },
+        "crude_protein": {
+          "min": 5.56,
+          "note": "fonte: 50 g/kg (MN, 10 % humidade) → 5 % MN → % MS (÷0,9). Proteína muito digestível e equilibrada (p. ex. lactalbumina)."
+        },
+        "histidine": {
+          "min": 0.0889,
+          "note": "fonte: 0,8 g/kg (MN, 10 % humidade) → 0,08 % MN → % MS (÷0,9)"
+        },
+        "isoleucine": {
+          "min": 0.344,
+          "note": "fonte: 3,1 g/kg (MN, 10 % humidade) → 0,31 % MN → % MS (÷0,9)"
+        },
+        "leucine": {
+          "min": 0.2,
+          "note": "fonte: 1,8 g/kg (MN, 10 % humidade) → 0,18 % MN → % MS (÷0,9)"
+        },
+        "lysine": {
+          "min": 0.122,
+          "note": "fonte: 1,1 g/kg (MN, 10 % humidade) → 0,11 % MN → % MS (÷0,9)"
+        },
+        "methionine_cystine": {
+          "min": 0.256,
+          "note": "fonte: 2,3 g/kg (MN, 10 % humidade) → 0,23 % MN → % MS (÷0,9). A cistina pode fornecer até 50 %."
+        },
+        "threonine": {
+          "min": 0.2,
+          "note": "fonte: 1,8 g/kg (MN, 10 % humidade) → 0,18 % MN → % MS (÷0,9)"
+        },
+        "tryptophan": {
+          "min": 0.0556,
+          "note": "fonte: 0,5 g/kg (MN, 10 % humidade) → 0,05 % MN → % MS (÷0,9)"
+        },
+        "valine": {
+          "min": 0.256,
+          "note": "fonte: 2,3 g/kg (MN, 10 % humidade) → 0,23 % MN → % MS (÷0,9)"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento (cobre também as necessidades de manutenção)",
+      "basis": "DM",
+      "values": {
+        "ether_extract": {
+          "min": 5.56,
+          "note": "fonte: 50 g/kg (MN, 10 % humidade) → 5 % MN → % MS (÷0,9)"
+        },
+        "linoleic_acid": {
+          "min": 0.667,
+          "note": "fonte: 6 g/kg (MN, 10 % humidade) → 0,6 % MN → % MS (÷0,9). Fêmeas em crescimento requerem só 2 g/kg."
+        },
+        "crude_protein": {
+          "min": 16.67,
+          "note": "fonte: 150 g/kg (MN, 10 % humidade) → 15 % MN → % MS (÷0,9). Proteína muito digestível e equilibrada (p. ex. lactalbumina)."
+        },
+        "arginine": {
+          "min": 0.478,
+          "note": "fonte: 4,3 g/kg (MN, 10 % humidade) → 0,43 % MN → % MS (÷0,9)"
+        },
+        "histidine": {
+          "min": 0.311,
+          "note": "fonte: 2,8 g/kg (MN, 10 % humidade) → 0,28 % MN → % MS (÷0,9)"
+        },
+        "isoleucine": {
+          "min": 0.689,
+          "note": "fonte: 6,2 g/kg (MN, 10 % humidade) → 0,62 % MN → % MS (÷0,9)"
+        },
+        "leucine": {
+          "min": 1.19,
+          "note": "fonte: 10,7 g/kg (MN, 10 % humidade) → 1,07 % MN → % MS (÷0,9)"
+        },
+        "lysine": {
+          "min": 1.02,
+          "note": "fonte: 9,2 g/kg (MN, 10 % humidade) → 0,92 % MN → % MS (÷0,9)"
+        },
+        "methionine_cystine": {
+          "min": 1.09,
+          "note": "fonte: 9,8 g/kg (MN, 10 % humidade) → 0,98 % MN → % MS (÷0,9). A cistina pode fornecer até 50 % (em peso)."
+        },
+        "threonine": {
+          "min": 0.689,
+          "note": "fonte: 6,2 g/kg (MN, 10 % humidade) → 0,62 % MN → % MS (÷0,9)"
+        },
+        "tryptophan": {
+          "min": 0.222,
+          "note": "fonte: 2 g/kg (MN, 10 % humidade) → 0,2 % MN → % MS (÷0,9)"
+        },
+        "valine": {
+          "min": 0.822,
+          "note": "fonte: 7,4 g/kg (MN, 10 % humidade) → 0,74 % MN → % MS (÷0,9)"
+        },
+        "calcium": {
+          "min": 0.556,
+          "note": "fonte: 5 g/kg (MN, 10 % humidade) → 0,5 % MN → % MS (÷0,9)"
+        },
+        "magnesium": {
+          "min": 0.0556,
+          "note": "fonte: 0,5 g/kg (MN, 10 % humidade) → 0,05 % MN → % MS (÷0,9)"
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 3 g/kg (MN, 10 % humidade) → 0,3 % MN → % MS (÷0,9)"
+        },
+        "potassium": {
+          "min": 0.4,
+          "note": "fonte: 3,6 g/kg (MN, 10 % humidade) → 0,36 % MN → % MS (÷0,9). Quantidade adequada, não requisito verdadeiro."
+        },
+        "sodium": {
+          "min": 0.0556,
+          "note": "fonte: 0,5 g/kg (MN, 10 % humidade) → 0,05 % MN → % MS (÷0,9)"
+        },
+        "copper": {
+          "min": 5.56,
+          "note": "fonte: 5 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "iron": {
+          "min": 38.89,
+          "note": "fonte: 35 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "manganese": {
+          "min": 11.11,
+          "note": "fonte: 10 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "zinc": {
+          "min": 13.33,
+          "note": "fonte: 12 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Maior concentração necessária com ingredientes com fitato (p. ex. farinha de soja)."
+        },
+        "iodine": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS"
+        },
+        "selenium": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS"
+        },
+        "vitamin_a": {
+          "min": 2.56,
+          "note": "fonte: 2300 UI/kg (MN, 10 % humidade) → 2,3 UI/g MN → ÷0,9 para MS. 0,7 mg retinol/kg; a nota da tabela diz \"2,300 IU/g\", interpretado como UI/kg. Também satisfeito por 1,3 mg β-caroteno/kg. Mais em stress (p. ex. recuperação cirúrgica)."
+        },
+        "vitamin_d3": {
+          "min": 1.11,
+          "note": "fonte: 1000 UI/kg (MN, 10 % humidade) → 1 UI/g MN → ÷0,9 para MS. 0,025 mg colecalciferol/kg."
+        },
+        "vitamin_e": {
+          "min": 20.0,
+          "note": "fonte: 18 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como RRR-α-tocoferol (= 27 UI/kg). Mais com dietas ricas em gordura."
+        },
+        "vitamin_k": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Filoquinona."
+        },
+        "biotin": {
+          "min": 0.222,
+          "note": "fonte: 0,2 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "choline": {
+          "min": 833.3,
+          "note": "fonte: 750 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Base livre."
+        },
+        "folic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "niacin": {
+          "min": 16.67,
+          "note": "fonte: 15 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "pantothenic_acid": {
+          "min": 11.11,
+          "note": "fonte: 10 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como Ca-d-pantotenato."
+        },
+        "riboflavin": {
+          "min": 3.33,
+          "note": "fonte: 3 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "thiamin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como tiamina-HCl. Mais com dietas pobres em proteína e ricas em hidratos de carbono."
+        },
+        "pyridoxine": {
+          "min": 6.67,
+          "note": "fonte: 6 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Quantidade adequada, não requisito verdadeiro."
+        },
+        "cobalamin": {
+          "min": 0.0556,
+          "note": "fonte: 50 µg/kg (MN, 10 % humidade) → 0,05 mg/kg MN → ÷0,9 para MS"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Reprodução (fêmeas: gestação e lactação)",
+      "basis": "DM",
+      "values": {
+        "ether_extract": {
+          "min": 5.56,
+          "note": "fonte: 50 g/kg (MN, 10 % humidade) → 5 % MN → % MS (÷0,9)"
+        },
+        "linoleic_acid": {
+          "min": 0.333,
+          "note": "fonte: 3 g/kg (MN, 10 % humidade) → 0,3 % MN → % MS (÷0,9)"
+        },
+        "crude_protein": {
+          "min": 16.67,
+          "note": "fonte: 150 g/kg (MN, 10 % humidade) → 15 % MN → % MS (÷0,9)"
+        },
+        "arginine": {
+          "min": 0.478,
+          "note": "fonte: 4,3 g/kg (MN, 10 % humidade) → 0,43 % MN → % MS (÷0,9)"
+        },
+        "histidine": {
+          "min": 0.311,
+          "note": "fonte: 2,8 g/kg (MN, 10 % humidade) → 0,28 % MN → % MS (÷0,9)"
+        },
+        "isoleucine": {
+          "min": 0.689,
+          "note": "fonte: 6,2 g/kg (MN, 10 % humidade) → 0,62 % MN → % MS (÷0,9)"
+        },
+        "leucine": {
+          "min": 1.19,
+          "note": "fonte: 10,7 g/kg (MN, 10 % humidade) → 1,07 % MN → % MS (÷0,9)"
+        },
+        "lysine": {
+          "min": 1.02,
+          "note": "fonte: 9,2 g/kg (MN, 10 % humidade) → 0,92 % MN → % MS (÷0,9)"
+        },
+        "methionine_cystine": {
+          "min": 1.09,
+          "note": "fonte: 9,8 g/kg (MN, 10 % humidade) → 0,98 % MN → % MS (÷0,9). A cistina pode fornecer até 50 % (em peso)."
+        },
+        "threonine": {
+          "min": 0.689,
+          "note": "fonte: 6,2 g/kg (MN, 10 % humidade) → 0,62 % MN → % MS (÷0,9)"
+        },
+        "tryptophan": {
+          "min": 0.222,
+          "note": "fonte: 2 g/kg (MN, 10 % humidade) → 0,2 % MN → % MS (÷0,9)"
+        },
+        "valine": {
+          "min": 0.822,
+          "note": "fonte: 7,4 g/kg (MN, 10 % humidade) → 0,74 % MN → % MS (÷0,9)"
+        },
+        "calcium": {
+          "min": 0.7,
+          "note": "fonte: 6,3 g/kg (MN, 10 % humidade) → 0,63 % MN → % MS (÷0,9)"
+        },
+        "magnesium": {
+          "min": 0.0667,
+          "note": "fonte: 0,6 g/kg (MN, 10 % humidade) → 0,06 % MN → % MS (÷0,9)"
+        },
+        "phosphorus": {
+          "min": 0.411,
+          "note": "fonte: 3,7 g/kg (MN, 10 % humidade) → 0,37 % MN → % MS (÷0,9)"
+        },
+        "potassium": {
+          "min": 0.4,
+          "note": "fonte: 3,6 g/kg (MN, 10 % humidade) → 0,36 % MN → % MS (÷0,9). Quantidade adequada, não requisito verdadeiro."
+        },
+        "sodium": {
+          "min": 0.0556,
+          "note": "fonte: 0,5 g/kg (MN, 10 % humidade) → 0,05 % MN → % MS (÷0,9)"
+        },
+        "copper": {
+          "min": 8.89,
+          "note": "fonte: 8 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "iron": {
+          "min": 83.33,
+          "note": "fonte: 75 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "manganese": {
+          "min": 11.11,
+          "note": "fonte: 10 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "zinc": {
+          "min": 27.78,
+          "note": "fonte: 25 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Maior concentração necessária com ingredientes com fitato (p. ex. farinha de soja)."
+        },
+        "iodine": {
+          "min": 0.167,
+          "note": "fonte: 150 µg/kg (MN, 10 % humidade) → 0,15 mg/kg MN → ÷0,9 para MS"
+        },
+        "selenium": {
+          "min": 0.444,
+          "note": "fonte: 400 µg/kg (MN, 10 % humidade) → 0,4 mg/kg MN → ÷0,9 para MS"
+        },
+        "vitamin_a": {
+          "min": 2.56,
+          "note": "fonte: 2300 UI/kg (MN, 10 % humidade) → 2,3 UI/g MN → ÷0,9 para MS. 0,7 mg retinol/kg; a nota da tabela diz \"2,300 IU/g\", interpretado como UI/kg. Também satisfeito por 1,3 mg β-caroteno/kg. Mais em stress (p. ex. recuperação cirúrgica)."
+        },
+        "vitamin_d3": {
+          "min": 1.11,
+          "note": "fonte: 1000 UI/kg (MN, 10 % humidade) → 1 UI/g MN → ÷0,9 para MS. 0,025 mg colecalciferol/kg."
+        },
+        "vitamin_e": {
+          "min": 20.0,
+          "note": "fonte: 18 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como RRR-α-tocoferol (= 27 UI/kg). Mais com dietas ricas em gordura."
+        },
+        "vitamin_k": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Filoquinona."
+        },
+        "biotin": {
+          "min": 0.222,
+          "note": "fonte: 0,2 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "choline": {
+          "min": 833.3,
+          "note": "fonte: 750 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Base livre."
+        },
+        "folic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "niacin": {
+          "min": 16.67,
+          "note": "fonte: 15 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "pantothenic_acid": {
+          "min": 11.11,
+          "note": "fonte: 10 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como Ca-d-pantotenato."
+        },
+        "riboflavin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg (MN, 10 % humidade) → ÷0,9 para MS"
+        },
+        "thiamin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Como tiamina-HCl. Mais com dietas pobres em proteína e ricas em hidratos de carbono."
+        },
+        "pyridoxine": {
+          "min": 6.67,
+          "note": "fonte: 6 mg/kg (MN, 10 % humidade) → ÷0,9 para MS. Quantidade adequada, não requisito verdadeiro."
+        },
+        "cobalamin": {
+          "min": 0.0556,
+          "note": "fonte: 50 µg/kg (MN, 10 % humidade) → 0,05 mg/kg MN → ÷0,9 para MS"
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Valores mínimos sem margem de segurança, para dietas purificadas com 3,8–4,1 kcal EM/g (MN). Em dietas com ingredientes naturais podem justificar-se concentrações superiores."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "A arginina de manutenção não foi determinada; o ácido linolénico (n-3) é necessário mas sem concentração definida (outros AGPI n-3 de cadeia longa podem substituí-lo)."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A Tabela 2-1 está em base MN para dietas com 10 % de humidade; todos os valores foram convertidos para MS dividindo por 0,9.",
+    "Na manutenção a fonte só define gordura, proteína e aminoácidos; para minerais e vitaminas indica que os requisitos de crescimento cobrem a manutenção.",
+    "Sem chave no catálogo (omitidos): cloro (0,5 g/kg), molibdénio (150 µg/kg), aminoácidos aromáticos fenilalanina+tirosina (1,9 / 10,2 / 10,2 g/kg) e 'outros aminoácidos não essenciais' (66 g/kg).",
+    "Vitamina A: a nota j da tabela escreve '2,300 IU/g', claramente UI/kg (0,7 mg retinol ≈ 2333 UI). Vitamina E expressa como RRR-α-tocoferol (não acetato).",
+    "Uso como modelo para roedores selvagens é extrapolação; espécies granívoras/herbívoras e esquilos podem ter necessidades diferentes."
+  ]
+}

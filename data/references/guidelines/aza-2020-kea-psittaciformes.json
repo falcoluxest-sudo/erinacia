@@ -1,0 +1,227 @@
+{
+  "id": "aza-2020-kea-psittaciformes",
+  "title": "Kea (Nestor notabilis) Care Manual — Section 6.1 Nutritional Requirements",
+  "citation": "AZA Kea Species Survival Plan (2020). Kea (Nestor notabilis) Care Manual. Association of Zoos and Aquariums, Silver Spring, MD. Secção 6.1, Tabela 3 (energia; McNab 1988; Koutsos, Matson & Klasing 2001) e Tabela 4 \"Target nutrient ranges for kea (National Research Council, 1994, 2006)\". https://assets.speakcdn.com/assets/2332/kea_care_manual_2020.pdf",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Nestor notabilis",
+      "commonName": {
+        "pt": "Kea",
+        "en": "Kea"
+      }
+    },
+    {
+      "scientificName": "Psittaciformes",
+      "commonName": {
+        "pt": "Psitacídeos (papagaios, catatuas, araras) — modelo",
+        "en": "Parrots (Psittaciformes) — model"
+      }
+    }
+  ],
+  "guild": "omnivore",
+  "modelSpecies": "Aves domésticas (NRC 1994) e cão (NRC 2006)",
+  "energy": [
+    {
+      "id": "bmr",
+      "coefficient": 73.6,
+      "exponent": 0.73,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "BMR",
+      "lifeStage": "all",
+      "label": "Metabolismo basal (psitacídeos adultos; McNab 1988)",
+      "note": "Fonte também em kJ: 308 × PV^0,73. Para espécies de clima temperado o BMR é ~21 % superior."
+    },
+    {
+      "id": "mer-indoor-cage",
+      "coefficient": 154.6,
+      "exponent": 0.73,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção — gaiola interior",
+      "note": "647 × PV^0,73 kJ."
+    },
+    {
+      "id": "mer-indoor-aviary",
+      "coefficient": 176.6,
+      "exponent": 0.73,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção — aviário interior",
+      "note": "739 × PV^0,73 kJ."
+    },
+    {
+      "id": "mer-outdoor-summer",
+      "coefficient": 226.1,
+      "exponent": 0.73,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção — aviário exterior, verão",
+      "note": "946 × PV^0,73 kJ."
+    },
+    {
+      "id": "mer-outdoor-winter",
+      "coefficient": 229.2,
+      "exponent": 0.73,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção — aviário exterior, inverno",
+      "note": "959 × PV^0,73 kJ."
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Faixas-alvo (base MS); extremos superiores de Ca, P, vit. A e D3 só para fêmeas em postura",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 12,
+          "max": 28
+        },
+        "ether_extract": {
+          "min": 5,
+          "max": 8.5
+        },
+        "linoleic_acid": {
+          "min": 0.8,
+          "max": 1.3
+        },
+        "calcium": {
+          "min": 0.5,
+          "max": 2.75,
+          "note": "Extremo superior apenas para fêmeas em reprodução/postura ativa; não fornecer a longo prazo."
+        },
+        "phosphorus": {
+          "min": 0.25,
+          "max": 1.0,
+          "note": "Extremo superior apenas para fêmeas em reprodução/postura ativa; não fornecer a longo prazo. A fonte não indica se é P total ou disponível."
+        },
+        "magnesium": {
+          "min": 0.03,
+          "max": 0.06
+        },
+        "potassium": {
+          "min": 0.25,
+          "max": 0.7
+        },
+        "sodium": {
+          "min": 0.12,
+          "max": 0.22
+        },
+        "iron": {
+          "min": 30,
+          "max": 120
+        },
+        "copper": {
+          "min": 4,
+          "max": 12.4
+        },
+        "zinc": {
+          "min": 25,
+          "max": 70
+        },
+        "manganese": {
+          "min": 5,
+          "max": 70
+        },
+        "iodine": {
+          "min": 0.33,
+          "max": 0.4
+        },
+        "selenium": {
+          "min": 0.1,
+          "max": 0.2
+        },
+        "vitamin_a": {
+          "min": 0.5,
+          "max": 5,
+          "note": "fonte: 500–5000 UI/kg MS → UI/g. Extremo superior apenas para fêmeas em reprodução/postura ativa; não fornecer a longo prazo."
+        },
+        "vitamin_d3": {
+          "min": 0.19,
+          "max": 1.1,
+          "note": "fonte: 190–1100 UI/kg MS → UI/g. Extremo superior apenas para fêmeas em reprodução/postura ativa; não fornecer a longo prazo."
+        },
+        "vitamin_e": {
+          "min": 4.3,
+          "max": 45.4,
+          "note": "fonte já em mg/kg MS."
+        },
+        "thiamin": {
+          "min": 0.8,
+          "max": 2.3
+        },
+        "riboflavin": {
+          "min": 1.7,
+          "max": 10.5
+        },
+        "niacin": {
+          "min": 10.3,
+          "max": 60
+        },
+        "pyridoxine": {
+          "min": 1.5,
+          "max": 4.5
+        },
+        "folic_acid": {
+          "min": 0.23,
+          "max": 1.0
+        },
+        "biotin": {
+          "min": 0.09,
+          "max": 0.3
+        },
+        "cobalamin": {
+          "min": 0.003,
+          "max": 0.04
+        },
+        "pantothenic_acid": {
+          "min": 9,
+          "max": 16
+        },
+        "choline": {
+          "min": 470,
+          "max": 2000
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Casais reprodutores antes e depois da postura: o Ca da dieta deve aproximar-se do extremo superior da faixa (suplementar se necessário)."
+      }
+    },
+    {
+      "kind": "monitoring",
+      "text": {
+        "pt": "Analisar a dieta (incluindo suplementos) antes de suplementar e comparar com as faixas-alvo; reavaliar calorias pelo peso e condição corporal."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Retirar alimento não consumido no máximo 24 h após ser oferecido."
+      }
+    }
+  ],
+  "dataQuality": [
+    "As faixas-alvo não são exigências específicas de psitacídeos: o manual deriva-as de NRC (1994) aves domésticas e NRC (2006) cão; o mínimo de cada faixa corresponde aproximadamente às exigências mínimas e o máximo ao extremo superior entre espécies/fases.",
+    "Não foi possível obter as tabelas de Koutsos, Matson & Klasing (2001, J Avian Med Surg 15:257–275) nem recomendações do comité de psitacídeos da AAFCO (sem acesso livre); este ficheiro usa o manual AZA do kea como melhor fonte publicada acessível.",
+    "Fósforo: a fonte não especifica se é total ou disponível.",
+    "Vitamina E já expressa em mg/kg MS na fonte (sem conversão).",
+    "Equações de energia (Tabela 3) aplicam-se a psitacídeos adultos em geral (McNab 1988; Koutsos et al. 2001); o gasto diário de kea selvagens no inverno foi 202,7 ± 16,7 kcal/d (Bryant 2006).",
+    "Guild 'omnivore' adequado ao kea; psitacídeos nectarívoros (lóris) e granívoros estritos podem ter necessidades diferentes."
+  ]
+}

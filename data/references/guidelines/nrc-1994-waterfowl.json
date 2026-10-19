@@ -1,0 +1,419 @@
+{
+  "id": "nrc-1994-waterfowl",
+  "title": "Nutrient Requirements of Poultry, 9th rev. ed. (1994) — Pekin ducks and geese (via Merck Veterinary Manual)",
+  "citation": "National Research Council (1994). Nutrient Requirements of Poultry: Ninth Revised Edition. National Academy Press, Washington, DC. https://doi.org/10.17226/2114 — tal como reproduzido (com autorização) em Korver, D. (2023, atualizado set. 2024) \"Nutritional Requirements of Poultry\", Merck Veterinary Manual, tabelas \"Nutrient Requirements of Pekin Ducks\" e \"Nutrient Requirements of Geese\". https://www.merckvetmanual.com/poultry/nutrition-and-management-poultry/nutritional-requirements-of-poultry",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Anas platyrhynchos domesticus",
+      "commonName": {
+        "pt": "Pato-de-Pequim",
+        "en": "Pekin duck"
+      }
+    },
+    {
+      "scientificName": "Anser anser domesticus",
+      "commonName": {
+        "pt": "Ganso doméstico",
+        "en": "Domestic goose"
+      }
+    },
+    {
+      "scientificName": "Anseriformes",
+      "commonName": {
+        "pt": "Anatídeos (patos, gansos, cisnes) — modelo",
+        "en": "Waterfowl (ducks, geese, swans) — model"
+      }
+    }
+  ],
+  "guild": "omnivore",
+  "modelSpecies": "Pato-de-Pequim e ganso doméstico, NRC 1994",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Pato — arranque 0–2 semanas",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.22,
+          "note": "fonte: 2 900 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 24.4,
+          "note": "fonte: 22 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "arginine": {
+          "min": 1.22,
+          "note": "fonte: 1,1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 1,
+          "note": "fonte: 0,9 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.778,
+          "note": "fonte: 0,7 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 0.722,
+          "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.444,
+          "note": "fonte: 0,4 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "magnesium": {
+          "min": 0.0556,
+          "note": "fonte: 500 mg/kg dieta (~90 % MS) → 0,05 % → ÷0,9"
+        },
+        "manganese": {
+          "min": 55.6,
+          "note": "fonte: 50 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "zinc": {
+          "min": 66.7,
+          "note": "fonte: 60 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "selenium": {
+          "min": 0.222,
+          "note": "fonte: 0,2 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "vitamin_a": {
+          "min": 2.78,
+          "note": "fonte: 2 500 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.444,
+          "note": "fonte: 400 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_k": {
+          "min": 0.556,
+          "note": "fonte: 0,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 12.2,
+          "note": "fonte: 11 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 61.1,
+          "note": "fonte: 55 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pyridoxine": {
+          "min": 2.78,
+          "note": "fonte: 2,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Pato — crescimento 2–7 semanas",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.33,
+          "note": "fonte: 3 000 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 17.8,
+          "note": "fonte: 16 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "arginine": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.722,
+          "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.611,
+          "note": "fonte: 0,55 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "magnesium": {
+          "min": 0.0556,
+          "note": "fonte: 500 mg/kg dieta (~90 % MS) → 0,05 % → ÷0,9"
+        },
+        "vitamin_a": {
+          "min": 2.78,
+          "note": "fonte: 2 500 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.444,
+          "note": "fonte: 400 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_k": {
+          "min": 0.556,
+          "note": "fonte: 0,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 12.2,
+          "note": "fonte: 11 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 61.1,
+          "note": "fonte: 55 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pyridoxine": {
+          "min": 2.78,
+          "note": "fonte: 2,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Pato — reprodução",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.22,
+          "note": "fonte: 2 900 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 16.7,
+          "note": "fonte: 15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.556,
+          "note": "fonte: 0,5 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 3.06,
+          "note": "fonte: 2,75 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "magnesium": {
+          "min": 0.0556,
+          "note": "fonte: 500 mg/kg dieta (~90 % MS) → 0,05 % → ÷0,9"
+        },
+        "vitamin_a": {
+          "min": 4.44,
+          "note": "fonte: 4 000 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 1,
+          "note": "fonte: 900 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_k": {
+          "min": 0.556,
+          "note": "fonte: 0,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 12.2,
+          "note": "fonte: 11 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 61.1,
+          "note": "fonte: 55 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pyridoxine": {
+          "min": 3.33,
+          "note": "fonte: 3 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Ganso — arranque 0–4 semanas",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.22,
+          "note": "fonte: 2 900 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 22.2,
+          "note": "fonte: 20 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 0.722,
+          "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "vitamin_a": {
+          "min": 1.67,
+          "note": "fonte: 1 500 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.222,
+          "note": "fonte: 200 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "riboflavin": {
+          "min": 4.22,
+          "note": "fonte: 3,8 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 16.7,
+          "note": "fonte: 15 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 72.2,
+          "note": "fonte: 65 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Ganso — crescimento (após 4 semanas)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.33,
+          "note": "fonte: 3 000 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 16.7,
+          "note": "fonte: 15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.944,
+          "note": "fonte: 0,85 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.556,
+          "note": "fonte: 0,5 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "vitamin_a": {
+          "min": 1.67,
+          "note": "fonte: 1 500 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.222,
+          "note": "fonte: 200 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "riboflavin": {
+          "min": 2.78,
+          "note": "fonte: 2,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 38.9,
+          "note": "fonte: 35 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Ganso — reprodução",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.22,
+          "note": "fonte: 2 900 kcal EM/kg dieta (~90 % MS) → ÷0,9 → kcal/g MS; concentração típica, não exigência absoluta"
+        },
+        "crude_protein": {
+          "min": 16.7,
+          "note": "fonte: 15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.556,
+          "note": "fonte: 0,5 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 2.5,
+          "note": "fonte: 2,25 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        },
+        "vitamin_a": {
+          "min": 4.44,
+          "note": "fonte: 4 000 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.222,
+          "note": "fonte: 200 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "riboflavin": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 22.2,
+          "note": "fonte: 20 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    }
+  ],
+  "dataQuality": [
+    "Valores do NRC (1994) obtidos através da reprodução autorizada no Merck Veterinary Manual (Korver, 2023, rev. 2024), não do livro original; o NRC original não pôde ser obtido (página 'read online' do NAP indisponível). Algumas tabelas do Merck são versões resumidas das tabelas NRC.",
+    "Tabelas NRC expressas por kg de dieta tal como fornecida (assumido ~90 % MS, convenção NRC); todos os valores foram divididos por 0,9 para base MS.",
+    "Exigências NRC são mínimos para aves domésticas de produção, sem margem de segurança e assumindo nutrientes altamente biodisponíveis; servem apenas de modelo para aves de zoo.",
+    "O fósforo NRC é fósforo DISPONÍVEL (não fítico); a chave 'phosphorus' do catálogo refere-se a fósforo total — o mínimo de P total real será superior.",
+    "Cloro (Cl) e glicina+serina, fenilalanina+tirosina e prolina não têm chave no catálogo e foram omitidos.",
+    "A energia (energy_density_dm) é a concentração típica de EM usada como base da tabela, não uma exigência; as concentrações dos outros nutrientes devem ser ajustadas proporcionalmente se a dieta tiver outra densidade energética.",
+    "Tabelas parciais: para nutrientes não listados a fonte remete para as exigências de frangos de carne (broilers) — não transcritas aqui por o Merck só reproduzir os aminoácidos dos broilers.",
+    "Pato: Mn, Zn e Se para crescimento e reprodução aparecem como '?' na fonte (não determinados) e foram omitidos; arginina de reprodução '—'.",
+    "Gansos selvagens e cisnes são herbívoros pastadores; o guild 'omnivore' segue a convenção para o modelo de anatídeos domésticos — rever para espécies estritamente herbívoras.",
+    "Não há valor NRC de manutenção para anatídeos não reprodutores; a fase de crescimento tardio é por vezes usada como aproximação."
+  ]
+}

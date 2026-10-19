@@ -1,0 +1,618 @@
+{
+  "id": "nrc-2011-fish",
+  "title": "Nutrient Requirements of Fish and Shrimp — Nutrient Requirements Tables (freshwater and marine fish)",
+  "citation": "National Research Council (2011). Nutrient Requirements of Fish and Shrimp. Washington, DC: The National Academies Press. doi:10.17226/13039. Chapter 18, Table 18-1 'Nutrient Requirements of Freshwater Fish (dry-matter basis)' (p. 327–328) and Table 18-2 'Nutrient Requirements of Marine Fish (dry-matter basis)' (p. 329–330). PDF consultado em https://ceebluenterprises.com/wp-content/uploads/2022/08/Nutrient-Requirements-of-Fish-and-Shrimp.pdf",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Salmo salar",
+      "commonName": {
+        "pt": "Salmão-do-atlântico",
+        "en": "Atlantic salmon"
+      }
+    },
+    {
+      "scientificName": "Oncorhynchus mykiss",
+      "commonName": {
+        "pt": "Truta-arco-íris",
+        "en": "Rainbow trout"
+      }
+    },
+    {
+      "scientificName": "Oncorhynchus spp.",
+      "commonName": {
+        "pt": "Salmões-do-pacífico",
+        "en": "Pacific salmon"
+      }
+    },
+    {
+      "scientificName": "Cyprinus carpio",
+      "commonName": {
+        "pt": "Carpa-comum",
+        "en": "Common carp"
+      }
+    },
+    {
+      "scientificName": "Oreochromis spp.",
+      "commonName": {
+        "pt": "Tilápia",
+        "en": "Tilapia"
+      }
+    },
+    {
+      "scientificName": "Dicentrarchus labrax",
+      "commonName": {
+        "pt": "Robalo-legítimo",
+        "en": "European sea bass"
+      }
+    }
+  ],
+  "guild": "carnivore",
+  "modelSpecies": "Peixes de aquacultura (juvenis, dietas purificadas)",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Salmão-do-atlântico (Salmo salar) — juvenis",
+      "basis": "DM",
+      "values": {
+        "arginine": {
+          "min": 1.8
+        },
+        "histidine": {
+          "min": 0.8,
+          "note": "Salmões jovens em crescimento rápido após transferência para água salgada parecem precisar de até 1,4 % de histidina para prevenir cataratas (nota d)."
+        },
+        "isoleucine": {
+          "min": 1.1
+        },
+        "leucine": {
+          "min": 1.5
+        },
+        "lysine": {
+          "min": 2.4
+        },
+        "methionine": {
+          "min": 0.7
+        },
+        "methionine_cystine": {
+          "min": 1.1
+        },
+        "phenylalanine": {
+          "min": 0.9
+        },
+        "threonine": {
+          "min": 1.1
+        },
+        "tryptophan": {
+          "min": 0.3
+        },
+        "valine": {
+          "min": 1.2
+        },
+        "linolenic_acid": {
+          "min": 1.0,
+          "note": "18:3n-3"
+        },
+        "magnesium": {
+          "min": 0.04
+        },
+        "phosphorus": {
+          "min": 0.8
+        },
+        "copper": {
+          "min": 5
+        },
+        "iron": {
+          "min": 30,
+          "note": "fonte indica intervalo 30–60 mg/kg"
+        },
+        "manganese": {
+          "min": 10
+        },
+        "zinc": {
+          "min": 37
+        },
+        "vitamin_e": {
+          "min": 60
+        },
+        "pyridoxine": {
+          "min": 5
+        },
+        "vitamin_c": {
+          "min": 20,
+          "note": "Como L-ascorbil-2-monofosfato/polifosfato."
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Carpa-comum (Cyprinus carpio) — juvenis",
+      "basis": "DM",
+      "values": {
+        "arginine": {
+          "min": 1.7
+        },
+        "histidine": {
+          "min": 0.5
+        },
+        "isoleucine": {
+          "min": 1.0
+        },
+        "leucine": {
+          "min": 1.4
+        },
+        "lysine": {
+          "min": 2.2
+        },
+        "methionine": {
+          "min": 0.7
+        },
+        "methionine_cystine": {
+          "min": 1.0
+        },
+        "phenylalanine": {
+          "min": 1.3
+        },
+        "threonine": {
+          "min": 1.5
+        },
+        "tryptophan": {
+          "min": 0.3
+        },
+        "valine": {
+          "min": 1.4
+        },
+        "linolenic_acid": {
+          "min": 0.5,
+          "note": "18:3n-3; fonte indica intervalo 0,5–1,0 %"
+        },
+        "linoleic_acid": {
+          "min": 1.0,
+          "note": "18:2n-6"
+        },
+        "calcium": {
+          "min": 0.34
+        },
+        "magnesium": {
+          "min": 0.05
+        },
+        "phosphorus": {
+          "min": 0.7
+        },
+        "copper": {
+          "min": 3
+        },
+        "iron": {
+          "min": 150
+        },
+        "manganese": {
+          "min": 12
+        },
+        "zinc": {
+          "min": 15
+        },
+        "vitamin_a": {
+          "min": 4.0,
+          "note": "fonte: 1,2 mg retinol/kg MS; 10 000 UI = 3000 µg → 4 000 UI/kg → 4,0 UI/g"
+        },
+        "vitamin_e": {
+          "min": 100
+        },
+        "thiamin": {
+          "min": 0.5
+        },
+        "riboflavin": {
+          "min": 7
+        },
+        "pyridoxine": {
+          "min": 6
+        },
+        "pantothenic_acid": {
+          "min": 30
+        },
+        "niacin": {
+          "min": 28
+        },
+        "biotin": {
+          "min": 1
+        },
+        "choline": {
+          "min": 1500,
+          "note": "Dieta sem fosfolípidos."
+        },
+        "vitamin_c": {
+          "min": 45,
+          "note": "Como L-ascorbil-2-monofosfato/polifosfato."
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Tilápia (Oreochromis spp.) — juvenis",
+      "basis": "DM",
+      "values": {
+        "arginine": {
+          "min": 1.2
+        },
+        "histidine": {
+          "min": 1.0
+        },
+        "isoleucine": {
+          "min": 1.0
+        },
+        "leucine": {
+          "min": 1.9
+        },
+        "lysine": {
+          "min": 1.6
+        },
+        "methionine": {
+          "min": 0.7
+        },
+        "methionine_cystine": {
+          "min": 1.0
+        },
+        "phenylalanine": {
+          "min": 1.1
+        },
+        "threonine": {
+          "min": 1.1
+        },
+        "tryptophan": {
+          "min": 0.3
+        },
+        "valine": {
+          "min": 1.5
+        },
+        "linoleic_acid": {
+          "min": 0.5,
+          "note": "18:2n-6; fonte indica intervalo 0,5–1,0 %"
+        },
+        "calcium": {
+          "min": 0.7,
+          "note": "Exigido na ausência de cálcio na água (fonte: 'R/0,7')."
+        },
+        "magnesium": {
+          "min": 0.06
+        },
+        "phosphorus": {
+          "min": 0.4
+        },
+        "potassium": {
+          "min": 0.2,
+          "note": "fonte indica intervalo 0,20–0,30 %"
+        },
+        "sodium": {
+          "min": 0.15
+        },
+        "copper": {
+          "min": 5
+        },
+        "iron": {
+          "min": 85
+        },
+        "manganese": {
+          "min": 7
+        },
+        "zinc": {
+          "min": 20
+        },
+        "vitamin_a": {
+          "min": 6.0,
+          "note": "fonte: 1,8 mg retinol/kg MS; 10 000 UI = 3000 µg → 6 000 UI/kg → 6,0 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.36,
+          "note": "fonte: 9 µg colecalciferol/kg MS; 1 UI = 0,025 µg → 360 UI/kg"
+        },
+        "vitamin_e": {
+          "min": 60
+        },
+        "riboflavin": {
+          "min": 6
+        },
+        "pyridoxine": {
+          "min": 15
+        },
+        "pantothenic_acid": {
+          "min": 10
+        },
+        "niacin": {
+          "min": 26
+        },
+        "biotin": {
+          "min": 0.06
+        },
+        "folic_acid": {
+          "min": 1
+        },
+        "choline": {
+          "min": 1000,
+          "note": "Dieta sem fosfolípidos."
+        },
+        "vitamin_c": {
+          "min": 20,
+          "note": "Como L-ascorbil-2-monofosfato/polifosfato."
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Truta-arco-íris (Oncorhynchus mykiss) — juvenis",
+      "basis": "DM",
+      "values": {
+        "arginine": {
+          "min": 1.5
+        },
+        "histidine": {
+          "min": 0.8
+        },
+        "isoleucine": {
+          "min": 1.1
+        },
+        "leucine": {
+          "min": 1.5
+        },
+        "lysine": {
+          "min": 2.4
+        },
+        "methionine": {
+          "min": 0.7
+        },
+        "methionine_cystine": {
+          "min": 1.1
+        },
+        "phenylalanine": {
+          "min": 0.9
+        },
+        "threonine": {
+          "min": 1.1
+        },
+        "tryptophan": {
+          "min": 0.3
+        },
+        "valine": {
+          "min": 1.2
+        },
+        "linolenic_acid": {
+          "min": 0.7,
+          "note": "18:3n-3; fonte indica intervalo 0,7–1,0 %"
+        },
+        "linoleic_acid": {
+          "min": 1.0,
+          "note": "18:2n-6"
+        },
+        "magnesium": {
+          "min": 0.05
+        },
+        "phosphorus": {
+          "min": 0.7
+        },
+        "copper": {
+          "min": 3
+        },
+        "iodine": {
+          "min": 1.1
+        },
+        "manganese": {
+          "min": 12
+        },
+        "selenium": {
+          "min": 0.15
+        },
+        "zinc": {
+          "min": 15
+        },
+        "vitamin_a": {
+          "min": 2.5,
+          "note": "fonte: 0,75 mg retinol/kg MS; 10 000 UI = 3000 µg → 2 500 UI/kg → 2,5 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 1.6,
+          "note": "fonte: 40 µg colecalciferol/kg MS; 1 UI = 0,025 µg → 1600 UI/kg"
+        },
+        "vitamin_e": {
+          "min": 50
+        },
+        "thiamin": {
+          "min": 1
+        },
+        "riboflavin": {
+          "min": 4
+        },
+        "pyridoxine": {
+          "min": 3
+        },
+        "pantothenic_acid": {
+          "min": 20
+        },
+        "niacin": {
+          "min": 10
+        },
+        "biotin": {
+          "min": 0.15
+        },
+        "folic_acid": {
+          "min": 1
+        },
+        "choline": {
+          "min": 800,
+          "note": "Dieta sem fosfolípidos."
+        },
+        "vitamin_c": {
+          "min": 20,
+          "note": "Como L-ascorbil-2-monofosfato/polifosfato."
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Salmões-do-pacífico (Oncorhynchus spp.) — juvenis",
+      "basis": "DM",
+      "values": {
+        "arginine": {
+          "min": 2.2
+        },
+        "histidine": {
+          "min": 0.7
+        },
+        "isoleucine": {
+          "min": 1.0
+        },
+        "leucine": {
+          "min": 1.6
+        },
+        "lysine": {
+          "min": 2.2
+        },
+        "methionine": {
+          "min": 0.7
+        },
+        "methionine_cystine": {
+          "min": 1.1
+        },
+        "phenylalanine": {
+          "min": 0.9
+        },
+        "threonine": {
+          "min": 1.1
+        },
+        "tryptophan": {
+          "min": 0.3
+        },
+        "valine": {
+          "min": 1.2
+        },
+        "linolenic_acid": {
+          "min": 1.0,
+          "note": "18:3n-3"
+        },
+        "linoleic_acid": {
+          "min": 1.0,
+          "note": "18:2n-6"
+        },
+        "phosphorus": {
+          "min": 0.6
+        },
+        "potassium": {
+          "min": 0.8
+        },
+        "iodine": {
+          "min": 1
+        },
+        "vitamin_e": {
+          "min": 50
+        },
+        "thiamin": {
+          "min": 10
+        },
+        "riboflavin": {
+          "min": 7
+        },
+        "pyridoxine": {
+          "min": 6
+        },
+        "pantothenic_acid": {
+          "min": 20
+        },
+        "niacin": {
+          "min": 150
+        },
+        "biotin": {
+          "min": 1
+        },
+        "cobalamin": {
+          "min": 0.02
+        },
+        "folic_acid": {
+          "min": 2
+        },
+        "choline": {
+          "min": 800,
+          "note": "Dieta sem fosfolípidos."
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Robalo-legítimo (Dicentrarchus labrax) — juvenis (Tabela 18-2)",
+      "basis": "DM",
+      "values": {
+        "arginine": {
+          "min": 1.8
+        },
+        "lysine": {
+          "min": 2.2
+        },
+        "methionine_cystine": {
+          "min": 1.1
+        },
+        "threonine": {
+          "min": 1.2
+        },
+        "tryptophan": {
+          "min": 0.3
+        },
+        "taurine": {
+          "min": 0.2,
+          "note": "Tabela 18-2, nota d: a taurina é provavelmente necessária a ~0,5 % em dietas com pouca proteína marinha/animal."
+        },
+        "phosphorus": {
+          "min": 0.65
+        },
+        "vitamin_a": {
+          "min": 103.33,
+          "note": "fonte: 31 mg retinol/kg MS; 10 000 UI = 3000 µg → 103 333 UI/kg → 103,33 UI/g"
+        },
+        "vitamin_c": {
+          "min": 20,
+          "note": "Como L-ascorbil-2-monofosfato/polifosfato."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Valores determinados com ingredientes purificados de digestibilidade ~100 % em juvenis/larvas, sem margem de segurança: com ingredientes práticos, considerar a biodisponibilidade e acrescentar margem para perdas de processamento e armazenamento."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Se a densidade de energia/proteína digestível da dieta diferir dos valores típicos (ED 3200–4400 kcal/kg; proteína digestível 29–40 %), ajustar proporcionalmente as restantes concentrações."
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Fornecer ácidos gordos n-3 de cadeia longa (20:5n-3 e/ou 22:6n-3): salmão-do-atlântico 0,5–1,0 %, truta 0,4–0,5 %, salmões-do-pacífico 1,0 %, robalo 1,0 % da MS; exigidos (sem quantidade definida) em carpa e tilápia."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Peixes marinhos: a taurina é provavelmente necessária (~0,5 % MS) em dietas com pouca proteína de origem marinha ou animal."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Espécies sem exigências de aminoácidos determinadas são habitualmente formuladas segundo as exigências de salmão ou truta."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Valores de 'requirement' mínimos para desempenho máximo, obtidos sobretudo com juvenis e larvas em condições ótimas; aplicados aqui como fase 'crescimento'. Não há valores para manutenção de adultos.",
+    "Guilda única 'carnivore' para o ficheiro; a carpa-comum e a tilápia são omnívoras — usar com essa ressalva.",
+    "Densidade de energia digestível típica e proteína digestível das dietas comerciais não foram registadas como alvos (o catálogo não tem chave para proteína digestível e energy_density_dm não distingue ED de EM). Valores típicos da fonte (kcal ED/kg dieta; % proteína digestível): salmão-do-atlântico 4400/36; carpa 3200/32; tilápia 3400/29; truta 4200/38; salmões-do-pacífico 4200/40; robalo 4000/40.",
+    "Não registados por falta de chave no catálogo: fenilalanina + tirosina, ácidos gordos n-3 LC-PUFA (EPA e/ou DHA combinados), fosfolípidos, cloro, mio-inositol.",
+    "Vitamina K do salmão-do-atlântico ('<10 mg/kg') omitida por ser formulação ambígua; valores 'R' (exigido, quantidade não determinada), 'NR' e 'NT' omitidos.",
+    "Cálcio da tilápia (0,7 %) só se aplica na ausência de cálcio na água; o da truta/salmão é 'NR' em água de dureza média.",
+    "Vitamina A da tabela em mg retinol/kg, convertida para UI/g (10 000 UI = 3000 µg); vitamina D em µg/kg, convertida para UI/g (1 UI = 0,025 µg) e registada como vitamina D3.",
+    "A vitamina A do robalo (31 mg/kg = ~103 UI/g) é muito superior à das outras espécies; confirmar no original (texto extraído por OCR do PDF).",
+    "Intervalos da fonte (ex.: 0,5–1,0 %) foram registados com o limite inferior como mínimo; o limite superior não é um máximo tolerável.",
+    "Valores de vitamina C referem-se a formas estáveis (L-ascorbil-2-mono/polifosfato)."
+  ]
+}

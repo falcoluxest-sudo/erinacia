@@ -1,0 +1,541 @@
+{
+  "id": "nrc-1994-chicken-leghorn",
+  "title": "Nutrient Requirements of Poultry, 9th rev. ed. (1994) — Leghorn-type chickens (via Merck Veterinary Manual)",
+  "citation": "National Research Council (1994). Nutrient Requirements of Poultry: Ninth Revised Edition. National Academy Press, Washington, DC. https://doi.org/10.17226/2114 — tal como reproduzido (com autorização) em Korver, D. (2023, atualizado set. 2024) \"Nutritional Requirements of Poultry\", Merck Veterinary Manual, tabelas \"Nutrient Requirements of Growing Pullets\", \"Nutrient Requirements of Laying Hens at Different Feed Intakes\" e \"Linoleic Acid, Mineral, and Vitamin Requirements of Leghorn-type Chickens\". https://www.merckvetmanual.com/poultry/nutrition-and-management-poultry/nutritional-requirements-of-poultry",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Gallus gallus domesticus",
+      "commonName": {
+        "pt": "Galinha doméstica (tipo Leghorn)",
+        "en": "Domestic chicken (Leghorn-type)"
+      }
+    },
+    {
+      "scientificName": "Galliformes",
+      "commonName": {
+        "pt": "Galiformes (faisões, perdizes, pavões, galos-silvestres)",
+        "en": "Galliformes (gamebirds)"
+      }
+    },
+    {
+      "scientificName": "Aves (granívoras/omnívoras de pequeno porte)",
+      "commonName": {
+        "pt": "Aves granívoras e omnívoras em geral (modelo)",
+        "en": "Granivorous and omnivorous birds (model)"
+      }
+    }
+  ],
+  "guild": "omnivore",
+  "modelSpecies": "Galinha doméstica tipo Leghorn (ovos brancos), NRC 1994",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento 0–6 semanas (frangas de ovos brancos)",
+      "basis": "DM",
+      "values": {
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "potassium": {
+          "min": 0.278,
+          "note": "fonte: 0,25 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "magnesium": {
+          "min": 0.0667,
+          "note": "fonte: 600 mg/kg dieta (~90 % MS) → 0,06 % → ÷0,9"
+        },
+        "manganese": {
+          "min": 66.7,
+          "note": "fonte: 60 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "zinc": {
+          "min": 44.4,
+          "note": "fonte: 40 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "iron": {
+          "min": 88.9,
+          "note": "fonte: 80 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "copper": {
+          "min": 5.56,
+          "note": "fonte: 5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.389,
+          "note": "fonte: 0,35 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "selenium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "vitamin_a": {
+          "min": 1.67,
+          "note": "fonte: 1 500 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.222,
+          "note": "fonte: 200 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_e": {
+          "min": 11.1,
+          "note": "fonte: 10 UI/kg dieta (~90 % MS); 1 UI = 1 mg acetato de dl-α-tocoferol (Merck) → ÷0,9"
+        },
+        "vitamin_k": {
+          "min": 0.556,
+          "note": "fonte: 0,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 4,
+          "note": "fonte: 3,6 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 30,
+          "note": "fonte: 27 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "cobalamin": {
+          "min": 0.01,
+          "note": "fonte: 0,009 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1440,
+          "note": "fonte: 1 300 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "biotin": {
+          "min": 0.167,
+          "note": "fonte: 0,15 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "folic_acid": {
+          "min": 0.611,
+          "note": "fonte: 0,55 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "thiamin": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pyridoxine": {
+          "min": 3.33,
+          "note": "fonte: 3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "crude_protein": {
+          "min": 20,
+          "note": "fonte: 18 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "arginine": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.944,
+          "note": "fonte: 0,85 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.689,
+          "note": "fonte: 0,62 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "threonine": {
+          "min": 0.756,
+          "note": "fonte: 0,68 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "tryptophan": {
+          "min": 0.189,
+          "note": "fonte: 0,17 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 1,
+          "note": "fonte: 0,9 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.444,
+          "note": "fonte: 0,4 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento 6–12 semanas (aminoácidos/Ca/P) e 6–18 semanas (minerais/vitaminas)",
+      "basis": "DM",
+      "values": {
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "potassium": {
+          "min": 0.278,
+          "note": "fonte: 0,25 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "magnesium": {
+          "min": 0.0556,
+          "note": "fonte: 500 mg/kg dieta (~90 % MS) → 0,05 % → ÷0,9"
+        },
+        "manganese": {
+          "min": 33.3,
+          "note": "fonte: 30 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "zinc": {
+          "min": 38.9,
+          "note": "fonte: 35 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "iron": {
+          "min": 66.7,
+          "note": "fonte: 60 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "copper": {
+          "min": 4.44,
+          "note": "fonte: 4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.389,
+          "note": "fonte: 0,35 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "selenium": {
+          "min": 0.111,
+          "note": "fonte: 0,1 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "vitamin_a": {
+          "min": 1.67,
+          "note": "fonte: 1 500 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.222,
+          "note": "fonte: 200 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_e": {
+          "min": 5.56,
+          "note": "fonte: 5 UI/kg dieta (~90 % MS); 1 UI = 1 mg acetato de dl-α-tocoferol (Merck) → ÷0,9"
+        },
+        "vitamin_k": {
+          "min": 0.556,
+          "note": "fonte: 0,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 2,
+          "note": "fonte: 1,8 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "cobalamin": {
+          "min": 0.00333,
+          "note": "fonte: 0,003 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1000,
+          "note": "fonte: 900 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "biotin": {
+          "min": 0.111,
+          "note": "fonte: 0,1 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "folic_acid": {
+          "min": 0.278,
+          "note": "fonte: 0,25 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "thiamin": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pyridoxine": {
+          "min": 3.33,
+          "note": "fonte: 3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "crude_protein": {
+          "min": 17.8,
+          "note": "fonte: 16 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "arginine": {
+          "min": 0.922,
+          "note": "fonte: 0,83 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine": {
+          "min": 0.278,
+          "note": "fonte: 0,25 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.578,
+          "note": "fonte: 0,52 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "threonine": {
+          "min": 0.633,
+          "note": "fonte: 0,57 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "tryptophan": {
+          "min": 0.156,
+          "note": "fonte: 0,14 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 0.889,
+          "note": "fonte: 0,8 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "phosphorus": {
+          "min": 0.389,
+          "note": "fonte: 0,35 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Poedeiras de ovos brancos (100 g ração/ave/dia) — postura",
+      "basis": "DM",
+      "values": {
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "potassium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "magnesium": {
+          "min": 0.0556,
+          "note": "fonte: 500 mg/kg dieta (~90 % MS) → 0,05 % → ÷0,9"
+        },
+        "manganese": {
+          "min": 22.2,
+          "note": "fonte: 20 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "zinc": {
+          "min": 38.9,
+          "note": "fonte: 35 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "iron": {
+          "min": 50,
+          "note": "fonte: 45 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.0389,
+          "note": "fonte: 0,035 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "selenium": {
+          "min": 0.0667,
+          "note": "fonte: 0,06 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "vitamin_a": {
+          "min": 3.33,
+          "note": "fonte: 3 000 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.333,
+          "note": "fonte: 300 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_e": {
+          "min": 5.56,
+          "note": "fonte: 5 UI/kg dieta (~90 % MS); 1 UI = 1 mg acetato de dl-α-tocoferol (Merck) → ÷0,9"
+        },
+        "vitamin_k": {
+          "min": 0.556,
+          "note": "fonte: 0,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 2.78,
+          "note": "fonte: 2,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 2.22,
+          "note": "fonte: 2 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "cobalamin": {
+          "min": 0.00444,
+          "note": "fonte: 0,004 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1170,
+          "note": "fonte: 1 050 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "biotin": {
+          "min": 0.111,
+          "note": "fonte: 0,1 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "folic_acid": {
+          "min": 0.278,
+          "note": "fonte: 0,25 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "thiamin": {
+          "min": 0.778,
+          "note": "fonte: 0,7 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pyridoxine": {
+          "min": 2.78,
+          "note": "fonte: 2,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "crude_protein": {
+          "min": 16.7,
+          "note": "fonte: 15 % (dieta, ~90 % MS) → ÷0,9; para 100 g de ração/dia; NRC dá 12,5–18,8 % consoante a ingestão"
+        },
+        "arginine": {
+          "min": 0.778,
+          "note": "fonte: 0,7 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "lysine": {
+          "min": 0.767,
+          "note": "fonte: 0,69 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "methionine_cystine": {
+          "min": 0.644,
+          "note": "fonte: 0,58 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "threonine": {
+          "min": 0.522,
+          "note": "fonte: 0,47 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "tryptophan": {
+          "min": 0.178,
+          "note": "fonte: 0,16 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "calcium": {
+          "min": 3.67,
+          "note": "fonte: 3,3 % (dieta, ~90 % MS) → ÷0,9; nível de postura; demasiado alto para aves fora da postura"
+        },
+        "phosphorus": {
+          "min": 0.278,
+          "note": "fonte: 0,25 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Reprodutoras (minerais, vitaminas, ác. linoleico)",
+      "basis": "DM",
+      "values": {
+        "linoleic_acid": {
+          "min": 1.11,
+          "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "potassium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "sodium": {
+          "min": 0.167,
+          "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
+        },
+        "magnesium": {
+          "min": 0.0556,
+          "note": "fonte: 500 mg/kg dieta (~90 % MS) → 0,05 % → ÷0,9"
+        },
+        "manganese": {
+          "min": 22.2,
+          "note": "fonte: 20 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "zinc": {
+          "min": 50,
+          "note": "fonte: 45 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "iron": {
+          "min": 66.7,
+          "note": "fonte: 60 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "iodine": {
+          "min": 0.0111,
+          "note": "fonte: 0,01 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "selenium": {
+          "min": 0.0667,
+          "note": "fonte: 0,06 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "vitamin_a": {
+          "min": 3.33,
+          "note": "fonte: 3 000 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.333,
+          "note": "fonte: 300 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
+        },
+        "vitamin_e": {
+          "min": 11.1,
+          "note": "fonte: 10 UI/kg dieta (~90 % MS); 1 UI = 1 mg acetato de dl-α-tocoferol (Merck) → ÷0,9"
+        },
+        "vitamin_k": {
+          "min": 1.11,
+          "note": "fonte: 1 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "riboflavin": {
+          "min": 4,
+          "note": "fonte: 3,6 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pantothenic_acid": {
+          "min": 7.78,
+          "note": "fonte: 7 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "niacin": {
+          "min": 11.1,
+          "note": "fonte: 10 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "cobalamin": {
+          "min": 0.0889,
+          "note": "fonte: 0,08 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "choline": {
+          "min": 1170,
+          "note": "fonte: 1 050 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "biotin": {
+          "min": 0.111,
+          "note": "fonte: 0,1 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "folic_acid": {
+          "min": 0.389,
+          "note": "fonte: 0,35 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "thiamin": {
+          "min": 0.778,
+          "note": "fonte: 0,7 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "pyridoxine": {
+          "min": 5,
+          "note": "fonte: 4,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        }
+      }
+    }
+  ],
+  "dataQuality": [
+    "Valores do NRC (1994) obtidos através da reprodução autorizada no Merck Veterinary Manual (Korver, 2023, rev. 2024), não do livro original; o NRC original não pôde ser obtido (página 'read online' do NAP indisponível). Algumas tabelas do Merck são versões resumidas das tabelas NRC.",
+    "Tabelas NRC expressas por kg de dieta tal como fornecida (assumido ~90 % MS, convenção NRC); todos os valores foram divididos por 0,9 para base MS.",
+    "Exigências NRC são mínimos para aves domésticas de produção, sem margem de segurança e assumindo nutrientes altamente biodisponíveis; servem apenas de modelo para aves de zoo.",
+    "O fósforo NRC é fósforo DISPONÍVEL (não fítico); a chave 'phosphorus' do catálogo refere-se a fósforo total — o mínimo de P total real será superior.",
+    "Cloro (Cl) e glicina+serina, fenilalanina+tirosina e prolina não têm chave no catálogo e foram omitidos.",
+    "A energia (energy_density_dm) é a concentração típica de EM usada como base da tabela, não uma exigência; as concentrações dos outros nutrientes devem ser ajustadas proporcionalmente se a dieta tiver outra densidade energética.",
+    "A tabela de minerais/vitaminas Leghorn tem colunas 0–6 sem, 6–18 sem, 18 sem–1.º ovo, poedeiras e reprodutoras; a tabela de aminoácidos tem 0–6, 6–12, 12–18 sem e 18 sem–1.º ovo. O conjunto 'crescimento 6–12 sem' combina aminoácidos 6–12 sem com minerais/vitaminas 6–18 sem.",
+    "O conjunto 'poedeiras' foi classificado como 'maintenance' por falta de etapa 'postura'; inclui Ca de postura (3,3 % MN) e não deve ser usado para aves adultas fora da postura.",
+    "Cobre para poedeiras/reprodutoras aparece como '?' na fonte (não determinado) e foi omitido. Vitamina B12 de reprodutoras: 0,08 mg/kg conforme a fonte (valor muito superior às outras fases; confirmar no NRC original).",
+    "Vitamina D expressa em UI de D3 (ICU); as aves usam mal a vitamina D2."
+  ]
+}

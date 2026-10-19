@@ -1,0 +1,72 @@
+{
+  "id": "nrc-2003-primates",
+  "title": "Nutrient Requirements of Nonhuman Primates, 2nd Revised Edition — Chapter 11, Nutrient Requirements",
+  "citation": "National Research Council (2003). Nutrient Requirements of Nonhuman Primates: Second Revised Edition. Washington, DC: The National Academies Press. doi:10.17226/9826. Capítulo 11, Tabela 11-2 (p. 193; concentrações adequadas, base MS, dietas com ingredientes convencionais, primatas pós-desmame) e Tabela 11-1 (p. 192; requisitos mínimos por espécie-modelo, dietas purificadas). Lido em https://www.nationalacademies.org/read/9826/chapter/13",
+  "language": "en",
+  "species": [
+    { "scientificName": "Primates (ordem)", "commonName": { "pt": "Primatas não humanos (geral)", "en": "Nonhuman primates (general)" } },
+    { "scientificName": "Macaca spp.", "commonName": { "pt": "Macacos (macacos-rhesus, macacos-japoneses…)", "en": "Macaques" } },
+    { "scientificName": "Papio spp.", "commonName": { "pt": "Babuínos", "en": "Baboons" } },
+    { "scientificName": "Saimiri spp.", "commonName": { "pt": "Macacos-esquilo", "en": "Squirrel monkeys" } },
+    { "scientificName": "Cebus / Sapajus spp.", "commonName": { "pt": "Macacos-prego / capuchinhos", "en": "Capuchin monkeys" } },
+    { "scientificName": "Alouatta spp.", "commonName": { "pt": "Bugios (macacos-uivadores)", "en": "Howler monkeys" } },
+    { "scientificName": "Callitrichidae", "commonName": { "pt": "Saguis e micos (calitriquídeos)", "en": "Marmosets and tamarins" } },
+    { "scientificName": "Colobinae", "commonName": { "pt": "Colobos e langures", "en": "Colobus monkeys and langurs" } },
+    { "scientificName": "Lemuridae", "commonName": { "pt": "Lémures", "en": "Lemurs" } },
+    { "scientificName": "Hominidae (Pan, Gorilla, Pongo)", "commonName": { "pt": "Grandes símios", "en": "Great apes" } }
+  ],
+  "guild": "omnivore",
+  "modelSpecies": "Primatas-modelo de laboratório (macaco-rhesus, babuíno, macaco-esquilo, capuchinho, sagui) e dietas comerciais de primatas",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Primatas pós-desmame, dietas com ingredientes convencionais (NRC 2003, Tabela 11-2)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 15, "max": 22, "note": "Fonte: 15–22 %. Lactação e crescimento (sobretudo primatas pequenos, p. ex. calitriquídeos) são mais satisfatórios no extremo superior. Depende muito da qualidade da proteína." },
+        "linolenic_acid": { "min": 0.5, "note": "Fonte: 'ácidos gordos n-3 essenciais' 0,5 %, satisfeitos por esta concentração de ácido α-linolénico (Tabela 11-1, nota f); com EPA/DHA a necessidade pode ser menor." },
+        "linoleic_acid": { "min": 2, "note": "Fonte: 'ácidos gordos n-6 essenciais' 2 %, satisfeitos por esta concentração de ácido linoleico (Tabela 11-1, nota g)." },
+        "ndf": { "min": 10, "max": 30, "note": "Fonte: 10–30 %. Não é nutriente; usar a concentração da Tabela 11-1 para o grupo: ≥10 % macacos e calitriquídeos; ≥20 % lémures e chimpanzé; ≥30 % bugios, colobos e langures." },
+        "adf": { "min": 5, "max": 15, "note": "Fonte: 5–15 %. Tabela 11-1: ≥5 % macacos e calitriquídeos; ≥10 % lémures e chimpanzé; ≥15 % bugios, colobos e langures." },
+        "calcium": { "min": 0.8 },
+        "phosphorus": { "min": 0.6, "note": "P total. A fonte indica também P não-fítico ≥0,4 % (sem chave no catálogo); o P fítico da soja e cereais é pouco disponível." },
+        "magnesium": { "min": 0.08 },
+        "potassium": { "min": 0.4 },
+        "sodium": { "min": 0.2 },
+        "iron": { "min": 100, "note": "A fonte sugere limitar o Fe a valores próximos ou ligeiramente abaixo de 100 mg/kg em espécies suscetíveis a doença de armazenamento de ferro (hemossiderose), sobretudo com muita fruta." },
+        "copper": { "min": 20 },
+        "manganese": { "min": 20 },
+        "zinc": { "min": 100 },
+        "iodine": { "min": 0.35 },
+        "selenium": { "min": 0.3 },
+        "vitamin_a": { "min": 8, "note": "fonte: 8000 UI/kg MS → 8 UI/g" },
+        "vitamin_d3": { "min": 2.5, "note": "fonte: 2500 UI/kg MS → 2,5 UI/g. Relatos anedóticos de necessidades maiores em calitriquídeos." },
+        "vitamin_e": { "min": 100, "note": "Como all-rac-α-tocoferil acetato." },
+        "vitamin_k": { "min": 0.5, "note": "Como filoquinona." },
+        "thiamin": { "min": 3 },
+        "riboflavin": { "min": 4 },
+        "pantothenic_acid": { "min": 12 },
+        "niacin": { "min": 25, "note": "Niacina disponível; a niacina do milho, sorgo, trigo e cevada é pouco disponível." },
+        "pyridoxine": { "min": 4 },
+        "biotin": { "min": 0.2 },
+        "folic_acid": { "min": 4 },
+        "cobalamin": { "min": 0.03 },
+        "vitamin_c": { "min": 200, "note": "Ascorbil-2-polifosfato é uma forma estável na extrusão e armazenamento." },
+        "choline": { "min": 750 }
+      }
+    }
+  ],
+  "rules": [
+    { "kind": "alert", "text": { "pt": "Fibra por grupo (NRC 2003, Tabela 11-1): FDN ≥10 % / FDA ≥5 % (MS) para macacos e calitriquídeos; ≥20 % / ≥10 % para lémures e chimpanzé; ≥30 % / ≥15 % para bugios, colobos e langures (folívoros)." } },
+    { "kind": "alert", "text": { "pt": "Calitriquídeos (saguis, micos): Tabela 11-1 indica vitamina D3 ≥2400 UI/kg MS (menor concentração testada), vitamina E >95–130 mg/kg MS e iodo 0,65 mg/kg MS; proteína 7 % (manutenção) e 12–18 % (crescimento) em dietas purificadas. Preferir o extremo superior da proteína (até 22 %) na lactação e crescimento." } },
+    { "kind": "limit", "text": { "pt": "Espécies suscetíveis a doença de armazenamento de ferro: manter o Fe perto ou abaixo de 100 mg/kg MS e limitar fruta (citrato e ascorbato aumentam a absorção de Fe)." } },
+    { "kind": "alert", "text": { "pt": "A taurina parece ser essencial na dieta durante o primeiro ano pós-natal em algumas espécies de primatas." } },
+    { "kind": "limit", "text": { "pt": "Alimentos de enriquecimento (fruta, legumes, browse) não devem diluir a densidade energética nem desequilibrar uma dieta formulada como completa." } }
+  ],
+  "dataQuality": [
+    "A Tabela 11-2 apresenta concentrações 'estimadas como adequadas' para primatas pós-desmame em geral; nunca foram testadas em conjunto e podem não servir para todas as espécies ou fases. Transcritas como mínimos (o NRC chama-lhes 'target levels at the time the diet is fed').",
+    "A Tabela 11-1 (dietas purificadas, EM aparente 4 kcal/g MS) não foi transcrita como conjunto de valores para evitar misturar espécies-modelo; os pontos relevantes para calitriquídeos e folívoros estão nas regras.",
+    "Sem chave no catálogo (omitidos): cloro (0,2 %), crómio trivalente (0,2 mg/kg), fósforo não-fítico (0,4 %).",
+    "Ácidos gordos n-3/n-6 'essenciais' mapeados para ácido α-linolénico e ácido linoleico conforme as notas f e g da Tabela 11-1."
+  ]
+}

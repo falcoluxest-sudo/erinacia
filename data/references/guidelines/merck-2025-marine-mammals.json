@@ -1,0 +1,100 @@
+{
+  "id": "merck-2025-marine-mammals",
+  "title": "Nutrition in Marine Mammals (Merck Veterinary Manual)",
+  "citation": "Merck Veterinary Manual. Nutrition in Marine Mammals. Management and Nutrition › Nutrition: Exotic and Zoo Animals. Última atualização: setembro de 2025 (Colorado State University). https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-marine-mammals (texto integral da página, sem tabelas).",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Pinnipedia",
+      "commonName": {
+        "pt": "Pinípedes (focas, leões-marinhos, morsa)",
+        "en": "Pinnipeds (seals, sea lions, walrus)"
+      }
+    },
+    {
+      "scientificName": "Cetacea (Odontoceti)",
+      "commonName": {
+        "pt": "Cetáceos odontocetes (golfinhos, orca)",
+        "en": "Toothed cetaceans (dolphins, killer whale)"
+      }
+    },
+    {
+      "scientificName": "Tursiops truncatus",
+      "commonName": {
+        "pt": "Roaz-corvineiro",
+        "en": "Common bottlenose dolphin"
+      }
+    }
+  ],
+  "guild": "carnivore",
+  "intake": [
+    {
+      "label": "Focas e leões-marinhos adultos — peixe por dia",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "min": 5,
+        "max": 8,
+        "note": "'Adult seals and sea lions consume approximately 5–8% of their body weight in fish/day.' Roazes em atuação comem geralmente 7–10 kg de peixe/dia."
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Tiamina: adicionar 30–35 mg por kg de peixe fornecido, diariamente, a qualquer programa alimentar de mamíferos marinhos (destruição por tiaminases presentes em várias espécies de peixe).",
+        "en": "Thiamine (30–35 mg/kg fish, daily) should be added to any marine mammal feeding program."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "marine_fish"
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Vitamina E: suplementar 100 UI por kg de peixe por dia sempre que se forneça peixe; os peixes gordos (ex.: sarda/cavala) são os mais suscetíveis à destruição da vitamina E e à peroxidação.",
+        "en": "Vitamin E supplementation (100 IU/kg fish per day) is generally recommended whenever fish are fed."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "marine_fish"
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Cetáceos: a suplementação de vitamina A pode ser desejável em algumas dietas, mas não há recomendação quantitativa."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "A dieta regular deve incluir duas ou mais espécies de peixe para ajudar a equilibrar nutrientes; não fornecer espécies ameaçadas na natureza (preferir pescarias certificadas pelo Marine Stewardship Council)."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Armazenar o peixe a −20 °C a −25 °C ou menos; peixe gordo (ex.: sarda) no máximo 3–4 meses; peixe magro (ex.: eperlano) até 9 meses. Descongelar idealmente durante a noite, no frigorífico."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Regra geral, fornecer peixe marinho. Usados com sucesso: arenque do Atlântico e do Pacífico, sardas/cavalas, xaréu, capelim e eperlano anádromo; lulas para muitos pinípedes; amêijoas na dieta da morsa."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Não existe substituto comercial do peixe aceite por cetáceos; para pinípedes, alguns produtos têm sido usados com algum sucesso."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A fonte não apresenta exigências em matéria seca; as doses de tiamina e vitamina E são suplementos por kg de peixe tal-qual (não concentrações totais da dieta) e por isso foram registadas como regras e não como alvos.",
+    "Conversão indicativa (não registada como alvo): com peixe a ~25–30 % MS, 100 UI vit. E/kg de peixe ≈ 330–400 UI/kg MS adicionadas; confirmar a MS do peixe efetivamente fornecido.",
+    "Nome completo do autor não foi capturado na extração da página (só a afiliação, Colorado State University)."
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "nag-crissey-penguin",
+  "title": "Penguins: Nutrition and Dietary Husbandry (Nutrition Advisory Group Handbook)",
+  "citation": "Crissey, S., Slifka, K. & McGill, P. (s.d., c. 2001–2002). Penguins: Nutrition and Dietary Husbandry. Nutrition Advisory Group Handbook, AZA Nutrition Advisory Group; adaptado em parte do capítulo de nutrição do AZA Penguin TAG Husbandry Manual. Tabela 2 \"Proposed minimum energy and nutrient concentrations (DMB) in adult penguin diets\". https://www.zoocentral.dk/uploads/4/9/7/5/49755431/penguin_-_aza__nutrition__-_2002.pdf",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Spheniscidae",
+      "commonName": {
+        "pt": "Pinguins",
+        "en": "Penguins"
+      }
+    },
+    {
+      "scientificName": "Aves piscívoras",
+      "commonName": {
+        "pt": "Aves piscívoras em geral (modelo)",
+        "en": "Piscivorous birds (model)"
+      }
+    }
+  ],
+  "guild": "carnivore",
+  "modelSpecies": "Aves domésticas (NRC 1994) e gato (NRC 1986)",
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Adultos — concentrações mínimas propostas (base MS)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 35
+        },
+        "ether_extract": {
+          "min": 10
+        },
+        "calcium": {
+          "min": 0.8
+        },
+        "phosphorus": {
+          "min": 0.6
+        },
+        "magnesium": {
+          "min": 0.05
+        },
+        "potassium": {
+          "min": 0.5
+        },
+        "sodium": {
+          "min": 0.2
+        },
+        "iron": {
+          "min": 80
+        },
+        "copper": {
+          "min": 5
+        },
+        "manganese": {
+          "min": 5
+        },
+        "zinc": {
+          "min": 50
+        },
+        "selenium": {
+          "min": 0.2
+        },
+        "vitamin_a": {
+          "min": 3.5,
+          "note": "fonte: 3500 UI/kg MS → UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.5,
+          "note": "fonte: \"Vitamin D, IU/kg\" 500 → UI/g; assumido D3 (o texto refere exigências de D3)"
+        },
+        "vitamin_e": {
+          "min": 400,
+          "note": "fonte: 400 UI/kg MS; assumido 1 UI = 1 mg. Excede o mínimo; corresponde ao suplemento de 100 UI/kg de peixe fresco para compensar a peroxidação"
+        },
+        "thiamin": {
+          "min": 100,
+          "note": "Excede o mínimo; ~100–120 mg/kg MS correspondem ao suplemento de 25–30 mg/kg de peixe fresco para compensar as tiaminases"
+        }
+      }
+    }
+  ],
+  "intake": [
+    {
+      "label": "Consumo diário de adultos ativos em cativeiro (kings/imperadores: 2–3 %; Humboldt/saltadores-da-rocha: 10–14 %)",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "min": 2,
+        "max": 14,
+        "note": "2–3 % PV para espécies grandes; 10–14 % PV para espécies pequenas."
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Suplementar 25–30 mg de tiamina e 100 UI de vitamina E por kg de peixe (base húmida), ajustando à quantidade consumida."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "marine_fish"
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Lulas são pobres em Ca (0,1–0,2 % MS) e têm relação Ca:P invertida; peixe inteiro e krill (0,9–6,4 % MS de Ca) dispensam suplemento de Ca."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Oferecer peixe gordo e magro para ajustar gordura e energia; qualidade para consumo humano, fornecedor com HACCP."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Peixe com sinais de degradação ou descongelação na receção não deve ser aceite nem fornecido."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Vitamina E acima de 1000–2000 UI/kg MS associada a problemas de coagulação em pelicanos."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Valores tentativos, derivados de NRC aves (1994), NRC gato (1986) e da composição das presas; não são exigências determinadas em pinguins.",
+    "A fonte dá também energia bruta mínima de 4,5 kcal EB/g MS; não transcrita porque o indicador energy_density_dm do catálogo refere-se a EM.",
+    "Ano do documento não indicado no PDF lido (cópia em zoocentral.dk, nome de ficheiro '2002'); confirmar a versão no nagonline.net.",
+    "Vitamina D indicada como 'Vitamin D' na Tabela 2; registada como D3."
+  ]
+}

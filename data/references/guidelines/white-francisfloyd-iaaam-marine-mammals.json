@@ -1,0 +1,106 @@
+{
+  "id": "white-francisfloyd-iaaam-marine-mammals",
+  "title": "Nutritional Management of Marine Mammals: A Review",
+  "citation": "White, J.R. and Francis-Floyd, R. Nutritional Management of Marine Mammals: A Review. IAAAM Archive (International Association for Aquatic Animal Medicine), publicado no VIN. https://www.vin.com/doc/?id=3863735&pid=11257 (secções 'Nutritional Disorders of Pinnipeds' e 'Handling and Storage of Food Items'). Recomendações citadas de Geraci (1972, 1974, 1981) e Engelhardt & Geraci (1978).",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Pinnipedia",
+      "commonName": {
+        "pt": "Pinípedes (focas, leões-marinhos, morsa)",
+        "en": "Pinnipeds (seals, sea lions, walrus)"
+      }
+    },
+    {
+      "scientificName": "Cetacea (Odontoceti)",
+      "commonName": {
+        "pt": "Cetáceos odontocetes (golfinhos, orca)",
+        "en": "Toothed cetaceans (dolphins, killer whale)"
+      }
+    },
+    {
+      "scientificName": "Tursiops truncatus",
+      "commonName": {
+        "pt": "Roaz-corvineiro",
+        "en": "Common bottlenose dolphin"
+      }
+    },
+    {
+      "scientificName": "Enhydra lutris",
+      "commonName": {
+        "pt": "Lontra-marinha",
+        "en": "Sea otter"
+      }
+    }
+  ],
+  "guild": "carnivore",
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Tiamina (Geraci 1972): 5 mg por cada 1000 kcal de peixe fornecido por dia, administrados 2 h antes da primeira refeição (o texto refere também suplementação duas vezes por semana); em alternativa, 25 mg de tiamina por kg de peixe fornecido, com a alimentação regular."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "marine_fish"
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Vitamina E (Engelhardt & Geraci 1978): 100 UI por kg de peixe fornecido, como suplemento diário, quando o peixe esteve congelado mais de 4 meses."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "marine_fish"
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Pinípedes mantidos em água doce (ou que tenham tido um episódio de hiponatremia): suplemento diário de NaCl, 3 g por kg de peixe fornecido por dia (Geraci 1981). A lula, rica em sal, é um bom alimento para casos recorrentes."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "A deficiência de tiamina em focas-da-gronelândia privadas de tiamina surge em 40–60 dias (anorexia, tremores, espasmos, morte). Diagnóstico: aumento ≥25 % da atividade da transcetolase eritrocitária após tiamina."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Miopatia nutricional fatal descrita num leão-marinho-da-califórnia após 32 dias sem suplementação de vitamina E."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Armazenar o peixe a −18 °C ou menos (sarda: no máximo ~4 meses; peixe magro como o eperlano: ~6 meses). Nenhum alimento deve ser fornecido mais de 24 h após sair do congelador. Descongelação lenta em água fria para reduzir perdas de nutrientes hidrossolúveis."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Peixe cortado perde vitaminas (remoção das vísceras) e deteriora-se mais depressa; minimizar o seu uso."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Leite/fórmulas com dissacarídeos podem causar diarreia em crias de pinípedes (o leite de pinípede não contém hidratos de carbono complexos)."
+      }
+    },
+    {
+      "kind": "monitoring",
+      "text": {
+        "pt": "Aumentar a proporção de peixe gordo para animais debilitados; reduzir em adultos em manutenção. Ajustar para crescimento, reprodução, lactação ou atividade."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Revisão antiga do arquivo IAAAM (referências até 1988; ano exato de publicação não indicado na página). Sem exigências em matéria seca: todas as doses são por kg de peixe tal-qual ou por 1000 kcal, registadas como regras.",
+    "O texto indica 'thiamin supplementation be provided twice weekly' e, na mesma frase, uma dose por 1000 kcal por dia — formulação ambígua; verificar em Geraci (1972/1974).",
+    "Lontra-marinha: a revisão refere apenas que no Monterey Bay Aquarium não foi necessária suplementação com dieta variada (comunicação pessoal, década de 1980)."
+  ]
+}
