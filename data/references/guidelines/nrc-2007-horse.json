@@ -1,0 +1,474 @@
+{
+  "id": "nrc-2007-horse",
+  "title": "Nutrient Requirements of Horses, 6th Revised Edition (2007) — modelo de cálculo das exigências",
+  "citation": "National Research Council (2007). Nutrient Requirements of Horses, 6th rev. ed. Washington, DC: The National Academies Press. doi:10.17226/11653. Valores calculados a partir das equações do Capítulo 15 ('Computer Model to Estimate Requirements', pp. 285–287), lidas no programa oficial da NRC em https://webassets.nationalacademies.org/nrh/ (código JavaScript da página) e conferidas com a listagem do código do livro (pp. 286–287, https://www.scribd.com/document/791583938/Nutrient-Requirements-of-Horses-6th-Revised-Edition-301-358). As exigências NRC 2007 são diárias (Tabelas 16-1 a 16-6); aqui foram convertidas em concentrações na MS.",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Equus quagga",
+      "commonName": {
+        "pt": "Zebra-das-planícies",
+        "en": "Plains zebra"
+      }
+    },
+    {
+      "scientificName": "Equus grevyi",
+      "commonName": {
+        "pt": "Zebra-de-Grévy",
+        "en": "Grévy's zebra"
+      }
+    },
+    {
+      "scientificName": "Equus zebra",
+      "commonName": {
+        "pt": "Zebra-da-montanha",
+        "en": "Mountain zebra"
+      }
+    },
+    {
+      "scientificName": "Equus ferus przewalskii",
+      "commonName": {
+        "pt": "Cavalo-de-Przewalski",
+        "en": "Przewalski's horse"
+      }
+    },
+    {
+      "scientificName": "Equus africanus",
+      "commonName": {
+        "pt": "Burro-selvagem-africano",
+        "en": "African wild ass"
+      }
+    },
+    {
+      "scientificName": "Equus hemionus",
+      "commonName": {
+        "pt": "Onagro",
+        "en": "Onager"
+      }
+    },
+    {
+      "scientificName": "Ceratotherium simum",
+      "commonName": {
+        "pt": "Rinoceronte-branco",
+        "en": "White rhinoceros"
+      }
+    },
+    {
+      "scientificName": "Diceros bicornis",
+      "commonName": {
+        "pt": "Rinoceronte-negro",
+        "en": "Black rhinoceros"
+      }
+    },
+    {
+      "scientificName": "Rhinoceros unicornis",
+      "commonName": {
+        "pt": "Rinoceronte-indiano",
+        "en": "Greater one-horned rhinoceros"
+      }
+    },
+    {
+      "scientificName": "Tapirus terrestris",
+      "commonName": {
+        "pt": "Anta",
+        "en": "Lowland tapir"
+      }
+    },
+    {
+      "scientificName": "Tapirus indicus",
+      "commonName": {
+        "pt": "Tapir-malaio",
+        "en": "Malayan tapir"
+      }
+    }
+  ],
+  "guild": "hindgut_herbivore",
+  "modelSpecies": "Cavalo doméstico (Equus caballus)",
+  "energy": [
+    {
+      "id": "de-maint-avg",
+      "coefficient": 33.3,
+      "exponent": 1,
+      "coefficientRange": [
+        30.3,
+        36.3
+      ],
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "DE",
+      "lifeStage": "maintenance",
+      "label": "ED de manutenção do adulto (média; mínima 30,3, elevada 36,3 kcal/kg PV)",
+      "note": "Modelo NRC 2007: DE_req = 0,0333 Mcal × PV (média), 0,0303 (mínima), 0,0363 (elevada; também garanhões sem reprodução). Equação linear no PV, não metabólica."
+    }
+  ],
+  "intake": [
+    {
+      "label": "Ingestão de MS assumida no cálculo (valor por defeito do programa NRC; opções 1,5–3,0 % PV)",
+      "basis": "DM",
+      "percentBodyWeight": {
+        "target": 2.0
+      }
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Manutenção (adulto, média)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 6.3,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1,26 g PB/kg PV/dia (manutenção média); mínima 1,08 → 5,4 %; elevada 1,44 → 7,2 %"
+        },
+        "lysine": {
+          "min": 0.27,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; lisina = 4,3 % da PB"
+        },
+        "calcium": {
+          "min": 0.2,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,04 g/kg PV"
+        },
+        "phosphorus": {
+          "min": 0.14,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,028 g/kg PV"
+        },
+        "magnesium": {
+          "min": 0.075,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,015 g/kg PV"
+        },
+        "potassium": {
+          "min": 0.25,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,05 g/kg PV"
+        },
+        "sodium": {
+          "min": 0.1,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,02 g/kg PV"
+        },
+        "copper": {
+          "min": 10,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,2 mg/kg PV"
+        },
+        "vitamin_a": {
+          "min": 1.5,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 30 UI/kg PV; fonte em UI/dia; convertido para UI/g MS"
+        },
+        "vitamin_d3": {
+          "min": 0.33,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 6,6 UI/kg PV; fonte: vitamina D (UI/dia), sem distinção D2/D3; convertido para UI/g MS"
+        },
+        "vitamin_e": {
+          "min": 50,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1,0 UI/kg PV; fonte em UI; 1 UI = 1 mg de acetato de all-rac-α-tocoferol, registado como mg/kg"
+        },
+        "thiamin": {
+          "min": 3,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,06 mg/kg PV"
+        },
+        "riboflavin": {
+          "min": 2,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,04 mg/kg PV"
+        },
+        "sulfur": {
+          "min": 0.15,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida; fonte: 1,5 g/kg MS"
+        },
+        "cobalt": {
+          "min": 0.05,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "iodine": {
+          "min": 0.35,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "iron": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "manganese": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "zinc": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "selenium": {
+          "min": 0.1,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        }
+      }
+    },
+    {
+      "lifeStage": "gestation_late",
+      "label": "Final de gestação (9.º–11.º mês)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 8.9,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 11.º mês de gestação; 9.º mês = 8,0 %"
+        },
+        "lysine": {
+          "min": 0.38,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 11.º mês; lisina = 4,3 % da PB"
+        },
+        "calcium": {
+          "min": 0.36,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,072 g/kg PV (≥ 9.º mês); 7.º–8.º mês: 0,056 g/kg PV → 0,28 %"
+        },
+        "phosphorus": {
+          "min": 0.26,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,0525 g/kg PV (≥ 9.º mês); 7.º–8.º mês: 0,04 g/kg PV → 0,20 %"
+        },
+        "magnesium": {
+          "min": 0.077,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,0153 g/kg PV"
+        },
+        "potassium": {
+          "min": 0.26,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,0517 g/kg PV"
+        },
+        "sodium": {
+          "min": 0.11,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,022 g/kg PV"
+        },
+        "copper": {
+          "min": 12.5,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,25 mg/kg PV"
+        },
+        "vitamin_a": {
+          "min": 3,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 60 UI/kg PV; fonte em UI/dia; convertido para UI/g MS"
+        },
+        "vitamin_d3": {
+          "min": 0.33,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 6,6 UI/kg PV; fonte: vitamina D (UI/dia), sem distinção D2/D3; convertido para UI/g MS"
+        },
+        "vitamin_e": {
+          "min": 50,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1,0 UI/kg PV; fonte em UI; 1 UI = 1 mg de acetato de all-rac-α-tocoferol, registado como mg/kg"
+        },
+        "thiamin": {
+          "min": 3,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,06 mg/kg PV"
+        },
+        "riboflavin": {
+          "min": 2,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,04 mg/kg PV"
+        },
+        "sulfur": {
+          "min": 0.15,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida; fonte: 1,5 g/kg MS"
+        },
+        "cobalt": {
+          "min": 0.05,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "iodine": {
+          "min": 0.4,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "iron": {
+          "min": 50,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "manganese": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "zinc": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "selenium": {
+          "min": 0.1,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Lactação (1.º mês, pico)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 15.4,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1.º mês de lactação (produção de leite 3,26 % PV/dia); 3.º mês = 14,7 %"
+        },
+        "lysine": {
+          "min": 0.85,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1.º mês"
+        },
+        "calcium": {
+          "min": 0.59,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1.º mês; 3.º mês = 0,56 %"
+        },
+        "phosphorus": {
+          "min": 0.38,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1.º mês; 3.º mês = 0,36 %"
+        },
+        "magnesium": {
+          "min": 0.11,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1.º mês"
+        },
+        "potassium": {
+          "min": 0.48,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1.º mês"
+        },
+        "sodium": {
+          "min": 0.13,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 1.º mês"
+        },
+        "copper": {
+          "min": 12.5,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,25 mg/kg PV"
+        },
+        "vitamin_a": {
+          "min": 3,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 60 UI/kg PV; fonte em UI/dia; convertido para UI/g MS"
+        },
+        "vitamin_d3": {
+          "min": 0.33,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 6,6 UI/kg PV; fonte: vitamina D (UI/dia), sem distinção D2/D3; convertido para UI/g MS"
+        },
+        "vitamin_e": {
+          "min": 100,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 2,0 UI/kg PV; fonte em UI; 1 UI = 1 mg de acetato de all-rac-α-tocoferol, registado como mg/kg"
+        },
+        "thiamin": {
+          "min": 3.75,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,075 mg/kg PV"
+        },
+        "riboflavin": {
+          "min": 2.5,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,05 mg/kg PV"
+        },
+        "sulfur": {
+          "min": 0.15,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida; fonte: 1,5 g/kg MS"
+        },
+        "cobalt": {
+          "min": 0.05,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "iodine": {
+          "min": 0.35,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "iron": {
+          "min": 50,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "manganese": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "zinc": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "selenium": {
+          "min": 0.1,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento (poldro desmamado, 6 meses)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 15.7,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; poldro de 6 meses (PV estimado 216 kg, GMD 0,72 kg/dia, peso adulto 500 kg), ingestão 2,0 % PV; 12 meses = 13,2 %; 18 meses = 10,3 %"
+        },
+        "lysine": {
+          "min": 0.67,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; poldro de 6 meses (PV estimado 216 kg, GMD 0,72 kg/dia, peso adulto 500 kg), ingestão 2,0 % PV; 12 meses = 0,57 %; 18 meses = 0,44 %"
+        },
+        "calcium": {
+          "min": 0.9,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; poldro de 6 meses (PV estimado 216 kg, GMD 0,72 kg/dia, peso adulto 500 kg), ingestão 2,0 % PV; 12 meses = 0,59 %; 18 meses = 0,48 %"
+        },
+        "phosphorus": {
+          "min": 0.5,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; poldro de 6 meses (PV estimado 216 kg, GMD 0,72 kg/dia, peso adulto 500 kg), ingestão 2,0 % PV; 12 meses = 0,33 %; 18 meses = 0,27 %"
+        },
+        "magnesium": {
+          "min": 0.096,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; poldro de 6 meses (PV estimado 216 kg, GMD 0,72 kg/dia, peso adulto 500 kg), ingestão 2,0 % PV; 12 meses = 0,084 %"
+        },
+        "potassium": {
+          "min": 0.3,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; poldro de 6 meses (PV estimado 216 kg, GMD 0,72 kg/dia, peso adulto 500 kg), ingestão 2,0 % PV; 12 meses = 0,27 %"
+        },
+        "sodium": {
+          "min": 0.12,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; poldro de 6 meses (PV estimado 216 kg, GMD 0,72 kg/dia, peso adulto 500 kg), ingestão 2,0 % PV; 12 meses = 0,11 %"
+        },
+        "copper": {
+          "min": 12.5,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,25 mg/kg PV"
+        },
+        "vitamin_a": {
+          "min": 2.25,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 45 UI/kg PV; fonte em UI/dia; convertido para UI/g MS"
+        },
+        "vitamin_d3": {
+          "min": 1.0,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 20 UI/kg PV (valor final aplicado pelo programa); fonte: vitamina D (UI/dia), sem distinção D2/D3; convertido para UI/g MS"
+        },
+        "vitamin_e": {
+          "min": 100,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 2,0 UI/kg PV; fonte em UI; 1 UI = 1 mg de acetato de all-rac-α-tocoferol, registado como mg/kg"
+        },
+        "thiamin": {
+          "min": 3.75,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,075 mg/kg PV"
+        },
+        "riboflavin": {
+          "min": 2.5,
+          "note": "calculado do modelo NRC 2007 (g ou mg ou UI por kg PV/dia) ÷ ingestão de MS de 2,0 % PV (valor por defeito do programa NRC), égua de 500 kg; 0,05 mg/kg PV"
+        },
+        "sulfur": {
+          "min": 0.15,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida; fonte: 1,5 g/kg MS"
+        },
+        "cobalt": {
+          "min": 0.05,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "iodine": {
+          "min": 0.35,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "iron": {
+          "min": 50,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "manganese": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "zinc": {
+          "min": 40,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        },
+        "selenium": {
+          "min": 0.1,
+          "note": "o modelo NRC 2007 exprime este nutriente diretamente por kg de MS ingerida"
+        }
+      }
+    }
+  ],
+  "dataQuality": [
+    "A NRC (2007) deixou de publicar tabelas de concentração na dieta; só dá quantidades por dia. As concentrações aqui registadas foram calculadas dividindo as exigências diárias do modelo oficial pela ingestão de MS de 2,0 % do PV (valor por defeito do programa NRC). Não foi possível obter a Tabela 16-3 original para confirmar a ingestão usada pela NRC em cada categoria.",
+    "Lactação e crescimento: éguas lactantes e poldros comem habitualmente mais de 2 % PV; com 2,5 % PV todas as concentrações calculadas a partir do PV descem 20 % (×0,8); com 3 % PV descem um terço. Os valores de lactação e crescimento são por isso conservadores (provavelmente altos). Enxofre, Co, I, Fe, Mn, Zn e Se não dependem da ingestão.",
+    "Gestação: o modelo só altera Ca, P, Mg, K, Na, Cu, I e Fe a partir do 7.º mês e de novo a partir do 9.º; antes do 5.º mês as exigências são iguais às de manutenção (use o conjunto de manutenção).",
+    "Crescimento: no código do programa a vitamina D é calculada por idade (22,2 → 13,7 UI/kg PV) mas depois substituída por 20 UI/kg PV; registou-se o valor final (20 UI/kg PV).",
+    "Vitamina D registada como vitamin_d3 (a NRC não distingue D2/D3). Vitamina E em UI convertida 1:1 para mg.",
+    "Cloro (0,08 g/kg PV na manutenção → 0,40 % MS) não foi registado por não existir chave no catálogo.",
+    "A ED (Mcal/kg MS) implícita não foi registada como energy_density_dm porque o catálogo não especifica ED vs EM; manutenção a 2 % PV ≈ 1,67 Mcal ED/kg MS.",
+    "Limites máximos (tolerância) da NRC 2007 para equinos não foram obtidos nesta pesquisa — não há valores max neste ficheiro.",
+    "Uso como modelo para rinocerontes e tapires: atenção à sobrecarga de ferro no rinoceronte-negro e tapires (os 40–50 mg Fe/kg MS são mínimos para equinos, não limites)."
+  ]
+}
