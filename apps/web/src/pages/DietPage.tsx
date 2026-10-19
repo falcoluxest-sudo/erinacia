@@ -11,13 +11,14 @@ import {
   FOOD_CATEGORY_LABEL,
   type DietResult,
   type EnergyModel,
+  type FeedingGuild,
   type Guideline,
   type NutrientResult,
   type RequirementStatus,
 } from '@erinacia/core';
 import { useFoods, fmt, matchesQuery, sourceOf, type AppFood } from '../data/foods';
 import { evaluate, FORMULAS, TYPE_LABEL } from '../data/formulas';
-import { DEFAULT_MODEL, GUIDES, guideName, loadDiets, newDiet, saveDiets, type DietDraft } from '../data/diets';
+import { DEFAULT_MODEL, GUIDES, GUILD_LABEL, guideLabel, loadDiets, newDiet, saveDiets, type DietDraft } from '../data/diets';
 
 const STAGE: Record<string, string> = {
   all: 'Todas as fases', maintenance: 'Manutenção', breeding: 'Reprodução', gestation: 'Gestação',
@@ -160,7 +161,11 @@ export function DietPage() {
               <label className="lbl full">Guia da espécie
                 <select className="select" value={d.guideId} onChange={(e) => chooseGuide(e.target.value)}>
                   <option value="">Sem guia (só energia e nutrientes)</option>
-                  {GUIDES.map((g) => <option key={g.id} value={g.id}>{guideName(g)}</option>)}
+                  {(Object.keys(GUILD_LABEL) as FeedingGuild[]).filter((k) => GUIDES.some((g) => g.guild === k)).map((k) => (
+                    <optgroup key={k} label={GUILD_LABEL[k]}>
+                      {GUIDES.filter((g) => g.guild === k).map((g) => <option key={g.id} value={g.id}>{guideLabel(g)}</option>)}
+                    </optgroup>
+                  ))}
                 </select>
               </label>
               {guide?.targets?.length ? (

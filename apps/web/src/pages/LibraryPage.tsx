@@ -1,11 +1,9 @@
-import { useState } from 'react';
-import { AlertTriangle, BookOpen, X } from 'lucide-react';
-import { NUTRIENT_BY_KEY, DERIVED_INDICATORS, FOOD_CATEGORY_LABEL, type Guideline } from '@erinacia/core';
+import { useMemo, useState } from 'react';
+import { AlertTriangle, BookOpen, Search, X } from 'lucide-react';
+import { NUTRIENT_BY_KEY, DERIVED_INDICATORS, FOOD_CATEGORY_LABEL, type FeedingGuild, type Guideline } from '@erinacia/core';
 import { useEscape } from '../components/FoodDetail';
-import { fmt } from '../data/foods';
-
-const files = import.meta.glob('../../../../data/references/guidelines/*.json', { eager: true, import: 'default' });
-const guidelines = (Object.values(files) as Guideline[]).sort((a, b) => a.species[0]!.commonName.pt.localeCompare(b.species[0]!.commonName.pt, 'pt'));
+import { fmt, matchesQuery } from '../data/foods';
+import { GUIDES as guidelines, GUILD_LABEL, guideSource } from '../data/diets';
 
 const STAGE: Record<string, string> = {
   all: 'Todas as fases', maintenance: 'Manutenção', breeding: 'Reprodução', gestation: 'Gestação',
@@ -22,14 +20,29 @@ const range = (r: { min?: number; max?: number; target?: number }) =>
 
 export function LibraryPage() {
   const [open, setOpen] = useState<Guideline | null>(null);
+  const [q, setQ] = useState('');
+  const [guild, setGuild] = useState<'' | FeedingGuild>('');
+  const visible = useMemo(() => guidelines.filter((g) => (!guild || g.guild === guild) && (!q.trim() || matchesQuery(
+    [g.title, g.citation, g.modelSpecies ?? '', ...g.species.flatMap((s) => [s.commonName.pt, s.commonName.en, s.scientificName])].join(' '), q.trim(),
+  ))), [q, guild]);
   return (
     <>
       <header className="page-head">
         <h1 className="page-title">Biblioteca científica</h1>
       </header>
-      <p className="result-count">{guidelines.length} guias transcritos de manuais publicados, com citação e notas de qualidade.</p>
+      <div className="toolbar" style={{ gridTemplateColumns: 'minmax(0, 1fr) 280px' }}>
+        <label className="field">
+          <Search size={18} aria-hidden="true" />
+          <input className="input" type="search" aria-label="Pesquisar guias" placeholder="Pesquisar espécie, nome científico ou fonte (ex.: ouriço, Panthera, NRC)…" value={q} onChange={(e) => setQ(e.target.value)} />
+        </label>
+        <select className="select" aria-label="Regime alimentar" value={guild} onChange={(e) => setGuild(e.target.value as typeof guild)}>
+          <option value="">Todos os regimes alimentares</option>
+          {(Object.keys(GUILD_LABEL) as FeedingGuild[]).map((k) => <option key={k} value={k}>{GUILD_LABEL[k]}</option>)}
+        </select>
+      </div>
+      <p className="result-count">A mostrar <strong>{visible.length}</strong> de {guidelines.length} guias transcritos de fontes publicadas, com citação e notas de qualidade.</p>
       <div className="grid">
-        {guidelines.map((g) => (
+        {visible.map((g) => (
           <article className="card" key={g.id}>
             <div className="card-head">
               <BookOpen size={20} aria-hidden="true" style={{ color: 'var(--folha)', marginTop: 2 }} />
@@ -38,6 +51,11 @@ export function LibraryPage() {
               </button>
             </div>
             <div className="guide-meta"><em>{g.species.map((s) => s.scientificName).join(', ')}</em></div>
+            <div className="badges">
+              <span className="badge badge-source">{guideSource(g)}</span>
+              <span className="badge badge-source">{GUILD_LABEL[g.guild]}</span>
+              {g.modelSpecies && <span className="badge badge-source">Modelo: {g.modelSpecies}</span>}
+            </div>
             <div className="chip-list">
               {g.energy?.length ? <span className="chip">Energia</span> : null}
               {g.targets?.length ? <span className="chip">Exigências</span> : null}

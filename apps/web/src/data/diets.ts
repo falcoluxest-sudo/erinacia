@@ -6,6 +6,30 @@ export const GUIDES = (Object.values(files) as Guideline[]).sort((a, b) =>
 );
 export const guideName = (g: Guideline) => g.species.map((s) => s.commonName.pt).join(', ');
 
+/** "NRC 2006" from "National Research Council (NRC). 2006. …" or "Dierenfeld, E.S. … (1994)". */
+export function guideSource(g: Guideline): string {
+  const year = g.citation.match(/\b(19|20)\d{2}\b/)?.[0] ?? '';
+  const acronym = g.citation.match(/\b(NRC|AZA|AZAB|EAZA|FEDIAF|AAFCO|NAG)\b/)?.[0];
+  const author = acronym ?? g.citation.split(/[,.(]/)[0]!.trim();
+  return `${author} ${year}`.trim();
+}
+
+/** Compact label for selects: first species, how many more, and the source. */
+export function guideLabel(g: Guideline): string {
+  const [first, ...rest] = g.species;
+  return `${first!.commonName.pt}${rest.length ? ` +${rest.length}` : ''} · ${guideSource(g)}`;
+}
+
+export const GUILD_LABEL: Record<FeedingGuild, string> = {
+  obligate_carnivore: 'Carnívoros estritos',
+  carnivore: 'Carnívoros',
+  omnivore: 'Omnívoros',
+  insectivore_omnivore: 'Insetívoros e omnívoros',
+  frugivore_folivore: 'Frugívoros e folívoros',
+  hindgut_herbivore: 'Herbívoros fermentadores do intestino grosso',
+  ruminant: 'Ruminantes',
+};
+
 export const DEFAULT_MODEL: Record<FeedingGuild, EnergyModel> = {
   obligate_carnivore: 'carnivore',
   carnivore: 'carnivore',
