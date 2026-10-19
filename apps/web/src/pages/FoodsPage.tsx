@@ -9,7 +9,7 @@ const PAGE = 60;
 type Panel = { kind: 'detail'; food: AppFood } | { kind: 'form'; food?: AppFood; copyOf?: AppFood } | null;
 
 export function FoodsPage() {
-  const { foods, upsert, remove } = useFoods();
+  const { foods, upsert, remove, loading } = useFoods();
   const [query, setQuery] = useState('');
   const [group, setGroup] = useState('');
   const [source, setSource] = useState('');
@@ -43,7 +43,8 @@ export function FoodsPage() {
       <div className="page-intro" role="note">
         <Info size={18} aria-hidden="true" style={{ flex: 'none', marginTop: 2 }} />
         <span>
-          Os alimentos do <strong>Banco Erinacia</strong> e da tabela portuguesa do <strong>INSA</strong> são a base de referência e não se
+          Os alimentos do <strong>Banco Erinacia</strong>, da tabela portuguesa do <strong>INSA</strong> e da tabela norte-americana do
+          <strong>USDA</strong> (nomes em inglês) são a base de referência e não se
           editam: use <em>Duplicar</em> para criar uma versão sua. Os seus alimentos podem ser editados e apagados.
         </span>
       </div>
@@ -79,6 +80,7 @@ export function FoodsPage() {
         A mostrar <strong>{visible.length}</strong> alimento{visible.length === 1 ? '' : 's'}
         {source && <> da fonte <strong>{source}</strong></>}
         {group && <> na categoria <strong>{group}</strong></>}
+        {loading && <> · a carregar as tabelas INSA e USDA…</>}
       </p>
 
       {visible.length === 0 ? (

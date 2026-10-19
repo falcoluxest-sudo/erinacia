@@ -1,7 +1,6 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { energyPer100g, nutrientDM, type Food } from '@erinacia/core';
 import banco from '../../../../data/seed/foods.json';
-import insa from '../../../../data/seed/foods_insa.json';
 
 export interface AppFood extends Food {
   origin: 'reference' | 'own';
@@ -15,13 +14,15 @@ export const REFERENCE_SOURCE = 'Banco Erinacia';
 export const OWN_SOURCE = 'Meus alimentos';
 
 export const INSA_SOURCE = 'INSA (PT)';
+export const USDA_SOURCE = 'USDA FDC (SR Legacy)';
 
 /** Citation each reference table requires wherever its data are shown. */
 export const SOURCE_ATTRIBUTION: Record<string, string> = {
   [INSA_SOURCE]: 'Fonte: Base de Dados da Composição de Alimentos. Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P. - INSA. v 7.1 - 2026.',
+  [USDA_SOURCE]: 'Fonte: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, SR Legacy (2018). fdc.nal.usda.gov. Domínio público; nomes no original em inglês.',
 };
 
-const referenceFoods: AppFood[] = [
+const bancoFoods: AppFood[] = [
   ...(banco as unknown as (Food & { sources: { source: string; reference?: string }[] })[]).map(
     (f): AppFood => ({
       ...f,
@@ -30,8 +31,26 @@ const referenceFoods: AppFood[] = [
       reference: f.sources[0]?.reference ?? undefined,
     }),
   ),
-  ...(insa as unknown as Food[]).map((f): AppFood => ({ ...f, origin: 'reference' })),
 ];
+
+// The national tables are several MB, so they load as separate chunks after
+// the first render; until then only the Banco and the user's foods are listed.
+let tables: AppFood[] = [];
+let tablesLoaded = false;
+const listeners = new Set<() => void>();
+const tablesPromise = Promise.all([
+  import('../../../../data/seed/foods_insa.json'),
+  import('../../../../data/seed/foods_usda.json'),
+]).then((mods) => {
+  tables = mods.flatMap((m) => (m.default as unknown as Food[]).map((f): AppFood => ({ ...f, origin: 'reference' })));
+  tablesLoaded = true;
+  listeners.forEach((l) => l());
+});
+void tablesPromise;
+const subscribe = (l: () => void) => {
+  listeners.add(l);
+  return () => listeners.delete(l);
+};
 
 function loadOwn(): AppFood[] {
   try {
@@ -54,7 +73,8 @@ export function useFoods() {
   const [own, setOwn] = useState<AppFood[]>(loadOwn);
   useEffect(() => saveOwn(own), [own]);
 
-  const all = useMemo(() => [...own, ...referenceFoods], [own]);
+  const loaded = useSyncExternalStore(subscribe, () => tablesLoaded);
+  const all = useMemo(() => [...own, ...bancoFoods, ...(loaded ? tables : [])], [own, loaded]);
 
   const upsert = useCallback((food: AppFood) => {
     setOwn((prev) => {
@@ -68,7 +88,7 @@ export function useFoods() {
 
   const remove = useCallback((id: string) => setOwn((prev) => prev.filter((f) => f.id !== id)), []);
 
-  return { foods: all, upsert, remove };
+  return { foods: all, upsert, remove, loading: !loaded };
 }
 
 export function newFoodId() {

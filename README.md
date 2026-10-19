@@ -31,6 +31,7 @@ pnpm test          # testes do motor (comparados com o Banco.xlsm e exemplos res
 pnpm typecheck
 python3 scripts/import_banco.py caminho/para/Banco.xlsm   # regenera data/seed
 python3 scripts/import_insa.py data/raw/insa_tca.xlsx     # tabela INSA -> data/seed/foods_insa.json
+python3 scripts/import_usda.py data/raw/FoodData_Central_sr_legacy_food_csv_2018-04   # USDA -> foods_usda.json
 ```
 
 ## Convenções
@@ -45,5 +46,8 @@ python3 scripts/import_insa.py data/raw/insa_tca.xlsx     # tabela INSA -> data/
   exigem a fonte visível onde os dados aparecem; a app mostra-a. O ficheiro original fica em
   `data/raw/` (fora do git). EM: Atwater 4/9/4 com hidratos de carbono disponíveis (os modelos
   carnívoro e primata são Atwater no Banco; ruminante e fermentadores precisam de fibras).
+- **USDA FoodData Central, SR Legacy (2018):** 4913 alimentos, domínio público. Ficam de fora as
+  categorias de comida humana preparada (fast food, restaurantes, doces, bolos, bebidas…). Nomes
+  no original em inglês. As tabelas INSA e USDA carregam à parte, depois do primeiro ecrã.
 
 Mais detalhe em [`docs/ARQUITETURA.md`](docs/ARQUITETURA.md).

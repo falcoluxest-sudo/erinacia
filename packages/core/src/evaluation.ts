@@ -66,8 +66,8 @@ export function evaluateRules(rules: GuidelineRule[], items: CategorizedItem[]):
 export function categoryFromGroup(group: string, name = ''): FoodCategory {
   const g = group.toLocaleLowerCase('pt');
   const n = name.toLocaleLowerCase('pt');
-  if (/fígado|figado|rim|coração|coracao|víscera|viscera/.test(n)) return 'organ_meat';
-  if (/osso/.test(n)) return 'bones';
+  if (/fígado|figado|\brim\b|coração|coracao|víscera|viscera|\bliver|kidney|heart|giblet|spleen|lungs?\b|brain|variety meats/.test(n) && !/palm|artichoke|lettuce/.test(n)) return 'organ_meat';
+  if (/osso|\bbones?\b/.test(n)) return 'bones';
   if (/fruta/.test(g)) return 'fruit';
   if (/legume/.test(g)) return 'vegetable_root';
   if (/verdura|hortaliça/.test(g)) return 'greens';

@@ -55,3 +55,22 @@ describe('energy models for proximate-only foods', () => {
     expect(energyPer100g(avocado, 'primate_fermenter')).toBeUndefined();
   });
 });
+
+describe('USDA seed', () => {
+  const usda: Food[] = JSON.parse(readFileSync(join(__dirname, '../../../data/seed/foods_usda.json'), 'utf8'));
+  const find = (name: string) => usda.find((f) => f.name === name)!;
+
+  it('uses catalog keys and unique ids', () => {
+    expect(usda.length).toBeGreaterThan(4000);
+    expect(new Set(usda.map((f) => f.id)).size).toBe(usda.length);
+    for (const f of usda) for (const k of Object.keys(f.nutrients)) expect(NUTRIENT_BY_KEY.has(k), `${f.name}: ${k}`).toBe(true);
+  });
+
+  it('converts beef liver (NDB 13325) per 100 g to catalog units', () => {
+    const f = find('Beef, variety meats and by-products, liver, raw');
+    expect(f.dryMatter).toBeCloseTo(29.19);
+    expect(f.nutrients.phosphorus).toBeCloseTo(0.387); // 387 mg
+    expect(f.nutrients.copper).toBeCloseTo(97.55); // 9.755 mg
+    expect(categoryFromGroup(f.group, f.name)).toBe('organ_meat');
+  });
+});
