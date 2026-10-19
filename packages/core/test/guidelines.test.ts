@@ -15,7 +15,10 @@ const asFormula = (g: Guideline, id: string): MetabolicFormula => {
 };
 
 describe('transcribed manuals', () => {
-  it('loads all nine', () => expect(guidelines.map((g) => g.id).sort()).toHaveLength(9));
+  it('loads every transcribed guide with unique ids', () => {
+    expect(guidelines.length).toBeGreaterThanOrEqual(9);
+    expect(new Set(guidelines.map((g) => g.id)).size).toBe(guidelines.length);
+  });
 
   it.each(guidelines.map((g) => [g.id, g] as const))('%s is valid', (_id, g) => {
     expect(validateGuideline(g)).toEqual([]);

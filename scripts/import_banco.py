@@ -4,7 +4,8 @@ Usage: python3 scripts/import_banco.py path/to/Banco.xlsm
 
 Foods are stored as fed (MN) using the canonical nutrient keys from
 packages/core/src/nutrients.ts. Requirement values are on a dry-matter basis;
-zeros in the workbook mean "no data" and are dropped.
+zeros in the workbook mean "not analysed" and are dropped, for foods and
+requirements alike.
 """
 
 import json
@@ -87,7 +88,8 @@ def import_foods(wb, catalog):
                 energy[ENERGY_COLUMNS[col]] = round(num(val), 6)
                 continue
             key = catalog.get(norm(col))
-            if key and key not in ("dry_matter",) and num(val) is not None:
+            # A zero in the Banco means "not analysed" (confirmed by the author), not a true zero.
+            if key and key not in ("dry_matter",) and num(val) is not None and num(val) != 0:
                 nutrients[key] = round(num(val), 6)
         foods.append({
             "id": slug(str(name)),

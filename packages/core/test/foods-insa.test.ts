@@ -42,11 +42,16 @@ describe('INSA seed', () => {
 });
 
 describe('energy models for proximate-only foods', () => {
-  it('derives carnivore and primate as Atwater, never fibre-based models', () => {
-    const f = byName('Porco, fígado cru');
-    expect(energyPer100g(f, 'carnivore')).toBe(energyPer100g(f, 'atwater'));
-    expect(energyPer100g(f, 'primate')).toBe(energyPer100g(f, 'atwater'));
-    expect(energyPer100g(f, 'ruminant')).toBeUndefined();
-    expect(energyPer100g(f, 'primate_fermenter')).toBeUndefined();
+  it('derives fibre-based models only when fibre is known', () => {
+    const liver = byName('Porco, fígado cru');
+    expect(energyPer100g(liver, 'carnivore')).toBe(energyPer100g(liver, 'atwater'));
+    // No dietary fibre ⇒ no crude fibre or NDF, so every model is available.
+    expect(energyPer100g(liver, 'ruminant')).toBeGreaterThan(0);
+    expect(energyPer100g(liver, 'primate_fermenter')).toBe(energyPer100g(liver, 'atwater'));
+    // Avocado has dietary fibre but no crude fibre/NDF analysis.
+    const avocado = byName('Abacate, Hass');
+    expect(energyPer100g(avocado, 'primate')).toBeGreaterThan(0);
+    expect(energyPer100g(avocado, 'ruminant')).toBeUndefined();
+    expect(energyPer100g(avocado, 'primate_fermenter')).toBeUndefined();
   });
 });
