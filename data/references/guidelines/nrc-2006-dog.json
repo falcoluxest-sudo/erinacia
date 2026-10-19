@@ -1,0 +1,772 @@
+{
+  "id": "nrc-2006-dog",
+  "title": "Nutrient Requirements of Dogs and Cats (2006) — dogs (Tables 15-2 to 15-8)",
+  "citation": "National Research Council (2006). Nutrient Requirements of Dogs and Cats. Washington, DC: The National Academies Press. doi:10.17226/10668. Capítulo 15, Nutrient Requirements and Dietary Nutrient Concentrations, pp. 354–369. Lido a partir da cópia do capítulo publicada em https://www.scribd.com/document/946366666/NRC-2006-tables (texto posicionado de cada página reconstruído e verificado; o livro está em https://nap.nationalacademies.org/catalog/10668). Tabelas 15-3 (crescimento), 15-5 (manutenção), 15-8 (gestação final e lactação); energia: Tabelas 15-2, 15-4, 15-6, 15-7.",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Canidae",
+      "commonName": {
+        "pt": "Canídeos (modelo: cão doméstico)",
+        "en": "Canids (domestic dog model)"
+      }
+    },
+    {
+      "scientificName": "Ursidae",
+      "commonName": {
+        "pt": "Ursídeos",
+        "en": "Bears"
+      }
+    },
+    {
+      "scientificName": "Procyonidae",
+      "commonName": {
+        "pt": "Procionídeos (guaxinins, quatis…)",
+        "en": "Procyonids"
+      }
+    },
+    {
+      "scientificName": "Viverridae",
+      "commonName": {
+        "pt": "Viverrídeos (geneta, civetas…)",
+        "en": "Viverrids"
+      }
+    },
+    {
+      "scientificName": "Canis lupus familiaris",
+      "commonName": {
+        "pt": "Cão doméstico",
+        "en": "Domestic dog"
+      }
+    }
+  ],
+  "guild": "carnivore",
+  "modelSpecies": "Cão doméstico (Canis lupus familiaris)",
+  "energy": [
+    {
+      "id": "maintenance-average",
+      "coefficient": 130,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção, média de cães de canil ou cães ativos (Tabela 15-4)"
+    },
+    {
+      "id": "maintenance-inactive",
+      "coefficient": 95,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção, cães inativos (Tabela 15-4)"
+    },
+    {
+      "id": "lactation-maintenance",
+      "coefficient": 145,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "ME",
+      "lifeStage": "lactation",
+      "label": "Componente de manutenção na lactação (Tabela 15-7)",
+      "note": "Somar a componente de lactação: PV × (24n + 12m) × L (ver ajustes)."
+    }
+  ],
+  "energyAdjustments": [
+    {
+      "label": "Outras categorias de manutenção (Tabela 15-4)",
+      "note": "kcal × PV^0,75: jovens adultos ativos 140; Grand Danois ativos 200; terriers ativos 180; cães idosos ou Terra-Nova 105."
+    },
+    {
+      "label": "Gestação final, 4 semanas após cobrição até ao parto (Tabela 15-6)",
+      "note": "EM (kcal) = 130 × PV^0,75 + 26 × PV. Exemplo NRC: cadela de 22 kg → 1320 + 572 = 1892 kcal."
+    },
+    {
+      "label": "Lactação (Tabela 15-7)",
+      "note": "EM (kcal) = 145 × PV^0,75 + PV × (24n + 12m) × L; n = crias de 1 a 4, m = crias de 5 a 8 (m = 0 se <5 crias); L = 0,75; 0,95; 1,1; 1,2 nas semanas 1–4. Exemplo NRC: 22 kg, 6 crias, semana 3 → 1473 + 2904 = 4377 kcal."
+    },
+    {
+      "label": "Crescimento após o desmame (Tabela 15-2)",
+      "note": "EM (kcal) = 130 × PVa^0,75 × 3,2 × [e^(−0,87·p) − 0,1], com p = PVa/PVm (peso atual/peso adulto esperado). Cachorros recém-nascidos: ~25 kcal/100 g PV."
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento, 4–14 semanas (Tabela 15-3)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 22.5,
+          "note": "necessidade mínima (MR) = 18,0"
+        },
+        "arginine": {
+          "min": 0.79,
+          "note": "necessidade mínima (MR) = 0,63"
+        },
+        "histidine": {
+          "min": 0.39,
+          "note": "necessidade mínima (MR) = 0,31"
+        },
+        "isoleucine": {
+          "min": 0.65,
+          "note": "necessidade mínima (MR) = 0,52"
+        },
+        "methionine": {
+          "min": 0.35,
+          "note": "necessidade mínima (MR) = 0,28"
+        },
+        "methionine_cystine": {
+          "min": 0.7,
+          "note": "necessidade mínima (MR) = 0,56"
+        },
+        "leucine": {
+          "min": 1.29,
+          "note": "necessidade mínima (MR) = 1,03"
+        },
+        "lysine": {
+          "min": 0.88,
+          "note": "necessidade mínima (MR) = 0,7"
+        },
+        "phenylalanine": {
+          "min": 0.65,
+          "note": "necessidade mínima (MR) = 0,52"
+        },
+        "threonine": {
+          "min": 0.81,
+          "note": "necessidade mínima (MR) = 0,65"
+        },
+        "tryptophan": {
+          "min": 0.23,
+          "note": "necessidade mínima (MR) = 0,18"
+        },
+        "valine": {
+          "min": 0.68,
+          "note": "necessidade mínima (MR) = 0,54"
+        },
+        "ether_extract": {
+          "min": 8.5,
+          "max": 33.0,
+          "note": "limite superior seguro (SUL) 330 g/kg MS"
+        },
+        "linoleic_acid": {
+          "min": 1.3,
+          "max": 6.5,
+          "note": "limite superior seguro (SUL) 65 g/kg MS; ingestão adequada (AI) = 1,18"
+        },
+        "linolenic_acid": {
+          "min": 0.08,
+          "note": "ingestão adequada (AI) = 0,07"
+        },
+        "arachidonic_acid": {
+          "min": 0.03
+        },
+        "calcium": {
+          "min": 1.2,
+          "max": 1.8,
+          "note": "limite superior seguro (SUL) 18 g/kg MS; necessidade mínima (MR) = 0,8; RA com nota h: cachorros >25 kg adultos até às 14 semanas ≥0,54 g Ca/kg PV"
+        },
+        "phosphorus": {
+          "min": 1.0
+        },
+        "magnesium": {
+          "min": 0.04,
+          "note": "necessidade mínima (MR) = 0,018"
+        },
+        "sodium": {
+          "min": 0.22
+        },
+        "potassium": {
+          "min": 0.44
+        },
+        "iron": {
+          "min": 88.0,
+          "note": "necessidade mínima (MR) = 72,0"
+        },
+        "copper": {
+          "min": 11.0
+        },
+        "zinc": {
+          "min": 100.0,
+          "note": "necessidade mínima (MR) = 40,0"
+        },
+        "manganese": {
+          "min": 5.6
+        },
+        "selenium": {
+          "min": 0.35,
+          "note": "fonte: 350 µg/kg MS; necessidade mínima (MR) = 0,21"
+        },
+        "iodine": {
+          "min": 0.88,
+          "note": "fonte: 880 µg/kg MS"
+        },
+        "vitamin_a": {
+          "min": 5.05,
+          "max": 50.0,
+          "note": "fonte: 1515 RE (µg retinol)/kg MS; 1 UI = 0,3 RE → 5,05 UI/g; limite superior seguro (SUL) 15000 RE (µg retinol)/kg MS; ingestão adequada (AI) = 4,04"
+        },
+        "vitamin_d3": {
+          "min": 0.552,
+          "max": 3.2,
+          "note": "fonte: 13,8 µg colecalciferol/kg MS; 1 µg = 40 UI → 0,552 UI/g; limite superior seguro (SUL) 80 µg colecalciferol/kg MS; ingestão adequada (AI) = 0,44"
+        },
+        "vitamin_e": {
+          "min": 30.0,
+          "note": "ingestão adequada (AI) = 24,0"
+        },
+        "vitamin_k": {
+          "min": 1.64,
+          "note": "ingestão adequada (AI) = 1,3"
+        },
+        "thiamin": {
+          "min": 1.38,
+          "note": "ingestão adequada (AI) = 1,08"
+        },
+        "riboflavin": {
+          "min": 5.25,
+          "note": "ingestão adequada (AI) = 4,2"
+        },
+        "pyridoxine": {
+          "min": 1.5,
+          "note": "ingestão adequada (AI) = 1,2"
+        },
+        "niacin": {
+          "min": 17.0,
+          "note": "ingestão adequada (AI) = 13,6"
+        },
+        "pantothenic_acid": {
+          "min": 15.0,
+          "note": "ingestão adequada (AI) = 12,0"
+        },
+        "cobalamin": {
+          "min": 0.035,
+          "note": "fonte: 35 µg/kg MS; ingestão adequada (AI) = 0,028"
+        },
+        "folic_acid": {
+          "min": 0.27,
+          "note": "fonte: 270 µg/kg MS; ingestão adequada (AI) = 0,216"
+        },
+        "choline": {
+          "min": 1700.0,
+          "note": "ingestão adequada (AI) = 1360,0"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento, ≥14 semanas (Tabela 15-3)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 17.5,
+          "note": "necessidade mínima (MR) = 14,0"
+        },
+        "arginine": {
+          "min": 0.66,
+          "note": "necessidade mínima (MR) = 0,53"
+        },
+        "histidine": {
+          "min": 0.25,
+          "note": "necessidade mínima (MR) = 0,2"
+        },
+        "isoleucine": {
+          "min": 0.5,
+          "note": "necessidade mínima (MR) = 0,4"
+        },
+        "methionine": {
+          "min": 0.26,
+          "note": "necessidade mínima (MR) = 0,21"
+        },
+        "methionine_cystine": {
+          "min": 0.53,
+          "note": "necessidade mínima (MR) = 0,42"
+        },
+        "leucine": {
+          "min": 0.82,
+          "note": "necessidade mínima (MR) = 0,65"
+        },
+        "lysine": {
+          "min": 0.7,
+          "note": "necessidade mínima (MR) = 0,56"
+        },
+        "phenylalanine": {
+          "min": 0.5,
+          "note": "necessidade mínima (MR) = 0,4"
+        },
+        "threonine": {
+          "min": 0.63,
+          "note": "necessidade mínima (MR) = 0,5"
+        },
+        "tryptophan": {
+          "min": 0.18,
+          "note": "necessidade mínima (MR) = 0,14"
+        },
+        "valine": {
+          "min": 0.56,
+          "note": "necessidade mínima (MR) = 0,45"
+        },
+        "ether_extract": {
+          "min": 8.5,
+          "max": 33.0,
+          "note": "limite superior seguro (SUL) 330 g/kg MS"
+        },
+        "linoleic_acid": {
+          "min": 1.3,
+          "max": 6.5,
+          "note": "limite superior seguro (SUL) 65 g/kg MS; ingestão adequada (AI) = 1,18"
+        },
+        "linolenic_acid": {
+          "min": 0.08,
+          "note": "ingestão adequada (AI) = 0,07"
+        },
+        "arachidonic_acid": {
+          "min": 0.03
+        },
+        "calcium": {
+          "min": 1.2,
+          "max": 1.8,
+          "note": "limite superior seguro (SUL) 18 g/kg MS; necessidade mínima (MR) = 0,8; RA com nota h: cachorros >25 kg adultos até às 14 semanas ≥0,54 g Ca/kg PV"
+        },
+        "phosphorus": {
+          "min": 1.0
+        },
+        "magnesium": {
+          "min": 0.04,
+          "note": "necessidade mínima (MR) = 0,018"
+        },
+        "sodium": {
+          "min": 0.22
+        },
+        "potassium": {
+          "min": 0.44
+        },
+        "iron": {
+          "min": 88.0,
+          "note": "necessidade mínima (MR) = 72,0"
+        },
+        "copper": {
+          "min": 11.0
+        },
+        "zinc": {
+          "min": 100.0,
+          "note": "necessidade mínima (MR) = 40,0"
+        },
+        "manganese": {
+          "min": 5.6
+        },
+        "selenium": {
+          "min": 0.35,
+          "note": "fonte: 350 µg/kg MS; necessidade mínima (MR) = 0,21"
+        },
+        "iodine": {
+          "min": 0.88,
+          "note": "fonte: 880 µg/kg MS"
+        },
+        "vitamin_a": {
+          "min": 5.05,
+          "max": 50.0,
+          "note": "fonte: 1515 RE (µg retinol)/kg MS; 1 UI = 0,3 RE → 5,05 UI/g; limite superior seguro (SUL) 15000 RE (µg retinol)/kg MS; ingestão adequada (AI) = 4,04"
+        },
+        "vitamin_d3": {
+          "min": 0.552,
+          "max": 3.2,
+          "note": "fonte: 13,8 µg colecalciferol/kg MS; 1 µg = 40 UI → 0,552 UI/g; limite superior seguro (SUL) 80 µg colecalciferol/kg MS; ingestão adequada (AI) = 0,44"
+        },
+        "vitamin_e": {
+          "min": 30.0,
+          "note": "ingestão adequada (AI) = 24,0"
+        },
+        "vitamin_k": {
+          "min": 1.64,
+          "note": "ingestão adequada (AI) = 1,3"
+        },
+        "thiamin": {
+          "min": 1.38,
+          "note": "ingestão adequada (AI) = 1,08"
+        },
+        "riboflavin": {
+          "min": 5.25,
+          "note": "ingestão adequada (AI) = 4,2"
+        },
+        "pyridoxine": {
+          "min": 1.5,
+          "note": "ingestão adequada (AI) = 1,2"
+        },
+        "niacin": {
+          "min": 17.0,
+          "note": "ingestão adequada (AI) = 13,6"
+        },
+        "pantothenic_acid": {
+          "min": 15.0,
+          "note": "ingestão adequada (AI) = 12,0"
+        },
+        "cobalamin": {
+          "min": 0.035,
+          "note": "fonte: 35 µg/kg MS; ingestão adequada (AI) = 0,028"
+        },
+        "folic_acid": {
+          "min": 0.27,
+          "note": "fonte: 270 µg/kg MS; ingestão adequada (AI) = 0,216"
+        },
+        "choline": {
+          "min": 1700.0,
+          "note": "ingestão adequada (AI) = 1360,0"
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Adulto em manutenção (Tabela 15-5)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 10.0,
+          "note": "necessidade mínima (MR) = 8,0"
+        },
+        "arginine": {
+          "min": 0.35,
+          "note": "necessidade mínima (MR) = 0,28"
+        },
+        "histidine": {
+          "min": 0.19,
+          "note": "necessidade mínima (MR) = 0,15"
+        },
+        "isoleucine": {
+          "min": 0.38,
+          "note": "necessidade mínima (MR) = 0,3"
+        },
+        "methionine": {
+          "min": 0.33,
+          "note": "necessidade mínima (MR) = 0,26"
+        },
+        "methionine_cystine": {
+          "min": 0.65,
+          "note": "necessidade mínima (MR) = 0,52"
+        },
+        "leucine": {
+          "min": 0.68,
+          "note": "necessidade mínima (MR) = 0,54"
+        },
+        "lysine": {
+          "min": 0.35,
+          "note": "necessidade mínima (MR) = 0,28"
+        },
+        "phenylalanine": {
+          "min": 0.45,
+          "note": "necessidade mínima (MR) = 0,36"
+        },
+        "threonine": {
+          "min": 0.43,
+          "note": "necessidade mínima (MR) = 0,34"
+        },
+        "tryptophan": {
+          "min": 0.14,
+          "note": "necessidade mínima (MR) = 0,11"
+        },
+        "valine": {
+          "min": 0.49,
+          "note": "necessidade mínima (MR) = 0,39"
+        },
+        "ether_extract": {
+          "min": 5.5,
+          "max": 33.0,
+          "note": "limite superior seguro (SUL) 330 g/kg MS; ingestão adequada (AI) = 4,0"
+        },
+        "linoleic_acid": {
+          "min": 1.1,
+          "max": 6.5,
+          "note": "limite superior seguro (SUL) 65 g/kg MS; ingestão adequada (AI) = 0,95"
+        },
+        "linolenic_acid": {
+          "min": 0.044,
+          "note": "ingestão adequada (AI) = 0,036"
+        },
+        "calcium": {
+          "min": 0.4,
+          "note": "necessidade mínima (MR) = 0,2"
+        },
+        "phosphorus": {
+          "min": 0.3
+        },
+        "magnesium": {
+          "min": 0.06,
+          "note": "necessidade mínima (MR) = 0,018"
+        },
+        "sodium": {
+          "min": 0.08,
+          "note": "necessidade mínima (MR) = 0,03"
+        },
+        "potassium": {
+          "min": 0.4
+        },
+        "iron": {
+          "min": 30.0
+        },
+        "copper": {
+          "min": 6.0
+        },
+        "zinc": {
+          "min": 60.0
+        },
+        "manganese": {
+          "min": 4.8
+        },
+        "selenium": {
+          "min": 0.35,
+          "note": "fonte: 350 µg/kg MS"
+        },
+        "iodine": {
+          "min": 0.88,
+          "note": "fonte: 880 µg/kg MS; necessidade mínima (MR) = 0,7"
+        },
+        "vitamin_a": {
+          "min": 5.05,
+          "max": 213.3,
+          "note": "fonte: 1515 RE (µg retinol)/kg MS; 1 UI = 0,3 RE → 5,05 UI/g; limite superior seguro (SUL) 64000 RE (µg retinol)/kg MS; ingestão adequada (AI) = 4,04"
+        },
+        "vitamin_d3": {
+          "min": 0.552,
+          "max": 3.2,
+          "note": "fonte: 13,8 µg colecalciferol/kg MS; 1 µg = 40 UI → 0,552 UI/g; limite superior seguro (SUL) 80 µg colecalciferol/kg MS; ingestão adequada (AI) = 0,44"
+        },
+        "vitamin_e": {
+          "min": 30.0,
+          "note": "ingestão adequada (AI) = 24,0"
+        },
+        "vitamin_k": {
+          "min": 1.63,
+          "note": "ingestão adequada (AI) = 1,3"
+        },
+        "thiamin": {
+          "min": 2.25,
+          "note": "ingestão adequada (AI) = 1,8"
+        },
+        "riboflavin": {
+          "min": 5.25,
+          "note": "necessidade mínima (MR) = 4,2"
+        },
+        "pyridoxine": {
+          "min": 1.5,
+          "note": "ingestão adequada (AI) = 1,2"
+        },
+        "niacin": {
+          "min": 17.0,
+          "note": "ingestão adequada (AI) = 13,6"
+        },
+        "pantothenic_acid": {
+          "min": 15.0,
+          "note": "ingestão adequada (AI) = 12,0"
+        },
+        "cobalamin": {
+          "min": 0.035,
+          "note": "fonte: 35 µg/kg MS; ingestão adequada (AI) = 0,028"
+        },
+        "folic_acid": {
+          "min": 0.27,
+          "note": "fonte: 270 µg/kg MS; ingestão adequada (AI) = 0,216"
+        },
+        "choline": {
+          "min": 1700.0,
+          "note": "ingestão adequada (AI) = 1360,0"
+        }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Gestação final e pico de lactação (Tabela 15-8)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 20.0
+        },
+        "arginine": {
+          "min": 1.0
+        },
+        "histidine": {
+          "min": 0.44
+        },
+        "isoleucine": {
+          "min": 0.71
+        },
+        "methionine": {
+          "min": 0.31
+        },
+        "methionine_cystine": {
+          "min": 0.62
+        },
+        "leucine": {
+          "min": 2.0
+        },
+        "lysine": {
+          "min": 0.9
+        },
+        "phenylalanine": {
+          "min": 0.83
+        },
+        "threonine": {
+          "min": 1.04
+        },
+        "tryptophan": {
+          "min": 0.12
+        },
+        "valine": {
+          "min": 1.3
+        },
+        "ether_extract": {
+          "min": 8.5,
+          "max": 33.0,
+          "note": "limite superior seguro (SUL) 330 g/kg MS"
+        },
+        "linoleic_acid": {
+          "min": 1.3,
+          "max": 6.5,
+          "note": "limite superior seguro (SUL) 65 g/kg MS; ingestão adequada (AI) = 1,1"
+        },
+        "linolenic_acid": {
+          "min": 0.08,
+          "note": "ingestão adequada (AI) = 0,07"
+        },
+        "calcium": {
+          "min": 0.8
+        },
+        "phosphorus": {
+          "min": 0.5
+        },
+        "magnesium": {
+          "min": 0.06
+        },
+        "sodium": {
+          "min": 0.2
+        },
+        "potassium": {
+          "min": 0.36
+        },
+        "iron": {
+          "min": 70.0
+        },
+        "copper": {
+          "min": 12.4
+        },
+        "zinc": {
+          "min": 96.0
+        },
+        "manganese": {
+          "min": 7.2
+        },
+        "selenium": {
+          "min": 0.35,
+          "note": "fonte: 350 µg/kg MS"
+        },
+        "iodine": {
+          "min": 0.88,
+          "note": "fonte: 880 µg/kg MS"
+        },
+        "vitamin_a": {
+          "min": 5.05,
+          "max": 50.0,
+          "note": "fonte: 1515 RE (µg retinol)/kg MS; 1 UI = 0,3 RE → 5,05 UI/g; limite superior seguro (SUL) 15000 RE (µg retinol)/kg MS; ingestão adequada (AI) = 4,04"
+        },
+        "vitamin_d3": {
+          "min": 0.552,
+          "max": 3.2,
+          "note": "fonte: 13,8 µg colecalciferol/kg MS; 1 µg = 40 UI → 0,552 UI/g; limite superior seguro (SUL) 80 µg colecalciferol/kg MS; ingestão adequada (AI) = 0,44"
+        },
+        "vitamin_e": {
+          "min": 30.0,
+          "note": "ingestão adequada (AI) = 24,0"
+        },
+        "vitamin_k": {
+          "min": 1.6,
+          "note": "ingestão adequada (AI) = 1,3"
+        },
+        "thiamin": {
+          "min": 2.25,
+          "note": "ingestão adequada (AI) = 1,8"
+        },
+        "riboflavin": {
+          "min": 5.3,
+          "note": "ingestão adequada (AI) = 4,2"
+        },
+        "pyridoxine": {
+          "min": 1.5,
+          "note": "ingestão adequada (AI) = 1,2"
+        },
+        "niacin": {
+          "min": 17.0,
+          "note": "ingestão adequada (AI) = 13,6"
+        },
+        "pantothenic_acid": {
+          "min": 15.0,
+          "note": "ingestão adequada (AI) = 12,0"
+        },
+        "cobalamin": {
+          "min": 0.035,
+          "note": "fonte: 35 µg/kg MS; ingestão adequada (AI) = 0,028"
+        },
+        "folic_acid": {
+          "min": 0.27,
+          "note": "fonte: 270 µg/kg MS; ingestão adequada (AI) = 0,216"
+        },
+        "choline": {
+          "min": 1700.0,
+          "note": "ingestão adequada (AI) = 1360,0"
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Arginina: juntar 0,01 g por cada g de proteína bruta acima da RA de proteína (adulto 100 g/kg MS; crescimento 225 g ou 175 g/kg MS; gestação/lactação 200 g/kg MS)."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Cachorros de raças grandes (peso adulto >25 kg) até às 14 semanas: o cálcio não deve ser inferior a 0,54 g/kg PV/dia."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Ácido α-linolénico: a razão linoleico:α-linolénico deve ficar entre 2,6 e 16 (crescimento, reprodução) ou 2,6 e 26 (manutenção)."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Vitamina E: são recomendadas concentrações mais altas em dietas ricas em ácidos gordos polinsaturados."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Algumas formas de óxido de ferro e de cobre têm baixa biodisponibilidade e não devem ser usadas."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Dietas com clara de ovo crua ou antibióticos podem precisar de biotina; o NRC não dá valor de biotina para cães."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Valores transcritos da coluna 'Amt/kg DM' do NRC, que assume 4000 kcal EM/kg MS. Para dietas com outra densidade energética o NRC manda corrigir: valor × (kcal EM/kg MS da dieta) / 4000.",
+    "min = Recommended Allowance (RA) do NRC; max = Safe Upper Limit (SUL). A necessidade mínima (MR) e a ingestão adequada (AI) ficam na nota quando diferem da RA.",
+    "Conversões: g/kg MS → % (÷10); mg/kg MS de Mg e Na → % (÷10 000); µg/kg → mg/kg (÷1000). 'Total fat' do NRC registado como extrato etéreo.",
+    "As páginas da cópia Scribd foram reconstruídas a partir das posições dos caracteres (tabelas rodadas). Todas as linhas foram verificadas pela relação Amt/kg MS = 4 × Amt/1000 kcal; só uma célula falhou (ác. pantoténico RA, lactação felina: 0,19/1000 kcal impresso, incoerente com 5,75 g/kg MS; usado o valor por kg MS).",
+    "SUL dados como '>x' (o limite real é superior a x) não foram registados como máximo; ver lista abaixo.",
+    "Sem chave no catálogo (omitidos): cloro, fenilalanina+tirosina, EPA+DHA (o NRC dá a soma), ácido glutâmico (SUL).",
+    "Tabela 15-8: o NRC indica que os valores de lactação por kg MS servem também para a gestação; registados uma única vez com lifeStage 'lactation'.",
+    "Crescimento: proteína e aminoácidos diferem entre 4–14 semanas e ≥14 semanas; gordura, minerais e vitaminas são comuns a ambos os conjuntos.",
+    "Cálcio no crescimento: RA 12 g/kg MS (com nota h); SUL 18 g/kg MS.",
+    "SUL não registados: lisina >20 g/kg MS (crescimento); sódio >15 g/kg MS, cloro 23,5 g/kg MS e iodo '≥ 4 mg'/kg MS (manutenção; o sinal do iodo saiu ambíguo na extração — confirmar no livro antes de usar 4 mg/kg como máximo).",
+    "Vitamina A em RE (1 RE = 1 µg retinol; 1 UI = 0,3 RE); os SUL estão expressos em µg de retinol."
+  ]
+}

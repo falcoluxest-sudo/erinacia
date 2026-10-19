@@ -1,0 +1,642 @@
+{
+  "id": "fediaf-2025-dog",
+  "title": "FEDIAF Nutritional Guidelines 2025 — complete dog food (Table III-3a)",
+  "citation": "FEDIAF (2025). Nutritional Guidelines for Complete and Complementary Pet Food for Cats and Dogs. European Pet Food Industry Federation, Bruxelas. https://europeanpetfood.org/wp-content/uploads/2025/09/FEDIAF-Nutritional-Guidelines_2025-ONLINE.pdf — Tabela III-3a (unidade por 100 g MS), secção 3.2.2, e notas a–h.",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Canidae",
+      "commonName": {
+        "pt": "Canídeos (modelo: cão doméstico)",
+        "en": "Canids (domestic dog model)"
+      }
+    },
+    {
+      "scientificName": "Canis lupus familiaris",
+      "commonName": {
+        "pt": "Cão doméstico",
+        "en": "Domestic dog"
+      }
+    }
+  ],
+  "guild": "carnivore",
+  "modelSpecies": "Cão doméstico (Canis lupus familiaris)",
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Adulto, NEM 110 kcal/kg^0,75 (Tabela III-3a)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 18.0
+        },
+        "arginine": {
+          "min": 0.52
+        },
+        "histidine": {
+          "min": 0.23
+        },
+        "isoleucine": {
+          "min": 0.46
+        },
+        "leucine": {
+          "min": 0.82
+        },
+        "lysine": {
+          "min": 0.42
+        },
+        "methionine": {
+          "min": 0.4
+        },
+        "methionine_cystine": {
+          "min": 0.76
+        },
+        "phenylalanine": {
+          "min": 0.54
+        },
+        "threonine": {
+          "min": 0.52
+        },
+        "tryptophan": {
+          "min": 0.17
+        },
+        "valine": {
+          "min": 0.59
+        },
+        "ether_extract": {
+          "min": 5.5
+        },
+        "linoleic_acid": {
+          "min": 1.32
+        },
+        "calcium": {
+          "min": 0.5,
+          "max": 2.5,
+          "note": "máximo nutricional"
+        },
+        "phosphorus": {
+          "min": 0.4,
+          "max": 1.6,
+          "note": "máximo nutricional (nota h: fósforo inorgânico)"
+        },
+        "potassium": {
+          "min": 0.5
+        },
+        "sodium": {
+          "min": 0.1
+        },
+        "magnesium": {
+          "min": 0.07
+        },
+        "copper": {
+          "min": 7.2,
+          "max": 28.0,
+          "note": "máximo legal UE 2,8 mg/100 g MS"
+        },
+        "iodine": {
+          "min": 1.1,
+          "max": 11.0,
+          "note": "máximo legal UE 1,1 mg/100 g MS"
+        },
+        "iron": {
+          "min": 36.0,
+          "max": 681.8,
+          "note": "máximo legal UE 68,18 mg/100 g MS"
+        },
+        "manganese": {
+          "min": 5.8,
+          "max": 170.0,
+          "note": "máximo legal UE 17 mg/100 g MS"
+        },
+        "selenium": {
+          "min": 0.23,
+          "note": "fonte: 23 µg/100 g MS; selénio para dietas húmidas; dietas secas: 18,00 µg/100 g MS; máximo legal UE 56,8 µg/100 g MS",
+          "max": 0.568
+        },
+        "zinc": {
+          "min": 72.0,
+          "max": 227.0,
+          "note": "máximo legal UE 22,7 mg/100 g MS"
+        },
+        "vitamin_a": {
+          "min": 6.06,
+          "note": "fonte: 606 UI/100 g MS → 6,06 UI/g; máximo nutricional 40 000 UI/100 g MS",
+          "max": 400.0
+        },
+        "vitamin_d3": {
+          "min": 0.552,
+          "note": "fonte: 55,2 UI/100 g MS → 0,552 UI/g; máximo legal UE 227 UI/100 g MS",
+          "max": 2.27
+        },
+        "vitamin_e": {
+          "min": 36.0,
+          "note": "fonte: 3,6 UI/100 g MS; 1 UI = 1 mg acetato de all-rac-α-tocoferilo → 36 mg/kg"
+        },
+        "thiamin": {
+          "min": 2.1
+        },
+        "riboflavin": {
+          "min": 6.0
+        },
+        "pantothenic_acid": {
+          "min": 14.2
+        },
+        "pyridoxine": {
+          "min": 1.5
+        },
+        "cobalamin": {
+          "min": 0.0335,
+          "note": "fonte: 3,35 µg/100 g MS"
+        },
+        "niacin": {
+          "min": 16.4
+        },
+        "folic_acid": {
+          "min": 0.258,
+          "note": "fonte: 25,8 µg/100 g MS"
+        },
+        "choline": {
+          "min": 1640.0
+        },
+        "ca_p_ratio": {
+          "max": 2.0,
+          "note": "máximo nutricional 2/1"
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Adulto com baixa necessidade energética, NEM 95 kcal/kg^0,75 (Tabela III-3a)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 21.0
+        },
+        "arginine": {
+          "min": 0.6
+        },
+        "histidine": {
+          "min": 0.27
+        },
+        "isoleucine": {
+          "min": 0.53
+        },
+        "leucine": {
+          "min": 0.95
+        },
+        "lysine": {
+          "min": 0.46
+        },
+        "methionine": {
+          "min": 0.46
+        },
+        "methionine_cystine": {
+          "min": 0.88
+        },
+        "phenylalanine": {
+          "min": 0.63
+        },
+        "threonine": {
+          "min": 0.6
+        },
+        "tryptophan": {
+          "min": 0.2
+        },
+        "valine": {
+          "min": 0.68
+        },
+        "ether_extract": {
+          "min": 5.5
+        },
+        "linoleic_acid": {
+          "min": 1.53
+        },
+        "calcium": {
+          "min": 0.58,
+          "max": 2.5,
+          "note": "máximo nutricional"
+        },
+        "phosphorus": {
+          "min": 0.46,
+          "max": 1.6,
+          "note": "máximo nutricional (nota h: fósforo inorgânico)"
+        },
+        "potassium": {
+          "min": 0.58
+        },
+        "sodium": {
+          "min": 0.12
+        },
+        "magnesium": {
+          "min": 0.08
+        },
+        "copper": {
+          "min": 8.3,
+          "max": 28.0,
+          "note": "máximo legal UE 2,8 mg/100 g MS"
+        },
+        "iodine": {
+          "min": 1.2,
+          "max": 11.0,
+          "note": "máximo legal UE 1,1 mg/100 g MS"
+        },
+        "iron": {
+          "min": 41.7,
+          "max": 681.8,
+          "note": "máximo legal UE 68,18 mg/100 g MS"
+        },
+        "manganese": {
+          "min": 6.7,
+          "max": 170.0,
+          "note": "máximo legal UE 17 mg/100 g MS"
+        },
+        "selenium": {
+          "min": 0.27,
+          "note": "fonte: 27 µg/100 g MS; selénio para dietas húmidas; dietas secas: 22,00 µg/100 g MS; máximo legal UE 56,8 µg/100 g MS",
+          "max": 0.568
+        },
+        "zinc": {
+          "min": 83.4,
+          "max": 227.0,
+          "note": "máximo legal UE 22,7 mg/100 g MS"
+        },
+        "vitamin_a": {
+          "min": 7.02,
+          "note": "fonte: 702 UI/100 g MS → 7,02 UI/g; máximo nutricional 40 000 UI/100 g MS",
+          "max": 400.0
+        },
+        "vitamin_d3": {
+          "min": 0.639,
+          "note": "fonte: 63,9 UI/100 g MS → 0,639 UI/g; máximo legal UE 227 UI/100 g MS",
+          "max": 2.27
+        },
+        "vitamin_e": {
+          "min": 41.7,
+          "note": "fonte: 4,17 UI/100 g MS; 1 UI = 1 mg acetato de all-rac-α-tocoferilo → 41,7 mg/kg"
+        },
+        "thiamin": {
+          "min": 2.5
+        },
+        "riboflavin": {
+          "min": 6.9
+        },
+        "pantothenic_acid": {
+          "min": 16.4
+        },
+        "pyridoxine": {
+          "min": 1.7
+        },
+        "cobalamin": {
+          "min": 0.0387,
+          "note": "fonte: 3,87 µg/100 g MS"
+        },
+        "niacin": {
+          "min": 18.9
+        },
+        "folic_acid": {
+          "min": 0.299,
+          "note": "fonte: 29,9 µg/100 g MS"
+        },
+        "choline": {
+          "min": 1890.0
+        },
+        "ca_p_ratio": {
+          "max": 2.0,
+          "note": "máximo nutricional 2/1"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento inicial (<14 semanas) e reprodução (Tabela III-3a)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 25.0
+        },
+        "arginine": {
+          "min": 0.82
+        },
+        "histidine": {
+          "min": 0.39
+        },
+        "isoleucine": {
+          "min": 0.65
+        },
+        "leucine": {
+          "min": 1.29
+        },
+        "lysine": {
+          "min": 0.88,
+          "max": 2.8,
+          "note": "máximo nutricional (crescimento)"
+        },
+        "methionine": {
+          "min": 0.35
+        },
+        "methionine_cystine": {
+          "min": 0.7
+        },
+        "phenylalanine": {
+          "min": 0.65
+        },
+        "threonine": {
+          "min": 0.81
+        },
+        "tryptophan": {
+          "min": 0.23
+        },
+        "valine": {
+          "min": 0.68
+        },
+        "ether_extract": {
+          "min": 8.5
+        },
+        "linoleic_acid": {
+          "min": 1.3,
+          "max": 6.5,
+          "note": "máximo nutricional (crescimento inicial)"
+        },
+        "arachidonic_acid": {
+          "min": 0.03,
+          "note": "fonte: 30 mg/100 g MS"
+        },
+        "linolenic_acid": {
+          "min": 0.08
+        },
+        "calcium": {
+          "min": 1.0,
+          "max": 1.6,
+          "note": "máximo nutricional"
+        },
+        "phosphorus": {
+          "min": 0.9
+        },
+        "potassium": {
+          "min": 0.44
+        },
+        "sodium": {
+          "min": 0.22
+        },
+        "magnesium": {
+          "min": 0.04
+        },
+        "copper": {
+          "min": 11.0,
+          "max": 28.0,
+          "note": "máximo legal UE 2,8 mg/100 g MS"
+        },
+        "iodine": {
+          "min": 1.5,
+          "max": 11.0,
+          "note": "máximo legal UE 1,1 mg/100 g MS"
+        },
+        "iron": {
+          "min": 88.0,
+          "max": 681.8,
+          "note": "máximo legal UE 68,18 mg/100 g MS"
+        },
+        "manganese": {
+          "min": 5.6,
+          "max": 170.0,
+          "note": "máximo legal UE 17 mg/100 g MS"
+        },
+        "selenium": {
+          "min": 0.4,
+          "note": "fonte: 40 µg/100 g MS; selénio para dietas húmidas; dietas secas: 40,00 µg/100 g MS; máximo legal UE 56,8 µg/100 g MS",
+          "max": 0.568
+        },
+        "zinc": {
+          "min": 100.0,
+          "max": 227.0,
+          "note": "máximo legal UE 22,7 mg/100 g MS"
+        },
+        "vitamin_a": {
+          "min": 5.0,
+          "note": "fonte: 500 UI/100 g MS → 5 UI/g; máximo nutricional 40 000 UI/100 g MS",
+          "max": 400.0
+        },
+        "vitamin_d3": {
+          "min": 0.552,
+          "note": "fonte: 55,2 UI/100 g MS → 0,552 UI/g; máximo legal UE 227 UI/100 g MS",
+          "max": 2.27
+        },
+        "vitamin_e": {
+          "min": 50.0,
+          "note": "fonte: 5 UI/100 g MS; 1 UI = 1 mg acetato de all-rac-α-tocoferilo → 50 mg/kg"
+        },
+        "thiamin": {
+          "min": 1.8
+        },
+        "riboflavin": {
+          "min": 4.2
+        },
+        "pantothenic_acid": {
+          "min": 12.0
+        },
+        "pyridoxine": {
+          "min": 1.2
+        },
+        "cobalamin": {
+          "min": 0.028,
+          "note": "fonte: 2,8 µg/100 g MS"
+        },
+        "niacin": {
+          "min": 13.6
+        },
+        "folic_acid": {
+          "min": 0.216,
+          "note": "fonte: 21,6 µg/100 g MS"
+        },
+        "choline": {
+          "min": 1700.0
+        },
+        "ca_p_ratio": {
+          "max": 1.6,
+          "note": "máximo nutricional 1,6/1"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento tardio (≥14 semanas) (Tabela III-3a)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 20.0
+        },
+        "arginine": {
+          "min": 0.74
+        },
+        "histidine": {
+          "min": 0.25
+        },
+        "isoleucine": {
+          "min": 0.5
+        },
+        "leucine": {
+          "min": 0.8
+        },
+        "lysine": {
+          "min": 0.7,
+          "max": 2.8,
+          "note": "máximo nutricional (crescimento)"
+        },
+        "methionine": {
+          "min": 0.26
+        },
+        "methionine_cystine": {
+          "min": 0.53
+        },
+        "phenylalanine": {
+          "min": 0.5
+        },
+        "threonine": {
+          "min": 0.64
+        },
+        "tryptophan": {
+          "min": 0.21
+        },
+        "valine": {
+          "min": 0.56
+        },
+        "ether_extract": {
+          "min": 8.5
+        },
+        "linoleic_acid": {
+          "min": 1.3
+        },
+        "arachidonic_acid": {
+          "min": 0.03,
+          "note": "fonte: 30 mg/100 g MS"
+        },
+        "linolenic_acid": {
+          "min": 0.08
+        },
+        "calcium": {
+          "min": 0.8,
+          "max": 1.8,
+          "note": "máximo nutricional; 0,80 % para raças com peso adulto ≤15 kg (nota a); 1,00 % para raças >15 kg até ~6 meses (nota b)"
+        },
+        "phosphorus": {
+          "min": 0.7
+        },
+        "potassium": {
+          "min": 0.44
+        },
+        "sodium": {
+          "min": 0.22
+        },
+        "magnesium": {
+          "min": 0.04
+        },
+        "copper": {
+          "min": 11.0,
+          "max": 28.0,
+          "note": "máximo legal UE 2,8 mg/100 g MS"
+        },
+        "iodine": {
+          "min": 1.5,
+          "max": 11.0,
+          "note": "máximo legal UE 1,1 mg/100 g MS"
+        },
+        "iron": {
+          "min": 88.0,
+          "max": 681.8,
+          "note": "máximo legal UE 68,18 mg/100 g MS"
+        },
+        "manganese": {
+          "min": 5.6,
+          "max": 170.0,
+          "note": "máximo legal UE 17 mg/100 g MS"
+        },
+        "selenium": {
+          "min": 0.4,
+          "note": "fonte: 40 µg/100 g MS; selénio para dietas húmidas; dietas secas: 40,00 µg/100 g MS; máximo legal UE 56,8 µg/100 g MS",
+          "max": 0.568
+        },
+        "zinc": {
+          "min": 100.0,
+          "max": 227.0,
+          "note": "máximo legal UE 22,7 mg/100 g MS"
+        },
+        "vitamin_a": {
+          "min": 5.0,
+          "note": "fonte: 500 UI/100 g MS → 5 UI/g; máximo nutricional 40 000 UI/100 g MS",
+          "max": 400.0
+        },
+        "vitamin_d3": {
+          "min": 0.5,
+          "note": "fonte: 50 UI/100 g MS → 0,5 UI/g; máximo legal UE 227 UI/100 g MS",
+          "max": 2.27
+        },
+        "vitamin_e": {
+          "min": 50.0,
+          "note": "fonte: 5 UI/100 g MS; 1 UI = 1 mg acetato de all-rac-α-tocoferilo → 50 mg/kg"
+        },
+        "thiamin": {
+          "min": 1.8
+        },
+        "riboflavin": {
+          "min": 4.2
+        },
+        "pantothenic_acid": {
+          "min": 12.0
+        },
+        "pyridoxine": {
+          "min": 1.2
+        },
+        "cobalamin": {
+          "min": 0.028,
+          "note": "fonte: 2,8 µg/100 g MS"
+        },
+        "niacin": {
+          "min": 13.6
+        },
+        "folic_acid": {
+          "min": 0.216,
+          "note": "fonte: 21,6 µg/100 g MS"
+        },
+        "choline": {
+          "min": 1700.0
+        },
+        "ca_p_ratio": {
+          "max": 1.8,
+          "note": "máximo nutricional 1,8/1 (raças ≤15 kg, nota a); 1,6/1 para raças >15 kg (nota b)"
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Sódio até 1,5 % MS e cloro até 2,35 % MS são seguros para cães saudáveis (nota c)."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Selénio orgânico: suplementação máxima 22,73 µg/100 g MS (nota d)."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Fósforo inorgânico muito disponível afeta a homeostase Ca/P em cães (nota h); ter em conta a fonte de fósforo."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Valores por 100 g MS dos quadros FEDIAF, que assumem 4000 kcal EM/kg MS (ver tabelas por 1000 kcal); para outras densidades energéticas corrigir proporcionalmente.",
+    "min = nível mínimo recomendado FEDIAF (não é a necessidade mínima); max = máximo nutricional (N) ou máximo legal UE (L), conforme indicado na nota.",
+    "Os valores dos adultos derivam do NRC (2006) para um cão de 15 kg / gato de 4 kg magros, com correção para menor ingestão energética.",
+    "Conversões: g/100 g MS = %; mg/100 g → mg/kg (×10); µg/100 g → mg/kg (÷100); UI/100 g → UI/g (÷100); vitamina E em UI convertida a mg (1 UI = 1 mg).",
+    "Vitamina D registada como D3; a FEDIAF não distingue D2/D3 nas tabelas.",
+    "Os máximos legais UE de oligoelementos e vitamina D referem-se ao teor total no alimento completo (12 % humidade), aqui convertidos pela FEDIAF a base MS.",
+    "Sem chave no catálogo (omitidos): cloro, fenilalanina+tirosina, EPA+DHA.",
+    "Crescimento tardio: cálcio 0,80 % (raças ≤15 kg) ou 1,00 % (raças >15 kg até ~6 meses); registado 0,80 % com a alternativa na nota.",
+    "A linha Ca/P da tabela tem '1/1' na coluna de unidade; não registado como mínimo por ambiguidade.",
+    "Vitamina D: o máximo legal (227 UI/100 g) é mais baixo que o nutricional (320 UI/100 g); registado o legal."
+  ]
+}

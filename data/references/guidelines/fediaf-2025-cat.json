@@ -1,0 +1,674 @@
+{
+  "id": "fediaf-2025-cat",
+  "title": "FEDIAF Nutritional Guidelines 2025 — complete cat food (Table III-4a)",
+  "citation": "FEDIAF (2025). Nutritional Guidelines for Complete and Complementary Pet Food for Cats and Dogs. European Pet Food Industry Federation, Bruxelas. https://europeanpetfood.org/wp-content/uploads/2025/09/FEDIAF-Nutritional-Guidelines_2025-ONLINE.pdf — Tabela III-4a (unidade por 100 g MS), secção 3.2.3, e notas a–h.",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Felidae",
+      "commonName": {
+        "pt": "Felídeos (modelo: gato doméstico)",
+        "en": "Felids (domestic cat model)"
+      }
+    },
+    {
+      "scientificName": "Felis catus",
+      "commonName": {
+        "pt": "Gato doméstico",
+        "en": "Domestic cat"
+      }
+    }
+  ],
+  "guild": "obligate_carnivore",
+  "modelSpecies": "Gato doméstico (Felis catus)",
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Adulto, NEM 100 kcal/kg^0,67 (Tabela III-4a)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 25.0
+        },
+        "arginine": {
+          "min": 1.0
+        },
+        "histidine": {
+          "min": 0.26
+        },
+        "isoleucine": {
+          "min": 0.43
+        },
+        "leucine": {
+          "min": 1.02
+        },
+        "lysine": {
+          "min": 0.34
+        },
+        "methionine": {
+          "min": 0.17
+        },
+        "methionine_cystine": {
+          "min": 0.34
+        },
+        "phenylalanine": {
+          "min": 0.4
+        },
+        "threonine": {
+          "min": 0.52
+        },
+        "tryptophan": {
+          "min": 0.13
+        },
+        "valine": {
+          "min": 0.51
+        },
+        "taurine": {
+          "min": 0.2,
+          "note": "taurina para alimento enlatado/húmido; alimento seco: 0,10 g/100 g MS"
+        },
+        "ether_extract": {
+          "min": 9.0
+        },
+        "linoleic_acid": {
+          "min": 0.5
+        },
+        "arachidonic_acid": {
+          "min": 0.006,
+          "note": "fonte: 6 mg/100 g MS"
+        },
+        "calcium": {
+          "min": 0.4
+        },
+        "phosphorus": {
+          "min": 0.26
+        },
+        "potassium": {
+          "min": 0.6
+        },
+        "sodium": {
+          "min": 0.08,
+          "note": "até 1,5 % MS é seguro para gatos saudáveis (nota e)"
+        },
+        "magnesium": {
+          "min": 0.04
+        },
+        "copper": {
+          "min": 5.0,
+          "max": 28.0,
+          "note": "máximo legal UE 2,8 mg/100 g MS"
+        },
+        "iodine": {
+          "min": 1.3,
+          "max": 11.0,
+          "note": "máximo legal UE 1,1 mg/100 g MS"
+        },
+        "iron": {
+          "min": 80.0,
+          "max": 681.8,
+          "note": "máximo legal UE 68,18 mg/100 g MS"
+        },
+        "manganese": {
+          "min": 5.0,
+          "max": 170.0,
+          "note": "máximo legal UE 17 mg/100 g MS"
+        },
+        "selenium": {
+          "min": 0.26,
+          "note": "fonte: 26 µg/100 g MS; selénio para dietas húmidas; dietas secas: 21,00 µg/100 g MS; máximo legal UE 56,8 µg/100 g MS",
+          "max": 0.568
+        },
+        "zinc": {
+          "min": 75.0,
+          "max": 227.0,
+          "note": "máximo legal UE 22,7 mg/100 g MS"
+        },
+        "vitamin_a": {
+          "min": 3.33,
+          "note": "fonte: 333 UI/100 g MS → 3,33 UI/g; máximo nutricional 40 000 UI/100 g MS",
+          "max": 400.0
+        },
+        "vitamin_d3": {
+          "min": 0.25,
+          "note": "fonte: 25 UI/100 g MS → 0,25 UI/g; máximo legal UE 227 UI/100 g MS; máximo nutricional 3000 UI/100 g MS (30 UI/g)",
+          "max": 2.27
+        },
+        "vitamin_e": {
+          "min": 38.0,
+          "note": "fonte: 3,8 UI/100 g MS; 1 UI = 1 mg acetato de all-rac-α-tocoferilo → 38 mg/kg"
+        },
+        "thiamin": {
+          "min": 4.4
+        },
+        "riboflavin": {
+          "min": 3.2
+        },
+        "pantothenic_acid": {
+          "min": 5.8
+        },
+        "pyridoxine": {
+          "min": 2.5
+        },
+        "cobalamin": {
+          "min": 0.0176,
+          "note": "fonte: 1,76 µg/100 g MS"
+        },
+        "niacin": {
+          "min": 32.0
+        },
+        "folic_acid": {
+          "min": 0.75,
+          "note": "fonte: 75 µg/100 g MS"
+        },
+        "biotin": {
+          "min": 0.06,
+          "note": "fonte: 6 µg/100 g MS"
+        },
+        "choline": {
+          "min": 2400.0
+        },
+        "ca_p_ratio": {
+          "max": 2.0,
+          "note": "máximo nutricional 2/1 (adulto)"
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Adulto com baixa necessidade energética, NEM 75 kcal/kg^0,67 (Tabela III-4a)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 33.3
+        },
+        "arginine": {
+          "min": 1.3
+        },
+        "histidine": {
+          "min": 0.35
+        },
+        "isoleucine": {
+          "min": 0.57
+        },
+        "leucine": {
+          "min": 1.36
+        },
+        "lysine": {
+          "min": 0.45
+        },
+        "methionine": {
+          "min": 0.23
+        },
+        "methionine_cystine": {
+          "min": 0.45
+        },
+        "phenylalanine": {
+          "min": 0.53
+        },
+        "threonine": {
+          "min": 0.69
+        },
+        "tryptophan": {
+          "min": 0.17
+        },
+        "valine": {
+          "min": 0.68
+        },
+        "taurine": {
+          "min": 0.27,
+          "note": "taurina para alimento enlatado/húmido; alimento seco: 0,13 g/100 g MS"
+        },
+        "ether_extract": {
+          "min": 9.0
+        },
+        "linoleic_acid": {
+          "min": 0.67
+        },
+        "arachidonic_acid": {
+          "min": 0.008,
+          "note": "fonte: 8 mg/100 g MS"
+        },
+        "calcium": {
+          "min": 0.53
+        },
+        "phosphorus": {
+          "min": 0.35
+        },
+        "potassium": {
+          "min": 0.8
+        },
+        "sodium": {
+          "min": 0.1,
+          "note": "até 1,5 % MS é seguro para gatos saudáveis (nota e)"
+        },
+        "magnesium": {
+          "min": 0.05
+        },
+        "copper": {
+          "min": 6.7,
+          "max": 28.0,
+          "note": "máximo legal UE 2,8 mg/100 g MS"
+        },
+        "iodine": {
+          "min": 1.7,
+          "max": 11.0,
+          "note": "máximo legal UE 1,1 mg/100 g MS"
+        },
+        "iron": {
+          "min": 107.0,
+          "max": 681.8,
+          "note": "máximo legal UE 68,18 mg/100 g MS"
+        },
+        "manganese": {
+          "min": 6.7,
+          "max": 170.0,
+          "note": "máximo legal UE 17 mg/100 g MS"
+        },
+        "selenium": {
+          "min": 0.35,
+          "note": "fonte: 35 µg/100 g MS; selénio para dietas húmidas; dietas secas: 28,00 µg/100 g MS; máximo legal UE 56,8 µg/100 g MS",
+          "max": 0.568
+        },
+        "zinc": {
+          "min": 100.0,
+          "max": 227.0,
+          "note": "máximo legal UE 22,7 mg/100 g MS"
+        },
+        "vitamin_a": {
+          "min": 4.44,
+          "note": "fonte: 444 UI/100 g MS → 4,44 UI/g; máximo nutricional 40 000 UI/100 g MS",
+          "max": 400.0
+        },
+        "vitamin_d3": {
+          "min": 0.333,
+          "note": "fonte: 33,3 UI/100 g MS → 0,333 UI/g; máximo legal UE 227 UI/100 g MS; máximo nutricional 3000 UI/100 g MS (30 UI/g)",
+          "max": 2.27
+        },
+        "vitamin_e": {
+          "min": 50.7,
+          "note": "fonte: 5,07 UI/100 g MS; 1 UI = 1 mg acetato de all-rac-α-tocoferilo → 50,7 mg/kg"
+        },
+        "thiamin": {
+          "min": 5.9
+        },
+        "riboflavin": {
+          "min": 4.2
+        },
+        "pantothenic_acid": {
+          "min": 7.7
+        },
+        "pyridoxine": {
+          "min": 3.3
+        },
+        "cobalamin": {
+          "min": 0.0235,
+          "note": "fonte: 2,35 µg/100 g MS"
+        },
+        "niacin": {
+          "min": 42.1
+        },
+        "folic_acid": {
+          "min": 1.01,
+          "note": "fonte: 101 µg/100 g MS"
+        },
+        "biotin": {
+          "min": 0.08,
+          "note": "fonte: 8 µg/100 g MS"
+        },
+        "choline": {
+          "min": 3200.0
+        },
+        "ca_p_ratio": {
+          "max": 2.0,
+          "note": "máximo nutricional 2/1 (adulto)"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento (Tabela III-4a)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 28.0,
+          "note": "coluna crescimento/reprodução: 28,00/30,00"
+        },
+        "arginine": {
+          "min": 1.07,
+          "max": 3.5,
+          "note": "máximo nutricional (crescimento); coluna crescimento/reprodução: 1,07/1,11"
+        },
+        "histidine": {
+          "min": 0.33
+        },
+        "isoleucine": {
+          "min": 0.54
+        },
+        "leucine": {
+          "min": 1.28
+        },
+        "lysine": {
+          "min": 0.85
+        },
+        "methionine": {
+          "min": 0.44,
+          "max": 1.3,
+          "note": "máximo nutricional (crescimento)"
+        },
+        "methionine_cystine": {
+          "min": 0.88
+        },
+        "phenylalanine": {
+          "min": 0.5
+        },
+        "threonine": {
+          "min": 0.65
+        },
+        "tryptophan": {
+          "min": 0.16,
+          "max": 1.7,
+          "note": "máximo nutricional (crescimento)"
+        },
+        "valine": {
+          "min": 0.64
+        },
+        "taurine": {
+          "min": 0.25,
+          "note": "taurina para alimento enlatado/húmido; alimento seco: 0,10 g/100 g MS"
+        },
+        "ether_extract": {
+          "min": 9.0
+        },
+        "linoleic_acid": {
+          "min": 0.55
+        },
+        "arachidonic_acid": {
+          "min": 0.02,
+          "note": "fonte: 20 mg/100 g MS"
+        },
+        "linolenic_acid": {
+          "min": 0.02
+        },
+        "calcium": {
+          "min": 1.0
+        },
+        "phosphorus": {
+          "min": 0.84
+        },
+        "potassium": {
+          "min": 0.6
+        },
+        "sodium": {
+          "min": 0.16,
+          "note": "até 1,5 % MS é seguro para gatos saudáveis (nota e)"
+        },
+        "magnesium": {
+          "min": 0.05
+        },
+        "copper": {
+          "min": 10.0,
+          "max": 28.0,
+          "note": "máximo legal UE 2,8 mg/100 g MS"
+        },
+        "iodine": {
+          "min": 1.8,
+          "max": 11.0,
+          "note": "máximo legal UE 1,1 mg/100 g MS"
+        },
+        "iron": {
+          "min": 80.0,
+          "max": 681.8,
+          "note": "máximo legal UE 68,18 mg/100 g MS"
+        },
+        "manganese": {
+          "min": 10.0,
+          "max": 170.0,
+          "note": "máximo legal UE 17 mg/100 g MS"
+        },
+        "selenium": {
+          "min": 0.3,
+          "note": "fonte: 30 µg/100 g MS; selénio para dietas húmidas; dietas secas: 30,00 µg/100 g MS; máximo legal UE 56,8 µg/100 g MS",
+          "max": 0.568
+        },
+        "zinc": {
+          "min": 75.0,
+          "max": 227.0,
+          "note": "máximo legal UE 22,7 mg/100 g MS"
+        },
+        "vitamin_a": {
+          "min": 9.0,
+          "note": "fonte: 900 UI/100 g MS → 9 UI/g; máximo nutricional 40 000 UI/100 g MS",
+          "max": 400.0
+        },
+        "vitamin_d3": {
+          "min": 0.28,
+          "note": "fonte: 28 UI/100 g MS → 0,28 UI/g; máximo legal UE 227 UI/100 g MS; máximo nutricional 3000 UI/100 g MS (30 UI/g)",
+          "max": 2.27
+        },
+        "vitamin_e": {
+          "min": 38.0,
+          "note": "fonte: 3,8 UI/100 g MS; 1 UI = 1 mg acetato de all-rac-α-tocoferilo → 38 mg/kg"
+        },
+        "thiamin": {
+          "min": 5.5
+        },
+        "riboflavin": {
+          "min": 3.2
+        },
+        "pantothenic_acid": {
+          "min": 5.7
+        },
+        "pyridoxine": {
+          "min": 2.5
+        },
+        "cobalamin": {
+          "min": 0.018,
+          "note": "fonte: 1,8 µg/100 g MS"
+        },
+        "niacin": {
+          "min": 32.0
+        },
+        "folic_acid": {
+          "min": 0.75,
+          "note": "fonte: 75 µg/100 g MS"
+        },
+        "biotin": {
+          "min": 0.07,
+          "note": "fonte: 7 µg/100 g MS"
+        },
+        "choline": {
+          "min": 2400.0
+        },
+        "ca_p_ratio": {
+          "max": 1.5,
+          "note": "máximo nutricional 1,5/1 (crescimento)"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Reprodução — gestação e lactação (Tabela III-4a)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 30.0,
+          "note": "coluna crescimento/reprodução: 28,00/30,00"
+        },
+        "arginine": {
+          "min": 1.11,
+          "note": "coluna crescimento/reprodução: 1,07/1,11"
+        },
+        "histidine": {
+          "min": 0.33
+        },
+        "isoleucine": {
+          "min": 0.54
+        },
+        "leucine": {
+          "min": 1.28
+        },
+        "lysine": {
+          "min": 0.85
+        },
+        "methionine": {
+          "min": 0.44
+        },
+        "methionine_cystine": {
+          "min": 0.88
+        },
+        "phenylalanine": {
+          "min": 0.5
+        },
+        "threonine": {
+          "min": 0.65
+        },
+        "tryptophan": {
+          "min": 0.16
+        },
+        "valine": {
+          "min": 0.64
+        },
+        "taurine": {
+          "min": 0.25,
+          "note": "taurina para alimento enlatado/húmido; alimento seco: 0,10 g/100 g MS"
+        },
+        "ether_extract": {
+          "min": 9.0
+        },
+        "linoleic_acid": {
+          "min": 0.55
+        },
+        "arachidonic_acid": {
+          "min": 0.02,
+          "note": "fonte: 20 mg/100 g MS"
+        },
+        "linolenic_acid": {
+          "min": 0.02
+        },
+        "calcium": {
+          "min": 1.0
+        },
+        "phosphorus": {
+          "min": 0.84
+        },
+        "potassium": {
+          "min": 0.6
+        },
+        "sodium": {
+          "min": 0.16,
+          "note": "até 1,5 % MS é seguro para gatos saudáveis (nota e)"
+        },
+        "magnesium": {
+          "min": 0.05
+        },
+        "copper": {
+          "min": 10.0,
+          "max": 28.0,
+          "note": "máximo legal UE 2,8 mg/100 g MS"
+        },
+        "iodine": {
+          "min": 1.8,
+          "max": 11.0,
+          "note": "máximo legal UE 1,1 mg/100 g MS"
+        },
+        "iron": {
+          "min": 80.0,
+          "max": 681.8,
+          "note": "máximo legal UE 68,18 mg/100 g MS"
+        },
+        "manganese": {
+          "min": 10.0,
+          "max": 170.0,
+          "note": "máximo legal UE 17 mg/100 g MS"
+        },
+        "selenium": {
+          "min": 0.3,
+          "note": "fonte: 30 µg/100 g MS; selénio para dietas húmidas; dietas secas: 30,00 µg/100 g MS; máximo legal UE 56,8 µg/100 g MS",
+          "max": 0.568
+        },
+        "zinc": {
+          "min": 75.0,
+          "max": 227.0,
+          "note": "máximo legal UE 22,7 mg/100 g MS"
+        },
+        "vitamin_a": {
+          "min": 9.0,
+          "note": "fonte: 900 UI/100 g MS → 9 UI/g; máximo nutricional 33 333 UI/100 g MS (reprodução)",
+          "max": 333.33
+        },
+        "vitamin_d3": {
+          "min": 0.28,
+          "note": "fonte: 28 UI/100 g MS → 0,28 UI/g; máximo legal UE 227 UI/100 g MS; máximo nutricional 3000 UI/100 g MS (30 UI/g)",
+          "max": 2.27
+        },
+        "vitamin_e": {
+          "min": 38.0,
+          "note": "fonte: 3,8 UI/100 g MS; 1 UI = 1 mg acetato de all-rac-α-tocoferilo → 38 mg/kg"
+        },
+        "thiamin": {
+          "min": 5.5
+        },
+        "riboflavin": {
+          "min": 3.2
+        },
+        "pantothenic_acid": {
+          "min": 5.7
+        },
+        "pyridoxine": {
+          "min": 2.5
+        },
+        "cobalamin": {
+          "min": 0.018,
+          "note": "fonte: 1,8 µg/100 g MS"
+        },
+        "niacin": {
+          "min": 32.0
+        },
+        "folic_acid": {
+          "min": 0.75,
+          "note": "fonte: 75 µg/100 g MS"
+        },
+        "biotin": {
+          "min": 0.07,
+          "note": "fonte: 7 µg/100 g MS"
+        },
+        "choline": {
+          "min": 2400.0
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Fósforo inorgânico muito disponível ≥1,5 g/1000 kcal EM pode afetar indicadores de função renal em gatos; 1 g/1000 kcal foi tolerado sem efeitos detetáveis (nota f)."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Selénio orgânico: suplementação máxima 22,73 µg/100 g MS (nota d)."
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Taurina: o mínimo depende do processamento — enlatado/húmido 0,20 % MS, seco 0,10 % MS (adulto, NEM 100)."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Valores por 100 g MS dos quadros FEDIAF, que assumem 4000 kcal EM/kg MS (ver tabelas por 1000 kcal); para outras densidades energéticas corrigir proporcionalmente.",
+    "min = nível mínimo recomendado FEDIAF (não é a necessidade mínima); max = máximo nutricional (N) ou máximo legal UE (L), conforme indicado na nota.",
+    "Os valores dos adultos derivam do NRC (2006) para um cão de 15 kg / gato de 4 kg magros, com correção para menor ingestão energética.",
+    "Conversões: g/100 g MS = %; mg/100 g → mg/kg (×10); µg/100 g → mg/kg (÷100); UI/100 g → UI/g (÷100); vitamina E em UI convertida a mg (1 UI = 1 mg).",
+    "Vitamina D registada como D3; a FEDIAF não distingue D2/D3 nas tabelas.",
+    "Os máximos legais UE de oligoelementos e vitamina D referem-se ao teor total no alimento completo (12 % humidade), aqui convertidos pela FEDIAF a base MS.",
+    "Sem chave no catálogo (omitidos): cloro, fenilalanina+tirosina, EPA+DHA.",
+    "Taurina e selénio: registados os valores para alimento húmido (mais próximos de dietas cruas de zoo); os valores para alimento seco ficam na nota.",
+    "Proteína e arginina na coluna 'Growth / Reproduction' vêm como 28,00/30,00 e 1,07/1,11 (crescimento/reprodução); separados por fase.",
+    "A linha Ca/P indica '1/1' numa coluna de mínimo sem unidade; não registado como mínimo por ambiguidade.",
+    "Vitamina D: máximo legal UE 227 UI/100 g MS registado como max; o máximo nutricional (3000 UI/100 g) fica na nota."
+  ]
+}
