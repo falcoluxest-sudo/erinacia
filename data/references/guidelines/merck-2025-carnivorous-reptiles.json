@@ -1,0 +1,225 @@
+{
+  "id": "merck-2025-carnivorous-reptiles",
+  "title": "Recommended Nutrient Concentrations for Reptiles — Carnivorous Reptiles (Merck Veterinary Manual)",
+  "citation": "Nijboer J, Fens A (2025). Nutrition in Reptiles. Merck Veterinary Manual, Management and Nutrition › Nutrition: Exotic and Zoo Animals (revisão completa set. 2025; última atualização out. 2025; revisão por pares J. Brandão). Tabela 'Recommended Nutrient Concentrations for Reptiles' (base MS; recomendações baseadas em Dennert C. Ernährung von Landschildkröten, 5.ª ed., Natur und Tier, 2021). https://www.merckvetmanual.com/multimedia/table/recommended-nutrient-concentrations-for-reptiles ; texto: https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-reptiles",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Serpentes",
+      "commonName": {
+        "pt": "Serpentes",
+        "en": "Snakes"
+      }
+    },
+    {
+      "scientificName": "Varanidae",
+      "commonName": {
+        "pt": "Varanos",
+        "en": "Monitor lizards"
+      }
+    },
+    {
+      "scientificName": "Crocodylia",
+      "commonName": {
+        "pt": "Crocodilianos",
+        "en": "Crocodilians"
+      }
+    }
+  ],
+  "guild": "carnivore",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Répteis carnívoros (mínimos recomendados, MS)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 30,
+          "note": "Fonte: intervalo 30–50 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "arginine": {
+          "min": 1.0
+        },
+        "isoleucine": {
+          "min": 0.5
+        },
+        "lysine": {
+          "min": 0.8
+        },
+        "methionine": {
+          "min": 0.4
+        },
+        "methionine_cystine": {
+          "min": 0.75
+        },
+        "threonine": {
+          "min": 0.7
+        },
+        "tryptophan": {
+          "min": 0.15
+        },
+        "linoleic_acid": {
+          "min": 1.0
+        },
+        "arachidonic_acid": {
+          "min": 0.02,
+          "note": "Nota d da tabela: uma fonte de ácido araquidónico a 200 mg/kg MS pode ser necessária (→ 0,02 %)."
+        },
+        "calcium": {
+          "min": 0.8,
+          "note": "Fonte: intervalo 0.8–1.1 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "phosphorus": {
+          "min": 0.5,
+          "note": "Fonte: intervalo 0.5–0.9 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "potassium": {
+          "min": 0.4,
+          "note": "Fonte: intervalo 0.4–0.6 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "sodium": {
+          "min": 0.2
+        },
+        "magnesium": {
+          "min": 0.04
+        },
+        "manganese": {
+          "min": 5
+        },
+        "zinc": {
+          "min": 50
+        },
+        "iron": {
+          "min": 60,
+          "note": "Fonte: intervalo 60–80 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "copper": {
+          "min": 5,
+          "note": "Fonte: intervalo 5–8 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "iodine": {
+          "min": 0.3,
+          "note": "Fonte: intervalo 0.3–0.6 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "selenium": {
+          "min": 0.3
+        },
+        "riboflavin": {
+          "min": 2,
+          "note": "Fonte: intervalo 2–4 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "pantothenic_acid": {
+          "min": 10
+        },
+        "niacin": {
+          "min": 10,
+          "note": "Fonte: intervalo 10–40 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "cobalamin": {
+          "min": 0.02,
+          "note": "Fonte: 0,020 ppm."
+        },
+        "choline": {
+          "min": 1250,
+          "note": "Fonte: intervalo 1250–2400 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "biotin": {
+          "min": 0.07,
+          "note": "Fonte: intervalo 0.07–0.1 (mínimos recomendados); registado o limite inferior como mínimo. Fonte em ppb: 70–100 ppb → 0,07–0,10 mg/kg."
+        },
+        "folic_acid": {
+          "min": 0.2,
+          "note": "Fonte: intervalo 0.2–0.8 (mínimos recomendados); registado o limite inferior como mínimo. Fonte (folacina) em ppb: 200–800 ppb → 0,2–0,8 mg/kg."
+        },
+        "thiamin": {
+          "min": 1,
+          "note": "Fonte: intervalo 1–5 (mínimos recomendados); registado o limite inferior como mínimo. Aumentar para 10–20 mg/kg se peixe congelado/descongelado > 25 % da dieta (nota e)."
+        },
+        "pyridoxine": {
+          "min": 1,
+          "note": "Fonte: intervalo 1–4 (mínimos recomendados); registado o limite inferior como mínimo."
+        },
+        "vitamin_a": {
+          "min": 5,
+          "note": "Fonte: intervalo 5–10 (mínimos recomendados); registado o limite inferior como mínimo. Fonte: 5000–10 000 UI/kg → 5–10 UI/g. Pode ser necessária vitamina A pré-formada (conversão de carotenos incerta em répteis)."
+        },
+        "vitamin_d3": {
+          "min": 0.5,
+          "note": "Fonte: intervalo 0.5–1.0 (mínimos recomendados); registado o limite inferior como mínimo. Fonte: 500–1000 UI/kg → 0,5–1,0 UI/g. Pode ser satisfeita total/parcialmente por UVB."
+        },
+        "vitamin_e": {
+          "min": 200,
+          "note": "Fonte: 200 UI/kg. 300 UI/kg MS aconselhável em dietas ricas em gordura insaturada (nota h)."
+        },
+        "ca_p_ratio": {
+          "min": 1,
+          "target": 2,
+          "note": "Texto do capítulo: Ca:P de pelo menos 1:1, preferencialmente 2:1 (refere-se aos alimentos oferecidos a répteis)."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Se peixe congelado/descongelado constituir > 25 % da dieta oferecida, aumentar a tiamina para 10–20 mg/kg MS (tiaminases)."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "marine_fish"
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Dietas ricas em gordura, sobretudo insaturada: vitamina E de 300 UI/kg MS em vez de 200."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Não fornecer dietas pobres em proteína a répteis carnívoros (adaptados a presas ricas em proteína); assegurar boa hidratação para prevenir gota (precipitação de uratos)."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Presas vertebradas congeladas: armazenar ≤ 6 meses a −20 °C em sacos de plástico espesso; descongelar minimizando a perda de água (as presas são também fonte de água)."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "whole_prey_vertebrate"
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Oferecer dois ou mais tipos de presa: a composição varia entre presas e depende da dieta com que foram criadas (ex.: ratinhos criados com dieta pobre em vitamina A têm menos reservas hepáticas)."
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Insetos-presa: alimentar os insetos durante 72 h antes de os oferecer com uma dieta/suplemento mineral com pelo menos 8–10 % de Ca (gut loading); o Ca dos insetos sobe de ~0,01 % para ~0,5 % MS."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "invertebrate_prey"
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "A vitamina D pode ser total ou parcialmente obtida por exposição a UVB (luz solar ou lâmpadas UVB); a exposição diária a UVB continua recomendada (30–120 min/dia com lâmpadas não de vapor de mercúrio)."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A tabela da Merck baseia-se em Dennert (2021), livro sobre nutrição de tartarugas terrestres; para carnívoros e omnívoros os valores parecem extrapolados de modelos domésticos (gato, cão, aves) — necessidades reais dos répteis largamente desconhecidas.",
+    "Vitamina E na fonte em UI/kg; registada em mg/kg assumindo 1 UI = 1 mg (acetato de all-rac-α-tocoferol), como nos outros ficheiros do catálogo.",
+    "Taurina: necessidade não determinada em répteis (a fonte cita 400–500 mg/kg MS para o gato apenas como referência); não incluída.",
+    "Nota a da tabela: para carnívoros os valores são 'mínimos recomendados'. Onde a fonte dá um intervalo (ex.: Ca 0,8–1,1 %, PB 30–50 %), registou-se o limite inferior como mínimo e o intervalo na nota — confirmar se o limite superior deve ser tratado como máximo (sobretudo PB, Ca e P).",
+    "A tabela não nomeia espécies; as espécies (serpentes, varanos, crocodilianos) são atribuídas pela prática em nutrição de zoo. Não é claro se répteis insectívoros devem usar esta coluna ou a de omnívoros."
+  ]
+}

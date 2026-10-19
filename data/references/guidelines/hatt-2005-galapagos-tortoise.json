@@ -1,0 +1,42 @@
+{
+  "id": "hatt-2005-galapagos-tortoise",
+  "title": "Fiber digestibility in juvenile Galapagos tortoises (Geochelone nigra) and implications for the development of captive animals",
+  "citation": "Hatt J-M, Clauss M, Gisler R, Liesegang A, Wanner M (2005). Fiber digestibility in juvenile Galapagos tortoises (Geochelone nigra) and implications for the development of captive animals. Zoo Biology 24:185–191. doi:10.1002/zoo.20039. Resumo (lido via OpenAlex, https://api.openalex.org/works/doi:10.1002/zoo.20039); acesso aberto verde em https://doi.org/10.5167/uzh-2409.",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Chelonoidis niger",
+      "commonName": {
+        "pt": "Tartaruga-gigante-das-Galápagos",
+        "en": "Galapagos giant tortoise"
+      }
+    }
+  ],
+  "guild": "hindgut_herbivore",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Juvenis (redução da digestibilidade para crescimento mais lento)",
+      "basis": "DM",
+      "values": {
+        "crude_fibre": {
+          "min": 30,
+          "max": 40,
+          "note": "Proposta dos autores se for desejável reduzir a digestibilidade da dieta em juvenis; a dieta estudada (77 % feno, 15 % granulado, 8 % maçã em MS) tinha 20,5 % FB, 22,6 % FDA, 11,3 % PB."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Juvenis de tartaruga-gigante digerem a fibra com eficiência semelhante a herbívoros fermentadores do intestino posterior (cavalo, elefante-asiático, rinoceronte-indiano); dietas pouco fibrosas favorecem crescimento excessivamente rápido — aumentar a fibra."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Apenas o resumo foi lido (o PDF no repositório ZORA estava bloqueado por verificação anti-robô); o valor de FB 30–40 % MS é uma proposta, não uma necessidade determinada.",
+    "Nome científico na fonte: Geochelone nigra (atualmente Chelonoidis niger / complexo Chelonoidis spp.)."
+  ]
+}

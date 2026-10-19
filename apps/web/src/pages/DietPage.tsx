@@ -18,7 +18,7 @@ import {
 } from '@erinacia/core';
 import { useFoods, fmt, matchesQuery, sourceOf, type AppFood } from '../data/foods';
 import { evaluate, FORMULAS, TYPE_LABEL } from '../data/formulas';
-import { DEFAULT_MODEL, GUIDES, GUILD_LABEL, guideLabel, loadDiets, newDiet, saveDiets, type DietDraft } from '../data/diets';
+import { DEFAULT_MODEL, DIET_TEMPLATES, dietFromTemplate, GUIDES, GUILD_LABEL, guideLabel, loadDiets, newDiet, saveDiets, type DietDraft } from '../data/diets';
 
 const STAGE: Record<string, string> = {
   all: 'Todas as fases', maintenance: 'Manutenção', breeding: 'Reprodução', gestation: 'Gestação',
@@ -145,6 +145,16 @@ export function DietPage() {
             {saved.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
           </select>
           <button type="button" className="btn" onClick={() => { setD(newDiet()); setMsg(''); }}><FilePlus2 size={16} aria-hidden="true" /> Nova</button>
+          <select className="select" aria-label="Começar de um modelo" value="" style={{ width: 'auto' }}
+            onChange={(e) => {
+              const t = DIET_TEMPLATES.find((x) => x.id === e.target.value);
+              if (!t) return;
+              setD(dietFromTemplate(t));
+              setMsg([t.note, t.weightClasses && `Classes de peso: ${t.weightClasses.join(', ')}.`, t.missing?.length && `Ainda sem registo de alimento: ${t.missing.join(', ')}.`].filter(Boolean).join(' '));
+            }}>
+            <option value="">Começar de um modelo…</option>
+            {DIET_TEMPLATES.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}
+          </select>
           <button type="button" className="btn" onClick={() => window.print()} disabled={!result}><Printer size={16} aria-hidden="true" /> Ficha alimentar</button>
           <button type="button" className="btn btn-primary" onClick={persist}><Save size={16} aria-hidden="true" /> Guardar</button>
         </div>

@@ -1,0 +1,235 @@
+{
+  "id": "ferrie-2014-amphibians",
+  "title": "Nutrition and Health in Amphibian Husbandry — Table 1: Preliminary recommendations for nutrient intake of amphibians post-metamorphosis",
+  "citation": "Ferrie GM, Alford VC, Atkinson J, Baitchman E, Barber D, et al. (2014). Nutrition and health in amphibian husbandry. Zoo Biology 33(6):485–501. doi:10.1002/zoo.21180. Tabela 1 (coluna 'Amphibian recommendation (adult)'), base MS, normalizada a 4000 kcal ED/kg. Manuscrito de autor em PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC4685711/",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Anura",
+      "commonName": {
+        "pt": "Anuros (rãs e sapos)",
+        "en": "Frogs and toads"
+      }
+    },
+    {
+      "scientificName": "Caudata",
+      "commonName": {
+        "pt": "Caudados (salamandras e tritões)",
+        "en": "Salamanders and newts"
+      }
+    },
+    {
+      "scientificName": "Gymnophiona",
+      "commonName": {
+        "pt": "Cecílias",
+        "en": "Caecilians"
+      }
+    }
+  ],
+  "guild": "insectivore_omnivore",
+  "modelSpecies": "Cão e gato (NRC 2006), peixes (NRC 1993), aves (NRC 1994), rato (NRC 1995)",
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Adultos pós-metamorfose (recomendação preliminar, MS)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 44.4,
+          "note": "Modelo NRC: peixe (NRC 1993). Ingestões mais elevadas associadas a menos anomalias de desenvolvimento."
+        },
+        "arginine": {
+          "min": 2.6,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "histidine": {
+          "min": 0.8,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "isoleucine": {
+          "min": 1.2,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "leucine": {
+          "min": 1.9,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "lysine": {
+          "min": 2.6,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "methionine": {
+          "min": 0.8,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "methionine_cystine": {
+          "min": 1.3,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "phenylalanine": {
+          "min": 1.1,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "threonine": {
+          "min": 1.3,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "tryptophan": {
+          "min": 0.4,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "valine": {
+          "min": 1.4,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "taurine": {
+          "min": 0.1,
+          "note": "Modelo NRC: gato (NRC 2006). Dados limitados sobre a essencialidade da taurina em anfíbios."
+        },
+        "calcium": {
+          "min": 0.6,
+          "note": "Modelo NRC: rato (NRC 1995)."
+        },
+        "phosphorus": {
+          "min": 0.3,
+          "note": "Modelo NRC: rato (NRC 1995)."
+        },
+        "sodium": {
+          "min": 0.2,
+          "note": "Modelo NRC: gato (NRC 2006)."
+        },
+        "magnesium": {
+          "min": 0.04,
+          "note": "Modelo NRC: gato (NRC 2006)."
+        },
+        "potassium": {
+          "min": 0.4,
+          "note": "Modelo NRC: gato (NRC 2006)."
+        },
+        "copper": {
+          "min": 12,
+          "note": "Modelo NRC: cão (NRC 2006)."
+        },
+        "iodine": {
+          "min": 1,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "iron": {
+          "min": 97,
+          "note": "Modelo NRC: aves (NRC 1994). Eritrócitos nucleados."
+        },
+        "manganese": {
+          "min": 14,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "selenium": {
+          "min": 0.3,
+          "note": "Modelo NRC: gato (NRC 2006). Risco de toxicidade."
+        },
+        "zinc": {
+          "min": 18,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "vitamin_c": {
+          "min": 23,
+          "note": "Modelo NRC: peixe (NRC 1993). Capacidade de síntese não documentada em todos os anfíbios."
+        },
+        "biotin": {
+          "min": 1,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "choline": {
+          "min": 1889,
+          "note": "Modelo NRC: cão (NRC 2006)."
+        },
+        "folic_acid": {
+          "min": 1,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "niacin": {
+          "min": 44,
+          "note": "Modelo NRC: gato (NRC 2006)."
+        },
+        "pantothenic_acid": {
+          "min": 23,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "pyridoxine": {
+          "min": 7,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "riboflavin": {
+          "min": 8,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "thiamin": {
+          "min": 12,
+          "note": "Modelo NRC: peixe (NRC 1993)."
+        },
+        "cobalamin": {
+          "min": 0.039,
+          "note": "Modelo NRC: cão (NRC 2006). Fonte: 39 µg/kg → 0,039 mg/kg."
+        },
+        "vitamin_a": {
+          "min": 2.914,
+          "note": "Modelo NRC: peixe (NRC 1993). Fonte: 2914 UI/kg → 2,914 UI/g. Forma e fonte adequadas de vitamina A ainda em estudo; vitamina A pré-formada revestida pode não ser consumida pelos insetos (tamanho de partícula)."
+        },
+        "vitamin_d3": {
+          "min": 1.111,
+          "note": "Modelo NRC: rato (NRC 1995). Fonte: 1111 UI/kg → 1,111 UI/g. A exposição a UVB influencia a mineralização óssea; os anfíbios sintetizam vitamina D3 endógena."
+        },
+        "vitamin_e": {
+          "min": 88,
+          "note": "Modelo NRC: peixe (NRC 1993). Fonte: 88 UI/kg (registado como mg/kg, 1 UI = 1 mg). Recomendação proporcional ao teor de ómega-3 da dieta."
+        },
+        "vitamin_k": {
+          "min": 2,
+          "note": "Modelo NRC: cão (NRC 2006)."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Dietas de insetos comerciais: nutrientes de preocupação são cálcio, vitaminas A, D e E e tiamina; a suplementação de vitamina A e cálcio é necessária (gut loading e/ou polvilhamento)."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "invertebrate_prey"
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Polvilhamento (dusting): oferecer os insetos logo após polvilhar — grilos podem remover até metade do pó em 90 s."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Dietas baseadas sobretudo em larvas (ricas em energia/gordura) podem ser limítrofes em vários nutrientes por diluição calórica; excesso de gordura pode limitar a ingestão."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Ácidos gordos (linoleico, linolénico, araquidónico, EPA, DHA) são provavelmente essenciais mas sem recomendação; os teores nos insetos podem ser modificados pela dieta dos insetos."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Fornecer UVB adequado: as necessidades de vitamina D parecem ser satisfeitas com iluminação apropriada."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Recomendações preliminares obtidas por extrapolação de modelos NRC (escolha do modelo mais apropriado, mediana, ou valor extremo quando há risco de deficiência/toxicidade); os autores dizem que representam quantidades provavelmente adequadas, não necessidades mínimas. Registadas como 'min'.",
+    "Valores normalizados a uma dieta de 4000 kcal ED/kg MS (energia digestível, não metabolizável); se a dieta tiver densidade energética muito diferente, ajustar proporcionalmente.",
+    "Vitamina E na fonte em UI/kg; registada em mg/kg assumindo 1 UI = 1 mg.",
+    "Nutrientes da tabela sem chave no catálogo, omitidos: glicina 0,9 %, fenilalanina+tirosina 2,2 %, cloro 0,1 %.",
+    "Sem recomendação para gordura bruta e ácidos gordos. Aplica-se a adultos pós-metamorfose; larvas/girinos não cobertos."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "merck-2025-herbivorous-reptiles",
+  "title": "Recommended Nutrient Concentrations for Reptiles — Herbivorous Reptiles (Merck Veterinary Manual)",
+  "citation": "Nijboer J, Fens A (2025). Nutrition in Reptiles. Merck Veterinary Manual, Management and Nutrition › Nutrition: Exotic and Zoo Animals (revisão completa set. 2025; última atualização out. 2025; revisão por pares J. Brandão). Tabela 'Recommended Nutrient Concentrations for Reptiles' (base MS; recomendações baseadas em Dennert C. Ernährung von Landschildkröten, 5.ª ed., Natur und Tier, 2021). https://www.merckvetmanual.com/multimedia/table/recommended-nutrient-concentrations-for-reptiles ; texto: https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-reptiles",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Testudinidae",
+      "commonName": {
+        "pt": "Tartarugas terrestres (Testudo, Chelonoidis, Centrochelys…)",
+        "en": "Tortoises"
+      }
+    },
+    {
+      "scientificName": "Iguana iguana",
+      "commonName": {
+        "pt": "Iguana-verde",
+        "en": "Green iguana"
+      }
+    },
+    {
+      "scientificName": "Cyclura spp.",
+      "commonName": {
+        "pt": "Iguanas-de-rocha",
+        "en": "Rock iguanas"
+      }
+    }
+  ],
+  "guild": "hindgut_herbivore",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Répteis herbívoros (MS)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 18,
+          "max": 22
+        },
+        "calcium": {
+          "min": 1.4,
+          "max": 2.0
+        },
+        "phosphorus": {
+          "min": 0.8,
+          "max": 1.0
+        },
+        "ca_p_ratio": {
+          "min": 1,
+          "target": 2,
+          "note": "Texto do capítulo: Ca:P de pelo menos 1:1, preferencialmente 2:1 (refere-se aos alimentos oferecidos a répteis)."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Fruta no máximo 5 % da dieta; verduras, legumes e fruta frescos no total ≤ 50 % da dieta."
+      },
+      "check": {
+        "type": "category_share_above",
+        "category": "fruit",
+        "percent": 5,
+        "basis": "DM"
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Fornecer feno de gramíneas de boa qualidade ou 'feno de ervas' (folhas, flores e ervas); na Europa usam-se também ervas e dente-de-leão."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "hay"
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Preferir vegetais com baixo teor de oxalatos (reduz o risco de urólitos)."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Iguana-verde: dietas com até 3000 UI vitamina D3/kg não preveniram fraturas; a exposição a UVB (lâmpadas a 30–46 cm, 12 h/dia) é crítica."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Água fresca e limpa sempre disponível."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "A vitamina D pode ser total ou parcialmente obtida por exposição a UVB (luz solar ou lâmpadas UVB); a exposição diária a UVB continua recomendada (30–120 min/dia com lâmpadas não de vapor de mercúrio)."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A tabela da Merck baseia-se em Dennert (2021), livro sobre nutrição de tartarugas terrestres; para carnívoros e omnívoros os valores parecem extrapolados de modelos domésticos (gato, cão, aves) — necessidades reais dos répteis largamente desconhecidas.",
+    "A coluna de herbívoros só tem PB, Ca e P; a nota a não diz se são mínimos ou médias — registados como intervalo mín./máx.",
+    "Proporções do texto (granulado para herbívoros 25–50 %, frescos ≤ 50 %, fruta ≤ 5 %) e ingestão de 1–4 % do PV em MS: a base das percentagens da dieta não é indicada; assumiu-se MS — confirmar.",
+    "A relação Ca:P (≥ 1:1, preferencialmente 2:1) vem do texto geral do capítulo; a tabela dá Ca 1,4–2,0 % e P 0,8–1,0 %, o que implica Ca:P ~1,4–2,5."
+  ],
+  "proportions": [
+    {
+      "label": "Composição da dieta de répteis herbívoros (texto Merck)",
+      "basis": "DM",
+      "rules": [
+        {
+          "category": "complete_feed_dry",
+          "range": {
+            "min": 25,
+            "max": 50
+          },
+          "label": "Granulado para répteis herbívoros"
+        },
+        {
+          "category": "fruit",
+          "range": {
+            "max": 5
+          },
+          "label": "Fruta"
+        }
+      ]
+    }
+  ],
+  "intake": [
+    {
+      "label": "Ingestão diária de répteis (texto Merck)",
+      "basis": "DM",
+      "percentBodyWeight": {
+        "min": 1,
+        "max": 4,
+        "note": "Texto: 'Reptiles should be fed 1–4% of their body weight daily on a dry-matter basis' (frase no parágrafo de herbívoros)."
+      }
+    }
+  ]
+}

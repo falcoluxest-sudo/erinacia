@@ -1,0 +1,39 @@
+[
+  {
+    "id": "crassa-controlo",
+    "name": "CRASSA — Dieta Controlo",
+    "animal": "Erinaceus europaeus (reabilitação)",
+    "trial": "Ensaio CRASSA",
+    "weightClasses": ["100–200 g", "200–300 g", "300–400 g", "500–600 g", "600–700 g"],
+    "foodIds": ["rotulo-ownat-classic-junior-dog", "feedipedia-tenebrio-vivo", "maca", "cenoura", "rotulo-royal-canin-recovery-humido"],
+    "note": "Misturar bem os ingredientes; porções de Recovery na arca congeladora. Quantidades por classe de peso a preencher."
+  },
+  {
+    "id": "crassa-a",
+    "name": "CRASSA — Dieta A (farinha de pena)",
+    "animal": "Erinaceus europaeus (reabilitação)",
+    "trial": "Ensaio CRASSA",
+    "weightClasses": ["100–200 g", "200–300 g", "300–400 g", "500–600 g", "600–700 g"],
+    "foodIds": ["rotulo-ownat-classic-junior-dog", "feedipedia-tenebrio-vivo", "maca", "cenoura", "rotulo-royal-canin-recovery-humido", "feedipedia-farinha-de-pena"],
+    "note": "Controlo + farinha de pena. Misturar bem os ingredientes; porções de Recovery na arca congeladora."
+  },
+  {
+    "id": "crassa-b",
+    "name": "CRASSA — Dieta B (farinha de cogumelo)",
+    "animal": "Erinaceus europaeus (reabilitação)",
+    "trial": "Ensaio CRASSA",
+    "weightClasses": ["100–200 g", "200–300 g", "300–400 g", "500–600 g", "600–700 g"],
+    "foodIds": ["rotulo-ownat-classic-junior-dog", "feedipedia-tenebrio-vivo", "maca", "cenoura", "rotulo-royal-canin-recovery-humido"],
+    "missing": ["Farinha de cogumelo (espécie a confirmar)"],
+    "note": "Controlo + farinha de cogumelo. Misturar bem os ingredientes; porções de Recovery na arca congeladora."
+  },
+  {
+    "id": "crassa-c",
+    "name": "CRASSA — Dieta C (farinha de inseto)",
+    "animal": "Erinaceus europaeus (reabilitação)",
+    "trial": "Ensaio CRASSA",
+    "weightClasses": ["100–200 g", "200–300 g", "300–400 g", "500–600 g", "600–700 g"],
+    "foodIds": ["rotulo-ownat-classic-junior-dog", "feedipedia-tenebrio-vivo", "maca", "cenoura", "rotulo-royal-canin-recovery-humido", "feedipedia-tenebrio-seco"],
+    "note": "Controlo + farinha de inseto (provisoriamente farinha de tenébrio; confirmar espécie). Misturar bem; porções de Recovery na arca congeladora."
+  }
+]

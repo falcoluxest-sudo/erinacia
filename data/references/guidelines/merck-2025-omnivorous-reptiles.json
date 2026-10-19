@@ -1,0 +1,228 @@
+{
+  "id": "merck-2025-omnivorous-reptiles",
+  "title": "Recommended Nutrient Concentrations for Reptiles — Omnivorous Reptiles (Merck Veterinary Manual)",
+  "citation": "Nijboer J, Fens A (2025). Nutrition in Reptiles. Merck Veterinary Manual, Management and Nutrition › Nutrition: Exotic and Zoo Animals (revisão completa set. 2025; última atualização out. 2025; revisão por pares J. Brandão). Tabela 'Recommended Nutrient Concentrations for Reptiles' (base MS; recomendações baseadas em Dennert C. Ernährung von Landschildkröten, 5.ª ed., Natur und Tier, 2021). https://www.merckvetmanual.com/multimedia/table/recommended-nutrient-concentrations-for-reptiles ; texto: https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-reptiles",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Pogona vitticeps",
+      "commonName": {
+        "pt": "Dragão-barbudo",
+        "en": "Central bearded dragon"
+      }
+    },
+    {
+      "scientificName": "Terrapene spp.",
+      "commonName": {
+        "pt": "Tartarugas-de-caixa",
+        "en": "Box turtles"
+      }
+    },
+    {
+      "scientificName": "Tiliqua spp.",
+      "commonName": {
+        "pt": "Escincos-de-língua-azul",
+        "en": "Blue-tongued skinks"
+      }
+    }
+  ],
+  "guild": "omnivore",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Répteis omnívoros (valores médios, MS)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 20,
+          "max": 25
+        },
+        "ether_extract": {
+          "min": 3,
+          "max": 6,
+          "note": "Fonte: 'Fat' 3–6 %."
+        },
+        "crude_fibre": {
+          "min": 20,
+          "max": 35
+        },
+        "arginine": {
+          "target": 1.8
+        },
+        "isoleucine": {
+          "target": 1.3
+        },
+        "lysine": {
+          "target": 1.5
+        },
+        "methionine": {
+          "target": 0.4
+        },
+        "methionine_cystine": {
+          "target": 0.75
+        },
+        "threonine": {
+          "target": 1.0
+        },
+        "tryptophan": {
+          "target": 0.3
+        },
+        "linoleic_acid": {
+          "target": 1.0
+        },
+        "arachidonic_acid": {
+          "min": 0.02,
+          "note": "Nota d da tabela: uma fonte de ácido araquidónico a 200 mg/kg MS pode ser necessária (→ 0,02 %)."
+        },
+        "calcium": {
+          "min": 1.0,
+          "max": 1.5
+        },
+        "phosphorus": {
+          "min": 0.6,
+          "max": 0.9
+        },
+        "potassium": {
+          "min": 0.4,
+          "max": 0.6
+        },
+        "sodium": {
+          "target": 0.2
+        },
+        "magnesium": {
+          "target": 0.2
+        },
+        "manganese": {
+          "target": 150
+        },
+        "zinc": {
+          "target": 130
+        },
+        "iron": {
+          "target": 200
+        },
+        "copper": {
+          "target": 15
+        },
+        "iodine": {
+          "target": 0.4
+        },
+        "selenium": {
+          "target": 0.3
+        },
+        "riboflavin": {
+          "target": 8
+        },
+        "pantothenic_acid": {
+          "target": 60
+        },
+        "niacin": {
+          "target": 100
+        },
+        "cobalamin": {
+          "target": 0.025,
+          "note": "Fonte: 0,025 ppm."
+        },
+        "choline": {
+          "target": 3500
+        },
+        "biotin": {
+          "target": 0.4,
+          "note": "Fonte: 400 ppb → 0,4 mg/kg."
+        },
+        "folic_acid": {
+          "target": 6.0,
+          "note": "Fonte (folacina): 6000 ppb → 6 mg/kg."
+        },
+        "thiamin": {
+          "target": 5,
+          "note": "Aumentar para 10–20 mg/kg se peixe congelado/descongelado > 25 % da dieta (nota e)."
+        },
+        "pyridoxine": {
+          "target": 10
+        },
+        "vitamin_a": {
+          "target": 15,
+          "note": "Fonte: 15 000 UI/kg → 15 UI/g."
+        },
+        "vitamin_d3": {
+          "min": 0.5,
+          "max": 1.0,
+          "note": "Fonte: 500–1000 UI/kg → 0,5–1,0 UI/g. Insuficiente para prevenir deficiência de vitamina D na iguana-verde (nota g); UVB essencial."
+        },
+        "vitamin_e": {
+          "target": 200,
+          "note": "Fonte: 200 UI/kg; 300 UI/kg MS se dieta rica em gordura insaturada (nota h)."
+        },
+        "ca_p_ratio": {
+          "min": 1,
+          "target": 2,
+          "note": "Texto do capítulo: Ca:P de pelo menos 1:1, preferencialmente 2:1 (refere-se aos alimentos oferecidos a répteis)."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Se peixe congelado/descongelado constituir > 25 % da dieta oferecida, aumentar a tiamina para 10–20 mg/kg MS."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "marine_fish"
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Dietas ricas em gordura, sobretudo insaturada: vitamina E de 300 UI/kg MS em vez de 200."
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "A vitamina D dos insetos-presa (ex.: tenébrios) é limitada; aconselha-se suplementação regular de vitamina D em muitas espécies."
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Insetos-presa: alimentar os insetos durante 72 h antes de os oferecer com uma dieta/suplemento mineral com pelo menos 8–10 % de Ca (gut loading); o Ca dos insetos sobe de ~0,01 % para ~0,5 % MS."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "invertebrate_prey"
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Presas vertebradas congeladas: armazenar ≤ 6 meses a −20 °C em sacos de plástico espesso; descongelar minimizando a perda de água (as presas são também fonte de água)."
+      },
+      "check": {
+        "type": "food_present",
+        "category": "whole_prey_vertebrate"
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Oferecer dois ou mais tipos de presa: a composição varia entre presas e depende da dieta com que foram criadas (ex.: ratinhos criados com dieta pobre em vitamina A têm menos reservas hepáticas)."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "A vitamina D pode ser total ou parcialmente obtida por exposição a UVB (luz solar ou lâmpadas UVB); a exposição diária a UVB continua recomendada (30–120 min/dia com lâmpadas não de vapor de mercúrio)."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A tabela da Merck baseia-se em Dennert (2021), livro sobre nutrição de tartarugas terrestres; para carnívoros e omnívoros os valores parecem extrapolados de modelos domésticos (gato, cão, aves) — necessidades reais dos répteis largamente desconhecidas.",
+    "Vitamina E na fonte em UI/kg; registada em mg/kg assumindo 1 UI = 1 mg (acetato de all-rac-α-tocoferol), como nos outros ficheiros do catálogo.",
+    "Taurina: necessidade não determinada em répteis (a fonte cita 400–500 mg/kg MS para o gato apenas como referência); não incluída.",
+    "Nota a da tabela: para omnívoros os valores são 'médias'; registados como alvo (target) quando há um único valor e como mín./máx. quando a fonte dá um intervalo.",
+    "A tabela não nomeia espécies; dragão-barbudo, tartarugas-de-caixa e escincos atribuídos pela prática. Fibra bruta 20–35 % para omnívoros parece elevada (semelhante a herbívoros) — confirmar na fonte original (Dennert 2021)."
+  ]
+}

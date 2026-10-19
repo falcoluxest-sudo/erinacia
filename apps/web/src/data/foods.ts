@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { energyPer100g, nutrientDM, type Food } from '@erinacia/core';
 import banco from '../../../../data/seed/foods.json';
+import curated from '../../../../data/seed/foods_curated.json';
 
 export interface AppFood extends Food {
   origin: 'reference' | 'own';
@@ -30,6 +31,10 @@ const bancoFoods: AppFood[] = [
       sources: [{ source: REFERENCE_SOURCE }],
       reference: f.sources[0]?.reference ?? undefined,
     }),
+  ),
+  // Labels and feed databases: each food keeps its own source and reference.
+  ...(curated as unknown as (Food & { sources: { source: string; reference?: string }[] })[]).map(
+    (f): AppFood => ({ ...f, origin: 'reference', sources: [{ source: f.sources[0]!.source }], reference: f.sources[0]?.reference }),
   ),
 ];
 

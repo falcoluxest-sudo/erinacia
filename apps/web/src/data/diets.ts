@@ -68,6 +68,33 @@ export interface DietDraft {
   updatedAt?: string;
 }
 
+import templates from '../../../../data/seed/diet_templates.json';
+
+export interface DietTemplate {
+  id: string;
+  name: string;
+  animal: string;
+  trial?: string;
+  weightClasses?: string[];
+  foodIds: string[];
+  /** Ingredients named by the template that have no food record yet. */
+  missing?: string[];
+  note?: string;
+}
+
+export const DIET_TEMPLATES = templates as DietTemplate[];
+
+/** A new draft with the template's foods; inclusions start at 0 for the user to fill in. */
+export function dietFromTemplate(t: DietTemplate): DietDraft {
+  return {
+    ...newDiet(),
+    name: t.name,
+    animal: t.animal,
+    weightKg: 0.15,
+    items: t.foodIds.map((foodId) => ({ foodId, inclusionPct: 0, intakePct: 100 })),
+  };
+}
+
 const KEY = 'erinacia.diets.v1';
 
 export function loadDiets(): DietDraft[] {
