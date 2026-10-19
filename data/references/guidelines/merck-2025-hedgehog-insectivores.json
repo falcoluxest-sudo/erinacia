@@ -17,7 +17,7 @@
       "values": {
         "crude_protein": { "target": 22, "note": "'should contain 22% protein'. Base não indicada pela fonte (assumida MS)." },
         "adf": { "target": 15, "note": "'15% acid detergent fiber or chitin (skeleton of insects)'. A quitina dos insetos é recuperada em grande parte na FDA." },
-        "ether_extract": { "target": 5, "max": 30, "note": "'5% fat'; em espécies que hibernam regularmente, a dieta deve conter até 30 % de gordura imediatamente antes da hibernação (máximo registado aqui apenas para essa fase)." }
+        "ether_extract": { "target": 5, "note": "'5% fat'; em espécies que hibernam regularmente, a dieta deve conter até 30 % de gordura imediatamente antes da hibernação (ver regras)." }
       }
     }
   ],

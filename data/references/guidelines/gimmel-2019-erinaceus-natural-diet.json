@@ -1,0 +1,34 @@
+{
+  "id": "gimmel-2019-erinaceus-natural-diet",
+  "title": "Comparison of commercial diets for the European hedgehog (Erinaceus europaeus) with their natural diet",
+  "citation": "Gimmel A., Cyrus-Eulenberger U., Liesegang A. (2019). Comparison of commercial diets for the European hedgehog (Erinaceus europaeus) with their natural diet. In: Schiavone A., Nery J. (eds.) 23rd Congress of the European Society of Veterinary and Comparative Nutrition (ESVCN), Turim, 18–20 set. 2019, p. 83. ZORA doi:10.5167/uzh-181070. Tabela 1 (composição da dieta natural segundo Struck & Meyer (1998) Die Ernährung des Igels, Grundlagen und Praxis; base MS). PDF lido em https://asiakas.kotisivukone.com/files/testisiili.tarjoaa.fi/Comparison_of_commercial_diets_for_the_European_hedgehog.pdf",
+  "language": "en",
+  "species": [
+    { "scientificName": "Erinaceus europaeus", "commonName": { "pt": "Ouriço-cacheiro", "en": "European hedgehog" } }
+  ],
+  "guild": "insectivore_omnivore",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Composição da dieta natural (referência, Struck & Meyer 1998)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 55, "max": 62, "note": "Dieta natural: 55–62 % PB MS." },
+        "ether_extract": { "min": 12, "max": 20, "note": "Dieta natural: 12–20 % EE MS." },
+        "crude_fibre": { "min": 7, "max": 12, "note": "Fonte: 'CF/Chitin' 7–12 % MS (fibra bruta/quitina)." },
+        "nfe": { "min": 2, "max": 11, "note": "Dieta natural: 2–11 % ENN MS." },
+        "ash": { "min": 5, "max": 16, "note": "Dieta natural: 5–16 % cinza bruta MS." }
+      }
+    }
+  ],
+  "rules": [
+    { "kind": "avoid", "text": { "pt": "Não se recomendam as rações secas comerciais para ouriço examinadas (38,8–50 % de cereais; PB 15–33 % MS; ENN 35–41 % MS), por inadequação de ingredientes e constituintes analíticos." } },
+    { "kind": "supplement", "text": { "pt": "Se se usarem dietas húmidas (mais próximas da dieta natural em PB e ENN), suplementar com uma fonte de fibra." } },
+    { "kind": "alert", "text": { "pt": "O ouriço-cacheiro é insetívoro: a dieta natural é rica em proteína e energia e pobre em hidratos de carbono (escaravelhos e outros insetos, minhocas, caracóis, ovos, cadáveres, algum material vegetal)." } }
+  ],
+  "dataQuality": [
+    "Os intervalos da dieta natural aparecem no PDF como '5 ± 16', '55 ± 62', etc.; interpretados como intervalos (5–16 %) por o símbolo do travessão ter sido mal codificado (um desvio-padrão maior do que a média, p. ex. ENN '2 ± 11', não faria sentido).",
+    "Trata-se da composição da dieta natural (resumo de congresso; dados de Struck & Meyer 1998), não de requisitos determinados experimentalmente; usar como referência de adequação.",
+    "Para as rações secas foi assumida pela fonte uma MS de 90 %. O artigo completo (Gimmel et al. 2021, J Anim Physiol Anim Nutr) não está em acesso aberto."
+  ]
+}
