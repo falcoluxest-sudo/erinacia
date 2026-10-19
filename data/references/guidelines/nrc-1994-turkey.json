@@ -87,10 +87,6 @@
           "min": 1.33,
           "note": "fonte: 1,2 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.667,
-          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "potassium": {
           "min": 0.778,
           "note": "fonte: 0,7 % (dieta, ~90 % MS) → ÷0,9"
@@ -178,6 +174,10 @@
         "pyridoxine": {
           "min": 5,
           "note": "fonte: 4,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.667,
+          "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -245,10 +245,6 @@
         "calcium": {
           "min": 0.944,
           "note": "fonte: 0,85 % (dieta, ~90 % MS) → ÷0,9"
-        },
-        "phosphorus": {
-          "min": 0.467,
-          "note": "fonte: 0,42 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         },
         "potassium": {
           "min": 0.556,
@@ -337,6 +333,10 @@
         "pyridoxine": {
           "min": 3.89,
           "note": "fonte: 3,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.467,
+          "note": "fonte: 0,42 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -404,10 +404,6 @@
         "calcium": {
           "min": 0.556,
           "note": "fonte: 0,5 % (dieta, ~90 % MS) → ÷0,9"
-        },
-        "phosphorus": {
-          "min": 0.278,
-          "note": "fonte: 0,25 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         },
         "potassium": {
           "min": 0.444,
@@ -496,6 +492,10 @@
         "pyridoxine": {
           "min": 3.33,
           "note": "fonte: 3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.278,
+          "note": "fonte: 0,25 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -563,10 +563,6 @@
         "calcium": {
           "min": 2.5,
           "note": "fonte: 2,25 % (dieta, ~90 % MS) → ÷0,9"
-        },
-        "phosphorus": {
-          "min": 0.389,
-          "note": "fonte: 0,35 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         },
         "potassium": {
           "min": 0.667,
@@ -655,6 +651,10 @@
         "pyridoxine": {
           "min": 4.44,
           "note": "fonte: 4 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.389,
+          "note": "fonte: 0,35 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     }

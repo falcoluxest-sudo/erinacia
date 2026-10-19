@@ -58,10 +58,6 @@
           "min": 1.11,
           "note": "fonte: 1 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.611,
-          "note": "fonte: 0,55 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "sodium": {
           "min": 0.167,
           "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
@@ -85,6 +81,10 @@
         "choline": {
           "min": 1590,
           "note": "fonte: 1 430 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.611,
+          "note": "fonte: 0,55 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -117,10 +117,6 @@
           "min": 0.589,
           "note": "fonte: 0,53 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.5,
-          "note": "fonte: 0,45 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "sodium": {
           "min": 0.167,
           "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
@@ -144,6 +140,10 @@
         "choline": {
           "min": 1110,
           "note": "fonte: 1 000 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.5,
+          "note": "fonte: 0,45 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -176,10 +176,6 @@
           "min": 2.78,
           "note": "fonte: 2,5 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.444,
-          "note": "fonte: 0,4 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "sodium": {
           "min": 0.167,
           "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
@@ -203,6 +199,10 @@
         "choline": {
           "min": 1110,
           "note": "fonte: 1 000 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.444,
+          "note": "fonte: 0,4 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -231,10 +231,6 @@
           "min": 0.722,
           "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.5,
-          "note": "fonte: 0,45 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "sodium": {
           "min": 0.167,
           "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
@@ -258,11 +254,15 @@
         "choline": {
           "min": 1670,
           "note": "fonte: 1 500 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.5,
+          "note": "fonte: 0,45 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
     {
-      "lifeStage": "maintenance",
+      "lifeStage": "growth",
       "label": "Colim — crescimento (growing); usar como referência de manutenção de adultos com cautela",
       "basis": "DM",
       "values": {
@@ -285,10 +285,6 @@
         "calcium": {
           "min": 0.722,
           "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
-        },
-        "phosphorus": {
-          "min": 0.333,
-          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         },
         "sodium": {
           "min": 0.167,
@@ -313,6 +309,10 @@
         "choline": {
           "min": 1670,
           "note": "fonte: 1 500 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -341,10 +341,6 @@
           "min": 2.67,
           "note": "fonte: 2,4 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.778,
-          "note": "fonte: 0,7 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "sodium": {
           "min": 0.167,
           "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
@@ -368,6 +364,10 @@
         "choline": {
           "min": 1110,
           "note": "fonte: 1 000 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.778,
+          "note": "fonte: 0,7 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     }

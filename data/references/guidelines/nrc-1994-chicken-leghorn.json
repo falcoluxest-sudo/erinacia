@@ -158,7 +158,7 @@
           "min": 1,
           "note": "fonte: 0,9 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
+        "phosphorus_available": {
           "min": 0.444,
           "note": "fonte: 0,4 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
@@ -293,14 +293,14 @@
           "min": 0.889,
           "note": "fonte: 0,8 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
+        "phosphorus_available": {
           "min": 0.389,
           "note": "fonte: 0,35 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
     {
-      "lifeStage": "maintenance",
+      "lifeStage": "laying",
       "label": "Poedeiras de ovos brancos (100 g ração/ave/dia) — postura",
       "basis": "DM",
       "values": {
@@ -424,7 +424,7 @@
           "min": 3.67,
           "note": "fonte: 3,3 % (dieta, ~90 % MS) → ÷0,9; nível de postura; demasiado alto para aves fora da postura"
         },
-        "phosphorus": {
+        "phosphorus_available": {
           "min": 0.278,
           "note": "fonte: 0,25 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }

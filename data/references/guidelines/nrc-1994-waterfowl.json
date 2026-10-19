@@ -58,10 +58,6 @@
           "min": 0.722,
           "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.444,
-          "note": "fonte: 0,4 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "sodium": {
           "min": 0.167,
           "note": "fonte: 0,15 % (dieta, ~90 % MS) → ÷0,9"
@@ -109,6 +105,10 @@
         "pyridoxine": {
           "min": 2.78,
           "note": "fonte: 2,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.444,
+          "note": "fonte: 0,4 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -140,10 +140,6 @@
         "calcium": {
           "min": 0.667,
           "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
-        },
-        "phosphorus": {
-          "min": 0.333,
-          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         },
         "sodium": {
           "min": 0.167,
@@ -180,6 +176,10 @@
         "pyridoxine": {
           "min": 2.78,
           "note": "fonte: 2,5 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -207,10 +207,6 @@
         "calcium": {
           "min": 3.06,
           "note": "fonte: 2,75 % (dieta, ~90 % MS) → ÷0,9"
-        },
-        "phosphorus": {
-          "min": 0.333,
-          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         },
         "sodium": {
           "min": 0.167,
@@ -247,6 +243,10 @@
         "pyridoxine": {
           "min": 3.33,
           "note": "fonte: 3 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -275,10 +275,6 @@
           "min": 0.722,
           "note": "fonte: 0,65 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.333,
-          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "vitamin_a": {
           "min": 1.67,
           "note": "fonte: 1 500 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
@@ -298,6 +294,10 @@
         "niacin": {
           "min": 72.2,
           "note": "fonte: 65 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -326,10 +326,6 @@
           "min": 0.667,
           "note": "fonte: 0,6 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.333,
-          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "vitamin_a": {
           "min": 1.67,
           "note": "fonte: 1 500 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
@@ -349,6 +345,10 @@
         "niacin": {
           "min": 38.9,
           "note": "fonte: 35 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     },
@@ -377,10 +377,6 @@
           "min": 2.5,
           "note": "fonte: 2,25 % (dieta, ~90 % MS) → ÷0,9"
         },
-        "phosphorus": {
-          "min": 0.333,
-          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
-        },
         "vitamin_a": {
           "min": 4.44,
           "note": "fonte: 4 000 UI/kg dieta (~90 % MS) → ÷0,9 → UI/g"
@@ -400,6 +396,10 @@
         "niacin": {
           "min": 22.2,
           "note": "fonte: 20 mg/kg dieta (~90 % MS) → ÷0,9"
+        },
+        "phosphorus_available": {
+          "min": 0.333,
+          "note": "fonte: 0,3 % (dieta, ~90 % MS) → ÷0,9; ATENÇÃO: fósforo DISPONÍVEL (não fítico), não fósforo total"
         }
       }
     }

@@ -7,7 +7,7 @@ import { GUIDES as guidelines, GUILD_LABEL, guideSource } from '../data/diets';
 
 const STAGE: Record<string, string> = {
   all: 'Todas as fases', maintenance: 'Manutenção', breeding: 'Reprodução', gestation: 'Gestação',
-  gestation_late: 'Final de gestação', lactation: 'Lactação', growth: 'Crescimento',
+  gestation_late: 'Final de gestação', lactation: 'Lactação', laying: 'Postura', growth: 'Crescimento',
 };
 const RULE: Record<string, string> = {
   supplement: 'Suplementação', limit: 'Limite', avoid: 'Evitar', alert: 'Alerta', schedule: 'Manejo', monitoring: 'Monitorização', safety: 'Segurança',

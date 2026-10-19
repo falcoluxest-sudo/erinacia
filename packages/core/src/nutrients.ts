@@ -43,6 +43,7 @@ export const NUTRIENTS: NutrientDef[] = [
 
   n('calcium', '%', 'macromineral', 'Cálcio', 'Calcium', 'Ca (%MN)'),
   n('phosphorus', '%', 'macromineral', 'Fósforo', 'Phosphorus', 'P (%MN)'),
+  n('phosphorus_available', '%', 'macromineral', 'Fósforo disponível (não fítico)', 'Available (non-phytate) phosphorus'),
   n('sodium', '%', 'macromineral', 'Sódio', 'Sodium', 'Na (%MN)'),
   n('potassium', '%', 'macromineral', 'Potássio', 'Potassium', 'K (%MN)'),
   n('magnesium', '%', 'macromineral', 'Magnésio', 'Magnesium', 'Mg (%MN)'),

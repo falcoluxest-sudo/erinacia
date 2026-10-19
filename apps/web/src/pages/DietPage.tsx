@@ -22,7 +22,7 @@ import { DEFAULT_MODEL, GUIDES, GUILD_LABEL, guideLabel, loadDiets, newDiet, sav
 
 const STAGE: Record<string, string> = {
   all: 'Todas as fases', maintenance: 'Manutenção', breeding: 'Reprodução', gestation: 'Gestação',
-  gestation_late: 'Final de gestação', lactation: 'Lactação', growth: 'Crescimento',
+  gestation_late: 'Final de gestação', lactation: 'Lactação', laying: 'Postura', growth: 'Crescimento',
 };
 const MODEL_LABEL: Record<EnergyModel, string> = {
   atwater: 'Atwater (4/9/4)', carnivore: 'Carnívoro', ruminant: 'Ruminante',

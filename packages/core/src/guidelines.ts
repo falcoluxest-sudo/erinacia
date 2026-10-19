@@ -12,6 +12,7 @@ export type LifeStage =
   | 'gestation'
   | 'gestation_late'
   | 'lactation'
+  | 'laying'
   | 'growth';
 
 export type FeedingGuild =

@@ -1,0 +1,348 @@
+{
+  "id": "nrc-2016-beef",
+  "title": "Nutrient Requirements of Beef Cattle, 8th Revised Edition (2016) — minerais e vitaminas, exigências e máximos toleráveis (MS)",
+  "citation": "National Academies of Sciences, Engineering, and Medicine (2016). Nutrient Requirements of Beef Cattle, 8th rev. ed. Washington, DC: The National Academies Press (doi:10.17226/19014); com máximos toleráveis de NRC (2005) Mineral Tolerance of Animals, 2nd rev. ed., e NRC (1987) Vitamin Tolerance of Animals. Valores lidos na tabulação secundária da Canadian Food Inspection Agency (2017), 'Proposal – Maximum Nutrient Values for Beef and Dairy Cattle Feeds', Appendix I (secções 'Rationale' de cada nutriente), https://inspection.canada.ca/en/animal-health/livestock-feeds/consultations/maximum-nutrient-values-beef-and-dairy-cattle. Os valores 'Proposed' da própria CFIA (limites regulamentares) NÃO foram usados.",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Bison bison",
+      "commonName": {
+        "pt": "Bisonte-americano",
+        "en": "American bison"
+      }
+    },
+    {
+      "scientificName": "Bison bonasus",
+      "commonName": {
+        "pt": "Bisonte-europeu",
+        "en": "European bison"
+      }
+    },
+    {
+      "scientificName": "Syncerus caffer",
+      "commonName": {
+        "pt": "Búfalo-africano",
+        "en": "African buffalo"
+      }
+    },
+    {
+      "scientificName": "Bubalus bubalis",
+      "commonName": {
+        "pt": "Búfalo-asiático",
+        "en": "Water buffalo"
+      }
+    },
+    {
+      "scientificName": "Bos gaurus",
+      "commonName": {
+        "pt": "Gauro",
+        "en": "Gaur"
+      }
+    },
+    {
+      "scientificName": "Bos javanicus",
+      "commonName": {
+        "pt": "Banteng",
+        "en": "Banteng"
+      }
+    },
+    {
+      "scientificName": "Taurotragus oryx",
+      "commonName": {
+        "pt": "Elande",
+        "en": "Common eland"
+      }
+    },
+    {
+      "scientificName": "Giraffa camelopardalis",
+      "commonName": {
+        "pt": "Girafa",
+        "en": "Giraffe"
+      }
+    }
+  ],
+  "guild": "ruminant",
+  "modelSpecies": "Bovino de carne doméstico (Bos taurus)",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento e acabamento",
+      "basis": "DM",
+      "values": {
+        "calcium": {
+          "max": 1.5,
+          "note": "máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "phosphorus": {
+          "max": 0.7,
+          "note": "máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "magnesium": {
+          "min": 0.1,
+          "max": 0.4,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "sodium": {
+          "min": 0.06,
+          "max": 1.8,
+          "note": "mínimo NRC (2016) 0,06–0,08 % em animais não lactantes; máximo ≈ 1,8 % Na (4,5 % NaCl) para bovinos em crescimento, NRC (2005), citado pela CFIA"
+        },
+        "potassium": {
+          "min": 0.6,
+          "max": 2.0,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "sulfur": {
+          "min": 0.15,
+          "max": 0.5,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005): 0,5 % com ≥ 40 % de forragem, 0,3 % em dietas de concentrado (≥ 85 %)"
+        },
+        "cobalt": {
+          "min": 0.15,
+          "max": 25,
+          "note": "mínimo NRC (2016) (era 0,10 mg/kg em 1996); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "copper": {
+          "min": 10,
+          "max": 40,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA; o máximo pressupõe Mo 1–2 mg/kg e S 0,15–0,25 % — com menos Mo/S o Cu pode ser tóxico abaixo de 40"
+        },
+        "iodine": {
+          "min": 0.5,
+          "max": 50,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "iron": {
+          "min": 50,
+          "max": 500,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "manganese": {
+          "min": 20,
+          "max": 1000,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "selenium": {
+          "min": 0.1,
+          "max": 5,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "zinc": {
+          "min": 30,
+          "max": 500,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "vitamin_a": {
+          "min": 2.2,
+          "max": 66,
+          "note": "NRC (2016): 2200 UI/kg MS para bovinos em engorda (feedlot); fonte em UI/kg MS, convertido para UI/g; máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (66 000 UI/kg)"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "max": 2.2,
+          "note": "NRC (2016): 275 UI/kg MS (vitamina D, sem distinção D2/D3), convertido para UI/g; máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (2200 UI/kg)"
+        },
+        "vitamin_e": {
+          "max": 2000,
+          "note": "máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (2000 UI/kg MS; 1 UI ≈ 1 mg acetato de all-rac-α-tocoferol)"
+        }
+      }
+    },
+    {
+      "lifeStage": "gestation",
+      "label": "Vacas gestantes",
+      "basis": "DM",
+      "values": {
+        "calcium": {
+          "max": 1.5,
+          "note": "máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "phosphorus": {
+          "max": 0.7,
+          "note": "máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "magnesium": {
+          "min": 0.12,
+          "max": 0.4,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "sodium": {
+          "min": 0.06,
+          "max": 1.8,
+          "note": "mínimo NRC (2016) 0,06–0,08 % em animais não lactantes; máximo ≈ 1,8 % Na (4,5 % NaCl) para bovinos em crescimento, NRC (2005), citado pela CFIA"
+        },
+        "potassium": {
+          "min": 0.6,
+          "max": 2.0,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "sulfur": {
+          "min": 0.15,
+          "max": 0.5,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005): 0,5 % com ≥ 40 % de forragem, 0,3 % em dietas de concentrado (≥ 85 %)"
+        },
+        "cobalt": {
+          "min": 0.15,
+          "max": 25,
+          "note": "mínimo NRC (2016) (era 0,10 mg/kg em 1996); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "copper": {
+          "min": 10,
+          "max": 40,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA; o máximo pressupõe Mo 1–2 mg/kg e S 0,15–0,25 % — com menos Mo/S o Cu pode ser tóxico abaixo de 40"
+        },
+        "iodine": {
+          "min": 0.5,
+          "max": 50,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "iron": {
+          "min": 50,
+          "max": 500,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "manganese": {
+          "min": 40,
+          "max": 1000,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "selenium": {
+          "min": 0.1,
+          "max": 5,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "zinc": {
+          "min": 30,
+          "max": 500,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "vitamin_a": {
+          "min": 2.8,
+          "max": 66,
+          "note": "NRC (2016): 2800 UI/kg MS para vacas gestantes; fonte em UI/kg MS, convertido para UI/g; máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (66 000 UI/kg)"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "max": 2.2,
+          "note": "NRC (2016): 275 UI/kg MS (vitamina D, sem distinção D2/D3), convertido para UI/g; máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (2200 UI/kg)"
+        },
+        "vitamin_e": {
+          "max": 2000,
+          "note": "máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (2000 UI/kg MS; 1 UI ≈ 1 mg acetato de all-rac-α-tocoferol)"
+        }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Vacas em lactação",
+      "basis": "DM",
+      "values": {
+        "calcium": {
+          "max": 1.5,
+          "note": "máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "phosphorus": {
+          "max": 0.7,
+          "note": "máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "magnesium": {
+          "min": 0.2,
+          "max": 0.4,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "sodium": {
+          "min": 0.1,
+          "max": 1.2,
+          "note": "mínimo NRC (2016) 0,10 % para vacas lactantes; máximo ≈ 1,2 % Na (3,0 % NaCl) para vacas lactantes, NRC (2005), citado pela CFIA"
+        },
+        "potassium": {
+          "min": 0.7,
+          "max": 2.0,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "sulfur": {
+          "min": 0.15,
+          "max": 0.5,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005): 0,5 % com ≥ 40 % de forragem, 0,3 % em dietas de concentrado (≥ 85 %)"
+        },
+        "cobalt": {
+          "min": 0.15,
+          "max": 25,
+          "note": "mínimo NRC (2016) (era 0,10 mg/kg em 1996); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "copper": {
+          "min": 10,
+          "max": 40,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA; o máximo pressupõe Mo 1–2 mg/kg e S 0,15–0,25 % — com menos Mo/S o Cu pode ser tóxico abaixo de 40"
+        },
+        "iodine": {
+          "min": 0.5,
+          "max": 50,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "iron": {
+          "min": 50,
+          "max": 500,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "manganese": {
+          "min": 40,
+          "max": 1000,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2016)"
+        },
+        "selenium": {
+          "min": 0.1,
+          "max": 5,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "zinc": {
+          "min": 30,
+          "max": 500,
+          "note": "mínimo NRC (2016); máximo tolerável NRC (2005) Mineral Tolerance of Animals, citado pela CFIA"
+        },
+        "vitamin_a": {
+          "min": 3.9,
+          "max": 66,
+          "note": "NRC (2016): 3900 UI/kg MS para vacas de carne em lactação; fonte em UI/kg MS, convertido para UI/g; máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (66 000 UI/kg)"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "max": 2.2,
+          "note": "NRC (2016): 275 UI/kg MS (vitamina D, sem distinção D2/D3), convertido para UI/g; máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (2200 UI/kg)"
+        },
+        "vitamin_e": {
+          "max": 2000,
+          "note": "máximo tolerável NRC (1987) Vitamin Tolerance of Animals, citado pela CFIA (2000 UI/kg MS; 1 UI ≈ 1 mg acetato de all-rac-α-tocoferol)"
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Enxofre: máximo 0,3 % da MS em dietas com ≥ 85 % de concentrado (risco de polioencefalomalácia); 0,5 % com ≥ 40 % de forragem."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Cobre: o máximo de 40 mg/kg MS assume Mo 1–2 mg/kg e S 0,15–0,25 %; com Mo/S baixos pode haver toxicidade abaixo deste valor. Houve toxicose clínica com 37 mg/kg em alimentação prolongada."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Girafas e outros ruminantes de ramoneio (browsers) diferem fisiologicamente dos bovinos (seleção de concentrados, menor tolerância a dietas de gramíneas); usar este modelo com prudência."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Fonte secundária: valores NRC citados pela CFIA (2017); não foi possível aceder ao livro NRC 2016 (Tabelas 19-x) para confirmação.",
+    "Ca e P: a NRC (2016) exprime as exigências em g/dia em função do PV, ganho e produção; a CFIA não as transcreve em % MS, pelo que só os máximos toleráveis (1,5 % e 0,7 %) foram registados.",
+    "Vitamina E: a CFIA indica 35 UI/kg MS como 'requirement for beef cattle' sem atribuir explicitamente à NRC 2016 (e 100 UI/kg MS para vitelos stressados); não registado como mínimo — confirmar na fonte.",
+    "Os máximos de Na derivam de tolerância ao NaCl (3,0 % lactação, 4,5 % crescimento) e pressupõem água não salina à vontade.",
+    "Proteína bruta, energia e Cl não incluídos (dependem de modelos dinâmicos / sem chave no catálogo para Cl). Mo (máximo tolerável) não tem chave no catálogo.",
+    "Na vaca gestante e lactante a CFIA não indica Mg/K/Na por fase além do aqui registado; Mn 40 mg/kg aplica-se a vacas gestantes e lactantes, 20 mg/kg a crescimento/acabamento."
+  ]
+}
