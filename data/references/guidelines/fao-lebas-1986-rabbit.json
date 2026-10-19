@@ -1,0 +1,707 @@
+{
+  "id": "fao-lebas-1986-rabbit",
+  "title": "The rabbit: husbandry, health and production — Chapter 6, Nutritional needs (Table 21)",
+  "citation": "Lebas F., Coudert P., Rouvier R., de Rochambeau H. (1986). The rabbit: husbandry, health and production. FAO Animal Production and Health Series No. 21. Rome: FAO. ISBN 92-5-101253-9. Capítulo 6 'Nutritional needs', Tabela 21 'Recommended chemical composition of feeds for intensively reared rabbits of different categories' (fonte primária indicada: Lebas 1979; Lang 1981; alimento assumido com 89 % de matéria seca) e Tabela 22 (níveis mínimos aceitáveis). Lido em https://www.fao.org/4/X5082E/X5082E06.htm",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Oryctolagus cuniculus",
+      "commonName": {
+        "pt": "Coelho-europeu / coelho doméstico",
+        "en": "European rabbit / domestic rabbit"
+      }
+    },
+    {
+      "scientificName": "Lepus spp.",
+      "commonName": {
+        "pt": "Lebres (modelo)",
+        "en": "Hares (model)"
+      }
+    },
+    {
+      "scientificName": "Sylvilagus spp.",
+      "commonName": {
+        "pt": "Coelhos-de-cauda-de-algodão (modelo)",
+        "en": "Cottontails (model)"
+      }
+    },
+    {
+      "scientificName": "Ochotona spp.",
+      "commonName": {
+        "pt": "Picas (modelo)",
+        "en": "Pikas (model)"
+      }
+    }
+  ],
+  "guild": "hindgut_herbivore",
+  "modelSpecies": "Coelho doméstico (Oryctolagus cuniculus) em produção intensiva",
+  "energy": [
+    {
+      "id": "de-intake-growth",
+      "coefficient": 230,
+      "coefficientRange": [
+        220,
+        240
+      ],
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "DE",
+      "lifeStage": "growth",
+      "label": "Ingestão de ED em crescimento (Neozelandês Branco/Californiano): 220–240 kcal ED/kg^0,75/d",
+      "note": "Ingestão voluntária observada (o coelho regula a ingestão pela concentração energética entre 2200 e 3200 kcal ED/kg de alimento), não requisito fatorial. 230 = ponto médio."
+    },
+    {
+      "id": "de-intake-lactation",
+      "coefficient": 300,
+      "coefficientRange": [
+        300,
+        360
+      ],
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "DE",
+      "lifeStage": "lactation",
+      "label": "Ingestão de ED da coelha em lactação: média 300, até 360 kcal ED/kg^0,75/d",
+      "note": "360 kcal no pico de produção de leite (15.º–20.º dia de lactação)."
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Coelhos em crescimento (4–12 semanas)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "target": 17.98,
+          "note": "fonte: 16 % (MN, 89 % MS) → ÷0,89; mínimo aceitável (Tabela 22): 12 % MN.",
+          "min": 13.48
+        },
+        "methionine_cystine": {
+          "target": 0.6742,
+          "note": "fonte: 0,6 % (MN, 89 % MS) → ÷0,89"
+        },
+        "lysine": {
+          "target": 0.7303,
+          "note": "fonte: 0,65 % (MN, 89 % MS) → ÷0,89; mínimo aceitável (Tabela 22): 0,4 % MN.",
+          "min": 0.4494
+        },
+        "arginine": {
+          "target": 1.011,
+          "note": "fonte: 0,9 % (MN, 89 % MS) → ÷0,89; mínimo aceitável (Tabela 22): 0,5 % MN.",
+          "min": 0.5618
+        },
+        "threonine": {
+          "target": 0.618,
+          "note": "fonte: 0,55 % (MN, 89 % MS) → ÷0,89"
+        },
+        "tryptophan": {
+          "target": 0.2022,
+          "note": "fonte: 0,18 % (MN, 89 % MS) → ÷0,89"
+        },
+        "histidine": {
+          "target": 0.3933,
+          "note": "fonte: 0,35 % (MN, 89 % MS) → ÷0,89"
+        },
+        "isoleucine": {
+          "target": 0.6742,
+          "note": "fonte: 0,6 % (MN, 89 % MS) → ÷0,89"
+        },
+        "valine": {
+          "target": 0.7865,
+          "note": "fonte: 0,7 % (MN, 89 % MS) → ÷0,89"
+        },
+        "leucine": {
+          "target": 1.18,
+          "note": "fonte: 1,05 % (MN, 89 % MS) → ÷0,89"
+        },
+        "crude_fibre": {
+          "target": 15.73,
+          "note": "fonte: 14 % (MN, 89 % MS) → ÷0,89; fibra bruta indigestível recomendada: 12 % MN (13,48 % MS) — sem chave no catálogo."
+        },
+        "ether_extract": {
+          "target": 3.371,
+          "note": "fonte: 3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "calcium": {
+          "target": 0.4494,
+          "note": "fonte: 0,4 % (MN, 89 % MS) → ÷0,89"
+        },
+        "phosphorus": {
+          "target": 0.3371,
+          "note": "fonte: 0,3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "potassium": {
+          "target": 0.6742,
+          "note": "fonte: 0,6 % (MN, 89 % MS) → ÷0,89"
+        },
+        "sodium": {
+          "target": 0.3371,
+          "note": "fonte: 0,3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "magnesium": {
+          "target": 0.03371,
+          "note": "fonte: 0,03 % (MN, 89 % MS) → ÷0,89"
+        },
+        "sulfur": {
+          "target": 0.04494,
+          "note": "fonte: 0,04 % (MN, 89 % MS) → ÷0,89"
+        },
+        "cobalt": {
+          "target": 0.1124,
+          "note": "fonte: 0,1 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "copper": {
+          "target": 5.618,
+          "note": "fonte: 5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "zinc": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iron": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "manganese": {
+          "target": 9.551,
+          "note": "fonte: 8,5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iodine": {
+          "target": 0.2247,
+          "note": "fonte: 0,2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "vitamin_a": {
+          "target": 6.742,
+          "note": "fonte: 6000 UI/kg (MN, 89 % MS) → 6 UI/g MN → ÷0,89"
+        },
+        "vitamin_d3": {
+          "target": 1.011,
+          "note": "fonte: 900 UI/kg (MN, 89 % MS) → 0,9 UI/g MN → ÷0,89; a fonte diz apenas 'Vitamin D' (forma não especificada)."
+        },
+        "vitamin_e": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "thiamin": {
+          "target": 2.247,
+          "note": "fonte: 2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "riboflavin": {
+          "target": 6.742,
+          "note": "fonte: 6 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "pyridoxine": {
+          "target": 2.247,
+          "note": "fonte: 2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "cobalamin": {
+          "target": 0.01124,
+          "note": "fonte: 0,01 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "folic_acid": {
+          "target": 5.618,
+          "note": "fonte: 5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "pantothenic_acid": {
+          "target": 22.47,
+          "note": "fonte: 20 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "niacin": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "biotin": {
+          "target": 0.2247,
+          "note": "fonte: 0,2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "methionine": {
+          "min": 0.4494,
+          "note": "Tabela 22: nível mínimo aceitável de metionina 0,40 % MN → ÷0,89 (a Tabela 21 recomenda 0,60 % MN de metionina+cistina)."
+        },
+        "energy_density_dm": {
+          "target": 2.697,
+          "note": "fonte: EM 2400 kcal/kg (MN, 89 % MS) → ÷0,89 (ED 2500 kcal/kg MN = 2,809 kcal ED/g MS)."
+        },
+        "ca_p_ratio": {
+          "target": 1.33,
+          "note": "Calculado a partir dos valores de Ca e P da Tabela 21."
+        }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Coelha em lactação + láparos",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "target": 20.22,
+          "note": "fonte: 18 % (MN, 89 % MS) → ÷0,89"
+        },
+        "methionine_cystine": {
+          "target": 0.6742,
+          "note": "fonte: 0,6 % (MN, 89 % MS) → ÷0,89"
+        },
+        "lysine": {
+          "target": 0.8427,
+          "note": "fonte: 0,75 % (MN, 89 % MS) → ÷0,89"
+        },
+        "arginine": {
+          "target": 0.8989,
+          "note": "fonte: 0,8 % (MN, 89 % MS) → ÷0,89"
+        },
+        "threonine": {
+          "target": 0.7865,
+          "note": "fonte: 0,7 % (MN, 89 % MS) → ÷0,89"
+        },
+        "tryptophan": {
+          "target": 0.2472,
+          "note": "fonte: 0,22 % (MN, 89 % MS) → ÷0,89"
+        },
+        "histidine": {
+          "target": 0.4831,
+          "note": "fonte: 0,43 % (MN, 89 % MS) → ÷0,89"
+        },
+        "isoleucine": {
+          "target": 0.7865,
+          "note": "fonte: 0,7 % (MN, 89 % MS) → ÷0,89"
+        },
+        "valine": {
+          "target": 0.9551,
+          "note": "fonte: 0,85 % (MN, 89 % MS) → ÷0,89"
+        },
+        "leucine": {
+          "target": 1.404,
+          "note": "fonte: 1,25 % (MN, 89 % MS) → ÷0,89"
+        },
+        "crude_fibre": {
+          "target": 13.48,
+          "note": "fonte: 12 % (MN, 89 % MS) → ÷0,89; fibra bruta indigestível recomendada: 10 % MN (11,24 % MS) — sem chave no catálogo."
+        },
+        "ether_extract": {
+          "target": 3.371,
+          "note": "fonte: 3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "calcium": {
+          "target": 1.236,
+          "note": "fonte: 1,1 % (MN, 89 % MS) → ÷0,89"
+        },
+        "phosphorus": {
+          "target": 0.8989,
+          "note": "fonte: 0,8 % (MN, 89 % MS) → ÷0,89"
+        },
+        "potassium": {
+          "target": 1.011,
+          "note": "fonte: 0,9 % (MN, 89 % MS) → ÷0,89"
+        },
+        "sodium": {
+          "target": 0.3371,
+          "note": "fonte: 0,3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "magnesium": {
+          "target": 0.04494,
+          "note": "fonte: 0,04 % (MN, 89 % MS) → ÷0,89"
+        },
+        "cobalt": {
+          "target": 0.1124,
+          "note": "fonte: 0,1 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "copper": {
+          "target": 5.618,
+          "note": "fonte: 5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "zinc": {
+          "target": 78.65,
+          "note": "fonte: 70 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iron": {
+          "target": 112.4,
+          "note": "fonte: 100 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "manganese": {
+          "target": 2.809,
+          "note": "fonte: 2,5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iodine": {
+          "target": 0.2247,
+          "note": "fonte: 0,2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "vitamin_a": {
+          "target": 13.48,
+          "note": "fonte: 12000 UI/kg (MN, 89 % MS) → 12 UI/g MN → ÷0,89"
+        },
+        "vitamin_d3": {
+          "target": 1.011,
+          "note": "fonte: 900 UI/kg (MN, 89 % MS) → 0,9 UI/g MN → ÷0,89; a fonte diz apenas 'Vitamin D' (forma não especificada)."
+        },
+        "vitamin_e": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "vitamin_k": {
+          "target": 2.247,
+          "note": "fonte: 2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "energy_density_dm": {
+          "target": 2.809,
+          "note": "fonte: EM 2500 kcal/kg (MN, 89 % MS) → ÷0,89 (ED 2600 kcal/kg MN = 2,921 kcal ED/g MS)."
+        },
+        "ca_p_ratio": {
+          "target": 1.38,
+          "note": "Calculado a partir dos valores de Ca e P da Tabela 21."
+        }
+      }
+    },
+    {
+      "lifeStage": "gestation",
+      "label": "Coelha gestante, não lactante",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "target": 17.98,
+          "note": "fonte: 16 % (MN, 89 % MS) → ÷0,89"
+        },
+        "crude_fibre": {
+          "target": 15.73,
+          "note": "fonte: 14 % (MN, 89 % MS) → ÷0,89; fibra bruta indigestível recomendada: 12 % MN (13,48 % MS) — sem chave no catálogo."
+        },
+        "ether_extract": {
+          "target": 3.371,
+          "note": "fonte: 3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "calcium": {
+          "target": 0.8989,
+          "note": "fonte: 0,8 % (MN, 89 % MS) → ÷0,89"
+        },
+        "phosphorus": {
+          "target": 0.5618,
+          "note": "fonte: 0,5 % (MN, 89 % MS) → ÷0,89"
+        },
+        "potassium": {
+          "target": 1.011,
+          "note": "fonte: 0,9 % (MN, 89 % MS) → ÷0,89"
+        },
+        "sodium": {
+          "target": 0.3371,
+          "note": "fonte: 0,3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "magnesium": {
+          "target": 0.04494,
+          "note": "fonte: 0,04 % (MN, 89 % MS) → ÷0,89"
+        },
+        "zinc": {
+          "target": 78.65,
+          "note": "fonte: 70 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iron": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "manganese": {
+          "target": 2.809,
+          "note": "fonte: 2,5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iodine": {
+          "target": 0.2247,
+          "note": "fonte: 0,2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "vitamin_a": {
+          "target": 13.48,
+          "note": "fonte: 12000 UI/kg (MN, 89 % MS) → 12 UI/g MN → ÷0,89"
+        },
+        "vitamin_d3": {
+          "target": 1.011,
+          "note": "fonte: 900 UI/kg (MN, 89 % MS) → 0,9 UI/g MN → ÷0,89; a fonte diz apenas 'Vitamin D' (forma não especificada)."
+        },
+        "vitamin_e": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "vitamin_k": {
+          "target": 2.247,
+          "note": "fonte: 2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "energy_density_dm": {
+          "target": 2.697,
+          "note": "fonte: EM 2400 kcal/kg (MN, 89 % MS) → ÷0,89 (ED 2500 kcal/kg MN = 2,809 kcal ED/g MS)."
+        },
+        "ca_p_ratio": {
+          "target": 1.6,
+          "note": "Calculado a partir dos valores de Ca e P da Tabela 21."
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Adultos em repouso (machos)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "target": 14.61,
+          "note": "fonte: 13 % (MN, 89 % MS) → ÷0,89"
+        },
+        "ether_extract": {
+          "target": 3.371,
+          "note": "fonte: 3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "calcium": {
+          "target": 0.4494,
+          "note": "fonte: 0,4 % (MN, 89 % MS) → ÷0,89"
+        },
+        "phosphorus": {
+          "target": 0.3371,
+          "note": "fonte: 0,3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "iron": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "manganese": {
+          "target": 2.809,
+          "note": "fonte: 2,5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iodine": {
+          "target": 0.2247,
+          "note": "fonte: 0,2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "vitamin_a": {
+          "target": 6.742,
+          "note": "fonte: 6000 UI/kg (MN, 89 % MS) → 6 UI/g MN → ÷0,89"
+        },
+        "vitamin_d3": {
+          "target": 1.011,
+          "note": "fonte: 900 UI/kg (MN, 89 % MS) → 0,9 UI/g MN → ÷0,89; a fonte diz apenas 'Vitamin D' (forma não especificada)."
+        },
+        "vitamin_e": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "crude_fibre": {
+          "min": 16.85,
+          "max": 17.98,
+          "note": "fonte: 15–16 % (MN, 89 % MS) → ÷0,89; fibra bruta indigestível recomendada: 13 % MN (14,61 % MS) — sem chave no catálogo."
+        },
+        "energy_density_dm": {
+          "target": 2.382,
+          "note": "fonte: EM 2120 kcal/kg (MN, 89 % MS) → ÷0,89 (ED 2200 kcal/kg MN = 2,472 kcal ED/g MS)."
+        },
+        "ca_p_ratio": {
+          "target": 1.33,
+          "note": "Calculado a partir dos valores de Ca e P da Tabela 21."
+        }
+      }
+    },
+    {
+      "lifeStage": "all",
+      "label": "Alimento único para reprodutoras + engorda (compromisso)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "target": 19.1,
+          "note": "fonte: 17 % (MN, 89 % MS) → ÷0,89"
+        },
+        "methionine_cystine": {
+          "target": 0.6742,
+          "note": "fonte: 0,6 % (MN, 89 % MS) → ÷0,89"
+        },
+        "lysine": {
+          "target": 0.7865,
+          "note": "fonte: 0,7 % (MN, 89 % MS) → ÷0,89"
+        },
+        "arginine": {
+          "target": 1.011,
+          "note": "fonte: 0,9 % (MN, 89 % MS) → ÷0,89"
+        },
+        "threonine": {
+          "target": 0.6742,
+          "note": "fonte: 0,6 % (MN, 89 % MS) → ÷0,89"
+        },
+        "tryptophan": {
+          "target": 0.2247,
+          "note": "fonte: 0,2 % (MN, 89 % MS) → ÷0,89"
+        },
+        "histidine": {
+          "target": 0.4494,
+          "note": "fonte: 0,4 % (MN, 89 % MS) → ÷0,89"
+        },
+        "isoleucine": {
+          "target": 0.7303,
+          "note": "fonte: 0,65 % (MN, 89 % MS) → ÷0,89"
+        },
+        "valine": {
+          "target": 0.8989,
+          "note": "fonte: 0,8 % (MN, 89 % MS) → ÷0,89"
+        },
+        "leucine": {
+          "target": 1.348,
+          "note": "fonte: 1,2 % (MN, 89 % MS) → ÷0,89"
+        },
+        "crude_fibre": {
+          "target": 15.73,
+          "note": "fonte: 14 % (MN, 89 % MS) → ÷0,89; fibra bruta indigestível recomendada: 12 % MN (13,48 % MS) — sem chave no catálogo."
+        },
+        "ether_extract": {
+          "target": 3.371,
+          "note": "fonte: 3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "calcium": {
+          "target": 1.236,
+          "note": "fonte: 1,1 % (MN, 89 % MS) → ÷0,89"
+        },
+        "phosphorus": {
+          "target": 0.8989,
+          "note": "fonte: 0,8 % (MN, 89 % MS) → ÷0,89"
+        },
+        "potassium": {
+          "target": 1.011,
+          "note": "fonte: 0,9 % (MN, 89 % MS) → ÷0,89"
+        },
+        "sodium": {
+          "target": 0.3371,
+          "note": "fonte: 0,3 % (MN, 89 % MS) → ÷0,89"
+        },
+        "magnesium": {
+          "target": 0.04494,
+          "note": "fonte: 0,04 % (MN, 89 % MS) → ÷0,89"
+        },
+        "sulfur": {
+          "target": 0.04494,
+          "note": "fonte: 0,04 % (MN, 89 % MS) → ÷0,89"
+        },
+        "cobalt": {
+          "target": 0.1124,
+          "note": "fonte: 0,1 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "copper": {
+          "target": 5.618,
+          "note": "fonte: 5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "zinc": {
+          "target": 78.65,
+          "note": "fonte: 70 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iron": {
+          "target": 112.4,
+          "note": "fonte: 100 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "manganese": {
+          "target": 9.551,
+          "note": "fonte: 8,5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "iodine": {
+          "target": 0.2247,
+          "note": "fonte: 0,2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "vitamin_a": {
+          "target": 11.24,
+          "note": "fonte: 10000 UI/kg (MN, 89 % MS) → 10 UI/g MN → ÷0,89"
+        },
+        "vitamin_d3": {
+          "target": 1.011,
+          "note": "fonte: 900 UI/kg (MN, 89 % MS) → 0,9 UI/g MN → ÷0,89; a fonte diz apenas 'Vitamin D' (forma não especificada)."
+        },
+        "vitamin_e": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "vitamin_k": {
+          "target": 2.247,
+          "note": "fonte: 2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "thiamin": {
+          "target": 2.247,
+          "note": "fonte: 2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "riboflavin": {
+          "target": 4.494,
+          "note": "fonte: 4 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "pyridoxine": {
+          "target": 2.247,
+          "note": "fonte: 2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "cobalamin": {
+          "target": 0.01124,
+          "note": "fonte: 0,01 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "folic_acid": {
+          "target": 5.618,
+          "note": "fonte: 5 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "pantothenic_acid": {
+          "target": 22.47,
+          "note": "fonte: 20 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "niacin": {
+          "target": 56.18,
+          "note": "fonte: 50 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "biotin": {
+          "target": 0.2247,
+          "note": "fonte: 0,2 ppm (MN, 89 % MS) → ÷0,89"
+        },
+        "energy_density_dm": {
+          "target": 2.708,
+          "note": "fonte: EM 2410 kcal/kg (MN, 89 % MS) → ÷0,89 (ED 2500 kcal/kg MN = 2,809 kcal ED/g MS)."
+        },
+        "ca_p_ratio": {
+          "target": 1.38,
+          "note": "Calculado a partir dos valores de Ca e P da Tabela 21."
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Fibra bruta indigestível < 10 % do alimento (MN): risco de diarreia letal. Acima de 12 % não elimina totalmente o risco digestivo e reduz o valor energético."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "A ingestão só é corretamente regulada entre 2200 e 3200 kcal ED/kg de alimento (MN); abaixo de 2200 kcal ED/kg o desempenho baixa, mas a saúde não fica comprometida."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Aminoácidos sulfurados: margem estreita entre a necessidade e o excesso que reduz o desempenho. Lisina e arginina têm limiares de toxicidade bem acima do recomendado."
+      }
+    },
+    {
+      "kind": "monitoring",
+      "text": {
+        "pt": "Todo o azoto deve vir de proteína verdadeira; ureia e sais de amónio não substituem a proteína."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Desequilíbrios de sódio, potássio ou cloro podem causar nefrite e acidentes de parto (risco com forragens muito adubadas com potássio)."
+      }
+    },
+    {
+      "kind": "monitoring",
+      "text": {
+        "pt": "Vitaminas B e C: a cecotrofia cobre a manutenção e a produção média; animais de crescimento rápido respondem a 1–2 ppm de B1 e B6, 6 ppm de B2 e 30–60 ppm de niacina. Vitamina C sem efeito no crescimento."
+      }
+    },
+    {
+      "kind": "monitoring",
+      "text": {
+        "pt": "Granulado ideal de 3–4 mm de diâmetro (máx. 5 mm) e ≤ 8–10 mm de comprimento; o coelho tolera mal o pó das farinhas."
+      }
+    }
+  ],
+  "dataQuality": [
+    "Base MN da fonte com 89 % de MS; todos os valores convertidos para MS dividindo por 0,89.",
+    "Os valores da Tabela 21 são composições 'teoricamente ideais' para produção intensiva em clima temperado europeu (registados como 'target'); a fonte diz que são referência e podem variar ligeiramente.",
+    "Valores '0' (vitaminas B1, B2, B6, B12, ác. fólico, pantoténico, vitamina K) e '-' foram omitidos: indicam ausência de requisito dietético ou falta de dados, não um alvo de zero.",
+    "Vitamina D: a fonte não especifica D2/D3; registada como vitamina_d3.",
+    "Sem chave no catálogo (omitidos): cloro (0,30 % MN), flúor (0,5 ppm), fenilalanina + tirosina (1,20–1,40 % MN), fibra bruta indigestível (10–13 % MN), energia digestível.",
+    "Dados de coelho doméstico de produção (objetivo de desempenho máximo); para lagomorfos de zoo/pets em manutenção, privilegiar fibra mais alta e energia/Ca mais baixos. Fonte de 1986 (base Lebas 1979 / Lang 1981); o NRC (1977) não pôde ser obtido (páginas digitalizadas do NAP não carregam)."
+  ]
+}

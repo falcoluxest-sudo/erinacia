@@ -1,0 +1,88 @@
+{
+  "id": "proigel-2016-erinaceus-hoglets",
+  "title": "Aufzucht verwaister Igelsäuglinge (IGELWISSEN kompakt, Merkblatt 4.6)",
+  "citation": "Neumeier M. (2016). Aufzucht verwaister Igelsäuglinge. Merkblatt 4.6 da série IGELWISSEN kompakt 4 (Wildtier Igel: Wissen | Schutz | Pflege). Pro Igel e.V., Lindau/B.; 10.ª edição totalmente revista, 2016 (© 1994). ISBN 978-3-940377-15-9 (obra completa). Tabela 4 (idade × peso), Tabela 6.1 (matéria seca do leite de ouriço e de substitutos), Cap. 7 e Tabela 7 (quantidade de alimento e ganho de peso). PDF lido em https://www.noe.gv.at/noe/Naturschutz/Aufzucht_verwaister_Igelsaeuglinge.pdf (distribuído pelo Governo da Baixa Áustria).",
+  "language": "de",
+  "species": [
+    { "scientificName": "Erinaceus europaeus", "commonName": { "pt": "Ouriço-cacheiro (crias órfãs)", "en": "European hedgehog (orphan hoglets)" } }
+  ],
+  "guild": "insectivore_omnivore",
+  "intake": [
+    {
+      "label": "Crias em aleitamento artificial (até ~90–100 g): substituto de leite por 24 h",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "target": 25,
+        "note": "'eine Nahrungsmenge, die etwa einem Viertel ihres Körpergewichts (= 25 %) entspricht' — necessária para ganhos de 4–6 g/dia até ~90 g. Ver Tabela 7 nas regras (mL por peso)."
+      }
+    }
+  ],
+  "growth": [
+    {
+      "label": "Meta de ganho em criação artificial (Pro Igel)",
+      "rearing": "hand",
+      "intervals": [
+        { "fromDay": 0, "toDay": 19, "adgGramsPerDay": 5 },
+        { "fromDay": 19, "toDay": 30, "adgGramsPerDay": 10 }
+      ],
+      "note": "Fonte: até ~90 g de peso vivo o ganho médio deve ser de 4–6 g/dia; a partir de ~90 g (aprox. a partir do 19.º dia, quando começam a lamber leite de um prato) 9–11 g/dia. Usados os pontos médios (5 e 10 g/d). Desmame completo (alimentação de adulto) por volta dos 30 dias."
+    },
+    {
+      "label": "Peso por idade para determinação da idade (Tabela 4)",
+      "birthWeightKg": 0.0185,
+      "intervals": [
+        { "fromDay": 0, "toDay": 7, "adgGramsPerDay": 3.1 },
+        { "fromDay": 7, "toDay": 14, "adgGramsPerDay": 4.3 },
+        { "fromDay": 14, "toDay": 21, "adgGramsPerDay": 6.4 },
+        { "fromDay": 21, "toDay": 28, "adgGramsPerDay": 6.4 }
+      ],
+      "note": "Tabela 4: nascimento 12–25 g; 1 semana 30–50 g; 2 semanas 60–80 g; 3 semanas 100–130 g; 4 semanas 140–180 g. GMD calculado a partir dos pontos médios (18,5 / 40 / 70 / 115 / 160 g). A fonte sublinha que a idade deve ser estimada sobretudo pelo aspeto (pele, espinhos, pelo, olhos/ouvidos, dentes) e não só pelo peso."
+    }
+  ],
+  "productSpecs": [
+    {
+      "label": "Leite de ouriço-cacheiro (matéria seca, valores médios)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "target": 35.4 },
+        "ether_extract": { "target": 56.4 },
+        "lactose": { "target": 0.16, "note": "Hidratos de carbono totais 0,16 %, dos quais lactose 0,16 %." }
+      }
+    },
+    {
+      "label": "Substituto Esbilac (Albrecht) — matéria seca, segundo a fonte",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "target": 33.0 },
+        "ether_extract": { "target": 40 },
+        "lactose": { "target": 15.6, "note": "Hidratos de carbono ca. 16,5 %, dos quais lactose 15,6 %." }
+      }
+    },
+    {
+      "label": "Substitutos Royal Canin Babycat/Babydog milk — matéria seca, segundo a fonte",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "target": 33.0 },
+        "ether_extract": { "target": 39.0 },
+        "lactose": { "target": 18.5, "note": "Hidratos de carbono 19,0 %, dos quais lactose 18,5 %." }
+      }
+    }
+  ],
+  "rules": [
+    { "kind": "alert", "text": { "pt": "O leite de ouriço é muito rico em proteína e gordura e quase sem lactose; o intestino do ouriço não produz lactase. Leite de vaca, leite condensado e a maioria dos substitutos para cães/gatos têm lactose a mais e causam diarreia grave." } },
+    { "kind": "supplement", "text": { "pt": "Adicionar lactase ao substituto de leite (1 cápsula de Lactrase 1500 neutraliza a lactose de ~40 g de pó). Para crias com mais de 1 semana, enriquecer progressivamente com Hill's a/d (começar com uma porção do tamanho de uma ervilha)." } },
+    { "kind": "safety", "text": { "pt": "Primeira refeição: chá de funcho (ou camomila) morno sem açúcar, por seringa de 1–2 mL, com a cria em posição vertical (risco de aspiração e pneumonia). Só chá no máximo durante um dia." } },
+    { "kind": "schedule", "text": { "pt": "Tabela 7 (mL de substituto/24 h; refeições dia+noite; mL/refeição): 30 g → 8 mL, 8+2, 0,8; 40 g → 10 mL, 8+2, 1; 50 g → 13 mL, 8+2, 1,3; 60 g → 15 mL, 8+1, 1,7; 70 g → 18 mL, 7+1, 2,3; 80 g → 20 mL, 6, 3,3; 90 g → 23 mL, 6, 3,8*; 100 g → 25 mL, 5, 5,0* (*incluindo ingestão autónoma)." } },
+    { "kind": "schedule", "text": { "pt": "Alimentar também de noite até aos 14 dias (início da abertura dos olhos). Sem refeições noturnas: última às ~23 h, primeira às ~7 h. A partir do ~19.º dia oferecer leite num prato antes da seringa; ao 25.º dia devem lamber sozinhas." } },
+    { "kind": "schedule", "text": { "pt": "Transição: misturar carne de vaca picada muito fresca ou ovo mexido no leite; a partir de 100 g podem oferecer-se larvas de zângão. Diluir progressivamente o leite; aos ~30 dias deve estar concluída a passagem para a dieta de adulto (ainda picada) e só água para beber. Depois da erupção dos dentes de leite, não dar papas — o ouriço tem de mastigar." } },
+    { "kind": "monitoring", "text": { "pt": "Pesar cada cria diariamente, à mesma hora (de manhã, antes da primeira refeição), ao grama, e registar peso e mL ingeridos num protocolo individual." } },
+    { "kind": "monitoring", "text": { "pt": "Estimulação ano-genital (toiletting) antes e depois de cada refeição até comerem sozinhas; fezes pequenas, verdes e aglomeradas são normais enquanto bebem substituto." } },
+    { "kind": "alert", "text": { "pt": "Vitaminas adicionais podem ser tóxicas ou afetar a bexiga: apenas uma gota diária de complexo B (prescrição veterinária) para a ninhada; Ca e restantes vitaminas estão nos substitutos." } },
+    { "kind": "monitoring", "text": { "pt": "Passagem para recinto exterior com ~250 g (até ~400 g quanto mais frias as noites de outono); libertação após ~2 semanas no recinto, de preferência no local onde foram encontrados." } }
+  ],
+  "dataQuality": [
+    "Tabela 6.1: os valores são 'Trockensubstanzen' (matéria seca) e, para o leite de ouriço, médias que variam com a idade das crias. A composição dos substitutos comerciais pode ter mudado desde 2016.",
+    "Folheto de divulgação de uma associação de proteção (Pro Igel), não artigo revisto por pares; os ganhos de peso são metas práticas de criação artificial.",
+    "O GMD da Tabela 4 foi calculado por mim a partir dos pontos médios dos intervalos de peso; a variação individual é grande (tamanho da ninhada, tempo em jejum)."
+  ]
+}

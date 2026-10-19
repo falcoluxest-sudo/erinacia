@@ -1,0 +1,34 @@
+{
+  "id": "robinson-routh-1999-hedgehog",
+  "title": "Veterinary care of the hedgehog (In Practice) — age/weight table and hand-rearing",
+  "citation": "Robinson I., Routh A. (1999). Veterinary care of the hedgehog. In Practice 21(3): 128–137. doi:10.1136/inpract.21.3.128. Tabela de idade/peso normal/aspeto (p. 128) e secção 'Hand-rearing orphans' (p. 129). PDF lido em https://asiakas.kotisivukone.com/files/testisiili.tarjoaa.fi/InPractice-1999-Robinson-128-37.pdf",
+  "language": "en",
+  "species": [
+    { "scientificName": "Erinaceus europaeus", "commonName": { "pt": "Ouriço-cacheiro", "en": "European hedgehog" } }
+  ],
+  "guild": "insectivore_omnivore",
+  "growth": [
+    {
+      "label": "Peso normal por idade (crias selvagens, Reino Unido)",
+      "rearing": "wild",
+      "birthWeightKg": 0.016,
+      "intervals": [
+        { "fromDay": 0, "toDay": 7, "adgGramsPerDay": 4.9 },
+        { "fromDay": 7, "toDay": 22, "adgGramsPerDay": 3.3 },
+        { "fromDay": 22, "toDay": 56, "adgGramsPerDay": 5.1 }
+      ],
+      "note": "Tabela: recém-nascido 12–20 g; 7 dias 50 g; 21–23 dias 100 g; 7–9 semanas 250–300 g; adulto até 1,5 kg (pesos superiores registados com alimento artificial). GMD calculado por mim entre pontos médios (16 g → 50 g → 100 g aos 22 d → 275 g aos 56 d)."
+    }
+  ],
+  "rules": [
+    { "kind": "monitoring", "text": { "pt": "Os juvenis têm de pesar pelo menos 450 g no outono para sobreviver à primeira hibernação." } },
+    { "kind": "schedule", "text": { "pt": "Órfãos: substituto de leite de cadela (p. ex. Esbilac) ou colostro de cabra, por seringa ou biberão de gatinho, a cada 2–4 horas; pesar pelo menos diariamente; suprimir as refeições noturnas quando o ganho de peso for regular." } },
+    { "kind": "schedule", "text": { "pt": "As crias lambem leite de uma taça cedo e às 3 semanas devem já comer sólidos (alimento completo para cachorros como primeiro sólido); continuar a pesar diariamente até ao desmame completo." } },
+    { "kind": "monitoring", "text": { "pt": "Massajar a zona ano-genital após cada refeição para estimular micção e defecação; se a pele ficar irritada, usar vaselina ou pomada neutra." } },
+    { "kind": "alert", "text": { "pt": "Tártaro e gengivite são frequentes em ouriços selvagens e de cativeiro; foi sugerida (não comprovada) uma ligação a dietas moles de comida de cão." } }
+  ],
+  "dataQuality": [
+    "Peso adulto lido por OCR como 'Up to 1 5 kg' — interpretado como 1,5 kg.",
+    "O GMD resulta de pontos de idade/peso aproximados de animais selvagens; não é uma curva de crescimento medida longitudinalmente."
+  ]
+}

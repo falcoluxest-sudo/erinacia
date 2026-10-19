@@ -120,14 +120,18 @@ def import_requirements(wb, catalog):
             group = group[: m.start()].strip()
         prof = profiles.setdefault(group, {"id": slug(group), "group": group, "values": {}, "reference": None})
         for col, val in zip(header, r):
-            if col is None or num(val) in (None, 0.0):
+            if col is None:
                 continue
             n = norm(col)
+            if "bibliografia" in n:
+                if val:
+                    prof["reference"] = str(val).strip()
+                continue
+            if num(val) in (None, 0.0):
+                continue
             key = REQUIREMENT_EXTRA.get(n) or catalog.get(n)
             if key:
                 prof["values"].setdefault(key, {})[bound] = num(val)
-            elif "bibliografia" in n:
-                prof["reference"] = val
     return list(profiles.values())
 
 

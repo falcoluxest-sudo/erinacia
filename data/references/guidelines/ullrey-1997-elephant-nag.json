@@ -1,0 +1,55 @@
+{
+  "id": "ullrey-1997-elephant-nag",
+  "title": "Elephants: Nutrition and Dietary Husbandry (AZA NAG Fact Sheet 004) — recomendações para a dieta de adultos",
+  "citation": "Ullrey DE, Crissey SD, Hintz HF (1997). Elephants: Nutrition and dietary husbandry. Nutrition Advisory Group Handbook, Fact Sheet 004. American Zoo and Aquarium Association. Valores lidos na tabulação secundária de Wood J, Koutsos E, Kendall CJ, Minter LJ, Tollefson TN, Ange-van Heugten K (2020). Analyses of African elephant (Loxodonta africana) diet with various browse and pellet inclusion levels. Zoo Biology 39: 37–50, doi:10.1002/zoo.21522, Tabelas 10 e 11, coluna 'Ele. Rec.' (cópia lida em https://growingfruit.org/uploads/short-url/8SGT9U2A3qxYFjAe5eriWzHOcmG.pdf). O PDF original do NAG (nagonline.net) estava bloqueado por Cloudflare.",
+  "language": "en",
+  "species": [
+    { "scientificName": "Loxodonta africana", "commonName": { "pt": "Elefante-africano", "en": "African elephant" } },
+    { "scientificName": "Elephas maximus", "commonName": { "pt": "Elefante-asiático", "en": "Asian elephant" } }
+  ],
+  "guild": "hindgut_herbivore",
+  "modelSpecies": "Equino (extrapolação) e estudos de campo de plantas consumidas",
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Adulto em manutenção",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 8, "max": 10, "note": "Intervalo recomendado 8,0–10,0 %." },
+        "adf": { "target": 30 },
+        "calcium": { "target": 0.3 },
+        "phosphorus": { "target": 0.2 },
+        "sodium": { "target": 0.1 },
+        "potassium": { "target": 0.4 },
+        "magnesium": { "target": 0.1 },
+        "sulfur": { "target": 0.2, "note": "Valor assinalado na tabela com nota de rodapé Williams et al. (2015), não Ullrey." },
+        "iron": { "target": 50 },
+        "copper": { "target": 10 },
+        "manganese": { "target": 40 },
+        "zinc": { "target": 40 },
+        "selenium": { "target": 0.2 },
+        "vitamin_d3": { "target": 0.8, "note": "Fonte: 800 UI/kg → 0,8 UI/g." },
+        "vitamin_e": { "target": 100, "note": "Fonte: 100 UI/kg; 1 UI ≈ 1 mg acetato de all-rac-α-tocoferol." }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Prática tradicional descrita por Ullrey et al. (1997)",
+      "basis": "DM",
+      "rules": [
+        { "category": "concentrate", "label": "Granulado nutricionalmente completo", "range": { "target": 10 } }
+      ]
+    }
+  ],
+  "rules": [
+    { "kind": "alert", "text": { "pt": "Dietas sem granulado fortificado ficam baixas em Na, Se, Cu, Zn, vitamina D3 e α-tocoferol (Wood et al. 2020); não são recomendadas." } },
+    { "kind": "monitoring", "text": { "pt": "Browse (p. ex. liquidâmbar) pode exceder muito o Mn recomendado (40 mg/kg) e o Fe; monitorizar o ferro em paquidermes." } }
+  ],
+  "dataQuality": [
+    "Valores lidos numa tabulação secundária (Wood et al. 2020), não no fact sheet original; o NAG estava inacessível. Confirmar no NAG FS004 quando possível.",
+    "Coincide quase integralmente com o ficheiro azab-elephant (também baseado em Ullrey 1997), mas aqui FDA = 30 % (azab: 48 %, Meissner 1990) e S = 0,2 % (azab: 0,15 %).",
+    "Katole et al. (2015, Indian J Anim Sci 85:1126) citam Ullrey (1997) com P = 0,24 % (aqui 0,2 %); discrepância a verificar no original.",
+    "A tabela de Wood et al. não dá vitamina A, PB por fase reprodutiva nem ingestão de MS; ver azab-elephant para essas fases."
+  ]
+}

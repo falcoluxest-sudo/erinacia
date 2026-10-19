@@ -1,0 +1,87 @@
+{
+  "id": "gussek-2016-giraffe",
+  "title": "Nutrition of giraffes (Giraffa camelopardalis) in captivity: evaluation of feeding practice and analysis of rations in European zoos",
+  "citation": "Gussek IR (2015/2016). Nutrition of giraffes (Giraffa camelopardalis) in captivity: Evaluation of feeding practice and analysis of rations in European zoos. Dissertação Dr. agr., Universidade de Bona, https://www.zootier-lexikon.org/images/Bibliographie/GUSSEK_I_R_2015_Diss_Giraffen.pdf (cap. 5, Discussão 'Ration composition and recommendations'; Tabela 20; Material e Métodos 'Dry matter and energy intake'); e Gussek I, Hirsch S, Hartmann M, Südekum K-H, Hummel J (2017). Feeding practices for captive giraffes (Giraffa camelopardalis) in Europe: a survey in EEP zoos. Journal of Zoo and Aquarium Research 5(1): 62–70, https://jzar.org/jzar/article/view/152 (Tabelas 1 e 2; Discussão). As recomendações citadas são de Hummel & Clauss (2006, EAZA Giraffe Husbandry Guidelines), Schmidt & Kendrick (2009), Schmidt & Schlegel (2005) e Pellew (1984). Composição da ração-tipo EAZA 2006 segundo Martin, Clavadetscher & Clauss (2025) JZAR 13(2): 86, https://jzar.org/jzar/article/view/867.",
+  "language": "en",
+  "species": [
+    { "scientificName": "Giraffa camelopardalis", "commonName": { "pt": "Girafa", "en": "Giraffe" } }
+  ],
+  "guild": "ruminant",
+  "energy": [
+    {
+      "id": "maintenance-pellew",
+      "coefficient": 500,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kJ",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção (Pellew 1984): 0,50 MJ EM/kg^0,75/d",
+      "note": "Nos zoos alemães estudados a ingestão média foi 0,6 MJ EM/kg^0,75/d (DP 0,1)."
+    }
+  ],
+  "energyAdjustments": [
+    { "label": "Gestação 0–8 meses", "factor": 1.0 },
+    { "label": "Gestação 9–14 meses", "factorRange": [1.09, 1.29], "note": "9,0–10,7 m: 1,09; 10,8–12,4 m: 1,15; 12,5–14,0 m: 1,29." },
+    { "label": "Lactação 0–12 meses", "factorRange": [1.34, 1.82], "note": "0–6 m: 1,82; 7–9 m: 1,63; 10–12 m: 1,34." },
+    { "label": "Juvenis 4–21 meses (fator sobre a manutenção)", "factorRange": [0.4, 1.41], "note": "4–6 m: 0,40; 7–9 m: 0,75; 10–12 m: 1,06; 13–15 m: 1,41; 16–18 m: 1,34; 19–21 m: 1,35. 0–3 m: 0 (lactente)." }
+  ],
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Ração total — recomendações citadas",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 14, "note": "> 14 % da MS (Schmidt & Kendrick 2009)." },
+        "ndf": { "min": 40, "note": "> 400 g FDNom/kg MS (Schmidt & Kendrick 2009); FDN livre de cinzas." },
+        "adf": { "min": 25, "max": 30, "note": "250–300 g FDAom/kg MS (Schmidt & Schlegel 2005); FDA livre de cinzas." }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Limites recomendados (Hummel & Clauss 2006, EAZA)",
+      "basis": "DM",
+      "rules": [
+        { "category": "concentrate", "label": "Alimentos não forrageiros (concentrado + hortofrutícolas)", "range": { "max": 50, "note": "Forragem ≥ 50 % da MS; o índice IFA dá pontuação máxima a < 30 % de não forrageiros." } },
+        { "category": "fruit", "range": { "max": 1 } },
+        { "category": "produce", "label": "Hortofrutícolas (fruta + hortícolas)", "range": { "max": 5, "note": "Hortícolas ≤ 4 % e fruta ≤ 1 % da MS; IFA dá pontuação máxima a 0 %." } }
+      ]
+    },
+    {
+      "label": "Ração-tipo das diretrizes EAZA 2006 (citada por Martin et al. 2025)",
+      "basis": "DM",
+      "rules": [
+        { "category": "hay", "label": "Feno de luzerna", "range": { "target": 50 } },
+        { "category": "browse", "range": { "target": 10 } },
+        { "category": "concentrate", "label": "Granulado composto (≈ 18 % PB, 5 % gordura, 40 % FDN, pouco amido)", "range": { "target": 30 } },
+        { "category": "greens", "label": "Restante: bagaço de linhaça e verduras", "range": { "target": 10 } }
+      ]
+    }
+  ],
+  "productSpecs": [
+    {
+      "label": "Granulado para girafas (diretrizes EAZA 2006, citado por Martin et al. 2025)",
+      "basis": "asFed",
+      "values": {
+        "crude_protein": { "target": 18 },
+        "ether_extract": { "target": 5 },
+        "ndf": { "target": 40 }
+      }
+    }
+  ],
+  "rules": [
+    { "kind": "avoid", "text": { "pt": "Evitar feno de gramíneas como forragem principal e cereais em grão no concentrado; preferir feno de luzerna, browse todo o ano, granulado composto, luzerna desidratada e polpa de beterraba sem melaço." } },
+    { "kind": "schedule", "text": { "pt": "Dar os alimentos não forrageiros em pelo menos duas refeições por dia, o mais espaçadas possível (uma refeição única baixa muito o pH ruminal)." } },
+    { "kind": "supplement", "text": { "pt": "Fornecer browse adicional (fresco, congelado, seco ou ensilado) em qualquer caso, para nutrientes, comportamento e prevenção de estereotipias orais." }, "check": { "type": "food_present", "category": "browse" } },
+    { "kind": "monitoring", "text": { "pt": "Ingestão de MS de referência (12 zoos alemães, g MS/kg PV^0,75/d): manutenção machos 62, fêmeas 59; lactação 1–6 m 121, 7–9 m 94, 9–12 m 81; juvenis 4–6 m 26, 7–9 m 46, 9–12 m 64, 1,00–1,25 anos 71, 1,25–1,75 anos 83, 1,75–2,5 anos 75." } },
+    { "kind": "limit", "text": { "pt": "Fruta e hortícolas apenas para treino e tratamentos médicos; não são parte necessária da dieta." }, "check": { "type": "category_share_above", "category": "produce", "percent": 5, "basis": "DM" } }
+  ],
+  "dataQuality": [
+    "Os teores de PB, FDN e FDA são recomendações secundárias (Schmidt & Kendrick 2009; Schmidt & Schlegel 2005) citadas por Gussek; os originais não foram consultados.",
+    "Não há valores de minerais nem vitaminas nesta fonte; usar NRC 2016 (bovinos de carne) ou outro modelo para micronutrientes.",
+    "As diretrizes EAZA de 2006 (Hummel & Clauss) não estavam acessíveis (biblioteca da Giraffe Conservation Foundation em manutenção); a ração-tipo 50/10/30/10 e o granulado (18 % PB, 5 % gordura, 40 % FDN) vêm de citação em Martin et al. (2025), que não indica se as percentagens são em MS ou tal-qual — assumido MS.",
+    "Os fatores de gestação/lactação/crescimento foram derivados por Gussek de dados de vacas leiteiras e vitelos (GfE 2001) para estimar ingestão adicional; são aproximações, não exigências medidas em girafas.",
+    "Na dissertação o limite de hortofrutícolas é ≤ 5 % da MS; no artigo de 2017 é fruta ≤ 1 % e hortícolas ≤ 4 % (soma igual)."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "merck-2025-browsers",
+  "title": "Merck Veterinary Manual — Nutrition in Ungulates and Subungulates (browsers; Suggested Analyses of Browser and Grazer Pellets)",
+  "citation": "Nijboer J, Fens A (2025). Nutrition in Ungulates and Subungulates. Merck Veterinary Manual, Professional Version (full review Sept 2025, atualizado Feb 2026), https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-ungulates-and-subungulates; tabela 'Suggested Analyses of Browser and Grazer Pellets (As-Fed Basis)', https://www.merckvetmanual.com/multimedia/table/suggested-analyses-of-browser-and-grazer-pellets-as-fed-basis. Classificação de browsers segundo Hofmann (1982, 1983, 1989), na tabela 'Types of Ruminants' da mesma página.",
+  "language": "en",
+  "species": [
+    { "scientificName": "Giraffa camelopardalis", "commonName": { "pt": "Girafa", "en": "Giraffe" } },
+    { "scientificName": "Okapia johnstoni", "commonName": { "pt": "Ocapi", "en": "Okapi" } },
+    { "scientificName": "Alces alces", "commonName": { "pt": "Alce", "en": "Moose" } },
+    { "scientificName": "Tragelaphus strepsiceros", "commonName": { "pt": "Cudo-grande", "en": "Greater kudu" } },
+    { "scientificName": "Tragelaphus imberbis", "commonName": { "pt": "Cudo-pequeno", "en": "Lesser kudu" } },
+    { "scientificName": "Tragelaphus eurycerus", "commonName": { "pt": "Bongo", "en": "Bongo" } },
+    { "scientificName": "Tragelaphus scriptus", "commonName": { "pt": "Imbabala", "en": "Bushbuck" } },
+    { "scientificName": "Litocranius walleri", "commonName": { "pt": "Gerenuque", "en": "Gerenuk" } },
+    { "scientificName": "Madoqua kirkii", "commonName": { "pt": "Dik-dik", "en": "Dik-dik" } },
+    { "scientificName": "Sylvicapra grimmia", "commonName": { "pt": "Cefalofo-comum", "en": "Common duiker" } },
+    { "scientificName": "Capreolus capreolus", "commonName": { "pt": "Corço", "en": "Roe deer" } },
+    { "scientificName": "Odocoileus virginianus", "commonName": { "pt": "Veado-de-cauda-branca", "en": "White-tailed deer" } },
+    { "scientificName": "Muntiacus reevesi", "commonName": { "pt": "Muntíaco", "en": "Muntjac" } }
+  ],
+  "guild": "ruminant",
+  "productSpecs": [
+    {
+      "label": "Granulado para browsers — análise sugerida (valor típico e intervalo)",
+      "basis": "asFed",
+      "values": {
+        "crude_protein": { "target": 15, "min": 13, "max": 20 },
+        "ether_extract": { "target": 3, "min": 3, "max": 5 },
+        "crude_fibre": { "target": 25, "min": 20, "max": 30 },
+        "ndf": { "target": 40, "min": 34, "max": 48 },
+        "adf": { "target": 25, "min": 24, "max": 35 },
+        "methionine": { "target": 0.3 },
+        "methionine_cystine": { "target": 0.6 },
+        "calcium": { "target": 1.2, "min": 0.8, "max": 1.4 },
+        "phosphorus": { "target": 0.6, "min": 0.5, "max": 0.8 },
+        "linoleic_acid": { "target": 1.0 },
+        "vitamin_a": { "target": 10, "min": 8, "max": 15, "note": "Fonte: 10 000 (8000–15 000) UI/kg → UI/g." },
+        "vitamin_d3": { "target": 2, "min": 1.8, "max": 2.4, "note": "Fonte: 2000 (1800–2400) UI/kg → UI/g." },
+        "vitamin_e": { "target": 600, "min": 600, "max": 800 }
+      }
+    },
+    {
+      "label": "Granulado para grazers (referência para comedores intermédios) — análise sugerida",
+      "basis": "asFed",
+      "values": {
+        "crude_protein": { "target": 14, "min": 12, "max": 16 },
+        "ether_extract": { "target": 3, "min": 3, "max": 5 },
+        "crude_fibre": { "target": 15, "min": 15, "max": 20 },
+        "ndf": { "target": 25, "min": 18, "max": 40 },
+        "adf": { "target": 18, "min": 15, "max": 30 },
+        "methionine": { "target": 0.3 },
+        "methionine_cystine": { "target": 0.6 },
+        "calcium": { "target": 0.7, "min": 0.6, "max": 0.9 },
+        "phosphorus": { "target": 0.6, "min": 0.5, "max": 0.7 },
+        "linoleic_acid": { "target": 1.0 },
+        "vitamin_a": { "target": 14, "min": 9, "max": 20, "note": "Fonte: 14 000 (9000–20 000) UI/kg → UI/g." },
+        "vitamin_d3": { "target": 2.5, "min": 2, "max": 3, "note": "Fonte: 2500 (2000–3000) UI/kg → UI/g." },
+        "vitamin_e": { "target": 700, "min": 300, "max": 1000 }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Browsers com folhas disponíveis (≈ 1/3 folhas, 1/3 luzerna, 1/3 granulado)",
+      "basis": "DM",
+      "rules": [
+        { "category": "browse", "label": "Folhas (frescas, congeladas, secas ou ensiladas)", "range": { "target": 33 } },
+        { "category": "hay", "label": "Feno de luzerna de boa qualidade", "range": { "target": 33 } },
+        { "category": "concentrate", "label": "Granulado para browsers", "range": { "target": 33, "max": 40 } }
+      ]
+    },
+    {
+      "label": "Browsers sem folhas disponíveis (≈ 2/3 luzerna, 1/3 granulado)",
+      "basis": "DM",
+      "rules": [
+        { "category": "hay", "label": "Feno de luzerna de boa qualidade", "range": { "target": 67 } },
+        { "category": "concentrate", "label": "Granulado para browsers", "range": { "target": 33 } }
+      ]
+    }
+  ],
+  "rules": [
+    { "kind": "avoid", "text": { "pt": "Não oferecer erva nem feno de gramíneas a browsers; preferir luzerna e browse (folhas e ramos)." } },
+    { "kind": "limit", "text": { "pt": "Fruta e hortícolas: < 5 % da dieta total (apenas para treino), exceto espécies que consomem naturalmente fruta e suculentas. Risco de acidose ruminal em browsers." }, "check": { "type": "category_share_above", "category": "produce", "percent": 5, "basis": "DM" } },
+    { "kind": "limit", "text": { "pt": "Granulado para browsers até 35 % da dieta total (granulado para grazers até 20 %); manter baixos os hidratos de carbono facilmente digeríveis e a ADL." }, "check": { "type": "category_share_above", "category": "concentrate", "percent": 35, "basis": "DM" } },
+    { "kind": "alert", "text": { "pt": "Evitar sobressuplementação de ferro: risco de hemossiderose em algumas espécies browser (no rinoceronte-negro recomenda-se < 100 mg Fe/kg MS)." } },
+    { "kind": "supplement", "text": { "pt": "Feno e erva costumam ser pobres em Ca, P, biotina, Se e vitaminas A, D e E; disponibilizar bloco de sal, de preferência com vitaminas e minerais, sem permitir lambedura excessiva." } },
+    { "kind": "safety", "text": { "pt": "Expor todos os ungulados a UVB solar: a suplementação de vitamina D pode ser insuficiente (p. ex. cudo, elefante)." } },
+    { "kind": "safety", "text": { "pt": "Browse adequado: amieiro, freixo, choupo-tremedor, bambu, bétula, silva, ulmeiro, videira, aveleira, carpa, tília, ácer, pilriteiro, urtiga, plátano, choupo-negro, roseira-brava, salgueiro. Não dar Acer pseudoplatanus (toxina nas folhas e sementes). Silagem de browse mal conservada pode ser fatal." } },
+    { "kind": "schedule", "text": { "pt": "Fornecer forragem ad libitum; feno em manjedoura à altura dos olhos para browsers altos (girafa, gerenuque); granulado de 5–10 mm conforme o tamanho da espécie." } },
+    { "kind": "monitoring", "text": { "pt": "Analisar cada lote de feno (MS, PB, gordura, FDN, FDA, ADL, Ca, P, Mg, Mn, Se) e ajustar o granulado em conformidade." } }
+  ],
+  "dataQuality": [
+    "A fonte declara que não há exigências nutricionais oficiais para ungulados; os valores são análises sugeridas de granulados (base tal-qual), não exigências da dieta total.",
+    "Os valores dos granulados estão em base tal-qual (as fed); não foram convertidos a MS por a fonte não indicar a humidade.",
+    "Inconsistência na fonte: a proporção máxima de granulado para browsers é dada como 'máximo 40 % em MS' (secção de forragens) e 'até 35 % da dieta total' (secção de granulados). A regra usa 35 %, o mais conservador.",
+    "Limite de fruta/hortícolas (< 5 %) sem base indicada na fonte; assumido em MS.",
+    "Minerais e vitaminas não listados: a fonte remete para as recomendações de ruminantes ou equinos conforme o tipo de granulado."
+  ]
+}

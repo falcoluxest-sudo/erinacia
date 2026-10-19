@@ -1,0 +1,34 @@
+{
+  "id": "rutgers-camelid",
+  "title": "Llama and Alpaca Production — Nutrient Requirements (Rutgers NJAES FS917)",
+  "citation": "Rutgers Cooperative Extension / New Jersey Agricultural Experiment Station. Llama and Alpaca Production: Nutrient requirements (adaptado do fact sheet FS917 'Llamas and Alpacas'), Plant & Pest Advisory, https://plant-pest-advisory.rutgers.edu/nutrient-requirements-2-2/.",
+  "language": "en",
+  "species": [
+    { "scientificName": "Lama glama", "commonName": { "pt": "Lama", "en": "Llama" } },
+    { "scientificName": "Vicugna pacos", "commonName": { "pt": "Alpaca", "en": "Alpaca" } },
+    { "scientificName": "Lama guanicoe", "commonName": { "pt": "Guanaco", "en": "Guanaco" } },
+    { "scientificName": "Vicugna vicugna", "commonName": { "pt": "Vicunha", "en": "Vicuña" } }
+  ],
+  "guild": "ruminant",
+  "modelSpecies": "Ovino doméstico (dados de ovinos usados para exigências desconhecidas)",
+  "targets": [
+    { "lifeStage": "maintenance", "label": "Manutenção (adultos > 3 anos sem trabalho; fêmeas nos 2 primeiros terços da gestação)", "basis": "DM", "values": { "crude_protein": { "min": 8, "max": 10 } } },
+    { "lifeStage": "gestation_late", "label": "Gestação final", "basis": "DM", "values": { "crude_protein": { "min": 12, "max": 14 } } },
+    { "lifeStage": "lactation", "label": "Lactação", "basis": "DM", "values": { "crude_protein": { "min": 12, "max": 14 } } },
+    { "lifeStage": "growth", "label": "Crescimento (nascimento aos 3 anos)", "basis": "DM", "values": { "crude_protein": { "min": 13, "max": 14 } } }
+  ],
+  "intake": [
+    { "label": "Ingestão de MS (todas as fases)", "basis": "DM", "percentBodyWeight": { "min": 1.8, "max": 2.0 } }
+  ],
+  "rules": [
+    { "kind": "monitoring", "text": { "pt": "Fibra recomendada: 20–30 % da MS em todas as fases (a fonte não especifica a fração)." } },
+    { "kind": "supplement", "text": { "pt": "Sal e minerais de preferência soltos (mais fáceis de lamber do que em bloco)." } },
+    { "kind": "monitoring", "text": { "pt": "Água: cerca de 4 L por cada 100 lb (45 kg) de peso vivo por dia." } }
+  ],
+  "dataQuality": [
+    "Fonte de extensão (não o NRC 2007, que inclui camelídeos mas não estava acessível no NAP). Só dá PB e ingestão; sem minerais nem vitaminas.",
+    "'Fiber 20–30 %' sem indicação da fração (FB, FDA ou FDN); não foi registado como alvo numérico.",
+    "A fonte refere 'pregnancy and lactation' sem distinguir terços; aplicado à gestação final porque a manutenção cobre os dois primeiros terços.",
+    "Há outras recomendações universitárias para camelídeos com PB mais alta (p. ex. Ohio State), não verificadas nesta transcrição; comparar antes de usar."
+  ]
+}

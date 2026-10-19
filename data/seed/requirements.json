@@ -52,7 +52,7 @@
         "min": 25.0
       }
     },
-    "reference": null
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
   },
   {
     "id": "mamifero-ruminante-grazer-grande",
@@ -107,7 +107,7 @@
         "min": 37.0
       }
     },
-    "reference": null
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
   },
   {
     "id": "mamifero-ruminante-predominantemente-browser",
@@ -162,7 +162,7 @@
         "min": 25.0
       }
     },
-    "reference": null
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
   },
   {
     "id": "mamifero-ruminante-predominantemente-grazer",
@@ -217,7 +217,7 @@
         "min": 30.0
       }
     },
-    "reference": null
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
   },
   {
     "id": "mamifero-ruminante-selecionador",
@@ -272,6 +272,6 @@
         "min": 23.0
       }
     },
-    "reference": null
+    "reference": "HAY AND PELLET RATIOS: CONSIDERATIONS IN FEEDING UNGULATES - 1997"
   }
 ]

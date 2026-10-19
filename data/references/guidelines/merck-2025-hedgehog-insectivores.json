@@ -1,0 +1,43 @@
+{
+  "id": "merck-2025-hedgehog-insectivores",
+  "title": "Nutrition in Insectivores, Edentates, and Aardvarks (Merck Veterinary Manual) — hedgehogs",
+  "citation": "Nijboer J., Fens A. Nutrition in Insectivores, Edentates, and Aardvarks. Merck Veterinary Manual, Management and Nutrition › Nutrition: Exotic and Zoo Animals. Full review Sept 2025. https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-insectivores-edentates-and-aardvarks (versão espanhola idêntica: https://www.merckvetmanual.com/es-us/manejo-y-nutrición/nutrición-animales-exóticos-y-de-zoológico/nutrición-en-insectívoros-desdentados-y-osos-hormigueros). Recomendação para ouriços baseada em Graffam W.S., Fitzpatrick M.P., Dierenfeld E.S. (1998) Fiber digestion in the African white-bellied hedgehog (Atelerix albiventris): a preliminary evaluation. J Nutr 128(12):2671S–2673S (artigo original não acessível; valores tal como citados pelo Merck).",
+  "language": "en",
+  "species": [
+    { "scientificName": "Atelerix albiventris", "commonName": { "pt": "Ouriço-pigmeu-africano", "en": "African pygmy (white-bellied) hedgehog" } },
+    { "scientificName": "Erinaceus europaeus", "commonName": { "pt": "Ouriço-cacheiro", "en": "European hedgehog" } },
+    { "scientificName": "Erinaceinae", "commonName": { "pt": "Ouriços (modelo)", "en": "Hedgehogs (model)" } }
+  ],
+  "guild": "insectivore_omnivore",
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Dieta comercial para ouriços",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "target": 22, "note": "'should contain 22% protein'. Base não indicada pela fonte (assumida MS)." },
+        "adf": { "target": 15, "note": "'15% acid detergent fiber or chitin (skeleton of insects)'. A quitina dos insetos é recuperada em grande parte na FDA." },
+        "ether_extract": { "target": 5, "max": 30, "note": "'5% fat'; em espécies que hibernam regularmente, a dieta deve conter até 30 % de gordura imediatamente antes da hibernação (máximo registado aqui apenas para essa fase)." }
+      }
+    }
+  ],
+  "intake": [
+    {
+      "label": "Ouriços — ingestão diária",
+      "basis": "asFed",
+      "percentBodyWeight": { "target": 6, "note": "'Hedgehogs eat approximately 6% of their body weight daily'; dividir em pelo menos duas refeições, uma de preferência à noite." }
+    }
+  ],
+  "rules": [
+    { "kind": "supplement", "text": { "pt": "A dieta comercial deve incluir um suplemento equilibrado de vitaminas e minerais." } },
+    { "kind": "schedule", "text": { "pt": "Dividir a ração diária em pelo menos duas refeições, uma delas de preferência à noite." } },
+    { "kind": "limit", "text": { "pt": "Espécies que hibernam: aumentar a gordura da dieta até 30 % apenas imediatamente antes da hibernação; fora dessa fase, ~5 %." } },
+    { "kind": "safety", "text": { "pt": "Dietas cruas à base de carne foram associadas a septicemia e mortes em pequenos mamíferos insetívoros e carnívoros; produtos de carne enlatados são alternativa mais segura." } },
+    { "kind": "monitoring", "text": { "pt": "Insetívoros obrigados: oferecer invertebrados vivos como alimento principal e estímulo do comportamento alimentar; vigiar obesidade e problemas gastrointestinais. Musaranhos, tenrecs e toupeiras podem receber comida de gato ou granulado para insetívoros, complementados com tenébrios, minhocas, grilos e crias de ratinho." } }
+  ],
+  "dataQuality": [
+    "A fonte não diz se 22 % PB / 15 % FDA / 5 % gordura são em MS ou em matéria fresca (rótulo de ração seca ~90 % MS): diferença de ~10 %. Registado como MS; confirmar no artigo de Graffam et al. (1998), que não foi possível obter (acesso bloqueado).",
+    "Recomendação derivada de um estudo preliminar em Atelerix albiventris; extrapolação para Erinaceus europaeus a validar. Os 22 % de proteína são muito inferiores à composição da dieta natural do ouriço-cacheiro (55–62 % PB MS; ver gimmel-2019-erinaceus-natural-diet).",
+    "Sem dados de Ca, P, vitaminas ou energia para ouriços nesta fonte."
+  ]
+}

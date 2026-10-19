@@ -1,0 +1,44 @@
+{
+  "id": "merck-2024-rabbit",
+  "title": "Nutrition of Rabbits (Merck Veterinary Manual, professional version)",
+  "citation": "Mayer J. Nutrition of Rabbits. Merck Veterinary Manual, Exotic and Laboratory Animals › Rabbits. Full review Jul 2021; last updated Sept 2024. https://www.merckvetmanual.com/exotic-and-laboratory-animals/rabbits/nutrition-of-rabbits (texto e Tabela 'Nutrient Requirements of Rabbits', https://www.merckvetmanual.com/multimedia/table/nutrient-requirements-of-rabbits).",
+  "language": "en",
+  "species": [
+    { "scientificName": "Oryctolagus cuniculus", "commonName": { "pt": "Coelho (doméstico / de companhia)", "en": "Rabbit (pet)" } },
+    { "scientificName": "Leporidae", "commonName": { "pt": "Leporídeos (coelhos e lebres — modelo)", "en": "Leporids (model)" } }
+  ],
+  "guild": "hindgut_herbivore",
+  "modelSpecies": "Coelho doméstico",
+  "energy": [
+    {
+      "id": "bmr-placental",
+      "coefficient": 70,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kcal",
+      "energyType": "BMR",
+      "lifeStage": "all",
+      "label": "Metabolismo basal (constante k = 70 para mamíferos placentários)",
+      "note": "A manutenção diária obtém-se multiplicando o BMR pelos fatores abaixo."
+    }
+  ],
+  "energyAdjustments": [
+    { "label": "Doença / necessidades acima da manutenção", "factorRange": [1.2, 2.0] },
+    { "label": "Crescimento", "factorRange": [1.5, 3.0] },
+    { "label": "Jejum prolongado / emaciação", "factorRange": [0.5, 0.9] }
+  ],
+  "rules": [
+    { "kind": "monitoring", "text": { "pt": "Feno (p. ex. timothy, ~30–35 % de fibra) sempre à discrição: a fibra longa estimula a motilidade do ceco e do cólon." } },
+    { "kind": "limit", "text": { "pt": "Fibra bruta da dieta ~15 % para promover a motilidade intestinal; em coelhos de companhia recomenda-se até 20 % de fibra bruta, com 12,5 % de fibra indigestível." } },
+    { "kind": "limit", "text": { "pt": "Coelhos adultos não lactantes: reduzir o cálcio para 0,4–0,5 % da dieta (granulado à base de timothy) para limitar hipercalciúria e cálculos de carbonato de cálcio; dietas com luzerna em manutenção prolongada aumentam o risco." } },
+    { "kind": "limit", "text": { "pt": "Vitamina A da dieta entre > 5000 UI/kg e < 75 000 UI/kg; fora deste intervalo há risco de aborto, reabsorção fetal e hidrocefalia. Dietas com ≥ 30 % de farinha de luzerna fornecem geralmente vitamina A suficiente." } },
+    { "kind": "monitoring", "text": { "pt": "Vitaminas B e K são sintetizadas pela flora intestinal (cecotrofia) em quantidade suficiente; vitaminas A, D e E têm de vir da dieta. Armazenar o alimento de modo a evitar a oxidação das vitaminas A e E." } },
+    { "kind": "limit", "text": { "pt": "Coelhos adultos de companhia, não reprodutores: granulado rico em fibra restrito a ¼ de chávena por 5 lb (~2,3 kg) de peso vivo por dia, para prevenir obesidade." } },
+    { "kind": "monitoring", "text": { "pt": "Água: ~120 mL/kg/dia (cerca do dobro de um cão ou gato do mesmo tamanho); bebem mais de taça aberta do que de bebedouro de bico. Desidratados: 240 mL/kg/dia (10 mL/kg/h)." } },
+    { "kind": "alert", "text": { "pt": "Amidos gluco-oligossacarídeos podem causar diarreia em láparos; os frutooligossacarídeos não têm esse efeito. Excesso de amido favorece Clostridium spiroforme." } }
+  ],
+  "dataQuality": [
+    "A tabela 'Nutrient Requirements of Rabbits' do Merck (baseada no NRC; proteína total (digestível) 12 (9) % manutenção, 16 (12) % crescimento, 15 (11) % gestação, 17 (13) % lactação; gordura 1,5–2 / 2–4 / 2–3 / 2,5–3,5 %; fibra 14–20 / 14–16 / 14–16 / 12–14 %) NÃO foi transcrita como alvos porque a página não indica a base (MN ou MS). Confirmar no NRC (1977) antes de usar.",
+    "O Ca de 0,4–0,5 % e a vitamina A em UI/kg são dados 'da dieta' sem base explícita; ficaram apenas como regras de texto."
+  ]
+}

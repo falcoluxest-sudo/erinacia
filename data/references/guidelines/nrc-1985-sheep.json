@@ -1,0 +1,131 @@
+{
+  "id": "nrc-1985-sheep",
+  "title": "Nutrient Requirements of Sheep, Sixth Revised Edition (1985) — exigências por categoria e minerais (MS)",
+  "citation": "National Research Council (1985). Nutrient Requirements of Sheep, 6th rev. ed. Washington, DC: National Academy Press. Valores lidos em tabulações secundárias da Oregon State University Extension (S. Filley): (1) 'Mineral requirements of sheep and goats' (2019, revisto 2024), Tabela 1 (macrominerais, % da MS) e Tabela 2 (microminerais e níveis máximos toleráveis, mg/kg MS), https://extension.oregonstate.edu/animals-livestock/sheep-goats/mineral-requirements-sheep-goats; (2) 'Nutrient requirements of sheep' (2024), Tabelas 1 e 3 (exigências diárias e % da MS, 'Adapted from NRC 1985'), https://extension.oregonstate.edu/catalog/nutrient-requirements-sheep. NRC (2007) Nutrient Requirements of Small Ruminants não pôde ser usado: no NAP só a Front Matter e o Summary estão disponíveis em leitura online (restantes capítulos redirecionam; imagens das páginas devolvem 404).",
+  "language": "en",
+  "species": [
+    { "scientificName": "Ovis aries musimon", "commonName": { "pt": "Muflão", "en": "Mouflon" } },
+    { "scientificName": "Ovis ammon", "commonName": { "pt": "Argali", "en": "Argali" } },
+    { "scientificName": "Ovis canadensis", "commonName": { "pt": "Carneiro-selvagem-das-montanhas-rochosas", "en": "Bighorn sheep" } },
+    { "scientificName": "Ammotragus lervia", "commonName": { "pt": "Arruí", "en": "Barbary sheep" } },
+    { "scientificName": "Pseudois nayaur", "commonName": { "pt": "Bharal", "en": "Blue sheep" } },
+    { "scientificName": "Capra ibex", "commonName": { "pt": "Íbex-dos-alpes", "en": "Alpine ibex" } },
+    { "scientificName": "Capra pyrenaica", "commonName": { "pt": "Cabra-montês", "en": "Iberian ibex" } },
+    { "scientificName": "Hemitragus jemlahicus", "commonName": { "pt": "Tar-do-himalaia", "en": "Himalayan tahr" } },
+    { "scientificName": "Rupicapra rupicapra", "commonName": { "pt": "Camurça", "en": "Chamois" } }
+  ],
+  "guild": "ruminant",
+  "modelSpecies": "Ovino doméstico (Ovis aries)",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Minerais — todas as categorias (intervalo de exigência e máximo tolerável)",
+      "basis": "DM",
+      "values": {
+        "sodium": { "min": 0.09, "note": "Exigência 0,09–0,18 % conforme a categoria; usar o valor superior para fases mais exigentes." },
+        "calcium": { "min": 0.2, "note": "Exigência 0,20–0,82 % conforme a categoria (ver conjuntos por fase)." },
+        "phosphorus": { "min": 0.16, "note": "Exigência 0,16–0,38 % conforme a categoria (ver conjuntos por fase)." },
+        "magnesium": { "min": 0.12, "note": "Exigência 0,12–0,18 % conforme a categoria." },
+        "potassium": { "min": 0.5, "note": "Exigência 0,50–0,80 % conforme a categoria." },
+        "sulfur": { "min": 0.14, "note": "Exigência 0,14–0,26 % conforme a categoria." },
+        "iodine": { "min": 0.1, "max": 50, "note": "Exigência 0,10–0,80 mg/kg; o valor alto aplica-se a gestação e lactação em dietas sem bociogénicos e deve ser aumentado se a dieta contiver bociogénicos." },
+        "iron": { "min": 30, "max": 500, "note": "Exigência 30–50 mg/kg." },
+        "copper": { "min": 7, "max": 25, "note": "Exigência 7–11 mg/kg quando Mo da dieta < 1 mg/kg MS. Máximo tolerável 25 mg/kg, mas níveis inferiores podem ser tóxicos em certas circunstâncias (Mo baixo)." },
+        "cobalt": { "min": 0.1, "max": 10, "note": "Exigência 0,1–0,2 mg/kg." },
+        "manganese": { "min": 20, "max": 1000, "note": "Exigência 20–40 mg/kg." },
+        "zinc": { "min": 20, "max": 750, "note": "Exigência 20–33 mg/kg." },
+        "selenium": { "min": 0.1, "max": 2, "note": "Exigência 0,1–0,2 mg/kg." }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Manutenção (ovelha adulta de 70 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 9.6 },
+        "calcium": { "min": 0.21, "note": "Calculado: 2,5 g Ca/d ÷ 1,18 kg MS/d (2,6 lb)." },
+        "phosphorus": { "min": 0.2, "note": "Calculado: 2,4 g P/d ÷ 1,18 kg MS/d." },
+        "vitamin_a": { "min": 2.8, "note": "Calculado: 3290 UI/d ÷ 1,18 kg MS/d = 2790 UI/kg → 2,8 UI/g." },
+        "vitamin_e": { "min": 15, "note": "Calculado: 18 UI/d ÷ 1,18 kg MS/d; 1 UI ≈ 1 mg acetato de all-rac-α-tocoferol." }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Flushing — 2 semanas antes e 3 primeiras semanas da cobrição (ovelha de 70 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 9.0 },
+        "calcium": { "min": 0.31, "note": "Calculado: 5,7 g/d ÷ 1,81 kg MS/d (4,0 lb)." },
+        "phosphorus": { "min": 0.18, "note": "Calculado: 3,2 g/d ÷ 1,81 kg MS/d." },
+        "vitamin_a": { "min": 1.8, "note": "Calculado: 3290 UI/d ÷ 1,81 kg MS/d." },
+        "vitamin_e": { "min": 15, "note": "Calculado: 27 UI/d ÷ 1,81 kg MS/d; 1 UI ≈ 1 mg." }
+      }
+    },
+    {
+      "lifeStage": "gestation",
+      "label": "Gestação — primeiras 15 semanas (ovelha de 70 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 9.4 },
+        "calcium": { "min": 0.25, "note": "Calculado: 3,5 g/d ÷ 1,41 kg MS/d (3,1 lb)." },
+        "phosphorus": { "min": 0.21, "note": "Calculado: 2,9 g/d ÷ 1,41 kg MS/d." },
+        "vitamin_a": { "min": 2.3, "note": "Calculado: 3290 UI/d ÷ 1,41 kg MS/d." },
+        "vitamin_e": { "min": 15, "note": "Calculado: 21 UI/d ÷ 1,41 kg MS/d; 1 UI ≈ 1 mg." }
+      }
+    },
+    {
+      "lifeStage": "gestation_late",
+      "label": "Últimas 4 semanas de gestação (prolificidade 130–150 %; ovelha de 70 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 10.5 },
+        "calcium": { "min": 0.34, "note": "Calculado: 6,2 g/d ÷ 1,81 kg MS/d (4,0 lb)." },
+        "phosphorus": { "min": 0.31, "note": "Calculado: 5,6 g/d ÷ 1,81 kg MS/d." },
+        "vitamin_a": { "min": 3.3, "note": "Calculado: 5950 UI/d ÷ 1,81 kg MS/d." },
+        "vitamin_e": { "min": 15, "note": "Calculado: 27 UI/d ÷ 1,81 kg MS/d; 1 UI ≈ 1 mg." }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Lactação — primeiras 6–8 semanas com gémeos (ovelha de 70 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 14.8 },
+        "calcium": { "min": 0.39, "note": "Calculado: 11,0 g/d ÷ 2,81 kg MS/d (6,2 lb)." },
+        "phosphorus": { "min": 0.29, "note": "Calculado: 8,1 g/d ÷ 2,81 kg MS/d." },
+        "vitamin_a": { "min": 2.5, "note": "Calculado: 7000 UI/d ÷ 2,81 kg MS/d." },
+        "vitamin_e": { "min": 15, "note": "Calculado: 42 UI/d ÷ 2,81 kg MS/d; 1 UI ≈ 1 mg." }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento — borregos em acabamento de 4–7 meses, 30 kg",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 14.5 },
+        "calcium": { "min": 0.5, "note": "Calculado: 6,6 g/d ÷ 1,32 kg MS/d (2,9 lb)." },
+        "phosphorus": { "min": 0.24, "note": "Calculado: 3,2 g/d ÷ 1,32 kg MS/d." },
+        "vitamin_a": { "min": 1.1, "note": "Calculado: 1410 UI/d ÷ 1,32 kg MS/d." },
+        "vitamin_e": { "min": 15, "note": "Calculado: 20 UI/d ÷ 1,32 kg MS/d; 1 UI ≈ 1 mg." }
+      }
+    }
+  ],
+  "intake": [
+    { "label": "Ovelha de 70 kg em manutenção (NRC 1985)", "basis": "DM", "percentBodyWeight": { "target": 1.69 } },
+    { "label": "Ovelha de 70 kg, início de lactação com gémeos (NRC 1985)", "basis": "DM", "percentBodyWeight": { "target": 4.03 } }
+  ],
+  "rules": [
+    { "kind": "alert", "text": { "pt": "Cobre: o intervalo de exigência (7–11 mg/kg MS) só vale com Mo < 1 mg/kg MS; ovinos são muito sensíveis à intoxicação por cobre e podem intoxicar-se abaixo do máximo tolerável de 25 mg/kg quando o Mo é baixo." } },
+    { "kind": "limit", "text": { "pt": "Molibdénio: exigência 0,5 mg/kg MS; máximo tolerável 10 mg/kg MS (níveis inferiores podem ser tóxicos em certas circunstâncias). Flúor: máximo tolerável 60–150 mg/kg MS. (Sem chave no catálogo de nutrientes.)" } },
+    { "kind": "alert", "text": { "pt": "Iodo: aumentar acima de 0,8 mg/kg MS se a dieta tiver bociogénicos (p. ex. brássicas)." } },
+    { "kind": "monitoring", "text": { "pt": "NDT (energia) por categoria, ovelha de 70 kg: manutenção ≈ 58 %, gestação inicial ≈ 55 %, gestação final ≈ 58 %, lactação com gémeos ≈ 65 %, borregos em acabamento ≈ 72–77 % da MS." } }
+  ],
+  "dataQuality": [
+    "NRC (2007) Small Ruminants (que inclui caprinos, cervídeos e camelídeos e modelos melhores) NÃO está disponível em leitura aberta no NAP; usou-se NRC (1985) Sheep via tabulações da OSU Extension. Rever quando houver acesso ao NRC 2007.",
+    "Ca, P, vitamina A e vitamina E por fase foram calculados dividindo a quantidade diária pela ingestão de MS (lb → kg, ×0,4536). A ingestão vem arredondada a 0,1 lb, o que introduz erro de ~±2–4 %; as concentrações da Tabela 2 original do NRC 1985 podem diferir ligeiramente.",
+    "Escolheu-se a linha da ovelha de 70 kg (154 lb) como representativa; para outros pesos as concentrações são semelhantes mas não idênticas.",
+    "Vitamina E: o NRC 1985 exprime em UI; convertida a mg/kg assumindo 1 UI = 1 mg de acetato de all-rac-α-tocoferol.",
+    "Os intervalos de macrominerais da Tabela 1 da OSU cobrem todas as categorias; registados como mínimo (valor inferior). Não usar o valor superior como máximo.",
+    "Uso como modelo para caprinos selvagens e ovinos selvagens é extrapolação; os caprinos domésticos não estão cobertos por esta fonte."
+  ]
+}
