@@ -1,0 +1,142 @@
+{
+  "id": "merck-2025-raptors",
+  "title": "Nutrition in Raptors (Merck Veterinary Manual)",
+  "citation": "Nijboer J., Fens A. (2025). Nutrition in Raptors. Merck Veterinary Manual (revisão completa set. 2025). https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-raptors — recomendações de tiamina/vitamina E para dietas de peixe citam Bernard J.B., Allen M.E. (2002) Feeding captive piscivorous animals: nutritional aspects of fish as food. NAG Fact Sheet 005.",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Accipitriformes / Falconiformes",
+      "commonName": {
+        "pt": "Aves de rapina diurnas (águias, açores, falcões, peneireiros)",
+        "en": "Diurnal birds of prey"
+      }
+    },
+    {
+      "scientificName": "Strigiformes",
+      "commonName": {
+        "pt": "Corujas e mochos",
+        "en": "Owls"
+      }
+    },
+    {
+      "scientificName": "Gyps fulvus",
+      "commonName": {
+        "pt": "Grifo",
+        "en": "Griffon vulture"
+      }
+    }
+  ],
+  "guild": "obligate_carnivore",
+  "intake": [
+    {
+      "label": "Rapinas pequenas (100–200 g)",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "min": 20,
+        "max": 25
+      }
+    },
+    {
+      "label": "Rapinas de 200–800 g",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "target": 15
+      }
+    },
+    {
+      "label": "Rapinas de 800–7000 g",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "min": 6,
+        "max": 10
+      }
+    },
+    {
+      "label": "Rapinas > 7000 g",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "target": 3.5
+      }
+    },
+    {
+      "label": "Abutres (ex. grifo): ~10 % do PV duas vezes por semana",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "target": 10,
+        "note": "Podem ingerir ~40 % do PV de uma vez; sugere-se ~10 % do PV, 2×/semana (não diário)."
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Se o peixe for a dieta predominante: suplementar diariamente tiamina (30–35 mg/kg de alimento) e vitamina E (100 mg/kg)."
+      },
+      "check": {
+        "type": "category_share_above",
+        "category": "marine_fish",
+        "percent": 50,
+        "basis": "asFed"
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Dietas à base de vísceras/carne: suplementar vitaminas e minerais; cálcio a 10 g de carbonato de cálcio por kg de carne fresca."
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Mesmo com presas inteiras, recomenda-se adicionar uma pequena quantidade de suplemento vitamínico-mineral equilibrado, sobretudo em situações de stress."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Não retirar a gema (saco vitelino) dos pintos do dia: a sua remoção reduz vitaminas A e E, proteína e energia e desequilibra a relação Ca:P."
+      }
+    },
+    {
+      "kind": "avoid",
+      "text": {
+        "pt": "Evitar presas com ossos grandes (risco de obstrução da moela e de impedir a regurgitação da egagrópila)."
+      }
+    },
+    {
+      "kind": "avoid",
+      "text": {
+        "pt": "Não fornecer presas capturadas na natureza (ratos, pombos, coelhos): risco de doenças, tóxicos e venenos. Usar presas criadas em cativeiro."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Descongelar lentamente no frigorífico (nunca em água morna) e deixar atingir a temperatura ambiente imediatamente antes de servir."
+      }
+    },
+    {
+      "kind": "schedule",
+      "text": {
+        "pt": "Não alimentar antes de transporte (risco de impactação do papo e perturbações digestivas)."
+      }
+    },
+    {
+      "kind": "monitoring",
+      "text": {
+        "pt": "Pesar regularmente e ajustar a quantidade; se não for possível, palpar a quilha: afiada = emaciação; coberta de gordura palpável = obesidade."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Ratinhos e ratazanas adultos são as melhores presas (perfil nutricional mais completo); pintos do dia e outras aves/mamíferos inteiros são adequados. Peneireiros consomem geralmente insetos; águias-pesqueiras e pigargos devem receber também peixe."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A fonte não dá metas de nutrientes em MS para rapinas; apenas consumo em % do PV e regras de suplementação.",
+    "Os 30–35 mg/kg de tiamina e 100 mg/kg de vitamina E referem-se a 'kg de alimento' (peixe tal como fornecido, presumivelmente), não a MS; por isso ficaram como regra e não como meta. O limiar de 50 % para 'dieta predominante' é uma interpretação."
+  ]
+}

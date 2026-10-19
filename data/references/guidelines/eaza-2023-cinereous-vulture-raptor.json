@@ -1,0 +1,137 @@
+{
+  "id": "eaza-2023-cinereous-vulture-raptor",
+  "title": "EAZA Best Practice Guidelines — Aegypius monachus (Cinereous vulture), section 2.2 Feeding",
+  "citation": "Huyghe M., Izquierdo P., Bureau E., Llopis A. (2023). EAZA Best Practice Guidelines for the Cinereous vulture (Aegypius monachus), 1st ed. EAZA Raptor TAG (subgrupo abutres), European Association of Zoos and Aquaria, Amsterdam. Secção 2.2 (pp. 37–41), Tabela 3. https://strapi.eaza.net/uploads/BPG_cinereous_vulture_2023_final_ddoi_67f352455e.pdf",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Aegypius monachus",
+      "commonName": {
+        "pt": "Abutre-preto",
+        "en": "Cinereous vulture"
+      }
+    },
+    {
+      "scientificName": "Accipitridae (Aegypiinae)",
+      "commonName": {
+        "pt": "Abutres do Velho Mundo (modelo)",
+        "en": "Old World vultures (model)"
+      }
+    }
+  ],
+  "guild": "obligate_carnivore",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Todas as fases",
+      "basis": "DM",
+      "values": {
+        "ca_p_ratio": {
+          "min": 1.5,
+          "max": 2,
+          "note": "fonte: 'the correct ratio Ca/P required for a good absorption of Ca is from 1.5 to 2'"
+        }
+      }
+    }
+  ],
+  "intake": [
+    {
+      "label": "Ração diária recomendada (350–1000 g, consoante o alimento)",
+      "basis": "asFed",
+      "percentBodyWeight": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Composição média observada em zoos EEP (inquérito; não é recomendação)",
+      "basis": "asFed",
+      "rules": [
+        {
+          "category": "muscle_meat",
+          "label": "Carne com ou sem osso",
+          "range": {
+            "target": 60
+          }
+        },
+        {
+          "category": "whole_prey_vertebrate",
+          "label": "Presas inteiras",
+          "range": {
+            "target": 30
+          }
+        },
+        {
+          "category": "whole_prey_vertebrate",
+          "label": "Presas evisceradas",
+          "range": {
+            "target": 10
+          }
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Se peças de carne sem osso (ex. vaca, cavalo) excederem 10 % da dieta, adicionar cálcio e vitamina D3."
+      },
+      "check": {
+        "type": "category_share_above",
+        "category": "muscle_meat",
+        "percent": 10,
+        "basis": "asFed"
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Ao fornecer carcaças/carne, suplementar todo o ano vitaminas A, D3, E, B1 e minerais Ca, Mn, Zn, Cu (suplemento para aves carnívoras, segundo o fabricante). Presas inteiras frescas dispensam suplemento."
+      }
+    },
+    {
+      "kind": "supplement",
+      "text": {
+        "pt": "Antes da época de reprodução (nov.–jan.) aumentar proteína, minerais (sobretudo cálcio) e vitamina E; ex.: 200 mg/kg/dia de acetato de alfa-tocoferol oral durante 5 dias um mês antes da postura (Parc des Oiseaux)."
+      }
+    },
+    {
+      "kind": "schedule",
+      "text": {
+        "pt": "Dois dias de jejum por semana (4–6 refeições/semana); alimentar diariamente durante a criação das crias, com presas inteiras (coelho, ratazana, porquinho-da-índia)."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Não armazenar alimento congelado mais de 3 meses; dietas com alimento congelado devem ser complementadas com vitaminas (défices de vit. E, B1 e B12)."
+      }
+    },
+    {
+      "kind": "avoid",
+      "text": {
+        "pt": "Não fornecer animais abatidos a tiro (bala ou chumbo): risco de saturnismo."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Dieta diversificada: pelo menos 3 tipos de alimento por semana, de preferência presas inteiras frescas."
+      }
+    },
+    {
+      "kind": "monitoring",
+      "text": {
+        "pt": "Pesar a ave sempre que for manuseada e pelo menos uma vez por ano."
+      }
+    }
+  ],
+  "dataQuality": [
+    "As diretrizes não dão metas de nutrientes em MS; só a relação Ca:P (1,5–2), consumo (5–10 % do PV) e regras.",
+    "As proporções (60/30/10) são médias de inquéritos a zoos, não recomendações. Duas regras usam a mesma categoria (presas inteiras e evisceradas).",
+    "O documento está protegido por direitos de autor (reprodução apenas para uso próprio de membros EAZA); aqui só se transcrevem valores numéricos e paráfrases."
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "id": "nrc-1982-mink-fox",
+  "title": "Nutrient Requirements of Mink and Foxes, 2nd rev. ed. (1982) — American mink (via AZA Mustelid Care Manual, Table 10)",
+  "citation": "National Research Council (1982). Nutrient Requirements of Mink and Foxes, Second Revised Edition. National Academy Press, Washington, DC. doi:10.17226/1114 — tal como reproduzido em Lewington J.H. (2002) Ferret Husbandry, Medicine & Surgery, e daí em AZA Small Carnivore TAG (2010) Mustelid (Mustelidae) Care Manual, Association of Zoos and Aquariums, Silver Spring, MD, Tabela 10 'Nutrition and energy requirements for American mink as percentage or amount per kg of dry matter' (p. 29). O texto online da NAP (https://nap.nationalacademies.org/read/1114/chapter/5 e /chapter/11) não carregou as páginas.",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Neovison vison",
+      "commonName": {
+        "pt": "Visão-americano",
+        "en": "American mink"
+      }
+    },
+    {
+      "scientificName": "Mustela spp.",
+      "commonName": {
+        "pt": "Doninhas, arminhos, toirões e furões (modelo)",
+        "en": "Weasels, stoats, polecats and ferrets (model)"
+      }
+    },
+    {
+      "scientificName": "Martes spp.",
+      "commonName": {
+        "pt": "Martas e fuinhas (modelo)",
+        "en": "Martens (model)"
+      }
+    }
+  ],
+  "guild": "carnivore",
+  "modelSpecies": "Visão-americano de criação (NRC 1982)",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento: desmame até 13 semanas",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 4.08,
+          "note": "fonte: 4080 kcal EM/kg MS (machos); fêmeas 3930 kcal EM/kg MS"
+        },
+        "crude_protein": {
+          "min": 38,
+          "note": "proteína de qualidade média, digestibilidade calculada 83 %"
+        },
+        "calcium": {
+          "min": 0.4
+        },
+        "phosphorus": {
+          "min": 0.4
+        },
+        "ca_p_ratio": {
+          "min": 1,
+          "max": 2
+        },
+        "sodium": {
+          "min": 0.2,
+          "note": "fonte: sal (NaCl) 0,5 % → Na ≈ 0,5 × 0,393 = 0,197 %"
+        },
+        "vitamin_a": {
+          "min": 5.93,
+          "note": "fonte: 5930 UI/kg MS → 5,93 UI/g"
+        },
+        "vitamin_e": {
+          "min": 27
+        },
+        "thiamin": {
+          "min": 1.3
+        },
+        "riboflavin": {
+          "min": 1.6
+        },
+        "pantothenic_acid": {
+          "min": 8.0
+        },
+        "pyridoxine": {
+          "min": 1.6
+        },
+        "niacin": {
+          "min": 20.0
+        },
+        "folic_acid": {
+          "min": 0.5,
+          "note": "pode não ser o mínimo, mas sabe-se que é adequado"
+        },
+        "biotin": {
+          "min": 0.12
+        },
+        "cobalamin": {
+          "min": 0.0326,
+          "note": "fonte: 32,6 µg/kg MS → 0,0326 mg/kg"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento: 13 semanas até à maturidade",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 4.08,
+          "note": "fonte: 4080 kcal EM/kg MS (machos); fêmeas 3930 kcal EM/kg MS"
+        },
+        "crude_protein": {
+          "min": 32.6,
+          "note": "fonte: 32,6–38,0 % (intervalo de exigência ao longo da fase); digestibilidade 83 %"
+        },
+        "calcium": {
+          "min": 0.4
+        },
+        "phosphorus": {
+          "min": 0.4
+        },
+        "ca_p_ratio": {
+          "min": 1,
+          "max": 2
+        },
+        "sodium": {
+          "min": 0.2,
+          "note": "fonte: sal (NaCl) 0,5 % → Na ≈ 0,5 × 0,393 = 0,197 %"
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Manutenção (adultos)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.6,
+          "note": "fonte: 3600 kcal EM/kg MS (machos); fêmeas 3600 kcal EM/kg MS"
+        },
+        "crude_protein": {
+          "min": 21.8,
+          "note": "fonte: 21,8–26,0 %; digestibilidade 83 %"
+        },
+        "calcium": {
+          "min": 0.3
+        },
+        "phosphorus": {
+          "min": 0.3
+        },
+        "ca_p_ratio": {
+          "min": 1,
+          "max": 2
+        },
+        "sodium": {
+          "min": 0.2,
+          "note": "fonte: sal (NaCl) 0,5 % → Na ≈ 0,5 × 0,393 = 0,197 %"
+        }
+      }
+    },
+    {
+      "lifeStage": "gestation",
+      "label": "Gestação",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 3.93,
+          "note": "fonte: 3930 kcal EM/kg MS (fêmeas)"
+        },
+        "crude_protein": {
+          "min": 38,
+          "note": "digestibilidade 83 %"
+        },
+        "calcium": {
+          "min": 0.4
+        },
+        "phosphorus": {
+          "min": 0.4
+        },
+        "ca_p_ratio": {
+          "min": 1,
+          "max": 2
+        },
+        "sodium": {
+          "min": 0.2,
+          "note": "fonte: sal (NaCl) 0,5 % → Na ≈ 0,5 × 0,393 = 0,197 %"
+        }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Lactação",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 4.5,
+          "note": "fonte: 4500 kcal EM/kg MS (fêmeas)"
+        },
+        "crude_protein": {
+          "min": 45.7,
+          "note": "digestibilidade 83 %"
+        },
+        "calcium": {
+          "min": 0.6
+        },
+        "phosphorus": {
+          "min": 0.6
+        },
+        "ca_p_ratio": {
+          "min": 1,
+          "max": 2
+        },
+        "sodium": {
+          "min": 0.2,
+          "note": "fonte: sal (NaCl) 0,5 % → Na ≈ 0,5 × 0,393 = 0,197 %"
+        }
+      }
+    }
+  ],
+  "dataQuality": [
+    "Fonte secundária em segunda mão (NRC 1982 → Lewington 2002 → AZA 2010, Tabela 10). As páginas da NRC na NAP ('read online') davam 'There was a problem loading page' e o PDF exige conta; não foi possível confirmar com o original.",
+    "Só a coluna de crescimento até às 13 semanas tem vitaminas; para as outras fases a tabela indica que a necessidade foi demonstrada mas não quantificada. Não há valores de vitamina D, K, colina, oligoelementos, Mg, K nem aminoácidos na tabela.",
+    "Energia: a tabela dá 4080 (machos) / 3930 (fêmeas) kcal EM/kg MS no crescimento e 3600 na manutenção; nota: as exigências assumem 5300 kcal EB ou 4080 kcal EM/kg. Registado como alvo de densidade energética (machos quando há dois valores).",
+    "Proteína: com digestibilidade de 83 %; proteína de maior qualidade/digestibilidade reduz a exigência.",
+    "O sal (NaCl 0,5 %) foi convertido para sódio (0,197 %, arredondado a 0,2 %). Relação Ca:P da fonte '1:1–2:1'.",
+    "Raposas (vermelha e ártica, NRC 1982 cap. 'Foxes') NÃO foram transcritas: o texto online da NAP não carregou e não se encontrou fonte secundária com a tabela."
+  ]
+}

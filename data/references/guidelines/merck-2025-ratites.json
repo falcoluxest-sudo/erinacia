@@ -1,0 +1,180 @@
+{
+  "id": "merck-2025-ratites",
+  "title": "Nutrition in Ostriches, Emus, and Other Ratites — table 'Selected Nutritional Requirements for Ratite Production'",
+  "citation": "Nijboer J., Fens A. (2025). Nutrition in Ostriches, Emus, and Other Ratites. Merck Veterinary Manual (revisão completa set. 2025), tabela \"Selected Nutritional Requirements for Ratite Production\" (reproduzida em parte de Doneley R. (2006) Ratites. In: Harrison G.J., Lightfoot T.L. (eds.) Clinical Avian Medicine, vol. 2, Spix Publishing, pp. 957–989). https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-ostriches-emus-and-other-ratites",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Struthio camelus",
+      "commonName": {
+        "pt": "Avestruz",
+        "en": "Ostrich"
+      }
+    },
+    {
+      "scientificName": "Dromaius novaehollandiae",
+      "commonName": {
+        "pt": "Emu",
+        "en": "Emu"
+      }
+    },
+    {
+      "scientificName": "Rhea americana",
+      "commonName": {
+        "pt": "Ema / nandu",
+        "en": "Greater rhea"
+      }
+    },
+    {
+      "scientificName": "Rhea pennata",
+      "commonName": {
+        "pt": "Nandu-de-darwin",
+        "en": "Lesser rhea"
+      }
+    }
+  ],
+  "guild": "hindgut_herbivore",
+  "modelSpecies": "Avestruz e emu em produção comercial (Doneley 2006)",
+  "targets": [
+    {
+      "lifeStage": "growth",
+      "label": "Pré-iniciação (0–2 meses; ~0,8–10,5 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 25
+        },
+        "calcium": {
+          "min": 1.2,
+          "max": 1.5
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Iniciação (2–4 meses; ~11–28 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 21.5
+        },
+        "calcium": {
+          "min": 1.2,
+          "max": 1.5
+        },
+        "crude_fibre": {
+          "min": 4,
+          "note": "fonte: 'Fiber, %' > 4; assumido como fibra bruta"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento (4–6 meses; ~29–52 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 17
+        },
+        "calcium": {
+          "min": 1.2,
+          "max": 1.5
+        },
+        "crude_fibre": {
+          "min": 4,
+          "note": "fonte: 'Fiber, %' > 4; assumido como fibra bruta"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Acabamento (6–10 meses; ~53–90 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 13.5
+        },
+        "calcium": {
+          "min": 0.9,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Pós-acabamento (10–20 meses; ~91–110 kg)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 8.5
+        },
+        "calcium": {
+          "min": 0.9,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Manutenção (adultos)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 8
+        },
+        "calcium": {
+          "min": 0.9,
+          "max": 1.0
+        },
+        "crude_fibre": {
+          "target": 6,
+          "note": "fonte: 'Fiber, %' 6; assumido como fibra bruta"
+        }
+      }
+    },
+    {
+      "lifeStage": "laying",
+      "label": "Reprodutores em postura",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 14
+        },
+        "calcium": {
+          "min": 2.0,
+          "max": 2.5
+        },
+        "crude_fibre": {
+          "target": 8,
+          "note": "fonte: 'Fiber, %' 8; assumido como fibra bruta"
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Crescimento demasiado rápido (dietas de produção para carne/couro) pode causar deformações angulares dos membros; não maximizar o crescimento em ratites de zoo."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Ratites não voadoras não precisam de dietas de alta energia; em liberdade consomem forragem grosseira fermentada no intestino."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Casuares (Casuarius spp.) são sobretudo frugívoros e as suas exigências não estão documentadas: esta tabela não se lhes aplica. Adultos consomem frequentemente 3–5 kg de alimento/dia; em zoo recebem fruta e hortícolas suplementados com proteína animal (pintos do dia, ratinhos, ração seca de cão)."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A fonte não indica a base (MS ou matéria natural) das percentagens; trata-se de especificações de rações compostas (normalmente ~88–90 % MS). Os valores foram transcritos sem conversão e marcados como MS; se forem em matéria natural, os equivalentes em MS seriam ~10–12 % mais altos.",
+    "A coluna 'Fiber, %' não especifica o método (fibra bruta vs. FDN); foi mapeada para fibra bruta. Os valores únicos (6 % manutenção, 8 % postura) foram registados como alvo, '> 4' como mínimo.",
+    "A tabela não discrimina espécies (avestruz, emu, ema); as idades e pesos correspondem ao avestruz em produção. Para emus e emas (menores), ajustar fases pela idade/peso.",
+    "Fósforo, energia e aminoácidos não constam da tabela."
+  ]
+}

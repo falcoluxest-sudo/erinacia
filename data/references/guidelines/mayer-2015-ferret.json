@@ -1,0 +1,130 @@
+{
+  "id": "mayer-2015-ferret",
+  "title": "Biology and Diseases of Ferrets — Nutrition (Laboratory Animal Medicine, 3rd ed.)",
+  "citation": "Mayer J., Marini R.P., Fox J.G. (2015). Biology and Diseases of Ferrets. In: Fox J.G., Anderson L.C., Otto G.M., Pritchett-Corning K.R., Whary M.T. (eds.) Laboratory Animal Medicine, 3rd ed. Academic Press/Elsevier. doi:10.1016/B978-0-12-409527-4.00014-6. Secção 'C. Nutrition' e secção sobre toxemia de gestação. Texto integral em https://pmc.ncbi.nlm.nih.gov/articles/PMC7149530/ (lido via Europe PMC fullTextXML).",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Mustela furo",
+      "commonName": {
+        "pt": "Furão",
+        "en": "Domestic ferret"
+      }
+    },
+    {
+      "scientificName": "Mustela putorius",
+      "commonName": {
+        "pt": "Toirão",
+        "en": "European polecat"
+      }
+    },
+    {
+      "scientificName": "Mustela nigripes",
+      "commonName": {
+        "pt": "Furão-de-patas-negras",
+        "en": "Black-footed ferret"
+      }
+    }
+  ],
+  "guild": "obligate_carnivore",
+  "modelSpecies": "Furão doméstico",
+  "energy": [
+    {
+      "id": "maintenance-kamphues",
+      "coefficient": 500,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kJ",
+      "energyType": "ME",
+      "lifeStage": "maintenance",
+      "label": "Manutenção: 0,5 MJ EM/kg^0,75/dia (Kamphues et al. 1999)",
+      "note": "Pode atingir múltiplos deste valor no crescimento, gestação e lactação (Bell 1996)."
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Adultos não reprodutores",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 30,
+          "max": 40,
+          "note": "recomendação de um autor (Brown 1997a)"
+        },
+        "ether_extract": {
+          "min": 18,
+          "max": 20,
+          "note": "recomendação de um autor (Brown 1997a)"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Animais reprodutores",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 35,
+          "note": "Brown 1997a"
+        },
+        "ether_extract": {
+          "min": 25,
+          "note": "Brown 1997a"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Juvenis (antes da maturidade sexual)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 35,
+          "note": "Brown 1997a"
+        },
+        "ether_extract": {
+          "min": 25,
+          "note": "Brown 1997a"
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Evitar dietas ricas em hidratos de carbono complexos ou fibra; a proteína deve ser muito digestível (trato digestivo curto, trânsito rápido)."
+      }
+    },
+    {
+      "kind": "avoid",
+      "text": {
+        "pt": "Não se recomendam dietas ricas em produtos de peixe."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Carne crua (frango, vaca, etc.) fortemente desaconselhada pelo risco de Campylobacter, Salmonella, Listeria, Mycobacterium e Streptococcus."
+      }
+    },
+    {
+      "kind": "alert",
+      "text": {
+        "pt": "Prevenção da toxemia de gestação: vigiar o apetite no fim da gestação e dar dieta muito palatável com > 20 % de gordura e > 35 % de proteína bruta, ad libitum em várias taças, sem stress nem mudanças de dieta."
+      }
+    },
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Desmame: papa da ração da fêmea a partir das 3–4 semanas, com cerca de 30 % de gordura e 40 % de proteína, 2×/dia por tempo limitado; desmame habitual às 6 semanas."
+      }
+    }
+  ],
+  "dataQuality": [
+    "As exigências específicas do furão não foram determinadas experimentalmente; os valores são recomendações de um autor (Brown 1997a) citadas na revisão.",
+    "A fonte não indica a base (MS ou matéria natural); os valores parecem referir-se a rações secas comerciais (~90 % MS). Transcritos sem conversão e marcados como MS; se forem em matéria natural, os equivalentes em MS seriam ~11 % mais altos.",
+    "A revisão menciona dietas com 9–28 % de gordura e 22–42 % de hidratos de carbono usadas com sucesso na manutenção e valores de proteína para crias de visão (42/36/26 %); não transcritos como metas."
+  ]
+}

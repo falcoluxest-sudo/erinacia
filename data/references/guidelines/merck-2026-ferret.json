@@ -1,0 +1,57 @@
+{
+  "id": "merck-2026-ferret",
+  "title": "Management of Ferrets — Nutrition of Ferrets (Merck Veterinary Manual)",
+  "citation": "Schoemaker N.J., van Zeeland Y.R.A. (2021, atualizado ago. 2026). Management of Ferrets — Nutrition of Ferrets. Merck Veterinary Manual. https://www.merckvetmanual.com/exotic-and-laboratory-animals/ferrets/management-of-ferrets",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Mustela furo",
+      "commonName": {
+        "pt": "Furão",
+        "en": "Domestic ferret"
+      }
+    }
+  ],
+  "guild": "obligate_carnivore",
+  "modelSpecies": "Furão doméstico",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Todas as fases",
+      "basis": "DM",
+      "values": {
+        "crude_protein": {
+          "min": 35,
+          "max": 40,
+          "note": "fonte: 'high levels of protein (35%–40%)'"
+        },
+        "nfe": {
+          "max": 25,
+          "note": "fonte: hidratos de carbono < 25 %; mapeado para ENN"
+        },
+        "crude_fibre": {
+          "max": 2.5,
+          "note": "fonte: 'fiber' < 2,5 %; assumido como fibra bruta"
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "kind": "limit",
+      "text": {
+        "pt": "Teor de gordura pode variar; usar ração comercial de furão de alta qualidade ou ração de gatinho de alta qualidade."
+      }
+    },
+    {
+      "kind": "safety",
+      "text": {
+        "pt": "Dietas naturais (roedores, coelhos, pombos inteiros) ou BARF: alimento de qualidade para consumo humano e sem Salmonella/Campylobacter."
+      }
+    }
+  ],
+  "dataQuality": [
+    "A fonte não indica a base (MS ou matéria natural). Valores transcritos sem conversão e marcados como MS.",
+    "'Carbohydrate' foi mapeado para ENN (extrativo não azotado) e 'fiber' para fibra bruta; confirmar se é aceitável."
+  ]
+}
