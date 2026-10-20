@@ -1,0 +1,188 @@
+{
+  "id": "ief-2004-elephant-husbandry",
+  "title": "Elephant Husbandry Resource Guide — Nutrition (Table 1: Proposed minimum nutrient concentrations, DM basis)",
+  "citation": "Olson D. (ed.) (2004). Elephant Husbandry Resource Guide. International Elephant Foundation, Elephant Managers Association e AZA Elephant Taxon Advisory Group. Capítulo 'Nutrition', pp. 209–217; Tabela 1 (p. 210, 'Proposed minimum nutrient concentrations (DM basis) in elephant diets based largely on extrapolation from nutrient requirements of horses (NRC 1989)'); consumo e regras de alimentação pp. 211–217. Lido no PDF https://elephantconservation.org/wp-content/uploads/2022/05/CompleteHusbandryGuide1stEdition.pdf (páginas 215–223 do PDF).",
+  "language": "en",
+  "species": [
+    { "scientificName": "Elephas maximus", "commonName": { "pt": "Elefante-asiático", "en": "Asian elephant" } },
+    { "scientificName": "Loxodonta africana", "commonName": { "pt": "Elefante-africano", "en": "African elephant" } }
+  ],
+  "guild": "hindgut_herbivore",
+  "modelSpecies": "Cavalo (NRC 1989), considerado pela fonte o modelo nutricional mais adequado para elefantes",
+  "intake": [
+    { "label": "Adultos em cativeiro (Hackenberger 1987; Roehrs et al. 1989)", "basis": "DM", "percentBodyWeight": { "min": 1.2, "max": 1.9, "note": "≈ 52 kg de alimento para um elefante de 3500 kg; mais ativo → maior consumo." } },
+    { "label": "Elefantes em crescimento", "basis": "DM", "percentBodyWeight": { "min": 2, "max": 2.6 } }
+  ],
+  "targets": [
+    {
+      "lifeStage": "maintenance",
+      "label": "Adulto em manutenção",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 8, "note": "Coluna 'Maintenance, breeding, early pregnancy' = 8–10 %; nota a: manutenção de adulto 8 %." },
+        "lysine": { "min": 0.3 },
+        "calcium": { "min": 0.3 },
+        "phosphorus": { "min": 0.2 },
+        "magnesium": { "min": 0.1 },
+        "potassium": { "min": 0.4 },
+        "sodium": { "min": 0.1 },
+        "sulfur": { "min": 0.15 },
+        "iron": { "min": 50, "note": "fonte em ppm (= mg/kg MS)." },
+        "copper": { "min": 10 },
+        "manganese": { "min": 40 },
+        "zinc": { "min": 40 },
+        "cobalt": { "min": 0.1 },
+        "iodine": { "min": 0.6 },
+        "selenium": { "min": 0.2 },
+        "vitamin_a": { "min": 3, "note": "fonte: 3000 UI/kg MS → 3 UI/g." },
+        "vitamin_d3": { "min": 0.8, "note": "fonte: 'Vitamin D' 800 UI/kg MS → 0,8 UI/g (forma não especificada)." },
+        "vitamin_e": { "min": 100, "note": "fonte: 100 UI/kg MS; assumido 1 UI = 1 mg (acetato de dl-α-tocoferol)." },
+        "thiamin": { "min": 3 },
+        "riboflavin": { "min": 3 }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Reprodução (macho reprodutor; fêmea nos primeiros dois terços da gestação)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 10, "note": "Nota a da Tabela 1: macho reprodutor e fêmea gestante (primeiros 2/3 da gestação) 10 % PB." },
+        "lysine": { "min": 0.3 },
+        "calcium": { "min": 0.3 },
+        "phosphorus": { "min": 0.2 },
+        "magnesium": { "min": 0.1 },
+        "potassium": { "min": 0.4 },
+        "sodium": { "min": 0.1 },
+        "sulfur": { "min": 0.15 },
+        "iron": { "min": 50 },
+        "copper": { "min": 10 },
+        "manganese": { "min": 40 },
+        "zinc": { "min": 40 },
+        "cobalt": { "min": 0.1 },
+        "iodine": { "min": 0.6 },
+        "selenium": { "min": 0.2 },
+        "vitamin_a": { "min": 3, "note": "fonte: 3000 UI/kg MS → 3 UI/g." },
+        "vitamin_d3": { "min": 0.8, "note": "fonte: 'Vitamin D' 800 UI/kg MS → 0,8 UI/g." },
+        "vitamin_e": { "min": 100, "note": "fonte: 100 UI/kg MS; assumido 1 UI = 1 mg." },
+        "thiamin": { "min": 3 },
+        "riboflavin": { "min": 3 }
+      }
+    },
+    {
+      "lifeStage": "gestation_late",
+      "label": "Gestação final (último terço)",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 12 },
+        "lysine": { "min": 0.4 },
+        "calcium": { "min": 0.5 },
+        "phosphorus": { "min": 0.3 },
+        "magnesium": { "min": 0.1 },
+        "potassium": { "min": 0.4 },
+        "sodium": { "min": 0.1 },
+        "sulfur": { "min": 0.15 },
+        "iron": { "min": 50 },
+        "copper": { "min": 10 },
+        "manganese": { "min": 40 },
+        "zinc": { "min": 40 },
+        "cobalt": { "min": 0.1 },
+        "iodine": { "min": 0.6 },
+        "selenium": { "min": 0.2 },
+        "vitamin_a": { "min": 3, "note": "fonte: 3000 UI/kg MS → 3 UI/g." },
+        "vitamin_d3": { "min": 0.8, "note": "fonte: 'Vitamin D' 800 UI/kg MS → 0,8 UI/g." },
+        "vitamin_e": { "min": 100, "note": "fonte: 100 UI/kg MS; assumido 1 UI = 1 mg." },
+        "thiamin": { "min": 3 },
+        "riboflavin": { "min": 3 }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Lactação",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 12, "note": "Fonte 12–14 %: 1.º ano de lactação 14 %; 2.º ano 12 %." },
+        "lysine": { "min": 0.4, "note": "Fonte 0,4–0,5 %." },
+        "calcium": { "min": 0.5 },
+        "phosphorus": { "min": 0.3 },
+        "magnesium": { "min": 0.1 },
+        "potassium": { "min": 0.5 },
+        "sodium": { "min": 0.1 },
+        "sulfur": { "min": 0.15 },
+        "iron": { "min": 50 },
+        "copper": { "min": 10 },
+        "manganese": { "min": 40 },
+        "zinc": { "min": 40 },
+        "cobalt": { "min": 0.1 },
+        "iodine": { "min": 0.6 },
+        "selenium": { "min": 0.2 },
+        "vitamin_a": { "min": 3, "note": "fonte: 3000 UI/kg MS → 3 UI/g." },
+        "vitamin_d3": { "min": 0.8, "note": "fonte: 'Vitamin D' 800 UI/kg MS → 0,8 UI/g." },
+        "vitamin_e": { "min": 100, "note": "fonte: 100 UI/kg MS; assumido 1 UI = 1 mg." },
+        "thiamin": { "min": 3 },
+        "riboflavin": { "min": 3 }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento de juvenis",
+      "basis": "DM",
+      "values": {
+        "crude_protein": { "min": 12, "note": "Fonte 12–14 %: desmame 14 %; 3 anos 13 %; 4 a 12 anos 12 %." },
+        "lysine": { "min": 0.5, "note": "Fonte 0,5–0,6 %." },
+        "calcium": { "min": 0.5, "note": "Fonte 0,5–0,7 %." },
+        "phosphorus": { "min": 0.3, "note": "Fonte 0,3–0,4 %." },
+        "magnesium": { "min": 0.1 },
+        "potassium": { "min": 0.4 },
+        "sodium": { "min": 0.1 },
+        "sulfur": { "min": 0.15 },
+        "iron": { "min": 50 },
+        "copper": { "min": 10 },
+        "manganese": { "min": 40 },
+        "zinc": { "min": 40 },
+        "cobalt": { "min": 0.1 },
+        "iodine": { "min": 0.6 },
+        "selenium": { "min": 0.2 },
+        "vitamin_a": { "min": 3, "note": "fonte: 3000 UI/kg MS → 3 UI/g." },
+        "vitamin_d3": { "min": 0.8, "note": "fonte: 'Vitamin D' 800 UI/kg MS → 0,8 UI/g." },
+        "vitamin_e": { "min": 100, "note": "fonte: 100 UI/kg MS; assumido 1 UI = 1 mg." },
+        "thiamin": { "min": 3 },
+        "riboflavin": { "min": 3 }
+      }
+    }
+  ],
+  "proportions": [
+    {
+      "label": "Inquérito a instituições norte-americanas (prática observada, não recomendação)",
+      "basis": "asFed",
+      "rules": [
+        { "category": "hay", "range": { "min": 40, "max": 88, "note": "Feno ≈ 40–88 % da dieta; os valores mais baixos correspondem a quem oferece mais browse. Base (MN/MS) não indicada na fonte." }, "label": "Feno (sobretudo de gramíneas, ex. timothy)" },
+        { "category": "produce", "range": { "min": 3, "max": 21, "target": 10, "note": "Hortofrutícolas 3–21 % do consumo total, média 10 %. Base não indicada na fonte." }, "label": "Hortofrutícolas (fruta, legumes, folhosas)" }
+      ]
+    }
+  ],
+  "rules": [
+    { "kind": "limit", "text": { "pt": "A base da dieta deve ser feno de gramíneas (ou mistura com leguminosa) de composição conhecida, de boa qualidade, sem pó, sem bolores e sem toxinas; browse, hortofrutícolas e suplementos completam o restante." } },
+    { "kind": "limit", "text": { "pt": "Feno de gramíneas fornecido ad libitum deve ter ≥ 30 % de FDA para evitar cólicas." } },
+    { "kind": "monitoring", "text": { "pt": "Analisar os fenos (MS, PB, FDN, FDA, lenhina, Ca e P) num laboratório competente, com programa regular de amostragem e registo, e comparar com a Tabela 1 para decidir a suplementação." } },
+    { "kind": "supplement", "text": { "pt": "Quando o feno não cobre energia digestível, proteína, minerais e vitaminas, acrescentar um granulado formulado para herbívoros (16–17 % PB e < 17 % FDA é o mais usado; existem 'suplementos para elefante' com 24–25 % PB), escolhido em função da análise do feno." } },
+    { "kind": "schedule", "text": { "pt": "Fazer todas as mudanças de dieta gradualmente, ao longo de 1 a 2 semanas, para evitar perturbações digestivas." } },
+    { "kind": "monitoring", "text": { "pt": "Registar diariamente o consumo da dieta; pesar todos os elefantes pelo menos uma vez por ano (as normas AZA de 2001 exigem avaliação do peso pelo menos duas vezes por ano); sem báscula, estimar o peso pelo perímetro torácico (Hile et al. 1997) e usar índices de condição corporal." } },
+    { "kind": "alert", "text": { "pt": "A obesidade é frequente em elefantes de zoo (dietas demasiado digestíveis e pouca atividade) e associa-se a mau desempenho reprodutivo e partos prolongados/distócias; evitar a sobrealimentação. Dietas muito digestíveis não são necessárias para a manutenção de adultos." } },
+    { "kind": "safety", "text": { "pt": "Não fornecer granulado diretamente sobre o substrato natural (impactação por areia documentada); usar placa de betão limpa, manjedouras, caixas ou baldes." } },
+    { "kind": "monitoring", "text": { "pt": "Recomendam-se estações de alimentação individuais, observando quanto granulado cada elefante consome e reduzindo a competição." } },
+    { "kind": "safety", "text": { "pt": "Browse fresco ou congelado é recomendado (fibra, nutrientes não quantificados, diluição de dietas demasiado digestíveis), mas garantir que não foi pulverizado com pesticidas ou herbicidas." } },
+    { "kind": "alert", "text": { "pt": "Cólicas: reduzir os hidratos de carbono fermentáveis (hortofrutícolas, pão) e aumentar a fibra (feno de gramíneas); com dieta completa não deve haver razão nutricional para ingestão de terra, argila ou areia." } },
+    { "kind": "supplement", "text": { "pt": "Vitamina E: suplementação dietética recomendada (formas hidrossolúveis TPGS ou d-α-tocoferol micelizado elevam os níveis plasmáticos); os níveis circulantes são normalmente baixos (< 1,0 µg/ml) em elefantes cativos e selvagens, pelo que não se justifica suplementação excessiva para atingir valores de gado doméstico." } },
+    { "kind": "limit", "text": { "pt": "Biotina: benefício para problemas de patas referido mas não estudado; é eliminada muito rapidamente do plasma, o que põe em causa doses elevadas." } },
+    { "kind": "monitoring", "text": { "pt": "Retinol plasmático é normalmente baixo em elefantes (< 0,1 µg/ml); não comparar com os valores de outros herbívoros (0,2–0,8 µg/ml)." } },
+    { "kind": "alert", "text": { "pt": "Assegurar o zinco dietético (deficiência suspeita num elefante-asiático com problemas crónicos de patas e pele, resolvidos com suplementação)." } },
+    { "kind": "alert", "text": { "pt": "Perda permanente de molares (sobretudo o 6.º) impede a mastigação de dietas fibrosas: considerar uma dieta geriátrica mais digestível." } }
+  ],
+  "dataQuality": [
+    "O PDF consultado não tem data impressa; o ano 2004 segue a citação habitual do guia (1.ª edição). Os metadados do PDF indicam criação em 2010.",
+    "A Tabela 1 apresenta 'concentrações mínimas propostas' extrapoladas do cavalo (NRC 1989); onde a fonte dá intervalos (ex. PB 12–14 %, lisina 0,4–0,5 %, Ca 0,5–0,7 %) registou-se o limite inferior como mínimo e o intervalo na nota.",
+    "Vitamina D aparece só como 'Vitamin D, IU/kg' (forma não especificada); foi registada em vitamin_d3. Vitamina E em UI/kg convertida 1:1 para mg/kg.",
+    "Proporções de feno (40–88 %) e hortofrutícolas (3–21 %) são resultados de inquérito sem base (MN/MS) indicada; registadas como MN com reserva.",
+    "Não transcrito: tabela de 'target range' do Fort Worth Zoo (p. 212; exemplo institucional, não recomendação do guia: PB 10–12 %, FDN 65 %, vit. A 2,0 UI/g, vit. E 130 mg/kg, vit. D3 0,30 UI/g, etc.) e as especificações dos granulados ADF16/ADF25/Herbivore Supplement (Tabela 3, de Ullrey et al. 1997), por a base (MN/MS) não ser indicada e por a Tabela 3 listar biotina e vitamina B12 em 'ppm' com valores (250, 20) que parecem ser ppb — a confirmar."
+  ]
+}
