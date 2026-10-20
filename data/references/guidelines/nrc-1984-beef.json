@@ -1,0 +1,399 @@
+{
+  "id": "nrc-1984-beef",
+  "title": "Nutrient Requirements of Beef Cattle, Sixth Revised Edition (1984) — concentrações na MS, minerais e máximos toleráveis",
+  "citation": "National Research Council (1984). Nutrient Requirements of Beef Cattle, 6th rev. ed. Washington, D.C.: National Academy Press (NAP record 19398, https://nap.nationalacademies.org/catalog/19398; sem leitura online, download exige conta). Valores lidos na digitalização integral do Internet Archive (Google Books scan), https://archive.org/details/bub_gb_Q2MrAAAAYAAJ: Tabela 4 'Mineral Requirements and Maximum Tolerable Levels for Beef Cattle' (p. 43; máximos de NRC 1980); Tabela 7 'Nutrient Requirements of Breeding Cattle (metric)' (p. 45–46, colunas 'In Diet DM'); Tabela 10 'Nutrient Requirements for Growing and Finishing Cattle (Nutrient Concentration in Diet Dry Matter, avoirdupois system)' (p. 77); texto das vitaminas (p. 25–27); cap. 6 'Prediction Equations' (p. 38) e ajustes ambientais (p. 36).",
+  "language": "en",
+  "species": [
+    {
+      "scientificName": "Bison bison",
+      "commonName": {
+        "pt": "Bisonte-americano",
+        "en": "American bison"
+      }
+    },
+    {
+      "scientificName": "Bison bonasus",
+      "commonName": {
+        "pt": "Bisonte-europeu",
+        "en": "European bison"
+      }
+    },
+    {
+      "scientificName": "Syncerus caffer",
+      "commonName": {
+        "pt": "Búfalo-africano",
+        "en": "African buffalo"
+      }
+    },
+    {
+      "scientificName": "Bubalus bubalis",
+      "commonName": {
+        "pt": "Búfalo-asiático",
+        "en": "Water buffalo"
+      }
+    },
+    {
+      "scientificName": "Bos gaurus",
+      "commonName": {
+        "pt": "Gauro",
+        "en": "Gaur"
+      }
+    },
+    {
+      "scientificName": "Bos javanicus",
+      "commonName": {
+        "pt": "Banteng",
+        "en": "Banteng"
+      }
+    },
+    {
+      "scientificName": "Bos grunniens",
+      "commonName": {
+        "pt": "Iaque",
+        "en": "Yak"
+      }
+    },
+    {
+      "scientificName": "Taurotragus oryx",
+      "commonName": {
+        "pt": "Elande",
+        "en": "Common eland"
+      }
+    },
+    {
+      "scientificName": "Ovibos moschatus",
+      "commonName": {
+        "pt": "Boi-almiscarado",
+        "en": "Muskox"
+      }
+    }
+  ],
+  "guild": "ruminant",
+  "modelSpecies": "Bovino de carne doméstico (Bos taurus)",
+  "energyAdjustments": [
+    {
+      "label": "Manutenção: ELm = 0,077 × PV^0,75 Mcal/d (vacas, novilhas, novilhos e touros, aclimatados a 20 °C)",
+      "factor": 1.0,
+      "note": "Cap. 6, eq. A (p. 38) e p. 36. É energia LÍQUIDA de manutenção (ELm/NEm), não EM — o esquema não tem tipo 'NE', por isso não foi registada como equação. PV em kg, Mcal/d."
+    },
+    {
+      "label": "Aclimatação ao calor (30 °C): a = 0,070",
+      "factor": 0.91,
+      "note": "p. 36: subtrair 0,0007 a 'a' por cada °C de exposição prévia acima de 20 °C. Fator calculado 0,070/0,077."
+    },
+    {
+      "label": "Aclimatação ao frio (10 °C): a = 0,084",
+      "factor": 1.09,
+      "note": "p. 36: somar 0,0007 a 'a' por cada °C abaixo de 20 °C. Fator calculado 0,084/0,077."
+    },
+    {
+      "label": "Aclimatação ao frio (0 °C): a = 0,091",
+      "factor": 1.18,
+      "note": "p. 36. Fator calculado 0,091/0,077."
+    },
+    {
+      "label": "Stress térmico agudo, respiração rápida e superficial",
+      "factor": 1.07,
+      "note": "p. 36: +7 % à necessidade de manutenção."
+    },
+    {
+      "label": "Lactação: ELm = 0,1 × (% gordura) + 0,35 Mcal/kg de leite",
+      "note": "Cap. 6, eq. E (p. 38)."
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Minerais e vitamina D — todas as categorias (valor sugerido e máximo tolerável)",
+      "basis": "DM",
+      "values": {
+        "calcium": {
+          "max": 2,
+          "note": "Exigência: ver conjuntos por fase (Tabelas 3 e 7). Máximo tolerável 2 % (NRC 1980)."
+        },
+        "phosphorus": {
+          "max": 1,
+          "note": "Exigência: ver conjuntos por fase. Máximo tolerável 1 % (NRC 1980)."
+        },
+        "magnesium": {
+          "min": 0.1,
+          "max": 0.4,
+          "note": "Valor sugerido 0,10 %; intervalo 0,05–0,25 %."
+        },
+        "potassium": {
+          "min": 0.65,
+          "max": 3,
+          "note": "Valor sugerido 0,65 %; intervalo 0,5–0,7 %."
+        },
+        "sodium": {
+          "min": 0.08,
+          "note": "Valor sugerido 0,08 %; intervalo 0,06–0,10 %. Máximo tolerável indicado como 10 % de cloreto de sódio (não convertido em Na)."
+        },
+        "sulfur": {
+          "min": 0.1,
+          "max": 0.4,
+          "note": "Valor sugerido 0,10 %; intervalo 0,08–0,15 %."
+        },
+        "cobalt": {
+          "min": 0.1,
+          "max": 5,
+          "note": "Valor sugerido 0,10 mg/kg; intervalo 0,07–0,11."
+        },
+        "copper": {
+          "min": 8,
+          "max": 115,
+          "note": "Valor sugerido 8 mg/kg; intervalo 4–10. Máximo impresso 115 mg/kg."
+        },
+        "iodine": {
+          "min": 0.5,
+          "max": 50,
+          "note": "Valor sugerido 0,5 mg/kg; intervalo 0,20–2,0."
+        },
+        "iron": {
+          "min": 50,
+          "max": 1000,
+          "note": "Valor sugerido 50 mg/kg; intervalo 50–100."
+        },
+        "manganese": {
+          "min": 40,
+          "max": 1000,
+          "note": "Valor sugerido 40 mg/kg; intervalo 20–50."
+        },
+        "selenium": {
+          "min": 0.2,
+          "max": 2,
+          "note": "Valor sugerido 0,20 mg/kg; intervalo 0,05–0,30."
+        },
+        "zinc": {
+          "min": 30,
+          "max": 500,
+          "note": "Valor sugerido 30 mg/kg; intervalo 20–40."
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "note": "Texto p. 26: 275 UI/kg MS (UI = 0,025 µg colecalciferol) → 0,275 UI/g"
+        }
+      }
+    },
+    {
+      "lifeStage": "growth",
+      "label": "Crescimento — vitelo macho de estrutura média, 181 kg (400 lb), GMD 0,68 kg/d (1,5 lb)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 2.29,
+          "note": "Tabela 10 (p. 77): EM 1,04 Mcal/lb MS ÷ 0,4536 = 2,29 Mcal/kg = 2,29 kcal/g."
+        },
+        "crude_protein": {
+          "min": 11.5,
+          "note": "Tabela 10. Nas linhas de 300–400 lb (136–181 kg) a PB vai de 8,9 % (0,5 lb/d) a 19,9 % (3,0 lb/d)."
+        },
+        "calcium": {
+          "min": 0.47,
+          "note": "Tabela 10. Entre 300–400 lb: 0,27–1,13 % conforme o GMD."
+        },
+        "phosphorus": {
+          "min": 0.25,
+          "note": "Tabela 10. Entre 300–400 lb: 0,18–0,47 % conforme o GMD."
+        },
+        "vitamin_a": {
+          "min": 2.2,
+          "note": "Texto p. 25: 2200 UI/kg MS para bovinos em engorda (feedlot) → 2,2 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "note": "Texto p. 26: 275 UI/kg MS (UI = 0,025 µg colecalciferol) → 0,275 UI/g"
+        },
+        "vitamin_e": {
+          "min": 15,
+          "max": 60,
+          "note": "Texto p. 27: 15–60 UI/kg MS estimado para vitelos jovens (1 UI = 1 mg acetato de dl-α-tocoferol); requisito não estabelecido. O 'max' é o limite superior do intervalo de exigência, não um máximo tolerável."
+        }
+      }
+    },
+    {
+      "lifeStage": "maintenance",
+      "label": "Manutenção — vaca adulta seca, terço médio da gestação (500 kg)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 1.76,
+          "note": "EM 1.76 Mcal/kg MS (Tabela 7 (métrico), p. 45–46) = 1.76 kcal/g"
+        },
+        "crude_protein": {
+          "min": 7.0,
+          "note": "proteína total, % da MS"
+        },
+        "calcium": {
+          "min": 0.19
+        },
+        "phosphorus": {
+          "min": 0.19
+        },
+        "vitamin_a": {
+          "min": 2.8,
+          "note": "Texto p. 25: 2800 UI/kg MS para novilhas e vacas gestantes → 2,8 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "note": "Texto p. 26: 275 UI/kg MS (UI = 0,025 µg colecalciferol) → 0,275 UI/g"
+        }
+      }
+    },
+    {
+      "lifeStage": "gestation_late",
+      "label": "Terço final da gestação — vaca adulta seca (500 kg, GMD 0,4 kg/d)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 1.92,
+          "note": "EM 1.92 Mcal/kg MS (Tabela 7 (métrico), p. 45–46) = 1.92 kcal/g"
+        },
+        "crude_protein": {
+          "min": 7.8,
+          "note": "proteína total, % da MS"
+        },
+        "calcium": {
+          "min": 0.26
+        },
+        "phosphorus": {
+          "min": 0.21
+        },
+        "vitamin_a": {
+          "min": 2.8,
+          "note": "Texto p. 25: 2800 UI/kg MS para novilhas e vacas gestantes → 2,8 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "note": "Texto p. 26: 275 UI/kg MS (UI = 0,025 µg colecalciferol) → 0,275 UI/g"
+        }
+      }
+    },
+    {
+      "lifeStage": "gestation_late",
+      "label": "Terço final da gestação — novilha de 1 ano (400 kg, GMD 0,6 kg/d)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 2.12,
+          "note": "EM 2.12 Mcal/kg MS (Tabela 7 (métrico), p. 45–46) = 2.12 kcal/g"
+        },
+        "crude_protein": {
+          "min": 8.5,
+          "note": "proteína total, % da MS"
+        },
+        "calcium": {
+          "min": 0.3
+        },
+        "phosphorus": {
+          "min": 0.21
+        },
+        "vitamin_a": {
+          "min": 2.8,
+          "note": "Texto p. 25: 2800 UI/kg MS para novilhas e vacas gestantes → 2,8 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "note": "Texto p. 26: 275 UI/kg MS (UI = 0,025 µg colecalciferol) → 0,275 UI/g"
+        }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Lactação — vaca a amamentar, 3–4 primeiros meses pós-parto, 5 kg leite/d (500 kg)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 2.05,
+          "note": "EM 2.05 Mcal/kg MS (Tabela 7 (métrico), p. 45–46) = 2.05 kcal/g"
+        },
+        "crude_protein": {
+          "min": 9.7,
+          "note": "proteína total, % da MS"
+        },
+        "calcium": {
+          "min": 0.28
+        },
+        "phosphorus": {
+          "min": 0.22
+        },
+        "vitamin_a": {
+          "min": 3.9,
+          "note": "Texto p. 25: 3900 UI/kg MS para vacas em lactação e touros reprodutores → 3,9 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "note": "Texto p. 26: 275 UI/kg MS (UI = 0,025 µg colecalciferol) → 0,275 UI/g"
+        }
+      }
+    },
+    {
+      "lifeStage": "lactation",
+      "label": "Lactação — vaca de capacidade leiteira superior, 3–4 primeiros meses pós-parto, 10 kg leite/d (500 kg)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 2.45,
+          "note": "EM 2.45 Mcal/kg MS (Tabela 7 (métrico), p. 45–46) = 2.45 kcal/g"
+        },
+        "crude_protein": {
+          "min": 12.4,
+          "note": "proteína total, % da MS"
+        },
+        "calcium": {
+          "min": 0.4
+        },
+        "phosphorus": {
+          "min": 0.28
+        },
+        "vitamin_a": {
+          "min": 3.9,
+          "note": "Texto p. 25: 3900 UI/kg MS para vacas em lactação e touros reprodutores → 3,9 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "note": "Texto p. 26: 275 UI/kg MS (UI = 0,025 µg colecalciferol) → 0,275 UI/g"
+        }
+      }
+    },
+    {
+      "lifeStage": "breeding",
+      "label": "Touros adultos — manutenção (800 kg, GMD 0)",
+      "basis": "DM",
+      "values": {
+        "energy_density_dm": {
+          "target": 1.75,
+          "note": "EM 1.75 Mcal/kg MS (Tabela 7 (métrico), p. 45–46) = 1.75 kcal/g"
+        },
+        "crude_protein": {
+          "min": 6.8,
+          "note": "proteína total, % da MS"
+        },
+        "calcium": {
+          "min": 0.21
+        },
+        "phosphorus": {
+          "min": 0.21
+        },
+        "vitamin_a": {
+          "min": 3.9,
+          "note": "Texto p. 25: 3900 UI/kg MS para vacas em lactação e touros reprodutores → 3,9 UI/g"
+        },
+        "vitamin_d3": {
+          "min": 0.275,
+          "note": "Texto p. 26: 275 UI/kg MS (UI = 0,025 µg colecalciferol) → 0,275 UI/g"
+        }
+      }
+    }
+  ],
+  "dataQuality": [
+    "Fonte digitalizada (scan do Google Books no Internet Archive); a Tabela 7 está rodada na página e o OCR é ilegível — os valores foram lidos diretamente das imagens a 600 dpi. A Tabela 4 e a linha usada da Tabela 10 também foram conferidas na imagem.",
+    "As concentrações da Tabela 7 variam com o peso vivo e o ganho; escolheram-se linhas representativas (vaca de 500 kg, novilha de 400 kg, touro de 800 kg). Para outros pesos consultar a tabela original.",
+    "Tabela 7: o título da secção de lactação aparece parcialmente coberto no scan ('Cows nursing calves — First 3–4 months postpartum'); a interpretação 'vacas a amamentar vitelos' é coerente com o resto do livro, mas convém confirmar.",
+    "energy_density_dm aqui é EM (Mcal/kg MS = kcal/g) tal como impressa; a fonte também dá NDT (%), ELm e ELg em Mcal/kg MS, para os quais não há chave no catálogo.",
+    "Cobre: o máximo tolerável impresso na Tabela 4 é 115 mg/kg MS (citando NRC 1980, Mineral Tolerance of Domestic Animals); confirmar com a fonte original, pois em ruminantes a tolerância ao cobre depende fortemente do molibdénio e enxofre.",
+    "Sódio: o máximo tolerável vem expresso como 10 % de cloreto de sódio na dieta, não como Na; não foi convertido.",
+    "Molibdénio (máximo tolerável 6 mg/kg MS) e os elementos tóxicos da Tabela 5 (Al 1000, As 50/100 orgânico, Br 200, Cd 0,5, F 20–100, Pb 30, Hg 2, Sr 2000 mg/kg) não têm chave no catálogo e não foram incluídos.",
+    "A equação de manutenção ELm = 0,077·PV^0,75 (Mcal/d) é de energia líquida; o esquema só aceita EM/DE/GE/BMR/FMR, por isso ficou como texto em energyAdjustments em vez de equação."
+  ]
+}
