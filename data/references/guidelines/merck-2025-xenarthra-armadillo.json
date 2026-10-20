@@ -1,0 +1,32 @@
+{
+  "id": "merck-2025-xenarthra-armadillo",
+  "title": "Nutrition in Insectivores, Edentates, and Aardvarks (Merck Veterinary Manual) — armadillos",
+  "citation": "Nijboer J., Fens A. Nutrition in Insectivores, Edentates, and Aardvarks. Merck Veterinary Manual, Management and Nutrition › Nutrition: Exotic and Zoo Animals. Full review Sept 2025. https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-insectivores-edentates-and-aardvarks — recomendação de vitamina K baseada em McPhee S., Leary N. (2008) Rehabilitation of the nine-banded armadillo (Dasypus novemcinctus). Wildl Rehabil Bull 26(1):25–31 (citado pelo Merck; não consultado). Dados de peso/ingestão de MS de Clark A. et al. (2016) JZAR 4(4), Tabela 4, https://jzar.org/jzar/article/view/207",
+  "language": "en",
+  "species": [
+    { "scientificName": "Dasypus novemcinctus", "commonName": { "pt": "Tatu-galinha", "en": "Nine-banded armadillo" } },
+    { "scientificName": "Chaetophractus villosus", "commonName": { "pt": "Tatu-peludo-grande", "en": "Larger hairy armadillo" } },
+    { "scientificName": "Euphractus sexcinctus", "commonName": { "pt": "Tatu-peba", "en": "Six-banded armadillo" } },
+    { "scientificName": "Tolypeutes matacus", "commonName": { "pt": "Tatu-bola-do-sul", "en": "Southern three-banded armadillo" } }
+  ],
+  "guild": "insectivore_omnivore",
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Suplementação de vitamina K (prevenção de hemorragias)",
+      "basis": "DM",
+      "values": {
+        "vitamin_k": { "min": 5, "note": "'5 mg of menadione sodium bisulfite/kg dry diet should be adequate'. Valor expresso como bissulfito sódico de menadiona (o composto), não como menadiona pura." }
+      }
+    }
+  ],
+  "rules": [
+    { "kind": "monitoring", "text": { "pt": "Os tatus aceitam ração felina congelada, ração seca de gato humedecida, comida enlatada de cão, granulado para insetívoros ou carne picada suplementada com minerais e vitaminas." } },
+    { "kind": "safety", "text": { "pt": "Dietas cruas à base de carne foram associadas a septicemia e mortes em pequenos mamíferos insetívoros; preferir produtos de carne enlatados." } },
+    { "kind": "monitoring", "text": { "pt": "Obesidade frequente em cativeiro (Reino Unido): C. villosus 3,8 kg e E. sexcinctus 7,1 kg em média, contra 2,4 kg e 3,3 kg em liberdade; MS oferecida 71 (23–148) e 32 (23–40) g/kg^0,75/d, respetivamente. T. matacus 1,3 kg (1,1 kg em liberdade), 90 (57–156) g MS/kg^0,75/d." } }
+  ],
+  "dataQuality": [
+    "A fonte expressa a vitamina K como bissulfito sódico de menadiona; o teor em menadiona é inferior (depende do sal). Confirmar a equivalência antes de comparar com tabelas em mg de menadiona.",
+    "Não há outros requisitos quantitativos para tatus nas fontes consultadas."
+  ]
+}

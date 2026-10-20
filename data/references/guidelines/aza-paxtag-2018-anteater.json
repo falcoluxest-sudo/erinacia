@@ -1,0 +1,61 @@
+{
+  "id": "aza-paxtag-2018-anteater",
+  "title": "AZA PAX TAG recommendations on calcium and vitamin D for anteaters (2018), with vitamin K and energy data from Bissell et al. (2023) and Stahl et al. (2012)",
+  "citation": "(1) AZA Pangolin, Aardvark & Xenarthra Taxon Advisory Group (PAX TAG) — Woc Colburn M., Bissell H., Dierenfeld E.S. Comunicado de 11 set. 2018 sobre hipercalcemia em tamanduás alimentados com Mazuri Insectivore Diet. https://docs.google.com/document/d/1NrLcy3vI0BCsPRvhuf_bp5tOWOTl7BWf4JmJLRqXbSw (lido na íntegra; referência 31 de Bissell et al. 2023). (2) Bissell H., Alves M.H., Yogui D.R., Woc Colburn M., Desbiez A.L.J. (2023). Comparison of estimated wild giant anteater (Myrmecophaga tridactyla) diets with commercial diets for insectivores: implications for anteater health. Animals 13(23):3606. doi:10.3390/ani13233606. Secções 4.2–4.3 e Tabelas 1–2. https://mdpi-res.com/d_attachment/animals/animals-13-03606/article_deploy/animals-13-03606.pdf (3) Stahl M., Osmann C., Ortmann S., Kreuzer M., Hatt J.-M., Clauss M. (2012). Energy intake for maintenance in a mammal with a low basal metabolism, the giant anteater (Myrmecophaga tridactyla). J Anim Physiol Anim Nutr 96(5):818–824. doi:10.1111/j.1439-0396.2011.01226.x (resumo lido via Europe PMC). (4) Clark A., Silva-Fletcher A., Fox M., Kreuzer M., Clauss M. (2016). Survey of feeding practices, body condition and faeces consistency in captive ant-eating mammals in the UK. JZAR 4(4). https://jzar.org/jzar/article/view/207 (BMR segundo McNab 2008; Tabela 4).",
+  "language": "en",
+  "species": [
+    { "scientificName": "Myrmecophaga tridactyla", "commonName": { "pt": "Tamanduá-bandeira", "en": "Giant anteater" } },
+    { "scientificName": "Tamandua tetradactyla", "commonName": { "pt": "Tamanduá-mirim", "en": "Southern tamandua" } },
+    { "scientificName": "Tamandua mexicana", "commonName": { "pt": "Tamanduá-do-norte", "en": "Northern tamandua" } }
+  ],
+  "guild": "insectivore_omnivore",
+  "energy": [
+    {
+      "id": "de-maintenance-stahl2012",
+      "coefficient": 347,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kJ",
+      "energyType": "DE",
+      "lifeStage": "maintenance",
+      "label": "Manutenção do tamanduá-bandeira: 347 kJ ED/kg^0,75/d (Stahl et al. 2012)",
+      "note": "Regressão da ingestão de ED para variação de peso nula em 8 animais (46–64 kg; 64 ensaios). Animais mais velhos (12–15 anos) tiveram requisitos relativos menores. Cães: 460–580 kJ ED/kg^0,75/d."
+    },
+    {
+      "id": "bmr-mcnab2008",
+      "coefficient": 96,
+      "exponent": 0.75,
+      "weightUnit": "kg",
+      "energyUnit": "kJ",
+      "energyType": "BMR",
+      "lifeStage": "all",
+      "label": "Metabolismo basal do tamanduá-bandeira (McNab 2008, citado por Clark et al. 2016)",
+      "note": "Oricterope: 162 kJ/kg^0,75/d — o tamanduá-bandeira tem ~59 % das necessidades basais do oricterope por kg^0,75."
+    }
+  ],
+  "targets": [
+    {
+      "lifeStage": "all",
+      "label": "Recomendação PAX TAG (Ca, vitamina D) + vitamina K (Bissell et al. 2023)",
+      "basis": "DM",
+      "values": {
+        "calcium": { "min": 0.5, "max": 1.3, "note": "PAX TAG 2018: 'reducing calcium levels to 0.5 – 1.3% (max) of diet dry matter'." },
+        "vitamin_d3": { "min": 1.32, "max": 2.4, "note": "PAX TAG 2018: 11–20 µg (440–800 UI)/1000 kcal, 'equivalent to 1320–2400 IU/kg DM' → 1,32–2,4 UI/g MS (equivalência da própria fonte, implica ~3000 kcal/kg MS). Forma (D2/D3) não especificada." },
+        "vitamin_k": { "min": 1, "max": 5, "note": "Bissell et al. (2023): 'keeping K within the range of 1–5 mg/kg diet is likely to provide sufficient amounts of K to prevent clotting disorders while not over-supplementing'. Proposta dos autores, não norma do TAG; base 'diet' assumida MS." }
+      }
+    }
+  ],
+  "rules": [
+    { "kind": "monitoring", "text": { "pt": "Cálcio sérico alvo: tamanduás 8–11 mg/dL; tamanduá-bandeira 7,8–10 mg/dL. Vitamina D sérica (25-OH-D) 25–100 nmol/L (previsto por analogia com outras espécies). Se fora destes intervalos, ou se houver depósitos de cálcio em radiografias, ajustar a dieta dentro dos intervalos recomendados." } },
+    { "kind": "alert", "text": { "pt": "Tamanduás (e possivelmente tamanduás-bandeira) alimentados com a Mazuri Insectivore Diet (5MK8/5MM3/5M2A) desenvolveram hipercalcemia (calcificação de tecidos moles e órgãos, espondiloartropatia) por Ca e vitamina D acima do desejável." } },
+    { "kind": "alert", "text": { "pt": "Conteúdos estomacais de tamanduás-bandeira selvagens: Ca 0,1 % MS, P 0,21 % MS, Ca:P ≈ 0,5, cinza 61,8 % MS (solo), Fe 8860 ppm MS — cálcio cerca de 10× inferior ao das rações comerciais (1,6 % MS). Os xenartros parecem ter absorção/retenção de cálcio muito eficiente." } },
+    { "kind": "alert", "text": { "pt": "Vitamina K e cálcio interagem: Ca elevado pode aumentar a necessidade de vitamina K, mas excesso de vitamina K aumenta a retenção de cálcio — manter Ca, vitamina D e vitamina K dentro dos intervalos." } },
+    { "kind": "monitoring", "text": { "pt": "Necessidades energéticas baixas (metabolismo basal reduzido): risco de sobrealimentação. No Reino Unido os tamanduás-bandeira recebiam em média 30 g MS/kg^0,75/d (16–53) e pesavam 49 kg em média, contra ≤ 40 kg em liberdade." } }
+  ],
+  "dataQuality": [
+    "Ficheiro compila quatro fontes (ver citação): Ca e vitamina D do comunicado PAX TAG 2018; vitamina K proposta por Bissell et al. 2023; energia de Stahl et al. 2012 (apenas o resumo foi lido) e BMR de McNab 2008 citado por Clark et al. 2016.",
+    "Equação de Stahl et al. em energia DIGESTÍVEL (kJ ED), não EM.",
+    "Não foram obtidos requisitos de proteína, gordura, fibra ou outros micronutrientes específicos para tamanduás; a Tabela 1 de Bissell et al. compara apenas com NRC cão/gato.",
+    "Não foi possível aceder às diretrizes EAZA/AZA (nagonline.net bloqueado; Steinecker-Quast et al. 2024 não está em acesso aberto)."
+  ]
+}
