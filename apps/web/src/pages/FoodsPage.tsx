@@ -3,6 +3,7 @@ import { Copy, Info, Lock, Pencil, Plus, Search, Trash2 } from 'lucide-react';
 import { fmt, groupColor, headline, nutrientCount, matchesQuery, SOURCE_ATTRIBUTION, sourceOf, useFoods, type AppFood } from '../data/foods';
 import { FoodDetail } from '../components/FoodDetail';
 import { FoodForm } from '../components/FoodForm';
+import { ReviewBadge } from '../components/ReviewBadge';
 
 const PAGE = 60;
 
@@ -166,6 +167,7 @@ function FoodCard({ food, onOpen, onEdit, onCopy, onRemove }: {
           {!own && <Lock size={11} aria-hidden="true" />}
           {sourceOf(food)}
         </span>
+        {food.review && <ReviewBadge review={food.review} />}
       </div>
       <div className="stats">
         <div className="stat"><div className="stat-label">MS</div><div className="stat-value">{fmt(h.dm)}%</div></div>

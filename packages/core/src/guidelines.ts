@@ -4,6 +4,7 @@
 // is recorded in the value's `note`.
 
 import { DERIVED_INDICATORS, NUTRIENT_BY_KEY } from './nutrients';
+import type { Review } from './food';
 
 export type LifeStage =
   | 'all'
@@ -161,6 +162,8 @@ export interface Guideline {
   rules?: GuidelineRule[];
   /** Places where the source looks inconsistent and needs checking. */
   dataQuality?: string[];
+  /** Founder's check against the source. Absent = pending. */
+  review?: Review;
 }
 
 /** Returns problems found in a guideline (unknown nutrient keys, inverted ranges…). */

@@ -17,6 +17,32 @@ export interface FoodSourceRef {
   version?: string;
 }
 
+/**
+ * Whether the founder has checked reference data against its source.
+ * Absent means "pending": nothing is treated as validated by default.
+ */
+export type ReviewStatus = 'pending' | 'reviewed' | 'reservations';
+
+export interface Review {
+  status: ReviewStatus;
+  /** ISO date of the review. */
+  date?: string;
+  note?: string;
+}
+
+/**
+ * How a single value was obtained. Values without a note are measured
+ * (analytical result as published, only unit or basis converted).
+ * - calculated: derived from other values (by difference, cross-table conversion…);
+ * - estimated: an assumption is involved (midpoint of a published range, conversion factor…).
+ */
+export type ValueOrigin = 'measured' | 'calculated' | 'estimated';
+
+export interface ValueNote {
+  origin: ValueOrigin;
+  note?: string;
+}
+
 export interface Food {
   id: string;
   name: string;
@@ -32,6 +58,11 @@ export interface Food {
   sources: FoodSourceRef[];
   /** How many analytical records back the values, when known. */
   sampleCount?: number;
+  /** Per-nutrient provenance for values that are not plain measurements. */
+  valueNotes?: Record<string, ValueNote>;
+  /** Problems found in the source while transcribing (inconsistent sums, likely typos…). */
+  dataQuality?: string[];
+  review?: Review;
 }
 
 /** General Atwater factors (4/9/4 kcal/g) applied to protein, fat and NFE as fed. */
