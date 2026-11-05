@@ -13,6 +13,7 @@ import {
   Atom,
   Calculator,
   BookA,
+  HardDriveDownload,
 } from 'lucide-react';
 import { Logo } from './Logo';
 
@@ -37,6 +38,7 @@ const SECTIONS: { title: string; links: { to: string; label: string; icon: typeo
       { to: '/nutrientes', label: 'Nutrientes', icon: Atom, soon: true },
       { to: '/stock', label: 'Stock', icon: Package, soon: true },
       { to: '/importar', label: 'Importar', icon: Upload, soon: true },
+      { to: '/copia-seguranca', label: 'Cópia de segurança', icon: HardDriveDownload },
     ],
   },
   {

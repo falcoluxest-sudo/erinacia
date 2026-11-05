@@ -47,14 +47,15 @@ segmentos desde o primeiro dia.
 | `packages/core` — motor de cálculo (TypeScript puro, sem dependências) | Sólido e testado (155 testes a passar). Energia alométrica, composição da dieta (MN/MS), ficha por vasilha e refeição, avaliação vs. exigências e proporções, regras dos guias, crescimento (GMD, Gompertz, curvas de referência), custos e sobras. |
 | `data/references/guidelines/` | 54 guias transcritos (NRC, AZA, EAZA, FEDIAF, Merck, NAG…), 155 entradas de espécie, cada um com citação e `dataQuality`. |
 | `data/seed/` | Alimentos: INSA PT v7.1 (1340), USDA SR Legacy (4913), Banco próprio (19 + 5 curados). 5 perfis de exigência, 4 fórmulas metabólicas, 9 referências de ingestão, 4 modelos de dieta. |
-| `apps/web` — Vite + React 18 + React Router | Funciona como ferramenta pessoal: alimentos, biblioteca, fórmulas, glossário, dietas, animais, curvas de crescimento. Painel, Nutrientes, Stock e Importar são apenas "em breve". |
+| `apps/web` — Vite + React 18 + React Router | Funciona como ferramenta pessoal: alimentos, biblioteca, fórmulas, glossário, dietas, animais, curvas de crescimento, cópia de segurança (exportar/importar JSON). Painel, Nutrientes, Stock e Importar são apenas "em breve". |
 | `db/migrations/0001_init.sql` — PostgreSQL/Supabase | Desenhado (multi-organização, papéis, row-level security), mas **não ligado à app**. |
 
 ### Problemas conhecidos
 
 1. **Não é ainda um SaaS:** animais e dietas guardados em `localStorage` do browser
    (`apps/web/src/data/*.ts`). Não há login, servidor nem sincronização. Limpar o browser
-   apaga os dados.
+   apaga os dados. Paliativo: página **Cópia de segurança** (`/copia-seguranca`,
+   `apps/web/src/data/backup.ts`) para exportar e repor os dados num ficheiro.
 2. **Esquema da BD desatualizado:** falta a migração `0002` (guias e tabelas filhas, categoria
    funcional e atributos de segurança dos alimentos). A app carrega os JSON dos guias diretamente.
 3. **Documentação desatualizada:** `docs/ARQUITETURA.md` refere Next.js (a app usa Vite);
