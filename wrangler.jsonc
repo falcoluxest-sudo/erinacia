@@ -1,0 +1,13 @@
+// Publicação no Cloudflare (Workers com ficheiros estáticos).
+// O Cloudflare compila com `pnpm --filter @erinacia/web build` e depois corre
+// `npx wrangler deploy`, que lê este ficheiro e publica a pasta apps/web/dist.
+{
+  "name": "erinacia",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./apps/web/dist",
+    // A app usa rotas no browser (/animais, /dietas…): qualquer endereço
+    // desconhecido devolve index.html em vez de um erro 404.
+    "not_found_handling": "single-page-application"
+  }
+}
