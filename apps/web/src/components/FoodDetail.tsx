@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Copy, Pencil, X } from 'lucide-react';
 import { NUTRIENTS, nutrientDM, energyPer100g, type EnergyModel, type NutrientCategory } from '@erinacia/core';
 import { fmt, groupColor, SOURCE_ATTRIBUTION, sourceOf, type AppFood } from '../data/foods';
+import { OriginTag, ReviewBadge } from './ReviewBadge';
 
 const CATEGORY_LABEL: Record<NutrientCategory, string> = {
   proximate: 'Composição centesimal',
@@ -30,6 +31,9 @@ export function FoodDetail({ food, onClose, onEdit }: { food: AppFood; onClose: 
   const c = groupColor(food.group);
 
   const rows = NUTRIENTS.filter((n) => food.nutrients[n.key] !== undefined && n.key !== 'moisture');
+  // The origin column only appears for foods transcribed with per-value provenance.
+  const hasNotes = food.valueNotes !== undefined || food.review !== undefined;
+  const dmNote = food.valueNotes?.moisture;
   const byCategory = new Map<NutrientCategory, typeof rows>();
   rows.forEach((n) => byCategory.set(n.category, [...(byCategory.get(n.category) ?? []), n]));
 
@@ -48,7 +52,9 @@ export function FoodDetail({ food, onClose, onEdit }: { food: AppFood; onClose: 
           <span className="badge badge-source">{sourceOf(food)}</span>
           {food.sources[0]?.code && <span className="badge badge-source">Código {food.sources[0].code}</span>}
           {food.sampleCount ? <span className="badge badge-source">{food.sampleCount} dados de origem</span> : null}
+          {food.review && <ReviewBadge review={food.review} />}
         </div>
+        {food.dataQuality?.map((d) => <div key={d} className="note">{d}</div>)}
         {food.classification && <p className="hint" style={{ margin: 0 }}>{food.classification.join(' › ')}</p>}
 
         <section>
@@ -65,7 +71,7 @@ export function FoodDetail({ food, onClose, onEdit }: { food: AppFood; onClose: 
 
         <section style={{ display: 'grid', gap: 10 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
-            <h3 style={{ margin: 0, fontSize: 16 }}>Composição · MS {fmt(food.dryMatter)}%</h3>
+            <h3 style={{ margin: 0, fontSize: 16 }}>Composição · MS {fmt(food.dryMatter)}% {dmNote && <OriginTag origin={dmNote.origin} note={dmNote.note} />}</h3>
             <div className="seg" role="group" aria-label="Base">
               <button type="button" aria-pressed={basis === 'asFed'} onClick={() => setBasis('asFed')}>Matéria natural</button>
               <button type="button" aria-pressed={basis === 'DM'} onClick={() => setBasis('DM')}>Matéria seca</button>
@@ -73,17 +79,24 @@ export function FoodDetail({ food, onClose, onEdit }: { food: AppFood; onClose: 
           </div>
           <div className="table-wrap">
             <table>
-              <thead><tr><th>Nutriente</th><th style={{ textAlign: 'right' }}>Valor</th><th>Unidade</th></tr></thead>
+              <thead><tr><th>Nutriente</th><th style={{ textAlign: 'right' }}>Valor</th><th>Unidade</th>{hasNotes && <th>Origem</th>}</tr></thead>
               <tbody>
                 {[...byCategory.entries()].map(([cat, list]) => (
                   <Group key={cat} label={CATEGORY_LABEL[cat]}>
                     {list.map((n) => {
                       const v = basis === 'DM' ? nutrientDM(food, n.key) : food.nutrients[n.key];
+                      const vn = food.valueNotes?.[n.key];
                       return (
                         <tr key={n.key}>
                           <td>{n.label.pt}</td>
                           <td className="num">{fmt(v, 3)}</td>
                           <td>{n.unit}</td>
+                          {hasNotes && (
+                            <td>
+                              <OriginTag origin={vn?.origin ?? 'measured'} note={vn?.note} />
+                              {vn?.note && <div className="hint" style={{ marginTop: 4, maxWidth: 360 }}>{vn.note}</div>}
+                            </td>
+                          )}
                         </tr>
                       );
                     })}
@@ -113,7 +126,7 @@ export function FoodDetail({ food, onClose, onEdit }: { food: AppFood; onClose: 
 function Group({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <>
-      <tr className="group"><td colSpan={3}>{label}</td></tr>
+      <tr className="group"><td colSpan={4}>{label}</td></tr>
       {children}
     </>
   );

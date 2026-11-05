@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 
 import { energyPer100g, nutrientDM, type Food } from '@erinacia/core';
 import banco from '../../../../data/seed/foods.json';
 import curated from '../../../../data/seed/foods_curated.json';
+import prey from '../../../../data/seed/foods_prey.json';
 
 export interface AppFood extends Food {
   origin: 'reference' | 'own';
@@ -34,6 +35,10 @@ const bancoFoods: AppFood[] = [
   ),
   // Labels and feed databases: each food keeps its own source and reference.
   ...(curated as unknown as (Food & { sources: { source: string; reference?: string }[] })[]).map(
+    (f): AppFood => ({ ...f, origin: 'reference', sources: [{ source: f.sources[0]!.source }], reference: f.sources[0]?.reference }),
+  ),
+  // Whole prey transcribed from zoo-nutrition literature (scripts/build_prey_foods.py).
+  ...(prey as unknown as (Food & { sources: { source: string; reference?: string }[] })[]).map(
     (f): AppFood => ({ ...f, origin: 'reference', sources: [{ source: f.sources[0]!.source }], reference: f.sources[0]?.reference }),
   ),
 ];
@@ -139,7 +144,8 @@ export const GROUP_COLORS: Record<string, { bg: string; fg: string }> = {
 export const GROUPS = Object.keys(GROUP_COLORS);
 
 export function groupColor(group: string) {
-  return GROUP_COLORS[group] ?? { bg: '#eceeea', fg: '#3a4a40' };
+  // Sub-groups such as "Presas — aves" take the colour of their parent group.
+  return GROUP_COLORS[group] ?? GROUP_COLORS[group.split(' — ')[0]!] ?? { bg: '#eceeea', fg: '#3a4a40' };
 }
 
 export const fmt = (v: number | undefined, digits = 1) =>

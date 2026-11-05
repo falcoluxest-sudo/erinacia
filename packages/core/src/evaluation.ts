@@ -73,7 +73,14 @@ export function categoryFromGroup(group: string, name = ''): FoodCategory {
   if (/verdura|hortaliça/.test(g)) return 'greens';
   if (/volumoso|feno/.test(g)) return /feno/.test(n) ? 'hay' : 'grass_forage';
   if (/carne/.test(g)) return 'muscle_meat';
-  if (/presa/.test(g)) return /inset|larva|grilo|tenébrio|tenebrio|barata|caracol|minhoca/.test(n) ? 'invertebrate_prey' : 'whole_prey_vertebrate';
+  if (/presa/.test(g)) {
+    // Sub-groups from the prey table ("Presas — peixes", "Presas — insetos"…).
+    // Marine invertebrates go with fish: NAG Fact Sheet 005 treats both as piscivore
+    // food, with the same thiamin and vitamin E supplementation rules.
+    if (/peixe|invertebrados marinhos/.test(g)) return 'marine_fish';
+    if (/inseto/.test(g)) return 'invertebrate_prey';
+    return /inset|larva|grilo|tenébrio|tenebrio|barata|caracol|minhoca/.test(n) ? 'invertebrate_prey' : 'whole_prey_vertebrate';
+  }
   if (/pescado|peixe/.test(g)) return 'marine_fish';
   if (/semente|castanha/.test(g)) return 'seeds_nuts';
   if (/suplement/.test(g)) return 'supplement';

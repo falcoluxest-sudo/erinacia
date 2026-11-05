@@ -4,6 +4,7 @@ import { NUTRIENT_BY_KEY, DERIVED_INDICATORS, FOOD_CATEGORY_LABEL, type FeedingG
 import { useEscape } from '../components/FoodDetail';
 import { fmt, matchesQuery } from '../data/foods';
 import { GUIDES as guidelines, GUILD_LABEL, guideSource } from '../data/diets';
+import { ReviewBadge } from '../components/ReviewBadge';
 
 const STAGE: Record<string, string> = {
   all: 'Todas as fases', maintenance: 'Manutenção', breeding: 'Reprodução', gestation: 'Gestação',
@@ -54,6 +55,7 @@ export function LibraryPage() {
             <div className="badges">
               <span className="badge badge-source">{guideSource(g)}</span>
               <span className="badge badge-source">{GUILD_LABEL[g.guild]}</span>
+              <ReviewBadge review={g.review} />
               {g.modelSpecies && <span className="badge badge-source">Modelo: {g.modelSpecies}</span>}
             </div>
             <div className="chip-list">
@@ -88,6 +90,8 @@ function GuideDetail({ g, onClose }: { g: Guideline; onClose: () => void }) {
           <h2 id="guide-title" className="panel-title">{g.species.map((s) => s.commonName.pt).join(', ')}</h2>
           <button type="button" className="btn btn-icon" aria-label="Fechar" onClick={onClose}><X size={18} aria-hidden="true" /></button>
         </div>
+        <div className="badges"><ReviewBadge review={g.review} /></div>
+        {g.review?.note && <p style={{ margin: 0, fontSize: 14 }}><strong>Nota de revisão:</strong> {g.review.note}</p>}
         <p className="guide-meta" style={{ margin: 0 }}>{g.citation}</p>
         {g.modelSpecies && <p style={{ margin: 0 }}><strong>Espécie-modelo:</strong> {g.modelSpecies}</p>}
         {g.dataQuality?.map((d) => <div key={d} className="note">{d}</div>)}

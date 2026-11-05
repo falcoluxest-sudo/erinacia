@@ -39,6 +39,11 @@ segmentos desde o primeiro dia.
 - O produto não substitui a avaliação de veterinários ou nutricionistas qualificados.
 - Os campos `dataQuality` dos guias assinalam incoerências nas fontes. **Os valores dos guias
   ainda não foram todos revistos pelo fundador** e não devem ser tratados como validados.
+- Estado de revisão (`review`: `pending` / `reviewed` / `reservations`) em guias e alimentos
+  transcritos; ausente = por rever. Só o fundador muda o estado (diz-te no chat; tu atualizas o JSON).
+- Origem por valor (`valueNotes`): sem nota = medido; `calculated` (por diferença, conversão entre
+  tabelas) ou `estimated` (ponto médio de intervalo, equivalência UI→mg). Nunca gravar "abaixo do
+  limite de deteção" ou "NA" como zero.
 
 ## 4. Estado atual (auditoria de 2026-11-05)
 
@@ -46,7 +51,7 @@ segmentos desde o primeiro dia.
 |---|---|
 | `packages/core` — motor de cálculo (TypeScript puro, sem dependências) | Sólido e testado (155 testes a passar). Energia alométrica, composição da dieta (MN/MS), ficha por vasilha e refeição, avaliação vs. exigências e proporções, regras dos guias, crescimento (GMD, Gompertz, curvas de referência), custos e sobras. |
 | `data/references/guidelines/` | 54 guias transcritos (NRC, AZA, EAZA, FEDIAF, Merck, NAG…), 155 entradas de espécie, cada um com citação e `dataQuality`. |
-| `data/seed/` | Alimentos: INSA PT v7.1 (1340), USDA SR Legacy (4913), Banco próprio (19 + 5 curados). 5 perfis de exigência, 4 fórmulas metabólicas, 9 referências de ingestão, 4 modelos de dieta. |
+| `data/seed/` | Alimentos: INSA PT v7.1 (1340), USDA SR Legacy (4913), Banco próprio (19 + 5 curados), presas inteiras (91: Dierenfeld et al. 2002, NAG FS005 peixe, Finke 2015 insetos; `scripts/build_prey_foods.py`). 5 perfis de exigência, 4 fórmulas metabólicas, 9 referências de ingestão, 4 modelos de dieta. |
 | `apps/web` — Vite + React 18 + React Router | Funciona como ferramenta pessoal: alimentos, biblioteca, fórmulas, glossário, dietas, animais, curvas de crescimento, cópia de segurança (exportar/importar JSON). Painel, Nutrientes, Stock e Importar são apenas "em breve". |
 | `db/migrations/0001_init.sql` — PostgreSQL/Supabase | Desenhado (multi-organização, papéis, row-level security), mas **não ligado à app**. |
 
@@ -114,6 +119,7 @@ pnpm typecheck
 python3 scripts/import_banco.py caminho/para/Banco.xlsm
 python3 scripts/import_insa.py data/raw/insa_tca.xlsx
 python3 scripts/import_usda.py data/raw/FoodData_Central_sr_legacy_food_csv_2018-04
+python3 scripts/build_prey_foods.py   # presas inteiras -> data/seed/foods_prey.json
 ```
 
 Antes de dar uma alteração como concluída, corre `pnpm test` e `pnpm typecheck`.
