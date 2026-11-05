@@ -9,6 +9,7 @@ import { DietPage } from './pages/DietPage';
 import { AnimalsPage } from './pages/AnimalsPage';
 import { AnimalDetailPage } from './pages/AnimalDetailPage';
 import { CurvesPage } from './pages/CurvesPage';
+import { BackupPage } from './pages/BackupPage';
 
 const SOON: [string, string][] = [
   ['/painel', 'Painel'], ['/nutrientes', 'Nutrientes'], ['/stock', 'Stock'],
@@ -30,6 +31,7 @@ export function App() {
           <Route path="/animais" element={<AnimalsPage />} />
           <Route path="/animais/:id" element={<AnimalDetailPage />} />
           <Route path="/crescimento" element={<CurvesPage />} />
+          <Route path="/copia-seguranca" element={<BackupPage />} />
           {SOON.map(([path, title]) => <Route key={path} path={path} element={<SoonPage title={title} />} />)}
           <Route path="*" element={<Navigate to="/alimentos" replace />} />
         </Routes>
